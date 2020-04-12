@@ -3,7 +3,7 @@
 >* Deciding the challenges to do
 >* Deciding on the our approach
 
-## - Progress:
+### - Progress:
 
 >* A brief introduction
 >* Mini-Challenge 1 is chosen as our main task
