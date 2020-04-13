@@ -36,9 +36,9 @@ unique(qt1_01$TargetLatitude) # NA  30.4483  29.3296  34.2958  34.5741  28.3004 
                                   # 32.6654 -25.4639 -17.1099  35.8806
 unique(qt1_01$TargetLongitude) # NA  -42.5341  -37.8076  -39.0260  -42.0541  -47.4036   91.7676   92.6106   89.7045   92.3982  -40.6293 -110.6500   89.4217
                                         #91.0250  -48.6701 -111.2490   90.7971  -34.5372
-unique(qt1_01$Source) # 599956 490041 533140 568093 632150 635665 616050 512397 623295 589639 550287 550361 596193 
+unique(qt1_01$Source) # 599956 490041 533140 568093 632150 635665 616050 512397 623295 589639 550287 550361 596193
                           # 464459 492777 570411 640464
-unique(qt1_01$Target) # 635665 490041 599956 589639 591682 616050 568093 632150 464459 533140 512397 550287 559657 
+unique(qt1_01$Target) # 635665 490041 599956 589639 591682 616050 568093 632150 464459 533140 512397 550287 559657
                             # 492777 570411 493044 596193 550361 640464 623295
 
 colnames(qt1_01)
@@ -48,12 +48,12 @@ glimpse(qt1_5)
 unique(qt1_5)
 unique(qt1_5$eType) # 5
 unique(qt1_5$SourceLocation) # NA
-unique(qt1_5$TargetLocation) # NA 
+unique(qt1_5$TargetLocation) # NA
 unique(qt1_5$SourceLatitude) # NA
 unique(qt1_5$SourceLongitude) # NA
 unique(qt1_5$TargetLatitude) # NA
 unique(qt1_5$TargetLongitude) # NA
-unique(qt1_5$Source) 
+unique(qt1_5$Source)
 unique(qt1_5$Target)
 unique(qt1_5$Weight)
 cat_list
@@ -69,8 +69,8 @@ range(qt1_5$Time) # 31536000-31536000
 income_cat_qt1 <- list()
 for (i in list(qt1_5$Source)) {
   for (j in cat_list) {                   # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
-    if(i == j){                  
-      income_cat_qt1 <- append(income_cat_qt1,i) 
+    if(i[1] == j[1]){                  
+      income_cat_qt1 <- append(income_cat_qt1,i)
     }
   }
 }
@@ -83,10 +83,10 @@ plot(qt1_5_sub1$Source, qt1_5_sub1$Weight) # Plot of Monetary income in each cat
 # Expense Categories:
 for (j in qt1_5$Target) {
   if(j == cat_list){                  # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
-    expense_cat_qt1 <- data.frame(j)   
-    
+    expense_cat_qt1 <- data.frame(j)
+
   }
-  
+
 }
 print(expense_cat_qt1) # expense categories extracted
 unique(expense_cat_qt1)
@@ -102,8 +102,3 @@ range(qt1_5$Weight) #0.46-900735.00
 
 
 ifelse(qt1_5$Target == 459381, 1,0)
-
-
-
-
-
