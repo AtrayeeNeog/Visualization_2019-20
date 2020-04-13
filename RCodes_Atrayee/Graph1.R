@@ -68,12 +68,18 @@ cat[,1]
 # Income Categories:
 income_cat_qt1  = c()
 for (i in unique(qt1_5$Source)) {
-  for (j in cat[,1]) {  
-    if(i == j){ 
+  for (j in cat[,1]) {
+    if(i == j){
       income_cat_qt1 = append(income_cat_qt1,j)
+income_cat_qt1 <- list()
+for (i in c(qt1_5$Source)) {
+  for (j in c(cat$NodeID)) {                   # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
+    if(i == j){
+      income_cat_qt1 <- append(income_cat_qt1,i)
     }
   }
 }
+
 print(income_cat_qt1) # income categories extracted
 unique(income_cat_qt1)
 qt1_5_sub1 <- subset(qt1_5, qt1_5$Source == income_cat_qt1) # Subset of data with only income categories
