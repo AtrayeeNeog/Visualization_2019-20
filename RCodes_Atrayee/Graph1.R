@@ -56,7 +56,7 @@ unique(qt1_5$TargetLongitude) # NA
 unique(qt1_5$Source)
 unique(qt1_5$Target)
 unique(qt1_5$Weight)
-cat_list
+
 
 qt1_5 <- subset(qt1_5, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
 colnames(qt1_5)
@@ -64,16 +64,10 @@ any(qt1_5$Source) == any(qt1_5$Target) # True
 range(qt1_5$Source) # 463777-654981
 range(qt1_5$Target) # 459381-654981
 range(qt1_5$Time) # 31536000-31536000
-cat[,1]
+income_cat_qt1 <- 0
 # Income Categories:
-income_cat_qt1  = c()
-for (i in unique(qt1_5$Source)) {
-  for (j in cat[,1]) {
-    if(i == j){
-      income_cat_qt1 = append(income_cat_qt1,j)
-income_cat_qt1 <- list()
-for (i in c(qt1_5$Source)) {
-  for (j in c(cat$NodeID)) {                   # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
+for (i in (qt1_5$Source)) {
+  for (j in (cat$NodeID)) {                   # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
     if(i == j){
       income_cat_qt1 <- append(income_cat_qt1,i)
     }
@@ -81,21 +75,23 @@ for (i in c(qt1_5$Source)) {
 }
 
 print(income_cat_qt1) # income categories extracted
-unique(income_cat_qt1)
+unique(income_cat_qt1) # 3
 qt1_5_sub1 <- subset(qt1_5, qt1_5$Source == income_cat_qt1) # Subset of data with only income categories
 str(qt1_5_sub1)
 plot(qt1_5_sub1$Source, qt1_5_sub1$Weight) # Plot of Monetary income in each category
 
 # Expense Categories:
-for (j in qt1_5$Target) {
-  if(j == cat_list){                  # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
-    expense_cat_qt1 <- data.frame(j)
-
+expense_cat_qt1 <- 0
+for (k in qt1_5$Target) {
+  for(l in cat$NodeID){ 
+    if(k==l){
+      expense_cat_qt1 <- append(expense_cat_qt1, k)
+    }
   }
 
 }
 print(expense_cat_qt1) # expense categories extracted
-unique(expense_cat_qt1)
+unique(expense_cat_qt1) # 27
 qt1_5_sub2 <- subset(qt1_5, qt1_5$Target == expense_cat_qt1) # Subset of data with only expense categories
 str(qt1_5_sub2)
 plot(qt1_5_sub2$Target, qt1_5_sub2$Weight) # Plot of Monetary expenses in each category
@@ -107,4 +103,3 @@ range(qt1_5$Weight) #0.46-900735.00
 # To-do : normalise the weights to better visualise in graph. Convert to csv maybe.
 
 
-ifelse(qt1_5$Target == 459381, 1,0)
