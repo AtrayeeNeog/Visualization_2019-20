@@ -1,0 +1,20 @@
+### RazorSQL
+
+>* RazorSQL is an extensive suite of tools that will help you run a relational database that is accessed with SQL. 
+The suite is able to communicate with a long list of RDBMSs, including Oracle, MySQL, SQL Server, PostgreSQL, Informix, and Ingres.
+The interoperability of the tool is particularly useful if you have to deal with several database types on your site. 
+The SQL command set is not exactly the same for all RDBMSs, so you can waste time entering the wrong command format when you switch from one system to another. 
+RazorSQL presents a GUI interface, which it then interprets into commands that get executed in the database. 
+However, if you want to write your own scripts, the utility includes an SQL Editor, which will highlight syntax errors.
+
+### MySQL Workbench
+
+>* 
+
+### TablePlus
+
+>* 
+
+### GraphDB
+
+>* 
