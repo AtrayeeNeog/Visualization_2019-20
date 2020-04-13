@@ -67,7 +67,7 @@ range(qt1_5$Time) # 31536000-31536000
 
 # Income Categories:
 income_cat_qt1 <- list()
-for (i in list(qt1_5$Source)) {
+for (i in length(qt1_5$Source)) {
   for (j in cat_list) {                   # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
     if(i == j){                  
       income_cat_qt1 <- append(income_cat_qt1,i) 
