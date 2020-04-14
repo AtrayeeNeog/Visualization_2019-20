@@ -8,7 +8,7 @@
 >* Make a short report till Monday for the next Wednesday's meeting.
 >* Add discussion to summary: discuss about the weights and -99
 >* Partition data based on channel and save it to different csv
-  ..>* Methods for now: R packages and Python packages
+  ..* Methods for now: R packages and Python packages
 >* Research to see different DB/software/tools to load and separate the data in a more efficient way with better and faster access
 >* Work on the Template and Q1 data graphs:
   ..>* write the ideas about the approach
