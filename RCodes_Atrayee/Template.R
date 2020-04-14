@@ -91,7 +91,7 @@ dt5_sub2 <- subset(dt5, dt5$Target >= 500000) # Subset of data with only expense
 str(dt5_sub2)
 plot(dt5_sub2$Target, dt5_sub2$Weight) # Plot of Monetary expenses in each category
 
-
+#any(dt6$Source) == any(dt6$Target)
 
 
 

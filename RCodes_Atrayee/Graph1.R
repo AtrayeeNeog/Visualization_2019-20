@@ -24,6 +24,18 @@ qt1_6 <- qt1 %>% filter(qt1$eType == 6) # Travel Channel
 nrow(qt1_6) # 37
 # Highest data for Demographic, Communication and Travel Channel.
 
+# To check if any Source ID is equal to any Target ID:
+for(i in dt6$Source){
+  for(j in dt6$Target){
+    if(i == j){
+      print("Match Found")
+    }
+    else{
+      print("No matches found")
+    }
+  }
+}
+
 # Analysis of the Communication channel:
 glimpse(qt1_01)
 unique(qt1_01)
@@ -60,7 +72,8 @@ unique(qt1_5$Weight)
 
 qt1_5 <- subset(qt1_5, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
 colnames(qt1_5)
-any(qt1_5$Source) == any(qt1_5$Target) # True
+
+
 range(qt1_5$Source) # 463777-654981
 range(qt1_5$Target) # 459381-654981
 range(qt1_5$Time) # 31536000-31536000
