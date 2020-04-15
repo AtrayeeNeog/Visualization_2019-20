@@ -62,7 +62,7 @@ unique(dt5$Weight)
 
 dt5 <- subset(dt5, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
 colnames(dt5)
-any(dt5$Source) == any(dt5$Target) # True
+#any(dt5$Source) == any(dt5$Target) # True
 range(dt5$Source) # 0-620120
 range(dt5$Target) # 0-644226
 range(dt5$Time) # 31536000-31536000
