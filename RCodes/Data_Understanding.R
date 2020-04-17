@@ -15,3 +15,5 @@ Travel <- subgraph_1[which(subgraph_1$eType == '6'),]
 Category <- read.csv('DemographicCategories.csv')
 joined_Demograohics <- merge(Demographics, Category, by.x = "Target", by.y = "NodeID", all.x = TRUE, all.y = FALSE)
 
+any(Travel$Source == Travel$Target)
+any(Travel$Source) == any(Travel$Target)
