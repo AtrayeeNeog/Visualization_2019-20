@@ -1,14 +1,14 @@
 ### - Agenda:
->* Focus on question 1
->* For Graph comparison, find quantitative tools to compare between graph sets (WaterStone Distance method)
->* Visualization diagrams need to be assesed ->
->** NodeLink Diagrams for Hierarachy (Multilevel Network)
->** Decision Trees
->** Force Directed Node Link Diagrams
->** Adjacency Matrices
->** Stratify the Data Visualisation into Panels.
->** Hierarchical Visualisation <- TreeMap.
->** Network D3
+* Focus on question 1
+* For Graph comparison, find quantitative tools to compare between graph sets (WaterStone Distance method)
+* Visualization diagrams need to be assesed ->
+>* NodeLink Diagrams for Hierarachy (Multilevel Network)
+>* Decision Trees
+>* Force Directed Node Link Diagrams
+>* Adjacency Matrices
+>* Stratify the Data Visualisation into Panels.
+>* Hierarchical Visualisation <- TreeMap.
+>* Network D3
 
 
 ### - Progress:
