@@ -1,5 +1,5 @@
 ### - Progress:
->* Graph analysis being done on the large dataset as well as Template nad Subgraphs.
+>* Graph analysis being done on the large dataset as well as Template and Subgraphs.
 >* Parallel Coordinates being plotted for each subchannel.
 >* A visual description of the task and data created and uploaded.
 
