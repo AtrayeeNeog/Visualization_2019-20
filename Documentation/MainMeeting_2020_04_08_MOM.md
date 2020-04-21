@@ -1,23 +1,24 @@
-### - Agenda:
->* Kick start on the Project
->* Deciding the challenges to do
->* Deciding on the our approach
+### Agenda:
 
-### - Progress:
+* Kick start on the Project
+* Deciding the challenges to do
+* Deciding on the our approach
 
->* A brief introduction
->* Mini-Challenge 1 is chosen as our main task
->* Discussion about the task
->* Next week's agenda was discussed
+### Progress:
 
-### - What next?
+* A brief introduction
+* Mini-Challenge 1 is chosen as our main task
+* Discussion about the task
+* Next week's agenda was discussed
 
->* Understanding the tasks
->* Reading about the datasets
->* Trying to load the big dataset
->* Trying to condense the data: removing rows, sampling, etc.
+### What next?
 
-### - Next week's agenda?
+* Understanding the tasks
+* Reading about the datasets
+* Trying to load the big dataset
+* Trying to condense the data: removing rows, sampling, etc.
 
->* Discussing our progress for the weekly
->* Discussing possible solutions
+### Next week's agenda?
+
+* Discussing our progress for the weekly
+* Discussing possible solutions
