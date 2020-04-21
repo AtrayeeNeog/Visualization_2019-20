@@ -1,9 +1,11 @@
+### Agenda
+* Team meetings
 
-### - Progress:
->* CGCS-GraphData.csv file was loaded with different methods (code in GitHub repository)
->* discussion about the MC1
+### Progress:
+* CGCS-GraphData.csv file was loaded with different methods (code in GitHub repository)
+* discussion about the MC1
 
-### - What next?
+### What next?
 
 * Make a short report till Monday for the next Wednesday's meeting.
 * Add discussion to summary: discuss about the weights and -99
@@ -24,8 +26,8 @@
   >* Histograms for weights in Demographic and Procurement channels.
 * Discuss the possibility of Sampling
 
-### - Next Meeting's Agenda:
+### Next Meeting's Agenda:
 
->* discuss sharing the GitHub repository
->* discuss our finding
->* prepare questions for the Wednesday's meeting
+* discuss sharing the GitHub repository
+* discuss our finding
+* prepare questions for the Wednesday's meeting
