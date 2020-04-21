@@ -20,29 +20,27 @@
 
 ### What next?
 
-* Literature Review
-*Literature Review
+* Literature Review on:
+>* How to find patterns in a network graphs
+>* Qualitative graph analysis tools
+>* Graph comparison tools
+>* Wasserstein distance(metric)
+* Add explanations to the codes
+* Focus on question-1 first
 
-* Focus on question 1
-* For Graph comparison, find quantitative tools to compare between graph sets (WaterStone Distance method)
-* Visualization diagrams need to be assesed ->
->* NodeLink Diagrams for Hierarachy (Multilevel Network)
+* Visualization diagrams need to be assessed:
+>* Node-Link Diagrams for Hierarchy Visualization (Multilevel Network)
 >* Decision Trees
 >* Force Directed Node Link Diagrams
->* Adjacency Matrices
->* Stratify the Data Visualisation into Panels.
->* Hierarchical Visualisation <- TreeMap.
->* Network D3
-
-
-
-
-
-
-* Need to find Packages and Literature for Graph analysis and comparison.
+>* Stratify the Data Visualization into Panels.
+>* Hierarchical Visualization <- TreeMap.
+* Need to find Packages(libraries) for Graph analysis and comparison:
+>* extension of ggplot2
+>* Check the Network graphs in D3.j
 * Plot Parallel Coordinates for each channel for comparison and analysis.
 * Work on Adjacency Matrix for each channel for comparison and analysis.
 * Try to find patterns among each channel of the Template along with the Subgraphs.
+* Clustering of the network should be assessed
 
 ### Next week's agenda?
 
