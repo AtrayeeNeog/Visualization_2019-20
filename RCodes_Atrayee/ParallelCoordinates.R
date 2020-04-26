@@ -4,6 +4,7 @@ library(GGally)
 ncol(dt)
 colnames(dt01)
 colnames(qt1_01)
+colnames(dt5)
 
 ggparcoord(dt, columns = 1: ncol(dt), groupColumn = 3) # Parallel Coords for the Template
 ggparcoord(qt1, columns = 1: ncol(qt1), groupColumn = 3) # Parallel Coords for Graph 1
