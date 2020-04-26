@@ -25,8 +25,8 @@ nrow(qt1_6) # 37
 # Highest data for Demographic, Communication and Travel Channel.
 
 # To check if any Source ID is equal to any Target ID:
-for(i in dt6$Source){
-  for(j in dt6$Target){
+for(i in qt1_6$Source){
+  for(j in qt1_6$Target){
     if(i == j){
       print("Match Found")
     }
@@ -77,7 +77,7 @@ colnames(qt1_5)
 range(qt1_5$Source) # 463777-654981
 range(qt1_5$Target) # 459381-654981
 range(qt1_5$Time) # 31536000-31536000
-income_cat_qt1 <- 0
+income_cat_qt1 <- NULL
 # Income Categories:
 for (i in (qt1_5$Source)) {
   for (j in (cat$NodeID)) {                   # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)

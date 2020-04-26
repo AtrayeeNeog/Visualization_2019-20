@@ -24,6 +24,18 @@ dt6 <- dt %>% filter(dt$eType == 6) # Travel Channel
 nrow(dt6) # 52
 # Highest data for Demographic, Communication and Travel Channel.
 
+# To check if any Source ID is equal to any Target ID:
+for(i in dt6$Source){
+  for(j in dt6$Target){
+    if(i == j){
+      print("Match Found")
+    }
+    else{
+      print("No matches found")
+    }
+  }
+}
+
 # Analysis of the Communication channel:
 glimpse(dt01)
 unique(dt01)
