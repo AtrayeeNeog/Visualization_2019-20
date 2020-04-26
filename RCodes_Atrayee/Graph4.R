@@ -108,7 +108,7 @@ plot(qt4_5_sub2$Target, qt4_5_sub2$Weight) # Plot of Monetary expenses in each c
 
 hist(qt4_5$Weight)
 unique(qt4_5$Weight)
-range(qt4_5$Weight) #1.53 159997.00
+range(qt4_5$Weight) #2.39 141744.00
 # To-do : normalise the weights to better visualise in graph. Convert to csv maybe.
 
 
