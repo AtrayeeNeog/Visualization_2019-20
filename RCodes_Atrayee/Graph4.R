@@ -8,20 +8,20 @@ tail(qt4)
 
 # Summarising the Data:
 summary(qt4)
-nrow(qt4) #729
+nrow(qt4) #732
 ncol(qt4) #11
 
 # Differentiating between channels:
 qt4_01 <- qt4 %>% filter(qt4$eType == 0 | qt4$eType == 1) # Communication Channel
-nrow(qt4_01) # 160
+nrow(qt4_01) # 106
 qt4_23 <- qt4 %>% filter(qt4$eType == 2 | qt4$eType == 3) # Procurement Channel
-nrow(qt4_23) # 12
+nrow(qt4_23) # 17
 qt4_4 <- qt4 %>% filter(qt4$eType == 4) # Co-authorship Channel
-nrow(qt4_4) # 1
+nrow(qt4_4) # 0
 qt4_5 <- qt4 %>% filter(qt4$eType == 5) # Demographic Channel
-nrow(qt4_5) # 519
+nrow(qt4_5) # 494
 qt4_6 <- qt4 %>% filter(qt4$eType == 6) # Travel Channel
-nrow(qt4_6) # 37
+nrow(qt4_6) # 115
 # Highest data for Demographic, Communication and Travel Channel.
 
 # To check if any Source ID is equal to any Target ID:
@@ -40,12 +40,12 @@ for(i in qt4_6$Source){
 glimpse(qt4_01)
 unique(qt4_01)
 unique(qt4_01$eType) # 0 1
-unique(qt4_01$SourceLocation) # 1  2 NA  4  5  0
-unique(qt4_01$TargetLocation) # 2 NA  1  0  4  5
-unique(qt4_01$SourceLatitude) # -27.78420 -23.59530 NA -29.17140   5.91178  24.98310  32.11920   2.35166
-unique(qt4_01$SourceLongitude)# -8.74823 91.35710 NA -10.49300 -161.27600  155.44600  -47.35310 -161.32200 
-unique(qt4_01$TargetLatitude) # -21.89600 -21.14110        NA -29.17140 -27.78420 -23.59530  33.57410   2.35166  32.11920  24.98310 5.91178
-unique(qt4_01$TargetLongitude) #  89.40000   91.14270         NA  -10.49300   -8.74823   91.35710  -40.39040 -161.32200  -47.35310 155.44600 -161.27600
+unique(qt4_01$SourceLocation) # 4  0 NA  5  1  3
+unique(qt4_01$TargetLocation) # 4  3 NA  5  2  1  0
+unique(qt4_01$SourceLatitude) 
+unique(qt4_01$SourceLongitude)
+unique(qt4_01$TargetLatitude) 
+unique(qt4_01$TargetLongitude) 
 unique(qt4_01$Source) 
 unique(qt4_01$Target) 
 
