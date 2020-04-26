@@ -37,5 +37,14 @@ tra_g4 <- ggparcoord(qt4_5,columns = c(1,3,4,5), groupColumn = 4)
 tra_g5 <- ggparcoord(qt5_5,columns = c(1,3,4,5), groupColumn = 4)
 ggarrange(tra_temp, tra_g1, tra_g2, tra_g3, tra_g4, tra_g5)
 
+# For Procurement Channel: 
+pro_temp <- ggparcoord(dt23, columns = c(1,3,4,5),groupColumn = 4)
+pro_g1<- ggparcoord(qt1_23,columns = c(1,3,4,5), groupColumn = 4)
+pro_g2 <- ggparcoord(qt2_23,columns = c(1,3,4,5), groupColumn = 4)
+pro_g3 <- ggparcoord(qt3_23,columns = c(1,3,4,5), groupColumn = 4)
+pro_g4 <- ggparcoord(qt4_23,columns = c(1,3,4,5), groupColumn = 4)
+pro_g5 <- ggparcoord(qt5_23,columns = c(1,3,4,5), groupColumn = 4)
+ggarrange(pro_temp, pro_g1, pro_g2, pro_g3, pro_g4, pro_g5)
+
 
 

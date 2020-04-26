@@ -135,5 +135,29 @@ hist(qt4_6$Weight)
 unique(qt4_6$Weight) 
 range(qt4_6$Weight) # -1  6
 
+# Procurement Channel:
+glimpse(qt4_23)
+unique(qt4_23)
+unique(qt4_23$eType) # 2 3
+unique(qt4_23$SourceLocation) # NA
+unique(qt4_23$TargetLocation) # NA
+unique(qt4_23$SourceLatitude) # NA
+unique(qt4_23$SourceLongitude) # NA
+unique(qt4_23$TargetLatitude) # NA
+unique(qt4_23$TargetLongitude) # NA
+unique(qt4_23$Source) # 636721
+unique(qt4_23$Target) # 585417 461577 629826 618398 655265 588802 499177 482579 638734 557626 492039 605235 590595
+unique(qt4_23$Weight) 
+
+qt4_23 <- subset(qt4_23, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+colnames(qt4_23)
+range(qt4_23$Source) 
+range(qt4_23$Target) 
+range(qt4_23$Time) # 98586 31106062
+
+hist(qt4_23$Weight)
+unique(qt4_23$Weight) 
+range(qt4_23$Weight) #1 1398
+
 
 

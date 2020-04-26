@@ -140,3 +140,28 @@ income_cat_qt1 <- NULL
 hist(qt1_6$Weight)
 unique(qt1_6$Weight) #4 2 5 3 1
 range(qt1_6$Weight) #1 5
+
+# Procurement Channel:
+glimpse(qt1_23)
+unique(qt1_23)
+unique(qt1_23$eType) # 2 3
+unique(qt1_23$SourceLocation) # NA
+unique(qt1_23$TargetLocation) # NA
+unique(qt1_23$SourceLatitude) # NA
+unique(qt1_23$SourceLongitude) # NA
+unique(qt1_23$TargetLatitude) # NA
+unique(qt1_23$TargetLongitude) # NA
+unique(qt1_23$Source) # 550287 512397
+unique(qt1_23$Target) # 657187
+unique(qt1_23$Weight) 
+
+qt1_23 <- subset(qt1_23, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+colnames(qt1_23)
+range(qt1_23$Source) 
+range(qt1_23$Target) 
+range(qt1_23$Time) # 10250285 17671007
+
+hist(qt1_23$Weight)
+unique(qt1_23$Weight) 
+range(qt1_23$Weight) #1 5
+
