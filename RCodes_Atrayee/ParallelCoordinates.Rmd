@@ -649,7 +649,7 @@ range(qt5_5$Weight) #0.17 441206.00
 
 
 
-## Parallel Coordinates for Template, Graph1 and Graph2:
+## Parallel Coordinates for Template and Graph Data:
 
 ```{r}
 ggparcoord(dt, columns = 1: ncol(dt), groupColumn = 3) # Parallel Coords for the Template
