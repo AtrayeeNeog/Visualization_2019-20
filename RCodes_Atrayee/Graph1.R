@@ -115,4 +115,28 @@ unique(qt1_5$Weight)
 range(qt1_5$Weight) #0.46-900735.00
 # To-do : normalise the weights to better visualise in graph. Convert to csv maybe.
 
+# Travel Channel:
 
+glimpse(qt1_6)
+unique(qt1_6)
+unique(qt1_6$eType) # 6
+unique(qt1_6$SourceLocation) # 4 3 2 1 0 5
+unique(qt1_6$TargetLocation) # 3 1 4 2 0 5
+unique(qt1_6$SourceLatitude) # 1 -25 -22 -29  33  22
+unique(qt1_6$SourceLongitude) # -165 -111   91  -13  -41  156
+unique(qt1_6$TargetLatitude) # -25 -29   1 -22  33  22
+unique(qt1_6$TargetLongitude) # -111  -13 -165   91  -41  156
+unique(qt1_6$Source)
+unique(qt1_6$Target)
+unique(qt1_6$Weight) #4 2 5 3 1
+
+
+range(qt1_6$Source) # 464459 649553
+range(qt1_6$Target) # 499467 657173
+range(qt1_6$Time) # 14845147 30224347
+income_cat_qt1 <- NULL
+
+
+hist(qt1_6$Weight)
+unique(qt1_6$Weight) #4 2 5 3 1
+range(qt1_6$Weight) #1 5

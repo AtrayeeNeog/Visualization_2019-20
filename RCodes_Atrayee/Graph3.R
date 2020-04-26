@@ -111,4 +111,28 @@ unique(qt3_5$Weight)
 range(qt3_5$Weight) #1.53 159997.00
 # To-do : normalise the weights to better visualise in graph. Convert to csv maybe.
 
+# Travel Channel:
+glimpse(qt3_6)
+unique(qt3_6)
+unique(qt3_6$eType) # 6
+unique(qt3_6$SourceLocation) 
+unique(qt3_6$TargetLocation) 
+unique(qt3_6$SourceLatitude) 
+unique(qt3_6$SourceLongitude) 
+unique(qt3_6$TargetLatitude) 
+unique(qt3_6$TargetLongitude) 
+unique(qt3_6$Source)
+unique(qt3_6$Target)
+unique(qt3_6$Weight) 
+
+
+range(qt3_6$Source) 
+range(qt3_6$Target) 
+range(qt3_6$Time) # 13716556 31514956
+
+
+hist(qt3_6$Weight)
+unique(qt3_6$Weight) 
+range(qt3_6$Weight) #1 6
+
 
