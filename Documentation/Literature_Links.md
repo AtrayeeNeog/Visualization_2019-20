@@ -16,3 +16,9 @@
 ### - Software
 
 1. Gephi: https://gephi.org/users/download/
+
+2. D3:
+  * https://d3js.org/
+  * https://observablehq.com/@d3/arc-diagram
+
+3. For ideas for visualization: https://www.data-to-viz.com/
