@@ -25,4 +25,7 @@ dem_g4 <- ggparcoord(qt4_5,columns = 1:ncol(qt4_5), groupColumn = 3)
 dem_g5 <- ggparcoord(qt5_5,columns = 1:ncol(qt5_5), groupColumn = 3)
 ggarrange(dem_temp, dem_g1, dem_g2, dem_g3, dem_g4, dem_g5)
 
+# For Travel Channel: 
+
+
 

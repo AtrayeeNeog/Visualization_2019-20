@@ -1,0 +1,361 @@
+---
+title: "ParallelCoordinates"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggpubr)
+library(GGally)
+library(here)
+library(tidyverse)
+```
+## Template Data Analysis:
+```{r}
+# Analysis of the Communication channel:
+glimpse(dt01)
+unique(dt01)
+unique(dt01$eType) # 0 1
+unique(dt01$SourceLocation) # NA  5  3  4  0
+unique(dt01$TargetLocation) # NA  5  0  3  4
+unique(dt01$SourceLatitude) # NA
+unique(dt01$SourceLongitude) # NA
+unique(dt01$TargetLatitude) # NA
+unique(dt01$TargetLongitude) # NA
+unique(dt01$Source)
+unique(dt01$Target)
+
+dt01 <- subset(dt01, select = -c(SourceLatitude, SourceLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+dt01 <- subset(dt01, select = -c(TargetLatitude, TargetLongitude))
+dt01 <- subset(dt01, select = -Weight) # Weight removed as all values 1.
+colnames(dt01)
+any(dt01$Source) == any(dt01$Target) # True
+range(dt01$Source) # 27-67
+range(dt01$Target) # 0-67
+range(dt01$Time) # 86400-27222388
+
+# Analysis of the Demographic channel:
+glimpse(dt5)
+unique(dt5)
+unique(dt5$eType) # 5
+unique(dt5$SourceLocation) # NA
+unique(dt5$TargetLocation) # NA 
+unique(dt5$SourceLatitude) # NA
+unique(dt5$SourceLongitude) # NA
+unique(dt5$TargetLatitude) # NA
+unique(dt5$TargetLongitude) # NA
+unique(dt5$Source) 
+unique(dt5$Target)
+unique(dt5$Weight)
+
+dt5 <- subset(dt5, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+colnames(dt5)
+#any(dt5$Source) == any(dt5$Target) # True
+range(dt5$Source) # 0-620120
+range(dt5$Target) # 0-644226
+range(dt5$Time) # 31536000-31536000
+income_cat <- subset(dt5$Source, dt5$Source >= 500000)
+unique(income_cat) #Income Categories: 510031(Gifts), 552988(Money Income before Taxes), 620120(Personal Taxes)
+expense_cat <- subset(dt5$Target, dt5$Target >= 500000)
+sort(unique(expense_cat)) # Expense Categories: 503218(Natural Gas) 503701(Miscellaneous) 520660(Healthcare) 523927(Restaurants) 527449 (Alcohol) 
+                                  # 536346(Home Maintenance) 537281(HouseKeeping) 567195 (Personal insurance and pensions) 
+                                  # 571970(Reading) 575030 (Transportation) 577992 (Education) 580426 (Telephone services) 
+                                  # 589943(Lodging away from home) 595298(Groceries) 595581(Donations) 606730(Entertainment)
+                                  # 616315(Apparel and services) 620120(Personal taxes) 621924(Mortgage payments) 
+                                  # 630626(Rented dwellings) 632961(Personal care products and services) 
+                                  # 640784(Tobacco) 642329(Household operations) 644226(Property taxes)
+
+hist(dt5$Weight)
+unique(dt5$Weight)
+range(dt5$Weight) #2-200000
+
+# Income Categories:
+dt5_sub1 <- subset(dt5, dt5$Source >= 500000) # Subset of data with only income categories
+str(dt5_sub1)
+plot(dt5_sub1$Source, dt5_sub1$Weight) # Plot of Monetary income in each category
+
+# Expense Categories:
+dt5_sub2 <- subset(dt5, dt5$Target >= 500000) # Subset of data with only expense categories
+str(dt5_sub2)
+plot(dt5_sub2$Target, dt5_sub2$Weight) # Plot of Monetary expenses in each category
+
+#any(dt6$Source) == any(dt6$Target)
+
+
+```
+## Graph 1 Analysis:
+```{r}
+
+# Load The Data:
+qt1 <- data.table::fread(here::here("data", "Q1-Graph1.csv"))
+head(qt1)
+tail(qt1)
+
+# Summarising the Data:
+summary(qt1)
+nrow(qt1) #1216
+ncol(qt1) #11
+
+# Differentiating between channels:
+qt1_01 <- qt1 %>% filter(qt1$eType == 0 | qt1$eType == 1) # Communication Channel
+nrow(qt1_01) # 318
+qt1_23 <- qt1 %>% filter(qt1$eType == 2 | qt1$eType == 3) # Procurement Channel
+nrow(qt1_23) # 14
+qt1_4 <- qt1 %>% filter(qt1$eType == 4) # Co-authorship Channel
+nrow(qt1_4) # 1
+qt1_5 <- qt1 %>% filter(qt1$eType == 5) # Demographic Channel
+nrow(qt1_5) # 846
+qt1_6 <- qt1 %>% filter(qt1$eType == 6) # Travel Channel
+nrow(qt1_6) # 37
+# Highest data for Demographic, Communication and Travel Channel.
+
+# To check if any Source ID is equal to any Target ID:
+for(i in qt1_6$Source){
+  for(j in qt1_6$Target){
+    if(i == j){
+      print("Match Found")
+    }
+    else{
+      print("No matches found")
+    }
+  }
+}
+
+# Analysis of the Communication channel:
+glimpse(qt1_01)
+unique(qt1_01)
+unique(qt1_01$eType) # 0 1
+unique(qt1_01$SourceLocation) # NA 0 2 3
+unique(qt1_01$TargetLocation) # NA 0 2 3
+unique(qt1_01$SourceLatitude) # NA  34.5741  34.2958 -27.2563  29.3296 -20.9062 -21.8004  25.0754 -25.4639 -24.5657 -18.3758  30.4483  35.8806
+unique(qt1_01$SourceLongitude) # NA  -42.0541  -39.0260   91.7676  -37.8076   92.3982   89.7045  -40.6293 -111.2490 -110.6500   91.0250  -42.5341  -34.5372
+unique(qt1_01$TargetLatitude) # NA  30.4483  29.3296  34.2958  34.5741  28.3004 -27.2563 -22.6503 -21.8004 -20.9062  25.0754 -24.5657 -20.8686 -18.3758
+                                  # 32.6654 -25.4639 -17.1099  35.8806
+unique(qt1_01$TargetLongitude) # NA  -42.5341  -37.8076  -39.0260  -42.0541  -47.4036   91.7676   92.6106   89.7045   92.3982  -40.6293 -110.6500   89.4217
+                                        #91.0250  -48.6701 -111.2490   90.7971  -34.5372
+unique(qt1_01$Source) # 599956 490041 533140 568093 632150 635665 616050 512397 623295 589639 550287 550361 596193
+                          # 464459 492777 570411 640464
+unique(qt1_01$Target) # 635665 490041 599956 589639 591682 616050 568093 632150 464459 533140 512397 550287 559657
+                            # 492777 570411 493044 596193 550361 640464 623295
+
+colnames(qt1_01)
+
+# Analysis of the Demographic channel:
+glimpse(qt1_5)
+unique(qt1_5)
+unique(qt1_5$eType) # 5
+unique(qt1_5$SourceLocation) # NA
+unique(qt1_5$TargetLocation) # NA
+unique(qt1_5$SourceLatitude) # NA
+unique(qt1_5$SourceLongitude) # NA
+unique(qt1_5$TargetLatitude) # NA
+unique(qt1_5$TargetLongitude) # NA
+unique(qt1_5$Source)
+unique(qt1_5$Target)
+unique(qt1_5$Weight)
+
+
+qt1_5 <- subset(qt1_5, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+colnames(qt1_5)
+
+
+range(qt1_5$Source) # 463777-654981
+range(qt1_5$Target) # 459381-654981
+range(qt1_5$Time) # 31536000-31536000
+income_cat_qt1 <- NULL
+# Income Categories:
+for (i in (qt1_5$Source)) {
+  for (j in (cat$NodeID)) {                   # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
+    if(i == j){
+      income_cat_qt1 <- append(income_cat_qt1,i)
+    }
+  }
+}
+
+print(income_cat_qt1) # income categories extracted
+unique(income_cat_qt1) # 3
+qt1_5_sub1 <- subset(qt1_5, qt1_5$Source == income_cat_qt1) # Subset of data with only income categories
+str(qt1_5_sub1)
+plot(qt1_5_sub1$Source, qt1_5_sub1$Weight) # Plot of Monetary income in each category
+
+# Expense Categories:
+expense_cat_qt1 <- 0
+for (k in qt1_5$Target) {
+  for(l in cat$NodeID){ 
+    if(k==l){
+      expense_cat_qt1 <- append(expense_cat_qt1, k)
+    }
+  }
+
+}
+print(expense_cat_qt1) # expense categories extracted
+unique(expense_cat_qt1) # 27
+qt1_5_sub2 <- subset(qt1_5, qt1_5$Target == expense_cat_qt1) # Subset of data with only expense categories
+str(qt1_5_sub2)
+plot(qt1_5_sub2$Target, qt1_5_sub2$Weight) # Plot of Monetary expenses in each category
+
+
+hist(qt1_5$Weight)
+unique(qt1_5$Weight)
+range(qt1_5$Weight) #0.46-900735.00
+# To-do : normalise the weights to better visualise in graph. Convert to csv maybe.
+
+
+
+```
+## Graph 3 Analysis:
+```{r}
+library(here)
+library(tidyverse)
+
+# Load The Data:
+qt3 <- data.table::fread(here::here("data", "Q1-Graph3.csv"))
+head(qt3)
+tail(qt3)
+
+# Summarising the Data:
+summary(qt3)
+nrow(qt3) #729
+ncol(qt3) #11
+
+# Differentiating between channels:
+qt3_01 <- qt3 %>% filter(qt3$eType == 0 | qt3$eType == 1) # Communication Channel
+nrow(qt3_01) # 160
+qt3_23 <- qt3 %>% filter(qt3$eType == 2 | qt3$eType == 3) # Procurement Channel
+nrow(qt3_23) # 12
+qt3_4 <- qt3 %>% filter(qt3$eType == 4) # Co-authorship Channel
+nrow(qt3_4) # 1
+qt3_5 <- qt3 %>% filter(qt3$eType == 5) # Demographic Channel
+nrow(qt3_5) # 519
+qt3_6 <- qt3 %>% filter(qt3$eType == 6) # Travel Channel
+nrow(qt3_6) # 37
+# Highest data for Demographic, Communication and Travel Channel.
+
+# Analysis of the Communication channel:
+glimpse(qt3_01)
+unique(qt3_01)
+unique(qt3_01$eType) # 0 1
+unique(qt3_01$SourceLocation) # 1  2 NA  4  5  0
+unique(qt3_01$TargetLocation) # 2 NA  1  0  4  5
+unique(qt3_01$SourceLatitude) # -27.78420 -23.59530 NA -29.17140   5.91178  24.98310  32.11920   2.35166
+unique(qt3_01$SourceLongitude)# -8.74823 91.35710 NA -10.49300 -161.27600  155.44600  -47.35310 -161.32200 
+unique(qt3_01$TargetLatitude) # -21.89600 -21.14110        NA -29.17140 -27.78420 -23.59530  33.57410   2.35166  32.11920  24.98310 5.91178
+unique(qt3_01$TargetLongitude) #  89.40000   91.14270         NA  -10.49300   -8.74823   91.35710  -40.39040 -161.32200  -47.35310 155.44600 -161.27600
+unique(qt3_01$Source) 
+unique(qt3_01$Target) 
+
+colnames(qt3_01)
+
+# Analysis of the Demographic channel:
+glimpse(qt3_5)
+unique(qt3_5)
+unique(qt3_5$eType) # 5
+unique(qt3_5$SourceLocation) # NA
+unique(qt3_5$TargetLocation) # NA
+unique(qt3_5$SourceLatitude) # NA
+unique(qt3_5$SourceLongitude) # NA
+unique(qt3_5$TargetLatitude) # NA
+unique(qt3_5$TargetLongitude) # NA
+unique(qt3_5$Source)
+unique(qt3_5$Target)
+unique(qt3_5$Weight)
+
+
+qt3_5 <- subset(qt3_5, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+colnames(qt3_5)
+
+
+range(qt3_5$Source) # 466976 657076
+range(qt3_5$Target) # 459381 657076
+range(qt3_5$Time) # 31536000-31536000
+income_cat_qt3 <- NULL
+# Income Categories:
+for (i in (qt3_5$Source)) {
+  for (j in (cat$NodeID)) {                   # cat_list contains all the demographic nodeIDs (from the DemographicNodeExtraction Script)
+    if(i == j){
+      income_cat_qt3 <- append(income_cat_qt3,i)
+    }
+  }
+}
+
+print(income_cat_qt3) # income categories extracted
+unique(income_cat_qt3) # 3
+qt3_5_sub1 <- subset(qt3_5, qt3_5$Source == income_cat_qt3) # Subset of data with only income categories
+str(qt3_5_sub1)
+plot(qt3_5_sub1$Source, qt3_5_sub1$Weight) # Plot of Monetary income in each category
+
+# Expense Categories:
+expense_cat_qt3 <- NULL
+for (k in qt3_5$Target) {
+  for(l in cat$NodeID){ 
+    if(k==l){
+      expense_cat_qt3 <- append(expense_cat_qt3, k)
+    }
+  }
+  
+}
+print(expense_cat_qt3) # expense categories extracted
+unique(expense_cat_qt3) # 27
+qt3_5_sub2 <- subset(qt3_5, qt3_5$Target == expense_cat_qt3) # Subset of data with only expense categories
+str(qt3_5_sub2)
+plot(qt3_5_sub2$Target, qt3_5_sub2$Weight) # Plot of Monetary expenses in each category
+
+
+hist(qt3_5$Weight)
+unique(qt3_5$Weight)
+range(qt3_5$Weight) #1.53 159997.00
+# To-do : normalise the weights to better visualise in graph. Convert to csv maybe.
+
+
+
+```
+
+
+
+## Parallel Coordinates for Template, Graph1 and Graph2:
+
+```{r}
+ggparcoord(dt, columns = 1: ncol(dt), groupColumn = 3) # Parallel Coords for the Template
+ggparcoord(qt1, columns = 1: ncol(qt1), groupColumn = 3) # Parallel Coords for Graph 1
+ggparcoord(qt2, columns = 1: ncol(qt2), groupColumn = 3) # Parallel Coords for Graph 2
+
+```
+## For Communication Channel:
+
+```{r}
+com_temp <- ggparcoord(dt01, groupColumn = 3)
+com_g1<- ggparcoord(qt1_01,columns = 1:ncol(qt1_01), groupColumn = 3)
+com_g2 <- ggparcoord(qt2_01,columns = 1:ncol(qt2_01), groupColumn = 3)
+com_g3 <- ggparcoord(qt3_01,columns = 1:ncol(qt3_01), groupColumn = 3)
+com_g4 <- ggparcoord(qt4_01,columns = 1:ncol(qt4_01), groupColumn = 3)
+com_g5 <- ggparcoord(qt5_01,columns = 1:ncol(qt5_01), groupColumn = 3)
+ggarrange(com_temp, com_g1, com_g2, com_g3, com_g4, com_g5)
+
+```
+## For Demographic Channel:
+
+```{r}
+dem_temp <- ggparcoord(dt5, columns = 1:ncol(dt5),groupColumn = 3)
+dem_g1<- ggparcoord(qt1_5,columns = 1:ncol(qt1_5), groupColumn = 3)
+dem_g2 <- ggparcoord(qt2_5,columns = 1:ncol(qt2_5), groupColumn = 3)
+dem_g3 <- ggparcoord(qt3_5,columns = 1:ncol(qt3_5), groupColumn = 3)
+dem_g4 <- ggparcoord(qt4_5,columns = 1:ncol(qt4_5), groupColumn = 3)
+dem_g5 <- ggparcoord(qt5_5,columns = 1:ncol(qt5_5), groupColumn = 3)
+ggarrange(dem_temp, dem_g1, dem_g2, dem_g3, dem_g4, dem_g5)
+```
+
+
+You can also embed plots, for example:
+
+```{r}
+tra_temp <- ggparcoord(dt6, columns = 1:ncol(dt6),groupColumn = 3)
+tra_g1<- ggparcoord(qt1_6,columns = 1:ncol(qt1_6), groupColumn = 3)
+tra_g2<- ggparcoord(qt2_6,columns = 1:ncol(qt2_6), groupColumn = 3)
+tra_g3<- ggparcoord(qt3_6,columns = 1:ncol(qt3_6), groupColumn = 3)
+tra_g4<- ggparcoord(qt4_6,columns = 1:ncol(qt4_6), groupColumn = 3)
+tra_g5<- ggparcoord(qt5_6,columns = 1:ncol(qt5_6), groupColumn = 3)
+ggarrange(tra_temp, tra_g1, tra_g2, tra_g3, tra_g4, tra_g5)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
