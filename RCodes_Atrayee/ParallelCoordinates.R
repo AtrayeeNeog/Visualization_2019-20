@@ -12,5 +12,6 @@ par(mfrow = c(1,3))
 par_temp <- ggparcoord(dt01, groupColumn = 3)
 par_g1<- ggparcoord(qt1_01,columns = 1:7, groupColumn = 3)
 par_g2 <- ggparcoord(qt2_01,columns = 1:7, groupColumn = 3)
-ggarrange(par_temp, par_g1, par_g2)
+par_g3 <- ggparcoord(qt3_01,columns = 1:7, groupColumn = 3)
+ggarrange(par_temp, par_g1, par_g2, par_g3)
 
