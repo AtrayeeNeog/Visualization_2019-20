@@ -660,7 +660,7 @@ ggparcoord(qt2, columns = 1: ncol(qt2), groupColumn = 3) # Parallel Coords for G
 
 
 
-## For Communication Channel:
+## Communication Channel:
 
 ```{r}
 com_temp <- ggparcoord(dt01,columns = c(1,3,4,5), groupColumn = 4)
@@ -675,7 +675,7 @@ ggarrange(com_temp, com_g1, com_g2, com_g3, com_g4, com_g5, ncol = 2, nrow = 3)
 
 
 
-## For Demographic Channel:
+## Demographic Channel:
 
 ```{r}
 dem_temp <- ggparcoord(dt5, columns = c(1,3,4,5),groupColumn = 4)
