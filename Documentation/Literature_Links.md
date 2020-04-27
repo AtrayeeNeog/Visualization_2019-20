@@ -22,3 +22,4 @@
   * https://observablehq.com/@d3/arc-diagram
 
 3. For ideas for visualization: https://www.data-to-viz.com/
+4. Color codes for graphs: http://phrogz.net/css/distinct-colors.html
