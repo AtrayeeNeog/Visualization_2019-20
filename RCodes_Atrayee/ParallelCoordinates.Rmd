@@ -27,6 +27,10 @@ tail(dt)
 summary(dt)
 nrow(dt)
 ncol(dt)
+dt$Source <- as.character(dt$Source)
+dt$Target <- as.character(dt$Target)
+str(dt$Source)
+str(dt$Target)
 # Differentiating between channels:
 dt01 <- dt %>% filter(dt$eType == 0 | dt$eType == 1) # Communication Channel
 nrow(dt01) # 563
@@ -120,6 +124,8 @@ tail(qt1)
 summary(qt1)
 nrow(qt1) #1216
 ncol(qt1) #11
+qt1$Source <- as.character(qt1$Source)
+qt1$Target <- as.character(qt1$Target)
 
 # Differentiating between channels:
 qt1_01 <- qt1 %>% filter(qt1$eType == 0 | qt1$eType == 1) # Communication Channel
@@ -134,17 +140,6 @@ qt1_6 <- qt1 %>% filter(qt1$eType == 6) # Travel Channel
 nrow(qt1_6) # 37
 # Highest data for Demographic, Communication and Travel Channel.
 
-# To check if any Source ID is equal to any Target ID:
-for(i in qt1_6$Source){
-  for(j in qt1_6$Target){
-    if(i == j){
-      print("Match Found")
-    }
-    else{
-      print("No matches found")
-    }
-  }
-}
 
 # Analysis of the Communication channel:
 glimpse(qt1_01)
@@ -238,6 +233,8 @@ tail(qt2)
 summary(qt2)
 nrow(qt2) #1300
 ncol(qt2) #11
+qt2$Source <- as.character(qt2$Source)
+qt2$Target <- as.character(qt2$Target)
 
 # Differentiating between channels:
 qt2_01 <- qt2 %>% filter(qt2$eType == 0 | qt2$eType == 1) # Communication Channel
@@ -346,6 +343,8 @@ tail(qt3)
 summary(qt3)
 nrow(qt3) #729
 ncol(qt3) #11
+qt3$Source <- as.character(qt3$Source)
+qt3$Target <- as.character(qt3$Target)
 
 # Differentiating between channels:
 qt3_01 <- qt3 %>% filter(qt3$eType == 0 | qt3$eType == 1) # Communication Channel
@@ -449,6 +448,8 @@ tail(qt4)
 summary(qt4)
 nrow(qt4) #732
 ncol(qt4) #11
+qt4$Source <- as.character(qt4$Source)
+qt4$Target <- as.character(qt4$Target)
 
 # Differentiating between channels:
 qt4_01 <- qt4 %>% filter(qt4$eType == 0 | qt4$eType == 1) # Communication Channel
@@ -552,6 +553,8 @@ tail(qt5)
 summary(qt5)
 nrow(qt5) #395
 ncol(qt5) #11
+qt5$Source <- as.character(qt5$Source)
+qt5$Target <- as.character(qt5$Target)
 
 # Differentiating between channels:
 qt5_01 <- qt5 %>% filter(qt5$eType == 0 | qt5$eType == 1) # Communication Channel
@@ -652,9 +655,13 @@ range(qt5_5$Weight) #0.17 441206.00
 ## Parallel Coordinates for Template and Graph Data:
 
 ```{r}
-ggparcoord(dt, columns = 1: ncol(dt), groupColumn = 3) # Parallel Coords for the Template
-ggparcoord(qt1, columns = 1: ncol(qt1), groupColumn = 3) # Parallel Coords for Graph 1
-ggparcoord(qt2, columns = 1: ncol(qt2), groupColumn = 3) # Parallel Coords for Graph 2
+colnames(dt)
+ggparcoord(dt, columns = c(1,3,4,5), groupColumn = 4) # Parallel Coords for the Template
+ggparcoord(qt1, columns = c(1,3,4,5), groupColumn = 4) # Parallel Coords for Graph 1
+ggparcoord(qt2, columns = c(1,3,4,5), groupColumn = 4) # Parallel Coords for Graph 2
+ggparcoord(qt3, columns = c(1,3,4,5), groupColumn = 4) # Parallel Coords for Graph 3
+ggparcoord(qt4, columns = c(1,3,4,5), groupColumn = 4) # Parallel Coords for Graph 4
+ggparcoord(qt5, columns = c(1,3,4,5), groupColumn = 4) # Parallel Coords for Graph 5
 
 ```
 
