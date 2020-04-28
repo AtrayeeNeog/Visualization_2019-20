@@ -161,8 +161,11 @@ unique(qt1_01$Source) # 599956 490041 533140 568093 632150 635665 616050 512397 
                           # 464459 492777 570411 640464
 unique(qt1_01$Target) # 635665 490041 599956 589639 591682 616050 568093 632150 464459 533140 512397 550287 559657
                             # 492777 570411 493044 596193 550361 640464 623295
-
+qt1_01 <- subset(qt1_01, select = -c(SourceLatitude, SourceLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+qt1_01 <- subset(qt1_01, select = -c(TargetLatitude, TargetLongitude))
+qt1_01 <- subset(qt1_01, select = -Weight) # Weight removed as all values 1.
 colnames(qt1_01)
+
 
 # Analysis of the Demographic channel:
 glimpse(qt1_5)
@@ -266,6 +269,9 @@ unique(qt2_01$TargetLongitude)
 unique(qt2_01$Source) 
 unique(qt2_01$Target) 
 
+qt2_01 <- subset(qt2_01, select = -c(SourceLatitude, SourceLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+qt2_01 <- subset(qt2_01, select = -c(TargetLatitude, TargetLongitude))
+qt2_01 <- subset(qt2_01, select = -Weight) # Weight removed as all values 1.
 colnames(qt2_01)
 
 # Analysis of the Demographic channel:
@@ -376,6 +382,9 @@ unique(qt3_01$TargetLongitude) #  89.40000   91.14270         NA  -10.49300   -8
 unique(qt3_01$Source) 
 unique(qt3_01$Target) 
 
+qt3_01 <- subset(qt3_01, select = -c(SourceLatitude, SourceLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+qt3_01 <- subset(qt3_01, select = -c(TargetLatitude, TargetLongitude))
+qt3_01 <- subset(qt3_01, select = -Weight) # Weight removed as all values 1.
 colnames(qt3_01)
 
 # Analysis of the Demographic channel:
@@ -481,6 +490,9 @@ unique(qt4_01$TargetLongitude)
 unique(qt4_01$Source) 
 unique(qt4_01$Target) 
 
+qt4_01 <- subset(qt4_01, select = -c(SourceLatitude, SourceLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+qt4_01 <- subset(qt4_01, select = -c(TargetLatitude, TargetLongitude))
+qt4_01 <- subset(qt4_01, select = -Weight) # Weight removed as all values 1.
 colnames(qt4_01)
 
 # Analysis of the Demographic channel:
@@ -586,6 +598,9 @@ unique(qt5_01$TargetLongitude)
 unique(qt5_01$Source) 
 unique(qt5_01$Target) 
 
+qt5_01 <- subset(qt5_01, select = -c(SourceLatitude, SourceLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+qt5_01 <- subset(qt5_01, select = -c(TargetLatitude, TargetLongitude))
+qt5_01 <- subset(qt5_01, select = -Weight) # Weight removed as all values 1.
 colnames(qt5_01)
 
 # Analysis of the Demographic channel:
@@ -674,12 +689,13 @@ ggparcoord(qt5, columns = c(1,3,4,5), groupColumn = 4) # Parallel Coords for Gra
 ## Communication Channel:
 
 ```{r}
-com_temp <- ggparcoord(dt01,columns = c(1,3,4,5), groupColumn = 4)
-com_g1<- ggparcoord(qt1_01,columns = c(1,3,4,5), groupColumn = 4)
-com_g2 <- ggparcoord(qt2_01,columns = c(1,3,4,5), groupColumn = 4)
-com_g3 <- ggparcoord(qt3_01,columns = c(1,3,4,5), groupColumn = 4)
-com_g4 <- ggparcoord(qt4_01,columns = c(1,3,4,5), groupColumn = 4)
-com_g5 <- ggparcoord(qt5_01,columns = c(1,3,4,5), groupColumn = 4)
+colnames(dt01)
+com_temp <- ggparcoord(dt01,columns = c(1,3,4), groupColumn = 4)
+com_g1<- ggparcoord(qt1_01,columns = c(1,3,4), groupColumn = 4)
+com_g2 <- ggparcoord(qt2_01,columns = c(1,3,4), groupColumn = 4)
+com_g3 <- ggparcoord(qt3_01,columns = c(1,3,4), groupColumn = 4)
+com_g4 <- ggparcoord(qt4_01,columns = c(1,3,4), groupColumn = 4)
+com_g5 <- ggparcoord(qt5_01,columns = c(1,3,4), groupColumn = 4)
 ggarrange(com_temp, com_g1, labels = c("Template", "Graph 1"), hjust = 0, vjust = 1, font.label = list(size = 10, color = "blue"))
 ggarrange(com_temp, com_g2, labels = c("Template", "Graph 2"), hjust = 0, vjust = 1, font.label = list(size = 10, color = "blue"))
 ggarrange(com_temp, com_g3, labels = c("Template", "Graph 3"), hjust = 0, vjust = 1, font.label = list(size = 10, color = "blue"))
