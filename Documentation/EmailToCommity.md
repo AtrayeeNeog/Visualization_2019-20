@@ -15,4 +15,4 @@ Here are the questions that we have regarding the datasets:
 3. While exploring the big graph, do we have to assume that different hacker groups are not in contact with each other or is it possible that a group of hackers is connected to another group or the CGCS organization itself? and if they are connected, what determines a separate hacker group?
 4. We noticed that phone and email eTypes are mentioned twice in "CGCS-GraphData-Readme.pdf" and once phone eType is 0 and email eType is 1 and another time the other way around. which one is the correct one and does it make any difference in our ananlysis?
 5. We couldn't quite understand the location data in the Travel channel, what does the Target, Source and Target locations, lattitude and longitude represent and how are they connected to each other?
-6. 
+6. Are the Id's for each node unique? Meaning that if there is an Id for a document(publication), could it also be assigned to a person? (we checked the 
