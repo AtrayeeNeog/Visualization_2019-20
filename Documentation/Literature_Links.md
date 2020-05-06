@@ -2,8 +2,15 @@
 
 ## Literature
 
+### - Books
+
+### - Papers
+
+### - Keywords
+1. graph partioning
 
 ## Links:
+
 
 ### - Python
 
