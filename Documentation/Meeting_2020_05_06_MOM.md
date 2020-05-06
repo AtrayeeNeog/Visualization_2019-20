@@ -9,19 +9,19 @@
 
 ### What next?
 * All of us:
-*> Literature survey
+>* Literature survey
 * Atrayee:
-*> Explore two variables at a time(with Heatmaps or Adjacency Matrix)
-*> Exclude the person's unique Ids and analyze only based on those
-*> Double check the code for person's Ids and whether they are repeated or not
+>* Explore two variables at a time(with Heatmaps or Adjacency Matrix)
+>* Exclude the person's unique Ids and analyze only based on those
+>* Double check the code for person's Ids and whether they are repeated or not
 * Cecilia:
-*> Check Atrayee's interactive visualization in R and look up more visualization technique's if needed
-*> Make a new folder and add your R code regularly
-*> Find out a better and more comprehensive way to compare the Template and graphs' data.
+>* Check Atrayee's interactive visualization in R and look up more visualization technique's if needed
+>* Make a new folder and add your R code regularly
+>* Find out a better and more comprehensive way to compare the Template and graphs' data.
 * Behnam:
-*> Explore the seeds in the big graphs
-*> Separate channel analysis
-*> Arc Visualization
+>* Explore the seeds in the big graphs
+>* Separate channel analysis
+>* Arc Visualization
 
 
 * Prepare list of questions to send to Committee (Due Wednesday 6th)
