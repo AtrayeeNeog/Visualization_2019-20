@@ -21,13 +21,15 @@
 
 ### What next?
 
+* Send the list of questions to the commity
 * Literature Review on:
 >* How to find patterns in a network graphs
 >* Qualitative graph analysis tools
 >* Graph comparison tools
 >* Wasserstein distance(metric)
+>* Assigning weights to the graph parts
 * Add explanations to the codes
-* Focus on question-1 first
+* Look for books regarding the Weights
 
 * Visualization diagrams need to be assessed:
 >* Node-Link Diagrams for Hierarchy Visualization (Multilevel Network)
@@ -35,13 +37,14 @@
 >* Force Directed Node Link Diagrams
 >* Stratify the Data Visualization into Panels.
 >* Hierarchical Visualization <- TreeMap.
-* Need to find Packages(libraries) for Graph analysis and comparison:
->* extension of ggplot2
->* Check the Network graphs in D3.j
-* Plot Parallel Coordinates for each channel for comparison and analysis.
+
+* Plot Parallel Coordinates have to be discussed and changed.
 * Work on Adjacency Matrix for each channel for comparison and analysis.
 * Try to find patterns among each channel of the Template along with the Subgraphs.
 * Clustering of the network should be assessed
+* start with qustion 2 and seeds and work on the big graph (find an stopping criteria)
+* Ignore Longtitude and Latitude for now
+* Explore each channel separately
 
 ### Next week's agenda?
 
