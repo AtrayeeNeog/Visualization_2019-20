@@ -10,7 +10,12 @@
 1. graph partioning
 
 ## Links:
- •	Video Extracting Information from Large Graphs by Computing Similarities Between Node: https://www.youtube.com/watch?v=0fT4EvrHmBY
+ * Video Extracting Information from Large Graphs by Computing Similarities Between Node: https://www.youtube.com/watch?v=0fT4EvrHmBY
+
+* #### Dynamic Network Visualization:
+  * https://pdfs.semanticscholar.org/7e02/7afeb014d3740d2b9fbfbc1f78ce3b16597c.pdf
+  * https://www.youtube.com/watch?v=EvO4HwI7Zi4
+
 
 ### - Python
 
