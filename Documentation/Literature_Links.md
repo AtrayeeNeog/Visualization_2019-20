@@ -10,7 +10,7 @@
 1. graph partioning
 
 ## Links:
-
+ •	Video Extracting Information from Large Graphs by Computing Similarities Between Node: https://www.youtube.com/watch?v=0fT4EvrHmBY
 
 ### - Python
 
