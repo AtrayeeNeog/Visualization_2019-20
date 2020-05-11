@@ -171,7 +171,7 @@ Graph1_OutDegree <- as.data.frame(Graph1_OutDegree) #Highest number of links: 44
 
 degree(qt1_graph2, mode = "in")
 Graph1_InDegree <- degree(qt1_graph2, mode = "in")
-Graph1_InDegree <- as.data.frame(Graph1_InDegree)
+Graph1_InDegree <- as.data.frame(Graph1_InDegree) #Highest number of links: 44
 
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
@@ -191,12 +191,13 @@ plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 #Degree: In, Out, All Centrality
 Template_OutDegree <- degree(dt_graph2, mode = "out")
-Template_OutDegree <- as.data.frame(Template_OutDegree) #Highest number of links: 44
+Template_OutDegree <- as.data.frame(Template_OutDegree) #Highest number of links: 36
 
 
 degree(dt_graph2, mode = "in")
 Template_InDegree <- degree(dt_graph2, mode = "in")
-Template_InDegree <- as.data.frame(dt_InDegree)
+Template_InDegree <- as.data.frame(Template_InDegree) #Highest number of links: 36
+
 
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
