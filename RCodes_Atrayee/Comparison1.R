@@ -160,7 +160,7 @@ qplot(Template_DegreeDis, data=Template_DegreeDis2, geom="histogram", binwidth=.
 
 #Clustering Coefficeint 
 transitivity(qt1_graph2) #0.1130306
-transitivity(dt_graph2) #0.1685912
+transitivity(dt_graph2) #0.1685912   # Template graph more bunchier than Graph 1
 
 Graph1_Trans <- transitivity(qt1_graph2)
 
