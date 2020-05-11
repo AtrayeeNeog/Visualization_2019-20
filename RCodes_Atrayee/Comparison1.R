@@ -73,3 +73,24 @@ E(dt_graph)$color <- "grey"
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
 plot(dt_graph, edge.arrow.size=0.25,edge.arrow.mode = "-")
+
+#Template Network: Fourth Try
+
+#Removing Self-Loops (Repondents Nominating Themselves)
+dt_graph2<-simplify(dt_graph, remove.multiple=TRUE, remove.loops=TRUE)
+
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+layout1 <- layout.fruchterman.reingold(dt_graph2) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(dt_graph2)$color <- "grey"
+V(dt_graph2)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(dt_graph2)$size=degree(dt_graph, mode = "in")/5 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+
+#Edge Options: Color
+E(dt_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-")
