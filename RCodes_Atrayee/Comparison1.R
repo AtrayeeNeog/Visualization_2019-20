@@ -137,12 +137,12 @@ plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 #CONNECTIVITY
 
 #Density
-graph.density(qt1_graph2,loop=FALSE)
-graph.density(dt_graph2, loop=FALSE)
+graph.density(qt1_graph2,loop=FALSE) #0.1144226
+graph.density(dt_graph2, loop=FALSE) #0.1121996
 
 #Average Path Length
-mean_distance(qt1_graph2)
-mean_distance(dt_graph2)
+mean_distance(qt1_graph2) #2.083075
+mean_distance(dt_graph2) #1.874689
 
 #Degree Distribution
 degree_distribution(qt1_graph2)
@@ -153,8 +153,8 @@ Graph1_DegreeDis2 <- as.data.frame(Graph1_DegreeDis)
 qplot(Graph1_DegreeDis, data=Graph1_DegreeDis2, geom="histogram", binwidth=.001)
 
 #Clustering Coefficeint 
-transitivity(qt1_graph2)
-transitivity(dt_graph2)
+transitivity(qt1_graph2) #0.1130306
+transitivity(dt_graph2) #0.1685912
 
 Graph1_Trans <- transitivity(qt1_graph2)
 
