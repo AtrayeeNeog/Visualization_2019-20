@@ -17,6 +17,7 @@
   * https://www.youtube.com/watch?v=EvO4HwI7Zi4
   * https://dl.acm.org/doi/10.1145/2858036.2858387
   * https://www.youtube.com/watch?v=bA261BF0bdk
+  * http://www.casos.cs.cmu.edu/projects/book/DNA-Book_Draft.pdf
 
 
 ### - Python
