@@ -87,9 +87,9 @@ V(qt1_graph2)$size=degree(qt1_graph, mode = "in")/3 #because we have wide range,
 #  4	  Financial category
 #  5	      Country
 
-V(qt1_graph2)$color <- ifelse(Template_Attributes[V(qt1_graph2), 2] == 1, "blue", 
-                             ifelse(Template_Attributes[V(qt1_graph2), 2] == 4, "red",
-                                    ifelse(Template_Attributes[V(qt1_graph2), 2] == 5, "green", "orange")))
+V(qt1_graph2)$color <- ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 1, "blue", 
+                             ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 4, "red",
+                                    ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
 E(qt1_graph2)$color <- "grey"
@@ -122,9 +122,9 @@ V(qt1_graph2)$size=degree(qt1_graph, mode = "in")/3 #because we have wide range,
 #  4	  Financial category
 #  5	      Country
 
-V(qt1_graph2)$color <- ifelse(Template_Attributes[V(qt1_graph2), 2] == 1, "blue", 
-                              ifelse(Template_Attributes[V(qt1_graph2), 2] == 4, "red",
-                                     ifelse(Template_Attributes[V(qt1_graph2), 2] == 5, "green", "orange")))
+V(qt1_graph2)$color <- ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 1, "blue", 
+                              ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 4, "red",
+                                     ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
 E(qt1_graph2)$color <- "grey"
@@ -134,7 +134,7 @@ E(qt1_graph2)$color <- "grey"
 plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
-#CONNECTIVITY
+#CONNECTIVITY ANALYSIS:
 
 #Density
 graph.density(qt1_graph2,loop=FALSE) #0.1144226
@@ -162,7 +162,56 @@ qplot(Template_DegreeDis, data=Template_DegreeDis2, geom="histogram", binwidth=.
 transitivity(qt1_graph2) #0.1130306
 transitivity(dt_graph2) #0.1685912   # Template graph more bunchier than Graph 1
 
-Graph1_Trans <- transitivity(qt1_graph2)
+#POSITION ANALYSIS
 
+#Degree: In, Out, All Centrality
+Graph1_OutDegree <- degree(qt1_graph2, mode = "out")
+Graph1_OutDegree <- as.data.frame(Graph1_OutDegree) #Highest number of links: 44
+
+
+degree(qt1_graph2, mode = "in")
+Graph1_InDegree <- degree(qt1_graph2, mode = "in")
+Graph1_InDegree <- as.data.frame(Graph1_InDegree)
+
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+layout1 <- layout.fruchterman.reingold(qt1_graph2,niter=500)
+#Node or Vetex Options: Size and Color
+V(qt1_graph2)$size=degree(Graph1_Graph, mode = "all")/5 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt1_graph2)$color <- ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 1, "blue", 
+                              ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 4, "red",
+                                     ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 5, "green", "orange")))
+
+#Edge Options: Color
+E(qt1_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+#Degree: In, Out, All Centrality
+Template_OutDegree <- degree(dt_graph2, mode = "out")
+Template_OutDegree <- as.data.frame(Template_OutDegree) #Highest number of links: 44
+
+
+degree(dt_graph2, mode = "in")
+Template_InDegree <- degree(dt_graph2, mode = "in")
+Template_InDegree <- as.data.frame(dt_InDegree)
+
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+layout1 <- layout.fruchterman.reingold(dt_graph2,niter=500)
+#Node or Vetex Options: Size and Color
+V(dt_graph2)$size=degree(Template_Graph, mode = "all")/5 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph2), 2] == 1, "blue", 
+                              ifelse(Template_Attributes[V(dt_graph2), 2] == 4, "red",
+                                     ifelse(Template_Attributes[V(dt_graph2), 2] == 5, "green", "orange")))
+
+#Edge Options: Color
+E(dt_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
