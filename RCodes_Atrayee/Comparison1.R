@@ -1,6 +1,9 @@
 library(igraph)
 library(here)
 library(tidyverse)
+library (readr)
+library (haven)
+library (ggplot2)
 
 # Load The Data:
 dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
@@ -131,7 +134,29 @@ E(qt1_graph2)$color <- "grey"
 plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
+#CONNECTIVITY
 
+#Density
+graph.density(qt1_graph2,loop=FALSE)
+graph.density(dt_graph2, loop=FALSE)
+
+#Average Path Length
+mean_distance(qt1_graph2)
+mean_distance(dt_graph2)
+
+#Degree Distribution
+degree_distribution(qt1_graph2)
+Graph1_DegreeDis <- degree_distribution(qt1_graph2)   #Turns this into a data object we can export
+
+Graph1_DegreeDis2 <- as.data.frame(Graph1_DegreeDis)
+
+qplot(Graph1_DegreeDis, data=Graph1_DegreeDis2, geom="histogram", binwidth=.001)
+
+#Clustering Coefficeint 
+transitivity(qt1_graph2)
+transitivity(dt_graph2)
+
+Graph1_Trans <- transitivity(qt1_graph2)
 
 
 
