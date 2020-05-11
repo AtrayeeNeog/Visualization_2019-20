@@ -150,7 +150,13 @@ Graph1_DegreeDis <- degree_distribution(qt1_graph2)   #Turns this into a data ob
 
 Graph1_DegreeDis2 <- as.data.frame(Graph1_DegreeDis)
 
+degree_distribution(dt_graph2)
+Template_DegreeDis <- degree_distribution(dt_graph2)   #Turns this into a data object we can export
+
+Template_DegreeDis2 <- as.data.frame(Template_DegreeDis)
+
 qplot(Graph1_DegreeDis, data=Graph1_DegreeDis2, geom="histogram", binwidth=.001)
+qplot(Template_DegreeDis, data=Template_DegreeDis2, geom="histogram", binwidth=.001)
 
 #Clustering Coefficeint 
 transitivity(qt1_graph2) #0.1130306
