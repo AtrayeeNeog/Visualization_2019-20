@@ -44,19 +44,19 @@ qt5_graph <- graph.data.frame(qt5_edgelist, directed = TRUE)
 ########################################
 
 #Removing Self-Loops (Repondents Nominating Themselves)
-dt_graph2 <- simplify(dt_graph, remove.multiple=TRUE, remove.loops = TRUE)
+dt_graph2 <- simplify(dt_graph)
 
 #Import the sample_attributes
 Template_Attributes=data.table::fread(here::here("data", "CGCS-Template-NodeTypes.csv"))
 
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(dt_graph, niter=5000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(dt_graph2, niter=5000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(dt_graph)$color <- "grey"
-V(dt_graph)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(dt_graph)$size=degree(dt_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(dt_graph2)$color <- "grey"
+V(dt_graph2)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(dt_graph2)$size=degree(dt_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -65,16 +65,16 @@ V(dt_graph)$size=degree(dt_graph, mode = "in")/3 #because we have wide range, I 
 #  4	  Financial category
 #  5	      Country
 
-V(dt_graph)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "blue", 
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "blue", 
                              ifelse(Template_Attributes[V(dt_graph), 2] == 4, "red",
                                     ifelse(Template_Attributes[V(dt_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(dt_graph)$color <- "grey"
+E(dt_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(dt_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
 #Import the sample_attributes
@@ -84,14 +84,17 @@ Graph_Attributes=data.table::fread(here::here("data", "CGCS-GraphData-NodeTypes.
 # GRAPH 1 ANALYSIS #
 ########################################
 
+#Removing Self-Loops (Repondents Nominating Themselves)
+qt1_graph2 <- simplify(qt1_graph)
+
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(qt1_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(qt1_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(qt1_graph)$color <- "grey"
-V(qt1_graph)[degree(qt1_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt1_graph)$size=degree(qt1_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt1_graph2)$color <- "grey"
+V(qt1_graph2)[degree(qt1_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt1_graph2)$size=degree(qt1_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -100,29 +103,32 @@ V(qt1_graph)$size=degree(qt1_graph, mode = "in")/3 #because we have wide range, 
 #  4	  Financial category
 #  5	      Country
 
-V(qt1_graph)$color <- ifelse(Graph_Attributes[V(qt1_graph), 2] == 1, "blue", 
+V(qt1_graph2)$color <- ifelse(Graph_Attributes[V(qt1_graph), 2] == 1, "blue", 
                               ifelse(Graph1_Attributes[V(qt1_graph), 2] == 4, "red",
                                      ifelse(Graph1_Attributes[V(qt1_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(qt1_graph)$color <- "grey"
+E(qt1_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(qt1_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 ########################################
 # GRAPH 2 ANALYSIS #
 ########################################
 
+#Removing Self-Loops (Repondents Nominating Themselves)
+qt2_graph2 <- simplify(qt2_graph)
+
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(qt2_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(qt2_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(qt2_graph)$color <- "grey"
-V(qt2_graph)[degree(qt2_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt2_graph)$size=degree(qt2_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt2_graph2)$color <- "grey"
+V(qt2_graph2)[degree(qt2_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt2_graph2)$size=degree(qt2_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -131,29 +137,30 @@ V(qt2_graph)$size=degree(qt2_graph, mode = "in")/3 #because we have wide range, 
 #  4	  Financial category
 #  5	      Country
 
-V(qt2_graph)$color <- ifelse(Graph_Attributes[V(qt2_graph), 2] == 1, "blue", 
+V(qt2_graph2)$color <- ifelse(Graph_Attributes[V(qt2_graph), 2] == 1, "blue", 
                              ifelse(Graph1_Attributes[V(qt2_graph), 2] == 4, "red",
                                     ifelse(Graph1_Attributes[V(qt2_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(qt2_graph)$color <- "grey"
+E(qt2_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(qt2_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(qt2_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 ########################################
 # GRAPH 3 ANALYSIS #
 ########################################
 
+qt3_graph2 <- simplify(qt3_graph)
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(qt3_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(qt3_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(qt3_graph)$color <- "grey"
-V(qt3_graph)[degree(qt3_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt3_graph)$size=degree(qt3_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt3_graph2)$color <- "grey"
+V(qt3_graph2)[degree(qt3_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt3_graph2)$size=degree(qt3_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -162,29 +169,30 @@ V(qt3_graph)$size=degree(qt3_graph, mode = "in")/3 #because we have wide range, 
 #  4	  Financial category
 #  5	      Country
 
-V(qt3_graph)$color <- ifelse(Graph_Attributes[V(qt3_graph), 2] == 1, "blue", 
+V(qt3_graph2)$color <- ifelse(Graph_Attributes[V(qt3_graph), 2] == 1, "blue", 
                              ifelse(Graph1_Attributes[V(qt3_graph), 2] == 4, "red",
                                     ifelse(Graph1_Attributes[V(qt3_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(qt3_graph)$color <- "grey"
+E(qt3_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(qt3_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(qt3_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 ########################################
 # GRAPH 4 ANALYSIS #
 ########################################
 
+qt4_graph2 <- simplify(qt4_graph)
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(qt4_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(qt4_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(qt4_graph)$color <- "grey"
-V(qt4_graph)[degree(qt4_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt4_graph)$size=degree(qt4_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt4_graph2)$color <- "grey"
+V(qt4_graph2)[degree(qt4_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt4_graph2)$size=degree(qt4_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -193,30 +201,31 @@ V(qt4_graph)$size=degree(qt4_graph, mode = "in")/3 #because we have wide range, 
 #  4	  Financial category
 #  5	      Country
 
-V(qt4_graph)$color <- ifelse(Graph_Attributes[V(qt4_graph), 2] == 1, "blue", 
+V(qt4_graph2)$color <- ifelse(Graph_Attributes[V(qt4_graph), 2] == 1, "blue", 
                              ifelse(Graph1_Attributes[V(qt4_graph), 2] == 4, "red",
                                     ifelse(Graph1_Attributes[V(qt4_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(qt4_graph)$color <- "grey"
+E(qt4_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(qt4_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(qt4_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
 ########################################
 # GRAPH 5 ANALYSIS #
 ########################################
 
+qt5_graph2 <- simplify(qt5_graph)
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(qt5_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(qt5_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(qt5_graph)$color <- "grey"
-V(qt5_graph)[degree(qt5_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt5_graph)$size=degree(qt5_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt5_graph2)$color <- "grey"
+V(qt5_graph2)[degree(qt5_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt5_graph2)$size=degree(qt5_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -225,16 +234,16 @@ V(qt5_graph)$size=degree(qt5_graph, mode = "in")/3 #because we have wide range, 
 #  4	  Financial category
 #  5	      Country
 
-V(qt5_graph)$color <- ifelse(Graph_Attributes[V(qt5_graph), 2] == 1, "blue", 
+V(qt5_graph2)$color <- ifelse(Graph_Attributes[V(qt5_graph), 2] == 1, "blue", 
                              ifelse(Graph1_Attributes[V(qt5_graph), 2] == 4, "red",
                                     ifelse(Graph1_Attributes[V(qt5_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(qt5_graph)$color <- "grey"
+E(qt5_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(qt5_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(qt5_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 ########################################
 # CONNECTIVITY ANALYSIS #
@@ -279,12 +288,12 @@ Graph5_DegreeDis <- as.data.frame(Graph5_DegreeDis)
 Template_DegreeDis <- degree_distribution(dt_graph)   #Turns this into a data object we can export
 Template_DegreeDis <- as.data.frame(Template_DegreeDis)
 
-qplot(Template_DegreeDis, data=Template_DegreeDis, geom="histogram", binwidth=.001)
-qplot(Graph1_DegreeDis, data=Graph1_DegreeDis, geom="histogram", binwidth=.001)
-qplot(Graph2_DegreeDis, data=Graph2_DegreeDis, geom="histogram", binwidth=.001)
-qplot(Graph3_DegreeDis, data=Graph3_DegreeDis, geom="histogram", binwidth=.001)
-qplot(Graph4_DegreeDis, data=Graph4_DegreeDis, geom="histogram", binwidth=.001)
-qplot(Graph5_DegreeDis, data=Graph5_DegreeDis, geom="histogram", binwidth=.001)
+qplot(Template_DegreeDis, data=Template_DegreeDis, geom="histogram")
+qplot(Graph1_DegreeDis, data=Graph1_DegreeDis, geom="histogram")
+qplot(Graph2_DegreeDis, data=Graph2_DegreeDis, geom="histogram")
+qplot(Graph3_DegreeDis, data=Graph3_DegreeDis, geom="histogram")
+qplot(Graph4_DegreeDis, data=Graph4_DegreeDis, geom="histogram")
+qplot(Graph5_DegreeDis, data=Graph5_DegreeDis, geom="histogram")
 
 # Decreasing order of similarity with Template: Graph2 > Graph1 > Graph3 > Graph4 > Graph5
 
@@ -354,19 +363,19 @@ Template_AllDegree <- as.data.frame(Template_AllDegree)#Range: 1-208
 ########################################
 
 #Removing Self-Loops (Repondents Nominating Themselves)
-dt_graph2 <- simplify(dt_graph, remove.multiple=TRUE, remove.loops = TRUE)
+dt_graph2 <- simplify(dt_graph)
 
 #Import the sample_attributes
 Template_Attributes=data.table::fread(here::here("data", "CGCS-Template-NodeTypes.csv"))
 
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(dt_graph, niter=5000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(dt_graph2, niter=5000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(dt_graph)$color <- "grey"
-V(dt_graph)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(dt_graph)$size=degree(dt_graph, mode = "all")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(dt_graph2)$color <- "grey"
+V(dt_graph2)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(dt_graph2)$size=degree(dt_graph, mode = "all")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -375,16 +384,16 @@ V(dt_graph)$size=degree(dt_graph, mode = "all")/3 #because we have wide range, I
 #  4	  Financial category
 #  5	      Country
 
-V(dt_graph)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "blue", 
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "blue", 
                             ifelse(Template_Attributes[V(dt_graph), 2] == 4, "red",
                                    ifelse(Template_Attributes[V(dt_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(dt_graph)$color <- "grey"
+E(dt_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(dt_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
 #Import the sample_attributes
@@ -394,14 +403,15 @@ Graph_Attributes=data.table::fread(here::here("data", "CGCS-GraphData-NodeTypes.
 # GRAPH 1 ANALYSIS #
 ########################################
 
+qt1_graph2 <- simplify(qt1_graph)
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(qt1_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(qt1_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(qt1_graph)$color <- "grey"
-V(qt1_graph)[degree(qt1_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt1_graph)$size=degree(qt1_graph, mode = "all")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt1_graph2)$color <- "grey"
+V(qt1_graph2)[degree(qt1_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt1_graph2)$size=degree(qt1_graph, mode = "all")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -410,29 +420,30 @@ V(qt1_graph)$size=degree(qt1_graph, mode = "all")/3 #because we have wide range,
 #  4	  Financial category
 #  5	      Country
 
-V(qt1_graph)$color <- ifelse(Graph_Attributes[V(qt1_graph), 2] == 1, "blue", 
+V(qt1_graph2)$color <- ifelse(Graph_Attributes[V(qt1_graph), 2] == 1, "blue", 
                              ifelse(Graph1_Attributes[V(qt1_graph), 2] == 4, "red",
                                     ifelse(Graph1_Attributes[V(qt1_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(qt1_graph)$color <- "grey"
+E(qt1_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(qt1_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 ########################################
 # GRAPH 2 ANALYSIS #
 ########################################
 
+qt2_graph2 <- simplify(qt2_graph)
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(qt2_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(qt2_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(qt2_graph)$color <- "grey"
-V(qt2_graph)[degree(qt2_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt2_graph)$size=degree(qt2_graph, mode = "all")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt2_graph2)$color <- "grey"
+V(qt2_graph2)[degree(qt2_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt2_graph2)$size=degree(qt2_graph, mode = "all")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -441,29 +452,29 @@ V(qt2_graph)$size=degree(qt2_graph, mode = "all")/3 #because we have wide range,
 #  4	  Financial category
 #  5	      Country
 
-V(qt2_graph)$color <- ifelse(Graph_Attributes[V(qt2_graph), 2] == 1, "blue", 
+V(qt2_graph2)$color <- ifelse(Graph_Attributes[V(qt2_graph), 2] == 1, "blue", 
                              ifelse(Graph1_Attributes[V(qt2_graph), 2] == 4, "red",
                                     ifelse(Graph1_Attributes[V(qt2_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(qt2_graph)$color <- "grey"
+E(qt2_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(qt2_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(qt2_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 ########################################
 # GRAPH 3 ANALYSIS #
 ########################################
-
+qt3_graph2 <- simplify(qt3_graph)
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
-layout1 <- layout.fruchterman.reingold(qt3_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <- layout.fruchterman.reingold(qt3_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(qt3_graph)$color <- "grey"
-V(qt3_graph)[degree(qt3_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt3_graph)$size=degree(qt3_graph, mode = "all")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt3_graph2)$color <- "grey"
+V(qt3_graph2)[degree(qt3_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt3_graph2)$size=degree(qt3_graph, mode = "all")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -472,16 +483,16 @@ V(qt3_graph)$size=degree(qt3_graph, mode = "all")/3 #because we have wide range,
 #  4	  Financial category
 #  5	      Country
 
-V(qt3_graph)$color <- ifelse(Graph_Attributes[V(qt3_graph), 2] == 1, "blue", 
+V(qt3_graph2)$color <- ifelse(Graph_Attributes[V(qt3_graph), 2] == 1, "blue", 
                              ifelse(Graph1_Attributes[V(qt3_graph), 2] == 4, "red",
                                     ifelse(Graph1_Attributes[V(qt3_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(qt3_graph)$color <- "grey"
+E(qt3_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(qt3_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(qt3_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 ########################################
 # GRAPH 4 ANALYSIS #
@@ -564,7 +575,7 @@ Graph4_Closeness <- closeness(qt4_graph, mode="all")
 Graph4_Closeness <- as.data.frame(Graph4_Closeness) # Range:0.004016064-0.007407407
 
 Graph5_Closeness <- closeness(qt5_graph, mode="all")
-Graph5_Closeness <- as.data.frame(Graph5_Closeness) # Range:0.004016064-0.007407407
+Graph5_Closeness <- as.data.frame(Graph5_Closeness) # Range:0.003937008-0.007462687
 
 # Not much variation; Probably not an important measure.
 # Decreasing order of similarity with Template: Graph3 > Graph2 > Graph1 > Graph5 = Graph4
