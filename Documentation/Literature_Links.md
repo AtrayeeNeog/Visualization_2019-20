@@ -8,8 +8,11 @@
 
 * Temporal distance metrics for social network analysis: https://dl.acm.org/doi/abs/10.1145/1592665.1592674
 
+### - Slides:
+  * https://www.slideshare.net/freshdatabos/visualizing-networks
+
 ### - Keywords
-1. graph partioning, Temporal distance metrics, Measuring networks, Global measures, 
+1. graph partioning, Temporal distance metrics, Measuring networks, Global measures,
 
 ## Links:
  * Video Extracting Information from Large Graphs by Computing Similarities Between Node: https://www.youtube.com/watch?v=0fT4EvrHmBY
