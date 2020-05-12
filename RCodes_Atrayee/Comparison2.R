@@ -804,7 +804,12 @@ Graph4_EigenCentrality <- as.data.frame(Graph4_EigenCentrality) #Range:0.0088496
 Graph5_EigenCentrality <- eigen_centrality(qt5_graph)
 Graph5_EigenCentrality <- as.data.frame(Graph5_EigenCentrality) #Range:0.006716513-1.0000000000;Value:	27.68101
 
-
+imp_nodes_template <- which(Template_EigenCentrality$vector >= 0.5) # 2  3  4  5 15 16
+imp_nodes_graph1 <- which(Graph1_EigenCentrality$vector >= 0.5) # 2  3  7  9 10 21
+imp_nodes_graph2 <- which(Graph2_EigenCentrality$vector >= 0.5) # 4  5  6 14 15 18
+imp_nodes_graph3 <- which(Graph3_EigenCentrality$vector >= 0.5) # 2  9 10
+imp_nodes_graph4 <- which(Graph4_EigenCentrality$vector >= 0.5) #  7  8 14 16 17 30 38 53
+imp_nodes_graph5 <- which(Graph5_EigenCentrality$vector >= 0.5) # 1  2  4  6 23 30 34
 
 ########################################
 # TEMPLATE ANALYSIS #
@@ -812,15 +817,21 @@ Graph5_EigenCentrality <- as.data.frame(Graph5_EigenCentrality) #Range:0.0067165
 
 #Import the sample_attributes
 Template_Attributes=data.table::fread(here::here("data", "CGCS-Template-NodeTypes.csv"))
+dt_graph2<-simplify(dt_graph)
+qt1_graph2<-simplify(qt1_graph)
+qt2_graph2<-simplify(qt2_graph)
+qt3_graph2<-simplify(qt3_graph)
+qt4_graph2<-simplify(qt4_graph)
+qt5_graph2<-simplify(qt5_graph)
 
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
 layout1 <- layout.fruchterman.reingold(dt_graph, niter=5000) #Creating a layout object to tell iGraph what layout I want
 
 #Node or Vetex Options: Size and Color
-V(dt_graph)$color <- "grey"
-V(dt_graph)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(dt_graph)$size <- eigen_centrality(dt_graph)/5
+V(dt_graph2)$color <- "grey"
+V(dt_graph2)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(dt_graph2)$size <- Template_EigenCentrality$vector
 
 #NodeType	Description
 #  1	      Person
@@ -829,16 +840,16 @@ V(dt_graph)$size <- eigen_centrality(dt_graph)/5
 #  4	  Financial category
 #  5	      Country
 
-V(dt_graph)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "blue", 
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "blue", 
                             ifelse(Template_Attributes[V(dt_graph), 2] == 4, "red",
                                    ifelse(Template_Attributes[V(dt_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
-E(dt_graph)$color <- "grey"
+E(dt_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(dt_graph, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
 #Import the sample_attributes
@@ -851,11 +862,10 @@ Graph_Attributes=data.table::fread(here::here("data", "CGCS-GraphData-NodeTypes.
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
 layout1 <- layout.fruchterman.reingold(qt1_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
-
 #Node or Vetex Options: Size and Color
 V(qt1_graph)$color <- "grey"
 V(qt1_graph)[degree(qt1_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt1_graph)$size=(eigen_centrality(qt1_graph)) #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt1_graph)$size=as.(Graph1_EigenCentrality$vector) #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
