@@ -308,3 +308,24 @@ E(dt_graph2)$color <- "grey"
 plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
+# Segue to Advanced Network Visualization Techniques #
+
+#Community Detection Algorithms in iGraph: Approaches Supported by iGraph
+#Detecting communitities by iteratively calculating edge betweeness (e.g., Girvan & Newman 2001)
+#Detecting communities by using eigenvector matrices (e.g., Newman 2006)
+#Detecting communities by iteratively optimizing for modularity (e.g., Blondel, Guillaume, Lambiotte, & Lefebvre 2008)
+#Detecting communities using random walk methods (e.g, Pons & Latapy 2005; Reichardt & Bornholdt 2006)
+#Detecting communities using label propogation techniques (e.g., Ragavan, Albert, & Kumara 2007)
+
+#Edge-Betweeness: Girvan-Newman (2001)
+
+GNC_graph1 <- cluster_edge_betweenness(qt1_graph2, weights = NULL)
+V(qt1_graph2)$color <-membership(GNC_graph1)              #Plot setting specifying the coloring of vertices by community
+qt1_graph2$palette <- diverging_pal(length(GNC_graph1))   #Plot setting specifying the color pallette I am using (iGraph supports 3)
+plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+GNC_template <- cluster_edge_betweenness(dt_graph2, weights = NULL)
+V(dt_graph2)$color <-membership(GNC_template)              #Plot setting specifying the coloring of vertices by community
+dt_graph2$palette <- diverging_pal(length(GNC_template))   #Plot setting specifying the color pallette I am using (iGraph supports 3)
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
