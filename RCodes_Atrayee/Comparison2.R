@@ -820,7 +820,7 @@ layout1 <- layout.fruchterman.reingold(dt_graph, niter=5000) #Creating a layout 
 #Node or Vetex Options: Size and Color
 V(dt_graph)$color <- "grey"
 V(dt_graph)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(dt_graph)$size=eigen_centrality(dt_graph) 
+V(dt_graph)$size <- eigen_centrality(dt_graph)/5
 
 #NodeType	Description
 #  1	      Person
@@ -855,7 +855,7 @@ layout1 <- layout.fruchterman.reingold(qt1_graph, niter=1000) #Creating a layout
 #Node or Vetex Options: Size and Color
 V(qt1_graph)$color <- "grey"
 V(qt1_graph)[degree(qt1_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt1_graph)$size=(eigen_centrality(qt1_graph)/3) #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt1_graph)$size=(eigen_centrality(qt1_graph)) #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
