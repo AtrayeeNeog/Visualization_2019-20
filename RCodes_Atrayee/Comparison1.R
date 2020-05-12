@@ -215,4 +215,21 @@ E(dt_graph2)$color <- "grey"
 #We are letting the color and the size of the node indicate the directed nature of the graph
 plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
+## Interestingly the number of in-links is equal to the number of out-links for both Template and Graph 1.
 
+#Closeness Centrality
+closeness(qt1_graph2, mode="in")
+
+Graph1_InCloseness <- closeness(qt1_graph2, mode="in")
+Graph1_InCloseness <- as.data.frame(Graph1_InCloseness)
+
+
+Graph1_OutCloseness <- closeness(qt1_graph2, mode="out")
+Graph1_OutCloseness <- as.data.frame(Graph1_OutCloseness)
+
+
+Graph1_Closeness <- closeness(qt1_graph2, mode="all")
+Graph1_Closeness <- as.data.frame(Graph1_Closeness) # Range:0.002197802-0.006369427
+
+Template_Closeness <- closeness(dt_graph2, mode = "all")
+Template_Closeness <- as.data.frame(Template_Closeness) # Range: 0.002949853-0.007042254
