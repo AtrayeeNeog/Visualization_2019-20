@@ -217,19 +217,53 @@ plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 ## Interestingly the number of in-links is equal to the number of out-links for both Template and Graph 1.
 
-#Closeness Centrality
-closeness(qt1_graph2, mode="in")
-
-Graph1_InCloseness <- closeness(qt1_graph2, mode="in")
-Graph1_InCloseness <- as.data.frame(Graph1_InCloseness)
-
-
-Graph1_OutCloseness <- closeness(qt1_graph2, mode="out")
-Graph1_OutCloseness <- as.data.frame(Graph1_OutCloseness)
-
+#Closeness Centrality:
 
 Graph1_Closeness <- closeness(qt1_graph2, mode="all")
 Graph1_Closeness <- as.data.frame(Graph1_Closeness) # Range:0.002197802-0.006369427
 
 Template_Closeness <- closeness(dt_graph2, mode = "all")
 Template_Closeness <- as.data.frame(Template_Closeness) # Range: 0.002949853-0.007042254
+
+# Not much variatio; Probably not an important measure.
+
+#Betweeness Centrality
+Graph1_Betweeness <- betweenness(qt1_graph2)
+Graph1_Betweeness <- as.data.frame(Graph1_Betweeness) # Range: 0.00 - 1021.3388889
+
+Template_Betweeness <- betweenness(dt_graph2)
+Template_Betweeness <- as.data.frame(Template_Betweeness) # Range: 0.00 - 690.9019841
+
+## Lots of variation in the range, can be an interesting measure. Hence the Visualisation:
+
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+layout1 <- layout.fruchterman.reingold(qt1_graph2,niter=500)
+#Node or Vetex Options: Size and Color
+V(qt1_graph2)$size=betweenness(Graph1_Graph, mode = "all")/200 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt1_graph2)$color <- ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 1, "blue", 
+                              ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 4, "red",
+                                     ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 5, "green", "orange")))
+#Edge Options: Color
+E(qt1_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+set.seed(3952)  # set seed to make the layout reproducible
+layout1 <- layout.fruchterman.reingold(dt_graph2,niter=500)
+#Node or Vetex Options: Size and Color
+V(dt_graph2)$size=betweenness(Template_Graph, mode = "all")/200 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph2), 2] == 1, "blue", 
+                              ifelse(Template_Attributes[V(dt_graph2), 2] == 4, "red",
+                                     ifelse(Template_Attributes[V(dt_graph2), 2] == 5, "green", "orange")))
+#Edge Options: Color
+E(dt_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+
+
