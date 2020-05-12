@@ -1002,7 +1002,7 @@ layout1 <- layout.fruchterman.reingold(qt5_graph2, niter=1000) #Creating a layou
 #Node or Vetex Options: Size and Color
 V(qt5_graph2)$color <- "grey"
 V(qt5_graph2)[degree(qt5_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt5_graph2)$size=eigen_centrality(qt5_graph)/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt5_graph2)$size=eigen_centrality(qt5_graph)/3 
 
 #NodeType	Description
 #  1	      Person
