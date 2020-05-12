@@ -39,6 +39,12 @@ qt5_edgelist <- qt5_network
 qt5_graph <- graph.data.frame(qt5_edgelist, directed = TRUE)
 
 
+dt_graph2<-simplify(dt_graph)
+qt1_graph2<-simplify(qt1_graph)
+qt2_graph2<-simplify(qt2_graph)
+qt3_graph2<-simplify(qt3_graph)
+qt4_graph2<-simplify(qt4_graph)
+qt5_graph2<-simplify(qt5_graph)
 ########################################
 # TEMPLATE ANALYSIS #
 ########################################
@@ -250,22 +256,22 @@ plot(qt5_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 ########################################
 
 #Density
-graph.density(dt_graph, loop=FALSE) #0.1730669
-graph.density(qt1_graph,loop=FALSE) #0.1421225
-graph.density(qt2_graph,loop=FALSE) #0.1737503
-graph.density(qt3_graph,loop=FALSE) #0.1183057
-graph.density(qt4_graph,loop=FALSE) #0.0978348
-graph.density(qt5_graph,loop=FALSE) #0.05403557
+graph.density(dt_graph2, loop=FALSE) #0.1730669
+graph.density(qt1_graph2,loop=FALSE) #0.1421225
+graph.density(qt2_graph2,loop=FALSE) #0.1737503
+graph.density(qt3_graph2,loop=FALSE) #0.1183057
+graph.density(qt4_graph2,loop=FALSE) #0.0978348
+graph.density(qt5_graph2,loop=FALSE) #0.05403557
 
 # Decreasing order of similarity with Template: Graph2 > Graph1 > Graph3 > Graph4 > Graph5
 
 #Average Path Length
-mean_distance(dt_graph) #1.874689
-mean_distance(qt1_graph) #2.083075
-mean_distance(qt2_graph) #2.085761
-mean_distance(qt3_graph) #2.026447
-mean_distance(qt4_graph) #2.429907
-mean_distance(qt5_graph) #2.283071
+mean_distance(dt_graph2) #1.874689
+mean_distance(qt1_graph2) #2.083075
+mean_distance(qt2_graph2) #2.085761
+mean_distance(qt3_graph2) #2.026447
+mean_distance(qt4_graph2) #2.429907
+mean_distance(qt5_graph2) #2.283071
 
 # Decreasing order of similarity with Template: Graph3 > Graph1 ~ Graph2 > Graph5 > Graph4
 
@@ -314,46 +320,46 @@ transitivity(qt5_graph) #0.217119
 ########################################
 
 # 1. Degree: In, Out, All Centrality
-Graph1_OutDegree <- degree(qt1_graph, mode = "out")
+Graph1_OutDegree <- degree(qt1_graph2, mode = "out")
 Graph1_OutDegree <- as.data.frame(Graph1_OutDegree) #Range:0-77
-Graph1_InDegree <- degree(qt1_graph, mode = "in")
+Graph1_InDegree <- degree(qt1_graph2, mode = "in")
 Graph1_InDegree <- as.data.frame(Graph1_InDegree) #Range: 0-64
-Graph1_AllDegree <- degree(qt1_graph, mode = "all")
+Graph1_AllDegree <- degree(qt1_graph2, mode = "all")
 Graph1_AllDegree <- as.data.frame(Graph1_AllDegree)#Range: 1-135
 
-Graph2_OutDegree <- degree(qt2_graph, mode = "out")
+Graph2_OutDegree <- degree(qt2_graph2, mode = "out")
 Graph2_OutDegree <- as.data.frame(Graph2_OutDegree) #Range:0-96
-Graph2_InDegree <- degree(qt2_graph, mode = "in")
+Graph2_InDegree <- degree(qt2_graph2, mode = "in")
 Graph2_InDegree <- as.data.frame(Graph2_InDegree) #Range: 0-96
-Graph2_AllDegree <- degree(qt2_graph, mode = "all")
+Graph2_AllDegree <- degree(qt2_graph2, mode = "all")
 Graph2_AllDegree <- as.data.frame(Graph2_AllDegree)#Range: 1-192
 
-Graph3_OutDegree <- degree(qt3_graph, mode = "out")
+Graph3_OutDegree <- degree(qt3_graph2, mode = "out")
 Graph3_OutDegree <- as.data.frame(Graph3_OutDegree) #Range:0-50
-Graph3_InDegree <- degree(qt3_graph, mode = "in")
+Graph3_InDegree <- degree(qt3_graph2, mode = "in")
 Graph3_InDegree <- as.data.frame(Graph3_InDegree) #Range: 0-36
-Graph3_AllDegree <- degree(qt3_graph, mode = "all")
+Graph3_AllDegree <- degree(qt3_graph2, mode = "all")
 Graph3_AllDegree <- as.data.frame(Graph3_AllDegree)#Range: 1-68
 
-Graph4_OutDegree <- degree(qt4_graph, mode = "out")
+Graph4_OutDegree <- degree(qt4_graph2, mode = "out")
 Graph4_OutDegree <- as.data.frame(Graph4_OutDegree) #Range:0-59
-Graph4_InDegree <- degree(qt4_graph, mode = "in")
+Graph4_InDegree <- degree(qt4_graph2, mode = "in")
 Graph4_InDegree <- as.data.frame(Graph4_InDegree) #Range: 0-35
-Graph4_AllDegree <- degree(qt4_graph, mode = "all")
+Graph4_AllDegree <- degree(qt4_graph2, mode = "all")
 Graph4_AllDegree <- as.data.frame(Graph4_AllDegree)#Range: 1-64
 
-Graph5_OutDegree <- degree(qt5_graph, mode = "out")
+Graph5_OutDegree <- degree(qt5_graph2, mode = "out")
 Graph5_OutDegree <- as.data.frame(Graph5_OutDegree) #Range:0-67
-Graph5_InDegree <- degree(qt5_graph, mode = "in")
+Graph5_InDegree <- degree(qt5_graph2, mode = "in")
 Graph5_InDegree <- as.data.frame(Graph5_InDegree) #Range: 0-30
-Graph5_AllDegree <- degree(qt5_graph, mode = "all")
+Graph5_AllDegree <- degree(qt5_graph2, mode = "all")
 Graph5_AllDegree <- as.data.frame(Graph5_AllDegree)#Range: 1-72
 
-Template_OutDegree <- degree(dt_graph, mode = "out")
+Template_OutDegree <- degree(dt_graph2, mode = "out")
 Template_OutDegree <- as.data.frame(Template_OutDegree) #Range: 0-136
-Template_InDegree <- degree(dt_graph, mode = "in")
+Template_InDegree <- degree(dt_graph2, mode = "in")
 Template_InDegree <- as.data.frame(Template_InDegree) #Range: 0-72
-Template_AllDegree <- degree(dt_graph, mode = "all")
+Template_AllDegree <- degree(dt_graph2, mode = "all")
 Template_AllDegree <- as.data.frame(Template_AllDegree)#Range: 1-208
 
 # Decreasing order of similarity with Template (wrt All Nodes): Graph2 > Graph1 > Graph3~Graph4~Graph5
