@@ -32,6 +32,8 @@
 ### - Software
 
 1. Gephi: https://gephi.org/users/download/
+  * https://www.youtube.com/watch?v=Kn8wgoapE5I
+  * 
 
 2. D3:
   * https://d3js.org/
