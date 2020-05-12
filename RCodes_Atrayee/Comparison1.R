@@ -265,5 +265,46 @@ E(dt_graph2)$color <- "grey"
 #We are letting the color and the size of the node indicate the directed nature of the graph
 plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
+#Eigen Vector Centrality
+
+eigen_centrality(qt1_graph2)
+Graph1_EigenCentrality <- eigen_centrality(qt1_graph2)
+
+Graph1_EigenCentrality <- as.data.frame(Graph1_EigenCentrality) # Range: 2.790809e-05 - 1.000000e+00
+
+Template_EigenCentrality <- eigen_centrality(dt_graph2)
+
+Template_EigenCentrality <- as.data.frame(Template_EigenCentrality) # Range: 0.001191586 - 1.000000000
+
+
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+layout1 <- layout.fruchterman.reingold(qt1_graph2,niter=500)
+#Node or Vetex Options: Size and Color
+V(qt1_graph2)$size=eigen_centrality(Graph1_Graph, mode = "all")/5 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt1_graph2)$color <- ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 1, "blue", 
+                              ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 4, "red",
+                                     ifelse(Graph1_Attributes[V(qt1_graph2), 2] == 5, "green", "orange")))
+#Edge Options: Color
+E(qt1_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+layout1 <- layout.fruchterman.reingold(dt_graph2,niter=500)
+#Node or Vetex Options: Size and Color
+V(dt_graph2)$size=eigen_centrality(Template_Graph, mode = "all")/5 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph2), 2] == 1, "blue", 
+                             ifelse(Template_Attributes[V(dt_graph2), 2] == 4, "red",
+                                    ifelse(template_Attributes[V(dt_graph2), 2] == 5, "green", "orange")))
+#Edge Options: Color
+E(dt_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 
 
