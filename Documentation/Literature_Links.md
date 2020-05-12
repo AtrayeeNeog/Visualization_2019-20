@@ -6,6 +6,8 @@
 
 ### - Papers
 
+* Temporal distance metrics for social network analysis: https://dl.acm.org/doi/abs/10.1145/1592665.1592674
+
 ### - Keywords
 1. graph partioning
 
