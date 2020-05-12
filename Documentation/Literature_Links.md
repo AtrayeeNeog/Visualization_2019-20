@@ -36,7 +36,7 @@
 1. Gephi: https://gephi.org/users/download/
   * https://www.youtube.com/watch?v=Kn8wgoapE5I
   * https://seinecle.github.io/gephi-tutorials/generated-html/using-filters-en.html
-  *
+  * https://seinecle.github.io/gephi-tutorials/
 
 2. D3:
   * https://d3js.org/
