@@ -28,12 +28,15 @@
 4. Graph Nets: https://github.com/deepmind/graph_nets
 5. Deep Graph library: https://github.com/dmlc/dgl
 
+6. Additional: https://github.com/tqdm/tqdm
+
 
 ### - Software
 
 1. Gephi: https://gephi.org/users/download/
   * https://www.youtube.com/watch?v=Kn8wgoapE5I
   * https://seinecle.github.io/gephi-tutorials/generated-html/using-filters-en.html
+  *
 
 2. D3:
   * https://d3js.org/
