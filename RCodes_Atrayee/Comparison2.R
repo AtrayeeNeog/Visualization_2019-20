@@ -305,15 +305,15 @@ qplot(Graph5_DegreeDis, data=Graph5_DegreeDis, geom="histogram")
 
 #Clustering Coefficeint
 transitivity(dt_graph) #0.1685912   
-transitivity(qt1_graph) #0.1130306
-transitivity(qt2_graph) #0.1238481
-transitivity(qt3_graph) #0.1151288
-transitivity(qt4_graph) #0.2228648
-transitivity(qt5_graph) #0.217119
+transitivity(qt1_graph) #0.1130306 #0.055
+transitivity(qt2_graph) #0.1238481 #0.045
+transitivity(qt3_graph) #0.1151288 #0.053
+transitivity(qt4_graph) #0.2228648 #-0.054
+transitivity(qt5_graph) #0.217119 #-0.049
 
 # Template graph more bunchier than Graph 1, 2 and 3
 # Graph 4, 5 more bunchier than Template
-# Decreasing order of similarity with Template: Graph2 > Graph1 > Graph3 > Graph5 > Graph4
+# Decreasing order of similarity with Template: Graph2 > Graph3 > Graph1 ~ Graph4 > Graph5
 
 ########################################
 # POSITION ANALYSIS #
