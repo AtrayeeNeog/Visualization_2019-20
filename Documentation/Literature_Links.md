@@ -33,6 +33,7 @@
 3. Lecture slide matplotlib: https://ocw.mit.edu/resources/res-6-009-how-to-process-analyze-and-visualize-data-january-iap-2012/lectures-and-labs/MITRES_6_009IAP12_lab2.pdf
 4. Graph Nets: https://github.com/deepmind/graph_nets
 5. Deep Graph library: https://github.com/dmlc/dgl
+* https://docs.dgl.ai/tutorials/basics/1_first.html
 
 6. Additional: https://github.com/tqdm/tqdm
 
