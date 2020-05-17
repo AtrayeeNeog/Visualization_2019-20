@@ -20,6 +20,7 @@
   * Plot aggregated measures
   * plot density curves insted of Histograms
   * Don't overplot in the same plot for better comprehension
+  * Lowest values should be rendered on top or with bright colors
 * Some details regarding the question were discussed
 
 ### What next?
