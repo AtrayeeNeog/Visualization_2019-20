@@ -47,4 +47,58 @@ qt3_graph2<-simplify(qt3_graph)
 qt4_graph2<-simplify(qt4_graph)
 qt5_graph2<-simplify(qt5_graph)
 
+#Authority Scores:
+authority_template <- authority_score(dt_graph2)
+authority_G1 <- authority_score(qt1_graph2)
+authority_G2 <- authority_score(qt2_graph2)
+authority_G3 <- authority_score(qt3_graph2)
+authority_G4 <- authority_score(qt4_graph2)
+authority_G5 <- authority_score(qt5_graph2)
+
+vector_dt <- data.frame(authority_template$vector)
+vector_dt$authority_template.vector
+vector_G1 <- data.frame(authority_G1$vector)
+vector_G2 <- data.frame(authority_G2$vector)
+vector_G3 <- data.frame(authority_G3$vector)
+vector_G4 <- data.frame(authority_G4$vector)
+vector_G5 <- data.frame(authority_G5$vector)
+
+vector_dt$authority_template.vector
+vector_G1$authority_G1.vector
+
+ggplot(vector_dt, aes(x=authority_template.vector)) +
+  geom_histogram(fill="red", alpha=0.5, position="identity")+labs(title="Histogram for Authority Score for Template")
+
+ggplot(vector_G1, aes(x=authority_G1.vector)) +
+  geom_histogram(fill="blue", alpha=0.5, position="identity")+labs(title="Histogram for Authority Score for Template")
+
+ggplot() + 
+  geom_histogram(data = vector_dt, aes(x = authority_template.vector, fill = "r"), alpha = 0.5) +
+  geom_histogram(data = vector_G1, aes(x = authority_G1.vector, fill = "b"), alpha = 0.5) +
+  scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph1", "r" = "Template")) +
+  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph1", "r" = "Template"))
+ggplot() + 
+  geom_histogram(data = vector_dt, aes(x = authority_template.vector, fill = "r"), alpha = 0.5) +
+  geom_histogram(data = vector_G2, aes(x = authority_G2.vector, fill = "b"), alpha = 0.5) +
+  scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph2", "r" = "Template")) +
+  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph2", "r" = "Template"))
+ggplot() + 
+  geom_histogram(data = vector_dt, aes(x = authority_template.vector, fill = "r"), alpha = 0.5) +
+  geom_histogram(data = vector_G3, aes(x = authority_G3.vector, fill = "b"), alpha = 0.5) +
+  scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph3", "r" = "Template")) +
+  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph3", "r" = "Template"))
+ggplot() + 
+  geom_histogram(data = vector_dt, aes(x = authority_template.vector, fill = "r"), alpha = 0.5) +
+  geom_histogram(data = vector_G4, aes(x = authority_G4.vector, fill = "b"), alpha = 0.5) +
+  scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph4", "r" = "Template")) +
+  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph4", "r" = "Template"))
+ggplot() + 
+  geom_histogram(data = vector_dt, aes(x = authority_template.vector, fill = "r"), alpha = 0.5) +
+  geom_histogram(data = vector_G5, aes(x = authority_G5.vector, fill = "b"), alpha = 0.5) +
+  scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph5", "r" = "Template")) +
+  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph5", "r" = "Template"))
+
+
+
+# Hub Scores:
 
