@@ -225,17 +225,39 @@ wasserstein.test(dt_degree, G5_degree)[spec.output]
 
 # For Closeness:
 dt_closeness <- as.matrix(closeness(dt_graph2))
-G1_degree_closeness <- as.matrix(closeness(qt1_graph2))
-G2_degree_closeness <- as.matrix(closeness(qt2_graph2))
-G3_degree_closeness <- as.matrix(closeness(qt3_graph2))
-G4_degree_closeness <- as.matrix(closeness(qt4_graph2))
-G5_degree_closeness <- as.matrix(closeness(qt5_graph2))
+G1_closeness <- as.matrix(closeness(qt1_graph2))
+G2_closeness <- as.matrix(closeness(qt2_graph2))
+G3_closeness <- as.matrix(closeness(qt3_graph2))
+G4_closeness <- as.matrix(closeness(qt4_graph2))
+G5_closeness <- as.matrix(closeness(qt5_graph2))
 
-wasserstein_metric(dt_closeness, G1_degree_closeness)
-wasserstein_metric(dt_closeness, G2_degree_closeness)
-wasserstein_metric(dt_closeness, G3_degree_closeness)
-wasserstein_metric(dt_closeness, G4_degree_closeness)
-wasserstein_metric(dt_closeness, G5_degree_closeness)
+wasserstein_metric(dt_closeness, G1_closeness)
+wasserstein_metric(dt_closeness, G2_closeness)
+wasserstein_metric(dt_closeness, G3_closeness)
+wasserstein_metric(dt_closeness, G4_closeness)
+wasserstein_metric(dt_closeness, G5_closeness)
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt_closeness, G1_closeness)[spec.output]
+wasserstein.test(dt_closeness, G2_closeness)[spec.output]
+wasserstein.test(dt_closeness, G3_closeness)[spec.output]
+wasserstein.test(dt_closeness, G4_closeness)[spec.output]
+wasserstein.test(dt_closeness, G5_closeness)[spec.output]
+
+# For Betweeness:
+dt_betweeness <- as.matrix(betweenness(dt_graph2))
+G1_betweeness <- as.matrix(betweenness(qt1_graph2))
+G2_betweenness <- as.matrix(betweenness(qt2_graph2))
+G3_closeness <- as.matrix(closeness(qt3_graph2))
+G4_closeness <- as.matrix(closeness(qt4_graph2))
+G5_closeness <- as.matrix(closeness(qt5_graph2))
+
+wasserstein_metric(dt_closeness, G1_closeness)
+wasserstein_metric(dt_closeness, G2_closeness)
+wasserstein_metric(dt_closeness, G3_closeness)
+wasserstein_metric(dt_closeness, G4_closeness)
+wasserstein_metric(dt_closeness, G5_closeness)
 
 # Testing based on Wasserstein Distance:
 spec.output <- c("pval", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
