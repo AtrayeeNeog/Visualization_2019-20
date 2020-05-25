@@ -6,7 +6,10 @@ library (haven)
 library (ggplot2)
 library(transport)
 library(plyr)
-
+#if (!requireNamespace("BiocManager", quietly = TRUE))
+  #install.packages("BiocManager")
+#BiocManager::install("waddR")
+library(waddR)
 
 # Load The Data:
 dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
@@ -191,101 +194,34 @@ ggplot() +
 
 
 # Wasserstein method:
-# Template: 
-# Combine all nodes together:
+dt_graph2<-simplify(dt_graph)
+qt1_graph2<-simplify(qt1_graph)
+qt2_graph2<-simplify(qt2_graph)
+qt3_graph2<-simplify(qt3_graph)
+qt4_graph2<-simplify(qt4_graph)
+qt5_graph2<-simplify(qt5_graph)
 
-dtS_nodes <- data.frame(dt_network$Source)
-colnames(dtS_nodes)[colnames(dtS_nodes) == 'dt_network.Source'] <- 'Node'
-head(dtS_nodes)
-dtT_nodes <- data.frame(dt_network$Target)
-colnames(dtT_nodes)[colnames(dtT_nodes) == 'dt_network.Target'] <- 'Node'
-head(dtT_nodes)
-dt_nodes<- rbind(dtS_nodes, dtT_nodes)
-# Find the frequency of occurrence of each node:
-dt_count <- count(dt_nodes, "Node")
-head(dt_count)
+dt_degree <- as.matrix(degree(dt_graph2))
+G1_degree <- as.matrix(degree(qt1_graph2))
+G2_degree <- as.matrix(degree(qt2_graph2))
+G3_degree <- as.matrix(degree(qt3_graph2))
+G4_degree <- as.matrix(degree(qt4_graph2))
+G5_degree <- as.matrix(degree(qt5_graph2))
 
-# Graph1:
-G1S_nodes <- data.frame(qt1_network$Source)
-colnames(G1S_nodes)[colnames(G1S_nodes) == 'qt1_network.Source'] <- 'Node'
-head(G1S_nodes)
-G1T_nodes <- data.frame(qt1_network$Target)
-colnames(G1T_nodes)[colnames(G1T_nodes) == 'qt1_network.Target'] <- 'Node'
-head(G1T_nodes)
-G1_nodes<- rbind(G1S_nodes, G1T_nodes)
-# Find the frequency of occurrence of each node:
-G1_count <- count(G1_nodes, "Node")
-head(G1_count)
+wasserstein_metric(dt_degree, G1_degree)
+wasserstein_metric(dt_degree, G2_degree)
+wasserstein_metric(dt_degree, G3_degree)
+wasserstein_metric(dt_degree, G4_degree)
+wasserstein_metric(dt_degree, G5_degree)
 
-# Graph2:
-G2S_nodes <- data.frame(qt2_network$Source)
-colnames(G2S_nodes)[colnames(G2S_nodes) == 'qt2_network.Source'] <- 'Node'
-head(G2S_nodes)
-G2T_nodes <- data.frame(qt2_network$Target)
-colnames(G2T_nodes)[colnames(G2T_nodes) == 'qt2_network.Target'] <- 'Node'
-head(G2T_nodes)
-G2_nodes<- rbind(G2S_nodes, G2T_nodes)
-# Find the frequency of occurrence of each node:
-G2_count <- count(G2_nodes, "Node")
-head(G2_count)
-
-# Graph3:
-G3S_nodes <- data.frame(qt3_network$Source)
-colnames(G3S_nodes)[colnames(G3S_nodes) == 'qt3_network.Source'] <- 'Node'
-head(G3S_nodes)
-G3T_nodes <- data.frame(qt3_network$Target)
-colnames(G3T_nodes)[colnames(G3T_nodes) == 'qt3_network.Target'] <- 'Node'
-head(G3T_nodes)
-G3_nodes<- rbind(G3S_nodes, G3T_nodes)
-# Find the frequency of occurrence of each node:
-G3_count <- count(G3_nodes, "Node")
-head(G3_count)
-
-# # Graph4:
-G4S_nodes <- data.frame(qt4_network$Source)
-colnames(G4S_nodes)[colnames(G4S_nodes) == 'qt4_network.Source'] <- 'Node'
-head(G4S_nodes)
-G4T_nodes <- data.frame(qt4_network$Target)
-colnames(G4T_nodes)[colnames(G4T_nodes) == 'qt4_network.Target'] <- 'Node'
-head(G4T_nodes)
-G4_nodes<- rbind(G4S_nodes, G4T_nodes)
-# Find the frequency of occurrence of each node:
-G4_count <- count(G4_nodes, "Node")
-head(G4_count)
-
-# # Graph5:
-G5S_nodes <- data.frame(qt5_network$Source)
-colnames(G5S_nodes)[colnames(G5S_nodes) == 'qt5_network.Source'] <- 'Node'
-head(G5S_nodes)
-G5T_nodes <- data.frame(qt5_network$Target)
-colnames(G5T_nodes)[colnames(G5T_nodes) == 'qt5_network.Target'] <- 'Node'
-head(G5T_nodes)
-G5_nodes<- rbind(G5S_nodes, G5T_nodes)
-# Find the frequency of occurrence of each node:
-G5_count <- count(G5_nodes, "Node")
-head(G5_count)
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt_degree, G1_degree)
+wasserstein.test(dt_degree, G2_degree)
 
 
-dt_pgrid <- pgrid(as.matrix(dt_count))
-G1_pgrid <- pgrid(as.matrix(G1_count))
-G2_pgrid <- pgrid(as.matrix(G2_count))
-G3_pgrid <- pgrid(as.matrix(G3_count))
-G4_pgrid <- pgrid(as.matrix(G4_count))
-G5_pgrid <- pgrid(as.matrix(G5_count))
 
-dt_pgrid
-G1_pgrid
-G2_pgrid
-G3_pgrid
-G4_pgrid
-G5_pgrid
 
-unique(dt_count$Node)
-unique(G1_count$Node)
-unique(G2_count$Node)
-unique(G3_count$Node)
-unique(G4_count$Node)
-unique(G5_count$Node)
 
-# Wasserstein Attempt 2:
+
 
