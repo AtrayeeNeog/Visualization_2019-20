@@ -193,6 +193,7 @@ ggplot() +
 # Wasserstein method:
 # Template: 
 # Combine all nodes together:
+
 dtS_nodes <- data.frame(dt_network$Source)
 colnames(dtS_nodes)[colnames(dtS_nodes) == 'dt_network.Source'] <- 'Node'
 head(dtS_nodes)
@@ -285,4 +286,6 @@ unique(G2_count$Node)
 unique(G3_count$Node)
 unique(G4_count$Node)
 unique(G5_count$Node)
+
+# Wasserstein Attempt 2:
 
