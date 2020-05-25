@@ -5,6 +5,8 @@ library (readr)
 library (haven)
 library (ggplot2)
 library(transport)
+library(plyr)
+
 
 # Load The Data:
 dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
@@ -184,5 +186,103 @@ ggplot() +
 ggplot() + 
   geom_histogram(data = hits_template, aes(x = vector_dt.authority_template.vector...vectorH_dt.hub_template.vector, fill = "r"), alpha = 0.5) +
   geom_histogram(data = hits_G5, aes(x = vector_G5.authority_G5.vector...vectorH_G5.hub_G5.vector, fill = "b"), alpha = 0.5) +
-  scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph1", "r" = "Template")) +
-  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph1", "r" = "Template"))
+  scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph5", "r" = "Template")) +
+  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph5", "r" = "Template"))
+
+
+# Wasserstein method:
+# Template: 
+# Combine all nodes together:
+dtS_nodes <- data.frame(dt_network$Source)
+colnames(dtS_nodes)[colnames(dtS_nodes) == 'dt_network.Source'] <- 'Node'
+head(dtS_nodes)
+dtT_nodes <- data.frame(dt_network$Target)
+colnames(dtT_nodes)[colnames(dtT_nodes) == 'dt_network.Target'] <- 'Node'
+head(dtT_nodes)
+dt_nodes<- rbind(dtS_nodes, dtT_nodes)
+# Find the frequency of occurrence of each node:
+dt_count <- count(dt_nodes, "Node")
+head(dt_count)
+
+# Graph1:
+G1S_nodes <- data.frame(qt1_network$Source)
+colnames(G1S_nodes)[colnames(G1S_nodes) == 'qt1_network.Source'] <- 'Node'
+head(G1S_nodes)
+G1T_nodes <- data.frame(qt1_network$Target)
+colnames(G1T_nodes)[colnames(G1T_nodes) == 'qt1_network.Target'] <- 'Node'
+head(G1T_nodes)
+G1_nodes<- rbind(G1S_nodes, G1T_nodes)
+# Find the frequency of occurrence of each node:
+G1_count <- count(G1_nodes, "Node")
+head(G1_count)
+
+# Graph2:
+G2S_nodes <- data.frame(qt2_network$Source)
+colnames(G2S_nodes)[colnames(G2S_nodes) == 'qt2_network.Source'] <- 'Node'
+head(G2S_nodes)
+G2T_nodes <- data.frame(qt2_network$Target)
+colnames(G2T_nodes)[colnames(G2T_nodes) == 'qt2_network.Target'] <- 'Node'
+head(G2T_nodes)
+G2_nodes<- rbind(G2S_nodes, G2T_nodes)
+# Find the frequency of occurrence of each node:
+G2_count <- count(G2_nodes, "Node")
+head(G2_count)
+
+# Graph3:
+G3S_nodes <- data.frame(qt3_network$Source)
+colnames(G3S_nodes)[colnames(G3S_nodes) == 'qt3_network.Source'] <- 'Node'
+head(G3S_nodes)
+G3T_nodes <- data.frame(qt3_network$Target)
+colnames(G3T_nodes)[colnames(G3T_nodes) == 'qt3_network.Target'] <- 'Node'
+head(G3T_nodes)
+G3_nodes<- rbind(G3S_nodes, G3T_nodes)
+# Find the frequency of occurrence of each node:
+G3_count <- count(G3_nodes, "Node")
+head(G3_count)
+
+# # Graph4:
+G4S_nodes <- data.frame(qt4_network$Source)
+colnames(G4S_nodes)[colnames(G4S_nodes) == 'qt4_network.Source'] <- 'Node'
+head(G4S_nodes)
+G4T_nodes <- data.frame(qt4_network$Target)
+colnames(G4T_nodes)[colnames(G4T_nodes) == 'qt4_network.Target'] <- 'Node'
+head(G4T_nodes)
+G4_nodes<- rbind(G4S_nodes, G4T_nodes)
+# Find the frequency of occurrence of each node:
+G4_count <- count(G4_nodes, "Node")
+head(G4_count)
+
+# # Graph5:
+G5S_nodes <- data.frame(qt5_network$Source)
+colnames(G5S_nodes)[colnames(G5S_nodes) == 'qt5_network.Source'] <- 'Node'
+head(G5S_nodes)
+G5T_nodes <- data.frame(qt5_network$Target)
+colnames(G5T_nodes)[colnames(G5T_nodes) == 'qt5_network.Target'] <- 'Node'
+head(G5T_nodes)
+G5_nodes<- rbind(G5S_nodes, G5T_nodes)
+# Find the frequency of occurrence of each node:
+G5_count <- count(G5_nodes, "Node")
+head(G5_count)
+
+
+dt_pgrid <- pgrid(as.matrix(dt_count))
+G1_pgrid <- pgrid(as.matrix(G1_count))
+G2_pgrid <- pgrid(as.matrix(G2_count))
+G3_pgrid <- pgrid(as.matrix(G3_count))
+G4_pgrid <- pgrid(as.matrix(G4_count))
+G5_pgrid <- pgrid(as.matrix(G5_count))
+
+dt_pgrid
+G1_pgrid
+G2_pgrid
+G3_pgrid
+G4_pgrid
+G5_pgrid
+
+unique(dt_count$Node)
+unique(G1_count$Node)
+unique(G2_count$Node)
+unique(G3_count$Node)
+unique(G4_count$Node)
+unique(G5_count$Node)
+
