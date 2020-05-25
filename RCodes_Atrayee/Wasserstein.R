@@ -161,13 +161,13 @@ ggplot() +
   geom_histogram(data = hits_template, aes(x = vector_dt.authority_template.vector...vectorH_dt.hub_template.vector, fill = "r"), alpha = 0.5) +
   geom_histogram(data = hits_G1, aes(x = vector_G1.authority_G1.vector...vectorH_G1.hub_G1.vector, fill = "b"), alpha = 0.5) +
   scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph1", "r" = "Template")) +
-  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph1", "r" = "Template"))
+  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph1", "r" = "Template"))+labs(title="Histogram for Total Hits Score for Template and Graph1")
 
 ggplot() + 
   geom_histogram(data = hits_template, aes(x = vector_dt.authority_template.vector...vectorH_dt.hub_template.vector, fill = "r"), alpha = 0.5) +
   geom_histogram(data = hits_G2, aes(x = vector_G2.authority_G2.vector...vectorH_G2.hub_G2.vector, fill = "b"), alpha = 0.5) +
   scale_colour_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph2", "r" = "Template")) +
-  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph2", "r" = "Template"))
+  scale_fill_manual(name ="vector", values = c("r" = "red", "b" = "blue"), labels=c("b" = "Graph2", "r" = "Template"))+labs(title="Histogram for Total Hits Score for Template and Graph2")
 
 ggplot() + 
   geom_histogram(data = hits_template, aes(x = vector_dt.authority_template.vector...vectorH_dt.hub_template.vector, fill = "r"), alpha = 0.5) +
