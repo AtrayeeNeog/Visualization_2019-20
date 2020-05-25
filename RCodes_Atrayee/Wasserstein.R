@@ -216,10 +216,11 @@ wasserstein_metric(dt_degree, G5_degree)
 
 # Testing based on Wasserstein Distance:
 spec.output <- c("pval", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
-wasserstein.test(dt_degree, G1_degree)
-wasserstein.test(dt_degree, G2_degree)
-
-
+wasserstein.test(dt_degree, G1_degree)[spec.output]
+wasserstein.test(dt_degree, G2_degree)[spec.output]
+wasserstein.test(dt_degree, G3_degree)[spec.output]
+wasserstein.test(dt_degree, G4_degree)[spec.output]
+wasserstein.test(dt_degree, G5_degree)[spec.output]
 
 
 
