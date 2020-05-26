@@ -19,12 +19,12 @@ qt3 <- data.table::fread(here::here("data", "Q1-Graph3.csv"))
 qt4 <- data.table::fread(here::here("data", "Q1-Graph4.csv"))
 qt5 <- data.table::fread(here::here("data", "Q1-Graph5.csv"))
 
-dt01 <- dt %>% filter(dt$eType == 2 | dt$eType == 3) 
-G101 <- qt1 %>% filter(qt1$eType == 2 | qt1$eType == 3)
-G201 <- qt2 %>% filter(qt2$eType == 2 | qt2$eType == 3)
-G301 <- qt3 %>% filter(qt3$eType == 2 | qt3$eType == 3)
-G401 <- qt4 %>% filter(qt4$eType == 2 | qt4$eType == 3)
-G501 <- qt5 %>% filter(qt5$eType == 2 | qt5$eType == 3)
+dt01 <- dt %>% filter(dt$eType == 4) 
+G101 <- qt1 %>% filter(qt1$eType == 4)
+G201 <- qt2 %>% filter(qt2$eType == 4)
+G301 <- qt3 %>% filter(qt3$eType == 4)
+G401 <- qt4 %>% filter(qt4$eType == 4)
+G501 <- qt5 %>% filter(qt5$eType == 4)
 
 nrow(G501)
 

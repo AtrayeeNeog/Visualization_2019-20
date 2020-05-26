@@ -430,11 +430,11 @@ wasserstein_metric(dt_authorities, G5_authorities)
 
 # Testing based on Wasserstein Distance:
 spec.output <- c("pval", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
-wasserstein.test(dt_hubs, G1_hubs)[spec.output]
-wasserstein.test(dt_hubs, G2_hubs)[spec.output]
-wasserstein.test(dt_hubs, G3_hubs)[spec.output]
-wasserstein.test(dt_hubs, G4_hubs)[spec.output]
-wasserstein.test(dt_hubs, G5_hubs)[spec.output]
+wasserstein.test(dt_authorities, G1_authorities)[spec.output]
+wasserstein.test(dt_authorities, G2_authorities)[spec.output]
+wasserstein.test(dt_authorities, G3_authorities)[spec.output]
+wasserstein.test(dt_authorities, G4_authorities)[spec.output]
+wasserstein.test(dt_authorities, G5_authorities)[spec.output]
 
 
 
