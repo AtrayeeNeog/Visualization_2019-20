@@ -16,3 +16,7 @@
 * https://www.nature.com/articles/s41598-019-53708-y
 * https://en.wikipedia.org/wiki/Graph_kernel
 * And some of methods are on the slides, I will update them as well.
+* https://hal.archives-ouvertes.fr/hal-01591250/document
+* https://journals.plos.org/plosone/article?id=10.1371/journal.pone.
+* https://www.researchgate.net/post/How_can_I_measure_similarity_between_two_networks
+* RankDegree.pdf (will even help with Seeds and Q2)
