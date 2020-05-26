@@ -342,6 +342,36 @@ wasserstein.test(dt_page_rank, G3_page_rank)[spec.output]
 wasserstein.test(dt_page_rank, G4_page_rank)[spec.output]
 wasserstein.test(dt_page_rank, G5_page_rank)[spec.output]
 
+# For KNN:
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = TRUE, remove.loops = TRUE)
+
+dt_knn <- as.matrix((knn(dt_graph2))$knn)
+G1_knn <- as.matrix((knn(qt1_graph2))$knn)
+G2_knn <- as.matrix((knn(qt2_graph2))$knn)
+G3_knn <- as.matrix((knn(qt3_graph2))$knn)
+G4_knn <- as.matrix((knn(qt4_graph2))$knn)
+G5_knn <- as.matrix((knn(qt5_graph2))$knn)
+
+wasserstein_metric(dt_knn, G1_knn)
+wasserstein_metric(dt_knn, G2_knn)
+wasserstein_metric(dt_knn, G3_knn)
+wasserstein_metric(dt_knn, G4_knn)
+wasserstein_metric(dt_knn, G5_knn)
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt_knn, G1_knn)[spec.output]
+wasserstein.test(dt_knn, G2_knn)[spec.output]
+wasserstein.test(dt_knn, G3_knn)[spec.output]
+wasserstein.test(dt_knn, G4_knn)[spec.output]
+wasserstein.test(dt_knn, G5_knn)[spec.output]
+
+
 
 
 
