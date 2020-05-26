@@ -433,7 +433,7 @@ wasserstein.test(dt_hubs, G5_hubs)[spec.output]
 
 
 
-
+closeness.
 
 
 
