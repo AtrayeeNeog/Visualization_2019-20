@@ -7,11 +7,9 @@ library (ggplot2)
 library(transport)
 library(plyr)
 #if (!requireNamespace("BiocManager", quietly = TRUE))
-  #install.packages("BiocManager")
+#install.packages("BiocManager")
 #BiocManager::install("waddR")
 library(waddR)
-library(centiserve)
-library(expm)
 
 # Load The Data:
 dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
@@ -21,12 +19,19 @@ qt3 <- data.table::fread(here::here("data", "Q1-Graph3.csv"))
 qt4 <- data.table::fread(here::here("data", "Q1-Graph4.csv"))
 qt5 <- data.table::fread(here::here("data", "Q1-Graph5.csv"))
 
-dt_network <- subset(dt, select = c(Source, Target, Weight))
-qt1_network <- subset(qt1, select = c(Source, Target, Weight))
-qt2_network <- subset(qt2, select = c(Source, Target, Weight))
-qt3_network <- subset(qt3, select = c(Source, Target, Weight))
-qt4_network <- subset(qt4, select = c(Source, Target, Weight))
-qt5_network <- subset(qt5, select = c(Source, Target, Weight))
+dt01 <- dt %>% filter(dt$eType == 0 | dt$eType == 1) 
+G101 <- qt1 %>% filter(qt1$eType == 0 | qt1$eType == 1)
+G201 <- qt2 %>% filter(qt2$eType == 0 | qt2$eType == 1)
+G301 <- qt3 %>% filter(qt3$eType == 0 | qt3$eType == 1)
+G401 <- qt4 %>% filter(qt4$eType == 0 | qt4$eType == 1)
+G501 <- qt5 %>% filter(qt5$eType == 0 | qt5$eType == 1)
+
+dt_network <- subset(dt01, select = c(Source, Target, Weight))
+qt1_network <- subset(G101, select = c(Source, Target, Weight))
+qt2_network <- subset(G201, select = c(Source, Target, Weight))
+qt3_network <- subset(G301, select = c(Source, Target, Weight))
+qt4_network <- subset(G401, select = c(Source, Target, Weight))
+qt5_network <- subset(G501, select = c(Source, Target, Weight))
 
 dt_edgelist <- dt_network
 dt_graph <- graph.data.frame(dt_edgelist, directed = TRUE)
@@ -47,12 +52,12 @@ qt5_edgelist <- qt5_network
 qt5_graph <- graph.data.frame(qt5_edgelist, directed = TRUE)
 
 
-dt_graph2<-simplify(dt_graph)
-qt1_graph2<-simplify(qt1_graph)
-qt2_graph2<-simplify(qt2_graph)
-qt3_graph2<-simplify(qt3_graph)
-qt4_graph2<-simplify(qt4_graph)
-qt5_graph2<-simplify(qt5_graph)
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = FALSE)
 
 #Authority Scores:
 authority_template <- authority_score(dt_graph2)
@@ -430,6 +435,7 @@ wasserstein.test(dt_hubs, G2_hubs)[spec.output]
 wasserstein.test(dt_hubs, G3_hubs)[spec.output]
 wasserstein.test(dt_hubs, G4_hubs)[spec.output]
 wasserstein.test(dt_hubs, G5_hubs)[spec.output]
+
 
 
 
