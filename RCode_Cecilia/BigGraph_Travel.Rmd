@@ -1,0 +1,129 @@
+---
+title: "BigGraph_Travel"
+author: "Cecilia W"
+date: "5/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(igraph)
+library(tidyverse)
+library (ggplot2)
+library(dplyr)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+getwd()
+setwd('~/OVGU/Visualization_Project/MC1/data')
+Template <- read.csv('CGCS-Template.csv')
+Subgragh_1 <- read.csv('Q1-Graph1.csv')
+Subgragh_2 <- read.csv('Q1-Graph2.csv')
+Subgragh_3 <- read.csv('Q1-Graph3.csv')
+Subgragh_4 <- read.csv('Q1-Graph4.csv')
+Subgragh_5 <- read.csv('Q1-Graph5.csv')
+Travel_Channel <- read.csv('eType6.csv')
+
+# Drop out the duplicated rows
+Travel_Channel_dedupted <- Travel_Channel[!duplicated(Travel_Channel), ]
+
+#Check the location nodes value
+unique(Travel_Channel_dedupted$Target) 
+# 6 values: 657173 509607 625756 616453 561157 499467
+
+#slipt the data by different Target location
+Target499467 <- filter(Travel_Channel_dedupted, Target == "499467")
+Target509607 <- filter(Travel_Channel_dedupted, Target == "509607")
+Target561157 <- filter(Travel_Channel_dedupted, Target == "561157")
+Target616453 <- filter(Travel_Channel_dedupted, Target == "616453")
+Target625756 <- filter(Travel_Channel_dedupted, Target == "625756")
+Target657173 <- filter(Travel_Channel_dedupted, Target == "657173")
+
+unique(Target499467$TargetLocation) #Target Location:2
+unique(Target509607$TargetLocation) #Target Location:4
+unique(Target561157$TargetLocation) #Target Location:0
+unique(Target616453$TargetLocation) #Target Location:5
+unique(Target625756$TargetLocation) #Target Location:3
+unique(Target657173$TargetLocation) #Target Location:1
+
+#There are on missing values in Target Location column
+#And one Target match with one exact Taget Location
+length(Target499467$TargetLocation) == nrow(Target499467) 
+length(Target509607$TargetLocation) == nrow(Target509607) 
+length(Target561157$TargetLocation) == nrow(Target561157) 
+length(Target616453$TargetLocation) == nrow(Target616453) 
+length(Target625756$TargetLocation) == nrow(Target625756)
+length(Target657173$TargetLocation) == nrow(Target657173)
+
+#Check the Target Latitude and Longitude
+#As long as the Trip has same Target, the Target Location, Target Longitude and Target Lantitude are the same.
+unique(Target499467$TargetLatitude) #-22
+unique(Target499467$TargetLongitude) #91
+length(Target499467$TargetLatitude) #43316
+length(Target499467$TargetLongitude) #43316
+
+unique(Target509607$TargetLatitude) # 1
+unique(Target509607$TargetLongitude) #-165
+length(Target509607$TargetLatitude) #50027
+length(Target509607$TargetLongitude) #50027
+
+unique(Target561157$TargetLatitude) # 33
+unique(Target561157$TargetLongitude) #-41
+length(Target561157$TargetLatitude) #75192
+length(Target561157$TargetLongitude) #75192
+
+unique(Target616453$TargetLatitude) # 22
+unique(Target616453$TargetLongitude) # 156
+length(Target616453$TargetLatitude) # 43097
+length(Target616453$TargetLongitude) # 43097
+
+unique(Target625756$TargetLatitude) # -25
+unique(Target625756$TargetLongitude) # -111
+length(Target625756$TargetLatitude) # 42850
+length(Target625756$TargetLongitude) # 42850
+
+unique(Target657173$TargetLatitude) # -29
+unique(Target657173$TargetLongitude) # -13
+length(Target657173$TargetLatitude) # 43999
+length(Target657173$TargetLongitude) # 43999
+
+range(Travel_Channel_dedupted$Time) #86400--31536000 According to Data Description: it means from 12am 02.01.2025 to 12am 01.01.2026
+
+#Create a new column to show the start day (1 Day has 24*60*60=86400 seconds)
+Travel_Channel_dedupted <- transform(Travel_Channel_dedupted, Start_Day = Time/86400)
+
+# Remove the rows that weight = '-1' first
+length(Travel_Channel_dedupted$Weight[Travel_Channel_dedupted$Weight==-1])
+Travel_Channel_New <- subset(Travel_Channel_dedupted, Weight != -1)
+
+#Create a new column to show the end day of trip (by adding start day and length of trip together)
+Travel_Channel_New<- transform(Travel_Channel_New, End_Day = Start_Day + Weight)
+
+#Split the data by Location 0-5
+Travel_Location0 <- filter(Travel_Channel_New, TargetLocation == "0")
+
+#Only look at the Trip that start on Day1 to Location0 (12am 02.01.2025)
+length(Travel_Location0$Start_Day[Travel_Location0$Start_Day == '1'])
+Travel_Location0_Day1 <- filter(Travel_Location0, Start_Day == '1')
+length(duplicated(Travel_Location0_Day1$Source)) == nrow(Travel_Location0_Day1) #No dulicated value in Source
+
+# Remove some meaningless information to make the data clear
+drops <- c("eType","Target","Time","TargetLocation","TargetLongitude","TargetLatitude")
+
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
