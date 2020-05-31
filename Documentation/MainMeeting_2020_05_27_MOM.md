@@ -19,17 +19,16 @@
 * The procedure for creating the graphs from seeds of question 2 was presented and discussed
 * The goodness of the seeds were presented
 * Agenda for the next meeting(in two weeks) was discussed
-*
+
 
 ### What next?
 
 * Further Literature review
-* Plot Parallel Coordinates have to be discussed and changed.
-* Work on Adjacency Matrix for each channel for comparison and analysis.
-* More measurements need to be compared for question 1
-* Clustering of the network should be decided
-* continue with qustion 2 and seeds and work on the big graph (find an stopping criteria)
-* Explore each channel separately for measures
+* Dynamic time warping needs to be researched
+* The p-values need to be recalculated and compared
+* All the comparisons should come as a whole graphs (to check for the majority voting)
+* continue with question 2 and seeds with other measures and more adjustments
+* Read the Literature for understanding and clustering the Parallel coordinates
 
 ### Next Meeting's agenda(May, 27th, 1pm)?
 
