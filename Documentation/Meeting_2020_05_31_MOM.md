@@ -23,8 +23,8 @@
 >* check Procurement channel in all of them
 >* check co-authorship and Travel and Procurement in Template:
   - how they are connect
-  - travel: check times
-  - Proc: who selled to whom
-  - co-a: Are all the publishers in the data (the -99 specially)
+  - Travel: check times
+  - Procurement: who sold to whom
+  - Co-authorship: Are all the publishers in the data (the -99 specially)
 >* Didn't check the Template in the big graph
 >* Check Graph of Q1 in the big graph
