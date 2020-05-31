@@ -1,27 +1,20 @@
 ### Agenda:
 
 * Discussing the last week's Progress
-* Discussing Different Graph analysis measurements in R
-* Discussing Different Graph analysis measurements in python
-* Dynamic Network analysis in Gephi
+* Discussing all the measurements for the question one graphs
+* Discussing our approach for the question 2 and how to go forward with it
+* Discussing the similarity measures and achieved results and conclusions
+*
 
 ### Progress:
 
-* Sent the list of questions to the commity
 * Literature review was done and some books and papers and tutorials were found
-* A presentation comparing different measurements for question 1 graphs were presented
-* Template file and Graph data were visualized in graph format
-* Bar charts and Histograms for comparison were discussed
-* Some channels of big graph data were visualized based on time
-* Dynamic networks were discussed and visualized in Gephi
-* keywords were discussed for further research
+* A presentation showing all the measurements with visualizations was presented
+* Histograms were replace by distribution curves and were created for all the measures
+* All the graphs of question 1 were compared to Template with Wasserstein metric
+* Different channels of all the graphs of question 1 were compared to Template with Wasserstein metric
 * Agenda for the next meeting(in two weeks) was discussed
-* Visualizations were discussed and these points were made:
-  * Plot aggregated measures
-  * plot density curves insted of Histograms
-  * Don't overplot in the same plot for better comprehension
-  * Lowest values should be rendered on top or with bright colors
-* Some details regarding the question were discussed
+* 
 
 ### What next?
 
