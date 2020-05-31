@@ -13,8 +13,11 @@
 * Histograms were replace by distribution curves and were created for all the measures
 * All the graphs of question 1 were compared to Template with Wasserstein metric
 * Different channels of all the graphs of question 1 were compared to Template with Wasserstein metric
-* Agenda for the next meeting(in two weeks) was discussed
-* 
+* The visualization for all the graphs and Template was presented
+* Parallel Coordinates for all the graphs was presented
+* The procedure for 
+*Agenda for the next meeting(in two weeks) was discussed
+*
 
 ### What next?
 
