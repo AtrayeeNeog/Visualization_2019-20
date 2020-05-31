@@ -15,8 +15,10 @@
 * Different channels of all the graphs of question 1 were compared to Template with Wasserstein metric
 * The visualization for all the graphs and Template was presented
 * Parallel Coordinates for all the graphs was presented
-* The procedure for 
-*Agenda for the next meeting(in two weeks) was discussed
+* Our conclusion for question 1 was given and discussed
+* The procedure for creating the graphs from seeds of question 2 was presented and discussed
+* The goodness of the seeds were presented
+* Agenda for the next meeting(in two weeks) was discussed
 *
 
 ### What next?
