@@ -30,7 +30,7 @@
 * continue with question 2 and seeds with other measures and more adjustments
 * Read the Literature for understanding and clustering the Parallel coordinates
 
-### Next Meeting's agenda(May, 27th, 1pm)?
+### Next Meeting's agenda(June, 10th, 1pm)?
 
 * Discussing our progress for the weekly
 * Discussing possible solutions
