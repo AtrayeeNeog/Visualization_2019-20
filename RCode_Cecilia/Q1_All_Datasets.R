@@ -24,6 +24,20 @@ TravelC <- Template %>% filter(Template$eType == 6) # Travel Channel
 nrow(TravelC) # 52
 # Highest data for Demographic, Communication and Travel Channel.
 
+# Person ID 0 and 39 only recieve Call from others, becasue they only appear in Target.
+unique(Call$Source)#34 41 27 37 65 40 43 63 56 58 47 45 57
+unique(Call$Target)#27 37 41 34 39  0 40 65 56 43 57 63 47 45 58
+
+# Person ID 0, 66 and 45 only recieve Email from others, becasue they only appear in Target.
+unique(Email$Source)#41 37 27 40 34 65 67 47 39 57 58 63 56 43
+unique(Email$Target)#34 27 37 41  0 39 66 47 65 40 67 56 43 58 45 63 57
+
+#Check the person34 in Call Channel
+Person34_Call <- Call %>% filter(Call$Source == "34" | Call$Target == "34")
+#Check the person34 in Email Channel
+Person34_Email <- Email %>% filter(Email$Source == "34" | Email$Target == "34")
+Person39_Call <- Call %>% filter(Call$Source == "39" | Call$Target == "39")
+
 # To check if any Source ID is equal to any Target ID:
 for(i in TravelC$Source){
   for(j in TravelC$Target){
