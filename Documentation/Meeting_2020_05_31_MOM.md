@@ -7,7 +7,7 @@
   * only check for the exact person who sold him that thing or bought sth from him
 
 * eType = 4:
-  * (1) Our guy published a paper with some people: 3 other papers[check the tamplate and see how many authors are there for each paper] [dendogram]
+  * (1) Our guy published a paper with some people: 3 other papers[check the template and see how many authors are there for each paper] [dendogram]
   * (2) Our paper had some authors(5 other authors + our guy): keep both
 * eType = 5: consider the 29 categories- Source is a person we keep the Source
   * Target is a person we keep the Target
