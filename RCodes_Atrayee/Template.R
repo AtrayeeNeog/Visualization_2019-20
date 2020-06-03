@@ -208,7 +208,12 @@ SLoc <- dt6 %>% filter(SourceLocation==0 | SourceLocation==2 | SourceLocation==3
 TLoc <- dt6 %>% filter(TargetLocation==0 | TargetLocation==3 | TargetLocation==4 ) #32; in order: 3,4,0
 time <- dt6 %>% filter(Time==15661606 | Time==12292006 | Time==15834406 |Time==24733606 | Time==26634406 | Time==30004006 ) #6 vals; in order: 15661606 (3), 12292006, 15834406, 24733606,26634406, 30004006
 df1 <- rbind(target, weight, SLoc, TLoc, time)
-df1 <- df1[!duplicated(df1), ] # 2 rows deleted
+nrow(df1)
+df1 <- df1[!duplicated(df1), ] # total nodes extracted: 52
+head(df1)
+
+# Target, Time, Weight:
+df1 %>% filter(Target==70) #13
 
 
 
