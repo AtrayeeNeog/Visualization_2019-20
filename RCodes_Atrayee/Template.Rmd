@@ -129,7 +129,11 @@ df1 %>% filter(Target==70 & SourceLocation==0) #73,75,74,86,87,85
 ### For Target=70, there are 10 nodes out of which:
 ### 1. 80,77,79,78,39,40,41 come from Country 4
 ### 2. 73,75,74,86,87,85 come from country 0
-### 3. Nodes 80, 77 have travelled to the destination within 2 days of each other and stayed for 1 day
+### 3. 3 Groups: based on SourceLocation and Time
+### 4. Nodes 80, 77,79,78 have travelled to the destination from 4 within days of each other. 80, 77 stayed for 1 day and 79, 78 stayed for 3 and 4 days respectively.
+### 5. Nodes 39,40,41 have travelled to the destination from 4 within days of each other and stayed for 3 days each.
+### 6. Nodes 73, 74, 75 have travelled to the destination from 0 within days of each other.
+
 
 ```{r}
 # Target:71
@@ -140,9 +144,9 @@ df1 %>% filter(Target==71 & SourceLocation==3) #40,41,39
 ```
 
 ### For Target=71, there are 9 nodes out of which:
-### 1. 87,85,86 come from Country 1
-### 2. 73,75,74 come from country 2
-### 3. 40,41,39 come from country 3
+### 1. 87,85,86 come from Country 1 and have travelled within days of each other
+### 2. 73,75,74 come from country 2 and have travelled within days of each other
+### 3. 40,41,39 come from country 3 and have travelled within days of each other
 
 
 ```{r}
