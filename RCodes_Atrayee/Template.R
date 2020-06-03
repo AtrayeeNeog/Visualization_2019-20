@@ -213,7 +213,9 @@ df1 <- df1[!duplicated(df1), ] # total nodes extracted: 52
 head(df1)
 
 # Target, Time, Weight:
-df1 %>% filter(Target==70) #13
+df1 %>% filter(Target==70) #13 SourceLocation: 0 and 4
+df1 %>% filter(Target==70 & SourceLocation==4) #80,77,79,78,39,40,41
+df1 %>% filter(Target==70 & SourceLocation==0) #73,75,74,86,87,85
 
 
 
