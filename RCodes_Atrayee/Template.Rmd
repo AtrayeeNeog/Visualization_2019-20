@@ -43,6 +43,53 @@ nrow(dt6) # 52
 
 
 ```
+```{r}
+common_list <- NULL
+for (i in dt01$Source) {
+  for (j in dt23$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Source) {
+  for (j in dt4$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Source) {
+  for (j in dt5$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Source) {
+  for (j in dt6$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+common_list
+length(common_list)
+```
+
+
 
 ## Travel Channel:
 
@@ -216,6 +263,8 @@ df1 %>% filter(Weight==2)
 df1 %>% filter(Weight==3)
 ```
 
+
+## Nodes 39, 40, 41 appear in all Channels and also in the major Analysis wrt the 
 
 
 ```{r}
