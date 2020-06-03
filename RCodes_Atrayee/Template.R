@@ -1,5 +1,6 @@
 library(here)
 library(tidyverse)
+library(plyr)
 
 # Load The Data:
 dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
@@ -189,8 +190,21 @@ dt6 <- subset(dt6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, 
 dt6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation, TargetLocation)
 nrow(dt6)
 # No Duplicate rows in Travel Channel
-
-
+target_count <- count(dt6, 'Target')
+target_count
+time_count <- count(dt6, 'Time')
+time_count <- time_count %>% filter(time_count$freq > 1)
+time_count
+weight_count <- count(dt6, 'Weight')
+weight_count
+sourceloc_count <- count(dt6, 'SourceLocation')
+sourceloc_count
+targetloc_count <- count(dt6, 'TargetLocation')
+targetloc_count
+dt6[duplicated(dt6[c('Target', 'Time', 'Weight', 'SourceLocation', 'TargetLocation')]), ]
+dt6[duplicated(dt6[c('Target', 'Time', 'Weight', 'SourceLocation')]), ]
+dt6[duplicated(dt6[c('Target', 'Time')]), ]
+# No rows with exactly equal Target, Time, Weight, SourceLoc and TargetLoc
 
 # Procurement Channel:
 glimpse(dt23)
