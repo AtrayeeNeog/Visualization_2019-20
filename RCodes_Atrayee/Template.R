@@ -36,6 +36,9 @@ for(i in dt6$Source){
   }
 }
 
+# List the nodes appearing in more than one Channel:
+
+
 # Analysis of the Communication channel:
 glimpse(dt01)
 unique(dt01)
