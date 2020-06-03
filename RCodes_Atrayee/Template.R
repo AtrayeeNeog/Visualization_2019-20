@@ -37,7 +37,14 @@ for(i in dt6$Source){
 }
 
 # List the nodes appearing in more than one Channel:
-
+head(dt4)
+unique(dt01$Source) #41 37 34 27 40 65 67 47 39 43 57 58 63 56 45
+unique(dt23$Source) # 67 39
+unique(dt4$Source) #0
+unique(dt5$Source) # 2 510031 552988  27 29 31  33  34  35  36 620120 37  38  39  40  41     
+# 42  43  44  45  46  47  48  49  52  53  54  55  56  57  58  59  60  61  62  63
+# 64  65  0
+unique(dt6$Source) # 78 80 77 79 82 83 84 73 75 74 39 40 41 87 85 86
 
 # Analysis of the Communication channel:
 glimpse(dt01)
