@@ -264,17 +264,22 @@ df1 %>% filter(Weight==3)
 ```
 
 
-## Nodes 39, 40, 41 appear in all Channels and also in the major Analysis wrt the 
+## Nodes 39, 40, 41 appear in the common list of nodes and also in the major Analysis wrt the Target, Time and Weight
 
+
+## Procurement Channel:
 
 ```{r}
-
+head(dt23)
 ```
 
 
 
 ```{r}
+dt23 <- subset(dt23, select = -c(SourceLocation,TargetLocation,SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
 
+dt23 %>% distinct(Source, etype, Target, Time, Weight)
+nrow(dt23)
 ```
 
 
