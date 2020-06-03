@@ -46,6 +46,50 @@ unique(dt5$Source) # 2 510031 552988  27 29 31  33  34  35  36 620120 37  38  39
 # 64  65  0
 unique(dt6$Source) # 78 80 77 79 82 83 84 73 75 74 39 40 41 87 85 86
 
+common_list <- NULL
+for (i in dt01$Source) {
+  for (j in dt23$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Source) {
+  for (j in dt4$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Source) {
+  for (j in dt5$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Source) {
+  for (j in dt6$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+common_list
+length(common_list)
+
 # Analysis of the Communication channel:
 glimpse(dt01)
 unique(dt01)
