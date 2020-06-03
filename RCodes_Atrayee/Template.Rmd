@@ -96,9 +96,5 @@ sourceloc_count <- count(dt6, 'SourceLocation')
 sourceloc_count
 targetloc_count <- count(dt6, 'TargetLocation')
 targetloc_count
-dt6[duplicated(dt6[c('Target', 'Time', 'Weight', 'SourceLocation', 'TargetLocation')]), ]
-dt6[duplicated(dt6[c('Target', 'Time', 'Weight', 'SourceLocation')]), ]
-dt6[duplicated(dt6[c('Target', 'Time')]), ]
-# No rows with exactly equal Target, Time, Weight, SourceLoc and TargetLoc
 ```
 
