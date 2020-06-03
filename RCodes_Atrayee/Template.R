@@ -202,7 +202,13 @@ sourceloc_count
 targetloc_count <- count(dt6, 'TargetLocation')
 targetloc_count
 # Extracting the top 3 most repeated values from each Column:
-target <- dt6 %>% filter(Target==71 | Target==70 | Target==69 )
+target <- dt6 %>% filter(Target==71 | Target==70 | Target==69 ) #32 vals; in order: 70,69,71
+weight <- dt6 %>% filter(Weight==1 | Weight==2 | Weight==3 ) #39 vals; in order:1,3,2
+SLoc <- dt6 %>% filter(SourceLocation==0 | SourceLocation==2 | SourceLocation==3 ) #32; in order: 3,2,0
+TLoc <- dt6 %>% filter(TargetLocation==0 | TargetLocation==3 | TargetLocation==4 ) #32; in order: 3,4,0
+time <- dt6 %>% filter(Time==15661606 | Time==12292006 | Time==15834406 |Time==24733606 | Time==26634406 | Time==30004006 ) #6 vals; in order: 15661606 (3), 12292006, 15834406, 24733606,26634406, 30004006
+df1 <- rbind(target, weight, SLoc, TLoc, time)
+df1 <- df1[!duplicated(df1), ] # 2 rows deleted
 
 
 
