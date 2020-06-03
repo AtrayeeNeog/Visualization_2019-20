@@ -283,3 +283,17 @@ nrow(dt23)
 ```
 
 
+```{r}
+unique(dt23$Source) # 67 39
+unique(dt23$Target) # 657187
+unique(dt23$Time) #9519349 11623738 11775168 13629169 14475818 15251393 15278449 17295721 19649264
+unique(dt23$Weight) #300 100 600 800
+```
+
+## Buying and selling between only 2 people: 67(Seller) and 39(Buyer). Sold only one item 657187 at different times for different prices.
+
+
+```{r}
+dt23
+```
+
