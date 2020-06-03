@@ -183,6 +183,15 @@ hist(dt6$Weight)
 unique(dt6$Weight) #2 1 3 4 5 6
 range(dt6$Weight) #1 6
 
+# Remove Duplicate rows:
+head(dt6)
+dt6 <- subset(dt6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+dt6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation, TargetLocation)
+nrow(dt6)
+# No Duplicate rows in Travel Channel
+
+
+
 # Procurement Channel:
 glimpse(dt23)
 unique(dt23)
