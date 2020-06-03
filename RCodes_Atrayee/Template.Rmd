@@ -291,9 +291,14 @@ unique(dt23$Weight) #300 100 600 800
 ```
 
 ## Buying and selling between only 2 people: 67(Seller) and 39(Buyer). Sold only one item 657187 at different times for different prices.
+## 67 and 39 appear also in the common nodes list.
 
 
 ```{r}
 dt23
+
+weight23 <- count(dt23, 'Weight')
+weight23
 ```
 
+## Item was sold most at the price of 300. 
