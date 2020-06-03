@@ -1,0 +1,104 @@
+---
+title: "TemplateAnalysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+library(plyr)
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+# Load The Data:
+dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
+head(dt)
+tail(dt)
+
+# Summarising the Data:
+summary(dt)
+nrow(dt)
+ncol(dt)
+
+# Differentiating between channels:
+dt01 <- dt %>% filter(dt$eType == 0 | dt$eType == 1) # Communication Channel
+nrow(dt01) # 563
+dt23 <- dt %>% filter(dt$eType == 2 | dt$eType == 3) # Procurement Channel
+nrow(dt23) # 18
+dt4 <- dt %>% filter(dt$eType == 4) # Co-authorship Channel
+nrow(dt4) # 1
+dt5 <- dt %>% filter(dt$eType == 5) # Demographic Channel
+nrow(dt5) # 591
+dt6 <- dt %>% filter(dt$eType == 6) # Travel Channel
+nrow(dt6) # 52
+# Highest data for Demographic, Communication and Travel Channel.
+
+
+```
+
+## Travel Channel:
+
+```{r}
+glimpse(dt6)
+unique(dt6)
+unique(dt6$eType) # 6
+unique(dt6$SourceLocation) # 3 4 2 1 0 5
+unique(dt6$TargetLocation) # 1 3 4 2 0 5
+unique(dt6$SourceLatitude) # NA
+unique(dt6$SourceLongitude) # NA
+unique(dt6$TargetLatitude) # NA
+unique(dt6$TargetLongitude) # NA
+unique(dt6$Source) #78 80 77 79 82 83 84 73 75 74 39 40 41 87 85 86
+unique(dt6$Target) #81 70 69 76 71 72
+unique(dt6$Weight) #2 1 3 4 5 6
+
+
+range(dt6$Source) # 39 87
+range(dt6$Target) # 69 81
+range(dt6$Time) # 11773606 31004806
+range(dt6$Weight) #1 6
+
+hist(dt6$Weight)
+unique(dt6$Weight) #2 1 3 4 5 6
+
+```
+
+
+## Removing Duplicates
+
+```{r}
+head(dt6)
+dt6 <- subset(dt6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+dt6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation, TargetLocation)
+nrow(dt6)
+# No Duplicate rows in Travel Channel
+```
+
+## Each variable with it's Frequency Counts:
+
+```{r}
+target_count <- count(dt6, 'Target')
+target_count
+time_count <- count(dt6, 'Time')
+time_count <- time_count %>% filter(time_count$freq > 1)
+time_count
+weight_count <- count(dt6, 'Weight')
+weight_count
+sourceloc_count <- count(dt6, 'SourceLocation')
+sourceloc_count
+targetloc_count <- count(dt6, 'TargetLocation')
+targetloc_count
+dt6[duplicated(dt6[c('Target', 'Time', 'Weight', 'SourceLocation', 'TargetLocation')]), ]
+dt6[duplicated(dt6[c('Target', 'Time', 'Weight', 'SourceLocation')]), ]
+dt6[duplicated(dt6[c('Target', 'Time')]), ]
+# No rows with exactly equal Target, Time, Weight, SourceLoc and TargetLoc
+```
+

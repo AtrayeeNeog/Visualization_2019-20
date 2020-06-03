@@ -186,8 +186,8 @@ range(dt6$Weight) #1 6
 
 # Remove Duplicate rows:
 head(dt6)
-dt6 <- subset(dt6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
-dt6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation, TargetLocation)
+dt6 <- subset(dt6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # Source and Target Latitude and Longitude columns removed as all Null.
+dt6 <- dt6[!duplicated(dt6),]
 nrow(dt6)
 # No Duplicate rows in Travel Channel
 target_count <- count(dt6, 'Target')
@@ -201,9 +201,11 @@ sourceloc_count <- count(dt6, 'SourceLocation')
 sourceloc_count
 targetloc_count <- count(dt6, 'TargetLocation')
 targetloc_count
-dt6[duplicated(dt6[c('Target', 'Time', 'Weight', 'SourceLocation', 'TargetLocation')]), ]
-dt6[duplicated(dt6[c('Target', 'Time', 'Weight', 'SourceLocation')]), ]
-dt6[duplicated(dt6[c('Target', 'Time')]), ]
+# Extracting the top 3 most repeated values from each Column:
+target <- dt6 %>% filter(Target==71 | Target==70 | Target==69 )
+
+
+
 # No rows with exactly equal Target, Time, Weight, SourceLoc and TargetLoc
 
 # Procurement Channel:
