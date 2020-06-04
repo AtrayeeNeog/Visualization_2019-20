@@ -138,3 +138,69 @@ common_list
 length(common_list)
 ```
 
+## Travel Channel:
+
+```{r}
+glimpse(qt1_6)
+unique(qt1_6)
+unique(qt1_6$eType) # 6
+unique(qt1_6$SourceLocation) # 4 3 2 1 0 5
+unique(qt1_6$TargetLocation) # 3 1 4 2 0 5
+unique(qt1_6$SourceLatitude) # 1 -25 -22 -29  33  22
+unique(qt1_6$SourceLongitude) # -165 -111   91  -13  -41  156
+unique(qt1_6$TargetLatitude) # -25 -29   1 -22  33  22
+unique(qt1_6$TargetLongitude) # -111  -13 -165   91  -41  156
+unique(qt1_6$Source)
+unique(qt1_6$Target)
+unique(qt1_6$Weight) #4 2 5 3 1
+
+
+range(qt1_6$Source) # 464459 649553
+range(qt1_6$Target) # 499467 657173
+range(qt1_6$Time) # 14845147 30224347
+income_cat_qt1 <- NULL
+
+
+hist(qt1_6$Weight)
+unique(qt1_6$Weight) #4 2 5 3 1
+range(qt1_6$Weight) #1 5
+```
+
+## Removing Duplicates:
+```{r}
+head(qt1_6)
+qt1_6 <- subset(qt1_6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+qt1_6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation, TargetLocation)
+nrow(qt1_6) #37
+# No Duplicate rows in Travel Channel
+```
+
+## Each variable with it's Frequency Counts:
+```{r}
+target_count <- count(qt1_6, 'Target')
+target_count #625756 509607 499467 561157 616453 657173
+time_count <- count(qt1_6, 'Time')
+time_count <- time_count %>% filter(time_count$freq > 1)
+time_count #16486747 18214747 21152347 24608347 30137947 30224347
+weight_count <- count(qt1_6, 'Weight')
+weight_count #2,5,1,4,3
+sourceloc_count <- count(qt1_6, 'SourceLocation')
+sourceloc_count #3,2,(0,4),1,5
+targetloc_count <- count(qt1_6, 'TargetLocation')
+targetloc_count #3,4,2,0,1,5
+```
+
+## Extracting the top 3 most repeated values from each Column:
+```{r}
+target <- qt1_6 %>% filter(Target==625756 | Target==509607 | Target==499467 ) #24 vals; 
+weight <- qt1_6 %>% filter(Weight==2 | Weight==5 | Weight==1 ) #27 vals; 
+SLoc <- qt1_6 %>% filter(SourceLocation==0 | SourceLocation==2 | SourceLocation==3 ) #32; in order: 3,2,0
+TLoc <- qt1_6 %>% filter(TargetLocation==3 | TargetLocation==2 | TargetLocation==0 | TargetLocation==4) #30; 
+time <- qt1_6 %>% filter(Time==16486747 | Time==18214747 | Time==21152347 |Time==24608347 | Time==30137947 | Time==30224347 ) #12 
+df1 <- rbind(target, weight, SLoc, TLoc, time)
+nrow(df1)
+df1 <- df1[!duplicated(df1), ] # total nodes extracted: 52
+nrow(df1)
+head(df1)
+unique(df1$Source) #16 People
+```
