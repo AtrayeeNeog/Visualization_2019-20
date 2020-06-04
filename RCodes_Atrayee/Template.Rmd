@@ -620,8 +620,8 @@ length(nodes_common)
 
 ```{r}
 nodes_common = NULL
-for (i in dt5$Source) {
-  for (j in dt$Source) {
+for (i in dt4$Source) {
+  for (j in dt5$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
