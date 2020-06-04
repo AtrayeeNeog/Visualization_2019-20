@@ -199,8 +199,8 @@ TLoc <- qt1_6 %>% filter(TargetLocation==3 | TargetLocation==2 | TargetLocation=
 time <- qt1_6 %>% filter(Time==16486747 | Time==18214747 | Time==21152347 |Time==24608347 | Time==30137947 | Time==30224347 ) #12 
 df1 <- rbind(target, weight, SLoc, TLoc, time)
 nrow(df1)
-df1 <- df1[!duplicated(df1), ] # total nodes extracted: 52
+df1 <- df1[!duplicated(df1), ] # total nodes extracted: 68
 nrow(df1)
 head(df1)
-unique(df1$Source) #16 People
+unique(df1$Source) #29 People
 ```
