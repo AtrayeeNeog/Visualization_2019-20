@@ -451,7 +451,7 @@ nodes_common # 41 37 34 27 40 65 47 39 43 57 58 63 56 45  0
 length(nodes_common)
 ```
 
-## Max common nodes overall are between Communication and Demographic.
+## Max common nodes overall are between Communication and Demographic: 15/16
 
 
 ```{r}

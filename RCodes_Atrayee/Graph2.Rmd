@@ -1,5 +1,5 @@
 ---
-title: "Graph1-Analysis"
+title: "Graph2-Analysis"
 output: html_document
 ---
 
@@ -17,9 +17,9 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r}
 # Load The Data:
-qt1 <- data.table::fread(here::here("data", "Q1-Graph1.csv"))
-head(qt1)
-tail(qt1)
+qt2 <- data.table::fread(here::here("data", "Q1-Graph2.csv"))
+head(qt2)
+tail(qt2)
 
 ```
 
@@ -27,35 +27,31 @@ tail(qt1)
 
 You can also embed plots, for example:
 
-```{r}
+```{r pressure}
 # Summarising the Data:
-summary(qt1)
-nrow(qt1) #1216
-ncol(qt1) #11
-
+summary(qt2)
+nrow(qt2) #1300
+ncol(qt2) #11
 ```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 ```{r}
 # Differentiating between channels:
-qt1_01 <- qt1 %>% filter(qt1$eType == 0 | qt1$eType == 1) # Communication Channel
-nrow(qt1_01) # 318
-qt1_23 <- qt1 %>% filter(qt1$eType == 2 | qt1$eType == 3) # Procurement Channel
-nrow(qt1_23) # 14
-qt1_4 <- qt1 %>% filter(qt1$eType == 4) # Co-authorship Channel
-nrow(qt1_4) # 1
-qt1_5 <- qt1 %>% filter(qt1$eType == 5) # Demographic Channel
-nrow(qt1_5) # 846
-qt1_6 <- qt1 %>% filter(qt1$eType == 6) # Travel Channel
-nrow(qt1_6) # 37
+qt2_01 <- qt1 %>% filter(qt1$eType == 0 | qt1$eType == 1) # Communication Channel
+nrow(qt2_01) # 318
+qt2_23 <- qt1 %>% filter(qt1$eType == 2 | qt1$eType == 3) # Procurement Channel
+nrow(qt2_23) # 14
+qt2_4 <- qt1 %>% filter(qt1$eType == 4) # Co-authorship Channel
+nrow(qt2_4) # 1
+qt2_5 <- qt1 %>% filter(qt1$eType == 5) # Demographic Channel
+nrow(qt2_5) # 846
+qt2_6 <- qt1 %>% filter(qt1$eType == 6) # Travel Channel
+nrow(qt2_6) # 37
 ```
-
 
 ```{r}
 common_list <- NULL
-for (i in qt1_01$Source) {
-  for (j in qt1_23$Source) {
+for (i in qt2_01$Source) {
+  for (j in qt2_23$Source) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -64,8 +60,8 @@ for (i in qt1_01$Source) {
   }
   
 }
-for (i in qt1_01$Source) {
-  for (j in qt1_4$Source) {
+for (i in qt2_01$Source) {
+  for (j in qt2_4$Source) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -74,8 +70,8 @@ for (i in qt1_01$Source) {
   }
   
 }
-for (i in qt1_01$Source) {
-  for (j in qt1_5$Source) {
+for (i in qt2_01$Source) {
+  for (j in qt2_5$Source) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -84,8 +80,8 @@ for (i in qt1_01$Source) {
   }
   
 }
-for (i in qt1_01$Source) {
-  for (j in qt1_6$Source) {
+for (i in qt2_01$Source) {
+  for (j in qt2_6$Source) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -94,8 +90,8 @@ for (i in qt1_01$Source) {
   }
   
 }
-for (i in qt1_01$Target) {
-  for (j in qt1_23$Target) {
+for (i in qt2_01$Target) {
+  for (j in qt2_23$Target) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -104,8 +100,8 @@ for (i in qt1_01$Target) {
   }
   
 }
-for (i in qt1_01$Target) {
-  for (j in qt1_4$Target) {
+for (i in qt2_01$Target) {
+  for (j in qt2_4$Target) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -114,8 +110,8 @@ for (i in qt1_01$Target) {
   }
   
 }
-for (i in qt1_01$Target) {
-  for (j in qt1_5$Target) {
+for (i in qt2_01$Target) {
+  for (j in qt2_5$Target) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -124,8 +120,8 @@ for (i in qt1_01$Target) {
   }
   
 }
-for (i in qt1_01$Target) {
-  for (j in qt1_6$Target) {
+for (i in qt2_01$Target) {
+  for (j in qt2_6$Target) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -138,76 +134,79 @@ common_list
 length(common_list)
 ```
 
+## Excatly same number as Template
+
 ## Travel Channel:
 
 ```{r}
-glimpse(qt1_6)
-unique(qt1_6)
-unique(qt1_6$eType) # 6
-unique(qt1_6$SourceLocation) # 4 3 2 1 0 5
-unique(qt1_6$TargetLocation) # 3 1 4 2 0 5
-unique(qt1_6$SourceLatitude) # 1 -25 -22 -29  33  22
-unique(qt1_6$SourceLongitude) # -165 -111   91  -13  -41  156
-unique(qt1_6$TargetLatitude) # -25 -29   1 -22  33  22
-unique(qt1_6$TargetLongitude) # -111  -13 -165   91  -41  156
-unique(qt1_6$Source)
-unique(qt1_6$Target)
-unique(qt1_6$Weight) #4 2 5 3 1
+glimpse(qt2_6)
+unique(qt2_6)
+unique(qt2_6$eType) # 6
+unique(qt2_6$SourceLocation) # 4 3 2 1 0 5
+unique(qt2_6$TargetLocation) # 3 1 4 2 0 5
+unique(qt2_6$SourceLatitude) # 1 -25 -22 -29  33  22
+unique(qt2_6$SourceLongitude) # -165 -111   91  -13  -41  156
+unique(qt2_6$TargetLatitude) # -25 -29   1 -22  33  22
+unique(qt2_6$TargetLongitude) # -111  -13 -165   91  -41  156
+unique(qt2_6$Source)
+unique(qt2_6$Target)
+unique(qt2_6$Weight) #4 2 5 3 1
 
 
-range(qt1_6$Source) # 464459 649553
-range(qt1_6$Target) # 499467 657173
-range(qt1_6$Time) # 14845147 30224347
+range(qt2_6$Source) # 464459 649553
+range(qt2_6$Target) # 499467 657173
+range(qt2_6$Time) # 14845147 30224347
 income_cat_qt1 <- NULL
 
 
-hist(qt1_6$Weight)
-unique(qt1_6$Weight) #4 2 5 3 1
-range(qt1_6$Weight) #1 5
+hist(qt2_6$Weight)
+unique(qt2_6$Weight) #4 2 5 3 1
+range(qt2_6$Weight) #1 5
 ```
 
 ## Removing Duplicates:
+
 ```{r}
-head(qt1_6)
-qt1_6 <- subset(qt1_6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
-qt1_6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation, TargetLocation)
-nrow(qt1_6) #37
+head(qt2_6)
+qt2_6 <- subset(qt2_6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+qt2_6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation, TargetLocation)
+nrow(qt2_6) #37
 # No Duplicate rows in Travel Channel
 ```
 
 ## Each variable with it's Frequency Counts:
+
 ```{r}
-target_count <- count(qt1_6, 'Target')
-target_count #625756 509607 499467 561157 616453 657173
-time_count <- count(qt1_6, 'Time')
+target_count <- count(qt2_6, 'Target')
+target_count #625756 509607 499467 561157 657173 616453
+time_count <- count(qt2_6, 'Time')
 time_count <- time_count %>% filter(time_count$freq > 1)
 time_count #16486747 18214747 21152347 24608347 30137947 30224347
-weight_count <- count(qt1_6, 'Weight')
+weight_count <- count(qt2_6, 'Weight')
 weight_count #2,5,1,4,3
-sourceloc_count <- count(qt1_6, 'SourceLocation')
+sourceloc_count <- count(qt2_6, 'SourceLocation')
 sourceloc_count #3,2,(0,4),1,5
-targetloc_count <- count(qt1_6, 'TargetLocation')
+targetloc_count <- count(qt2_6, 'TargetLocation')
 targetloc_count #3,4,2,0,1,5
 ```
 
 ## Extracting the top 3 most repeated values from each Column:
 
 ```{r}
-target <- qt1_6 %>% filter(Target==625756 | Target==509607 | Target==499467 ) #24 vals; 
-weight <- qt1_6 %>% filter(Weight==2 | Weight==5 | Weight==1 ) #27 vals; 
-SLoc <- qt1_6 %>% filter(SourceLocation==0 | SourceLocation==2 | SourceLocation==3 ) #32; in order: 3,2,0
-TLoc <- qt1_6 %>% filter(TargetLocation==3 | TargetLocation==2 | TargetLocation==0 | TargetLocation==4) #30; 
-time <- qt1_6 %>% filter(Time==16486747 | Time==18214747 | Time==21152347 |Time==24608347 | Time==30137947 | Time==30224347 ) #12 
+target <- qt2_6 %>% filter(Target==625756 | Target==509607 | Target==499467 ) #24 vals; 
+weight <- qt2_6 %>% filter(Weight==2 | Weight==5 | Weight==1 ) #27 vals; 
+SLoc <- qt2_6 %>% filter(SourceLocation==0 | SourceLocation==2 | SourceLocation==3 ) #32; in order: 3,2,0
+TLoc <- qt2_6 %>% filter(TargetLocation==3 | TargetLocation==2 | TargetLocation==0 | TargetLocation==4) #30; 
+time <- qt2_6 %>% filter(Time==16486747 | Time==18214747 | Time==21152347 |Time==24608347 | Time==30137947 | Time==30224347 ) #12 
 df1 <- rbind(target, weight, SLoc, TLoc, time)
-nrow(df1)
+nrow(df1) #117
 df1 <- df1[!duplicated(df1), ] # total nodes extracted: 68
-nrow(df1)
+nrow(df1) #37
 head(df1)
-unique(df1$Source) #29 People
+unique(df1$Source) #13 People
 ```
 
-
-## ## Target, Time, Weight:
+## Target, Time, Weight:
 
 ```{r}
 # Target:70
@@ -220,19 +219,7 @@ df1 %>% filter(Target==625756 & SourceLocation==0) #464459,568093,635665
 ### 1. 3 groups based Source Location and Time
 ### 2. 629627,534034,599441,585212 come from Country 4 and have travelled within days of each other
 ### 3. 643925,649553 come from country 4 and have travelled within days of each other
-### 4. 464459,568093,635665 come from country 0 and have travelled within days of each other 
-
-```{r}
-# Target:509607
-df1 %>% filter(Target==509607) #8 SourceLocation: 2 and 5
-df1 %>% filter(Target==509607 & SourceLocation==2) #599441,585212,538892,542965,572391
-df1 %>% filter(Target==509607 & SourceLocation==5) #649553,570284,643925
-```
-
-## For Target=509607, 8 nodes are found
-### 1. 3 groups based Source Location and Time
-### 2. 599441,585212,538892,542965,572391 come from Country 2 and have travelled within days of each other
-### 3. 649553,570284,643925 come from country 5 and have travelled within days of each other
+### 4. 464459,568093,635665 come from country 0 and have travelled within days of each other
 
 ```{r}
 # Target:499467
@@ -254,7 +241,6 @@ df1 %>% filter(Time==21152347)
 df1 %>% filter(Time==24608347)
 df1 %>% filter(Time==30137947)
 df1 %>% filter(Time==30224347)
-
 ```
 
 ```{r}
@@ -264,30 +250,28 @@ df1 %>% filter(Weight==2)
 df1 %>% filter(Weight==5)
 ```
 
-
 ## Procurement Channel:
+
 ```{r}
-nrow(qt1_23)
-qt1_23 <- subset(qt1_23, select = -c(SourceLocation,TargetLocation,SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+nrow(qt2_23)
+qt2_23 <- subset(qt2_23, select = -c(SourceLocation,TargetLocation,SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
 
-qt1_23 %>% distinct(Source, etype, Target, Time, Weight)
-nrow(qt1_23)
-head(qt1_23)
-
+qt2_23 %>% distinct(Source, etype, Target, Time, Weight)
+nrow(qt2_23)
+head(qt2_23)
 ```
 
 ```{r}
-unique(qt1_23$Source) 
-unique(qt1_23$Target)
+unique(qt2_23$Source) 
+unique(qt2_23$Target)
 ```
-
-## 550287(Seller) 512397 (Buyer) 657187 (Item sold)
 
 ## Common nodes Analysis:
+
 ```{r}
 nodes_common = NULL
-for (i in qt1_01$Source) {
-  for (j in qt1_6$Source) {
+for (i in qt2_01$Source) {
+  for (j in qt2_6$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -296,8 +280,8 @@ for (i in qt1_01$Source) {
   }
   
 }
-for (i in qt1_01$Target) {
-  for (j in qt1_6$Target) {
+for (i in qt2_01$Target) {
+  for (j in qt2_6$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -310,12 +294,10 @@ nodes_common #568093 635665 464459
 length(nodes_common)
 ```
 
-## 568093 635665 464459 are coomon nodes for communication channel. From previous analysis we come to know that they probably always travel together. Much like Template
-
 ```{r}
 nodes_common = NULL
-for (i in qt1_01$Source) {
-  for (j in qt1_4$Source) {
+for (i in qt2_01$Source) {
+  for (j in qt2_4$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -324,8 +306,8 @@ for (i in qt1_01$Source) {
   }
   
 }
-for (i in qt1_01$Target) {
-  for (j in qt1_4$Target) {
+for (i in qt2_01$Target) {
+  for (j in qt2_4$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -338,12 +320,10 @@ nodes_common #616050
 length(nodes_common)
 ```
 
-## 1 common node - not same as Template
-
 ```{r}
 nodes_common = NULL
-for (i in qt1_01$Source) {
-  for (j in qt1_5$Source) {
+for (i in qt2_01$Source) {
+  for (j in qt2_5$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -352,8 +332,8 @@ for (i in qt1_01$Source) {
   }
   
 }
-for (i in qt1_01$Target) {
-  for (j in qt1_5$Target) {
+for (i in qt2_01$Target) {
+  for (j in qt2_5$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -366,12 +346,10 @@ nodes_common # 599956 490041 533140 568093 632150 635665 616050 512397 623295 58
 length(nodes_common)
 ```
 
-## Max nodes common in between Coomunication and Template: 18/19
-
 ```{r}
 nodes_common = NULL
-for (i in qt1_01$Source) {
-  for (j in qt1_23$Source) {
+for (i in qt2_01$Source) {
+  for (j in qt2_23$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -380,8 +358,8 @@ for (i in qt1_01$Source) {
   }
   
 }
-for (i in qt1_01$Target) {
-  for (j in qt1_23$Target) {
+for (i in qt2_01$Target) {
+  for (j in qt2_23$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -394,13 +372,12 @@ nodes_common # 512397 550287
 length(nodes_common)
 ```
 
-## Same as Template
-
 ## Travel Channel:
+
 ```{r}
 nodes_common = NULL
-for (i in qt1_6$Source) {
-  for (j in qt1_23$Source) {
+for (i in qt2_6$Source) {
+  for (j in qt2_23$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -409,8 +386,8 @@ for (i in qt1_6$Source) {
   }
   
 }
-for (i in qt1_6$Target) {
-  for (j in qt1_23$Target) {
+for (i in qt2_6$Target) {
+  for (j in qt2_23$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -423,12 +400,10 @@ nodes_common #Null
 length(nodes_common)
 ```
 
-## Template has 1 common
-
 ```{r}
 nodes_common = NULL
-for (i in qt1_6$Source) {
-  for (j in qt1_4$Source) {
+for (i in qt2_6$Source) {
+  for (j in qt2_4$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -437,8 +412,8 @@ for (i in qt1_6$Source) {
   }
   
 }
-for (i in qt1_6$Target) {
-  for (j in qt1_4$Target) {
+for (i in qt2_6$Target) {
+  for (j in qt2_4$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -450,12 +425,12 @@ for (i in qt1_6$Target) {
 nodes_common #Null
 length(nodes_common)
 ```
-## Template has 1 value
+
 
 ```{r}
 nodes_common = NULL
-for (i in qt1_6$Source) {
-  for (j in qt1_5$Source) {
+for (i in qt2_6$Source) {
+  for (j in qt2_5$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -464,8 +439,8 @@ for (i in qt1_6$Source) {
   }
   
 }
-for (i in qt1_6$Target) {
-  for (j in qt1_5$Target) {
+for (i in qt2_6$Target) {
+  for (j in qt2_5$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -478,14 +453,12 @@ nodes_common #464459 568093 635665
 length(nodes_common)
 ```
 
-## Same as Template. Similar to Template the nodes which are common appear also in the previous analysis of the Travel Channel.
-
-
 ## Procurement Channel:
+
 ```{r}
 nodes_common = NULL
-for (i in qt1_23$Source) {
-  for (j in qt1_4$Source) {
+for (i in qt2_23$Source) {
+  for (j in qt2_4$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -494,8 +467,8 @@ for (i in qt1_23$Source) {
   }
   
 }
-for (i in qt1_23$Target) {
-  for (j in qt1_4$Target) {
+for (i in qt2_23$Target) {
+  for (j in qt2_4$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -508,12 +481,11 @@ nodes_common #Null
 length(nodes_common)
 ```
 
-## Unlike Template not similar
 
 ```{r}
 nodes_common = NULL
-for (i in qt1_23$Source) {
-  for (j in qt1_5$Source) {
+for (i in qt2_23$Source) {
+  for (j in qt2_5$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -522,8 +494,8 @@ for (i in qt1_23$Source) {
   }
   
 }
-for (i in qt1_23$Target) {
-  for (j in qt1_5$Target) {
+for (i in qt2_23$Target) {
+  for (j in qt2_5$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -540,8 +512,8 @@ length(nodes_common)
 
 ```{r}
 nodes_common = NULL
-for (i in qt1_4$Source) {
-  for (j in qt1_5$Source) {
+for (i in qt2_4$Source) {
+  for (j in qt2_5$Source) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -550,8 +522,8 @@ for (i in qt1_4$Source) {
   }
   
 }
-for (i in qt1_23$Target) {
-  for (j in qt1_5$Target) {
+for (i in qt2_23$Target) {
+  for (j in qt2_5$Target) {
     if(i==j){
       nodes_common <- append(nodes_common,i)
       nodes_common <- unique(nodes_common)
@@ -564,9 +536,11 @@ nodes_common #616050
 length(nodes_common)
 ```
 
+
 ## Nodes which have travelled only once:
 
 ```{r}
-count(qt1_6, "Source") #538892,542965,572391 have travelled only once
+count(qt2_6, "Source") #538892,542965,572391 have travelled only once
 ```
+
 
