@@ -65,7 +65,7 @@ for (i in qt1_01$Source) {
   
 }
 for (i in qt1_01$Source) {
-  for (j in dt4$Source) {
+  for (j in qt1_4$Source) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
@@ -86,6 +86,46 @@ for (i in qt1_01$Source) {
 }
 for (i in qt1_01$Source) {
   for (j in qt1_6$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt1_01$Target) {
+  for (j in qt1_23$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt1_01$Target) {
+  for (j in qt1_4$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt1_01$Target) {
+  for (j in qt1_5$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt1_01$Target) {
+  for (j in qt1_6$Target) {
     if(i==j){
       common_list <- append(common_list,i)
       common_list <- unique(common_list)
