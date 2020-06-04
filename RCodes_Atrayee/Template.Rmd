@@ -302,3 +302,12 @@ weight23
 ```
 
 ## Item was sold most at the price of 300. 
+
+
+## Coomunication Channel:
+
+```{r}
+head(dt01)
+unique(dt01$SourceLocation)
+```
+

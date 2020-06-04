@@ -1,0 +1,100 @@
+---
+title: "Graph1-Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+# Load The Data:
+qt1 <- data.table::fread(here::here("data", "Q1-Graph1.csv"))
+head(qt1)
+tail(qt1)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+# Summarising the Data:
+summary(qt1)
+nrow(qt1) #1216
+ncol(qt1) #11
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r}
+# Differentiating between channels:
+qt1_01 <- qt1 %>% filter(qt1$eType == 0 | qt1$eType == 1) # Communication Channel
+nrow(qt1_01) # 318
+qt1_23 <- qt1 %>% filter(qt1$eType == 2 | qt1$eType == 3) # Procurement Channel
+nrow(qt1_23) # 14
+qt1_4 <- qt1 %>% filter(qt1$eType == 4) # Co-authorship Channel
+nrow(qt1_4) # 1
+qt1_5 <- qt1 %>% filter(qt1$eType == 5) # Demographic Channel
+nrow(qt1_5) # 846
+qt1_6 <- qt1 %>% filter(qt1$eType == 6) # Travel Channel
+nrow(qt1_6) # 37
+```
+
+
+```{r}
+common_list <- NULL
+for (i in qt1_01$Source) {
+  for (j in qt1_23$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt1_01$Source) {
+  for (j in dt4$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt1_01$Source) {
+  for (j in qt1_5$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt1_01$Source) {
+  for (j in qt1_6$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+common_list
+length(common_list)
+```
+
