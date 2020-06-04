@@ -44,6 +44,11 @@ nrow(dt6) # 52
 
 ```
 ```{r}
+dt01[]
+```
+
+
+```{r}
 common_list <- NULL
 for (i in dt01$Source) {
   for (j in dt23$Source) {
@@ -87,6 +92,11 @@ for (i in dt01$Source) {
 }
 common_list
 length(common_list)
+```
+
+
+```{r}
+dt4
 ```
 
 
@@ -159,6 +169,7 @@ nrow(df1)
 df1 <- df1[!duplicated(df1), ] # total nodes extracted: 52
 nrow(df1)
 head(df1)
+unique(df1$Source) #16 People
 ```
 
 
@@ -309,5 +320,7 @@ weight23
 ```{r}
 head(dt01)
 unique(dt01$SourceLocation)
+unique(dt01$Target)
+
 ```
 
