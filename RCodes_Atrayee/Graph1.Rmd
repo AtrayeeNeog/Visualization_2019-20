@@ -204,3 +204,13 @@ nrow(df1)
 head(df1)
 unique(df1$Source) #29 People
 ```
+
+
+## ## Target, Time, Weight:
+```{r}
+# Target:70
+df1 %>% filter(Target==625756) #9 SourceLocation: 0 and 4
+df1 %>% filter(Target==625756 & SourceLocation==4) #629627,534034,599441,585212,643925,649553
+df1 %>% filter(Target==625756 & SourceLocation==0) #464459,568093,635665
+```
+
