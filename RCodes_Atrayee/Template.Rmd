@@ -90,6 +90,46 @@ for (i in dt01$Source) {
   }
   
 }
+for (i in dt01$Target) {
+  for (j in dt23$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Target) {
+  for (j in dt4$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Target) {
+  for (j in dt5$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in dt01$Target) {
+  for (j in dt6$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
 common_list
 length(common_list)
 ```
@@ -315,7 +355,7 @@ weight23
 ## Item was sold most at the price of 300. 
 
 
-## Coomunication Channel:
+## Communication Channel:
 
 ```{r}
 head(dt01)
@@ -323,4 +363,121 @@ unique(dt01$SourceLocation)
 unique(dt01$Target)
 
 ```
+
+
+```{r}
+nodes_common = NULL
+for (i in dt01$Source) {
+  for (j in dt6$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt01$Target) {
+  for (j in dt6$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common
+length(nodes_common)
+
+#41 40 39
+```
+
+## 39, 40, 41 are common nodes for communication and travel channel.From previous analysis we know that 39, 40 and 41 probably always travel together.
+
+
+```{r}
+nodes_common = NULL
+for (i in dt01$Source) {
+  for (j in dt4$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt01$Target) {
+  for (j in dt4$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common
+length(nodes_common)
+```
+
+## No nodes common between Communication and Co-Authorship channel.
+
+
+```{r}
+nodes_common = NULL
+for (i in dt01$Source) {
+  for (j in dt5$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt01$Target) {
+  for (j in dt5$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common # 41 37 34 27 40 65 47 39 43 57 58 63 56 45  0
+length(nodes_common)
+```
+
+## Max common nodes overall are between Communication and Demographic.
+
+
+```{r}
+nodes_common = NULL
+for (i in dt01$Source) {
+  for (j in dt23$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt01$Target) {
+  for (j in dt23$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common # 67 39
+length(nodes_common)
+```
+
 
