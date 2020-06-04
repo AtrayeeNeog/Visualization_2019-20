@@ -481,3 +481,166 @@ length(nodes_common)
 ```
 
 
+## Travel Channel:
+
+```{r}
+nodes_common = NULL
+for (i in dt6$Source) {
+  for (j in dt23$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt6$Target) {
+  for (j in dt23$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #39
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in dt6$Source) {
+  for (j in dt4$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt6$Target) {
+  for (j in dt4$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #39
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in dt6$Source) {
+  for (j in dt5$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt6$Target) {
+  for (j in dt5$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #39 40 41
+length(nodes_common)
+```
+
+
+## Procurement Channel:
+
+```{r}
+nodes_common = NULL
+for (i in dt23$Source) {
+  for (j in dt4$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt23$Target) {
+  for (j in dt4$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #39 40 41
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in dt23$Source) {
+  for (j in dt5$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt23$Target) {
+  for (j in dt5$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #39
+length(nodes_common)
+```
+
+## Demographic Channel:
+
+```{r}
+nodes_common = NULL
+for (i in dt5$Source) {
+  for (j in dt$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in dt23$Target) {
+  for (j in dt5$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #39
+length(nodes_common)
+```
+
