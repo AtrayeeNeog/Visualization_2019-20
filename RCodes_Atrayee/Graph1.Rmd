@@ -567,6 +567,12 @@ length(nodes_common)
 ## Nodes which have travelled only once:
 
 ```{r}
-count(qt1_6, "Source") #538892,542965,572391 have travelled only once
+count(qt1_6, "Source") #538892,542965,572391 have travelled only once; Not in the common list
+```
+
+## Communication Channel:
+
+```{r}
+
 ```
 

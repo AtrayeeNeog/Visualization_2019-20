@@ -647,7 +647,7 @@ length(nodes_common)
 ## Nodes which travelled only once:
 
 ```{r}
-count(dt6, "Source") #82,83,84 have travelled only once
+count(dt6, "Source") #82,83,84 have travelled only once; Do not appear in the common list
 ```
 
 

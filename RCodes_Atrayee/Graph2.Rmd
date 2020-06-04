@@ -134,34 +134,32 @@ common_list
 length(common_list)
 ```
 
-## Excatly same number as Template
-
 ## Travel Channel:
 
 ```{r}
 glimpse(qt2_6)
 unique(qt2_6)
-unique(qt2_6$eType) # 6
-unique(qt2_6$SourceLocation) # 4 3 2 1 0 5
-unique(qt2_6$TargetLocation) # 3 1 4 2 0 5
-unique(qt2_6$SourceLatitude) # 1 -25 -22 -29  33  22
-unique(qt2_6$SourceLongitude) # -165 -111   91  -13  -41  156
-unique(qt2_6$TargetLatitude) # -25 -29   1 -22  33  22
-unique(qt2_6$TargetLongitude) # -111  -13 -165   91  -41  156
+unique(qt2_6$eType) 
+unique(qt2_6$SourceLocation) 
+unique(qt2_6$TargetLocation) 
+unique(qt2_6$SourceLatitude) 
+unique(qt2_6$SourceLongitude) 
+unique(qt2_6$TargetLatitude) 
+unique(qt2_6$TargetLongitude) 
 unique(qt2_6$Source)
 unique(qt2_6$Target)
-unique(qt2_6$Weight) #4 2 5 3 1
+unique(qt2_6$Weight) 
 
 
-range(qt2_6$Source) # 464459 649553
-range(qt2_6$Target) # 499467 657173
-range(qt2_6$Time) # 14845147 30224347
+range(qt2_6$Source) 
+range(qt2_6$Target) 
+range(qt2_6$Time) 
 income_cat_qt1 <- NULL
 
 
 hist(qt2_6$Weight)
-unique(qt2_6$Weight) #4 2 5 3 1
-range(qt2_6$Weight) #1 5
+unique(qt2_6$Weight) 
+range(qt2_6$Weight) 
 ```
 
 ## Removing Duplicates:
@@ -200,7 +198,7 @@ TLoc <- qt2_6 %>% filter(TargetLocation==3 | TargetLocation==2 | TargetLocation=
 time <- qt2_6 %>% filter(Time==16486747 | Time==18214747 | Time==21152347 |Time==24608347 | Time==30137947 | Time==30224347 ) #12 
 df1 <- rbind(target, weight, SLoc, TLoc, time)
 nrow(df1) #117
-df1 <- df1[!duplicated(df1), ] # total nodes extracted: 68
+df1 <- df1[!duplicated(df1), ]
 nrow(df1) #37
 head(df1)
 unique(df1$Source) #13 People
@@ -223,9 +221,9 @@ df1 %>% filter(Target==625756 & SourceLocation==0) #464459,568093,635665
 
 ```{r}
 # Target:499467
-df1 %>% filter(Target==499467) #7 SourceLocation: 2 and 5
-df1 %>% filter(Target==499467 & SourceLocation==2) #534034,629627,585212,599441
-df1 %>% filter(Target==499467 & SourceLocation==5) #635665,464459,568093
+df1 %>% filter(Target==499467) #7 SourceLocation: 1 and 3
+df1 %>% filter(Target==499467 & SourceLocation==1) #534034,629627,585212,599441
+df1 %>% filter(Target==499467 & SourceLocation==3) #635665,464459,568093
 ```
 
 ## For Target=499467, 7 nodes are found
@@ -265,6 +263,8 @@ head(qt2_23)
 unique(qt2_23$Source) 
 unique(qt2_23$Target)
 ```
+
+## 550287(Seller) 512397 (Buyer) 657187 (Item sold)
 
 ## Common nodes Analysis:
 
@@ -540,7 +540,7 @@ length(nodes_common)
 ## Nodes which have travelled only once:
 
 ```{r}
-count(qt2_6, "Source") #538892,542965,572391 have travelled only once
+count(qt2_6, "Source") #538892,542965,572391 have travelled only once; Not in the common list
 ```
 
 
