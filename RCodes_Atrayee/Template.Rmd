@@ -387,10 +387,10 @@ for (i in dt01$Target) {
   }
   
 }
-nodes_common
+nodes_common #41 40 39
 length(nodes_common)
 
-#41 40 39
+
 ```
 
 ## 39, 40, 41 are common nodes for communication and travel channel.From previous analysis we know that 39, 40 and 41 probably always travel together.
@@ -642,5 +642,21 @@ for (i in dt23$Target) {
 }
 nodes_common #39
 length(nodes_common)
+```
+
+## Nodes which travelled only once:
+
+```{r}
+count(dt6, "Source") #82,83,84 have travelled only once
+```
+
+
+```{r}
+
+```
+
+
+```{r}
+
 ```
 
