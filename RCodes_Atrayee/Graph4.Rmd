@@ -1,0 +1,492 @@
+---
+title: "Graph4-Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+# Load The Data:
+qt4 <- data.table::fread(here::here("data", "Q1-Graph4.csv"))
+head(qt4)
+tail(qt4)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+# Summarising the Data:
+summary(qt4)
+nrow(qt4) #1300
+ncol(qt4) #11
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+# Differentiating between channels:
+qt4_01 <- qt4 %>% filter(qt4$eType == 0 | qt4$eType == 1) # Communication Channel
+nrow(qt4_01) # 318
+qt4_23 <- qt4 %>% filter(qt4$eType == 2 | qt4$eType == 3) # Procurement Channel
+nrow(qt4_23) # 14
+qt4_4 <- qt4 %>% filter(qt4$eType == 4) # Co-authorship Channel
+nrow(qt4_4) # 1
+qt4_5 <- qt4 %>% filter(qt4$eType == 5) # Demographic Channel
+nrow(qt4_5) # 846
+qt4_6 <- qt4 %>% filter(qt4$eType == 6) # Travel Channel
+nrow(qt4_6) # 37
+```
+
+
+```{r}
+common_list <- NULL
+for (i in qt4_01$Source) {
+  for (j in qt4_23$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Source) {
+  for (j in qt4_4$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Source) {
+  for (j in qt4_5$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Source) {
+  for (j in qt4_6$Source) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Target) {
+  for (j in qt4_23$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Target) {
+  for (j in qt4_4$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Target) {
+  for (j in qt4_5$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Target) {
+  for (j in qt4_6$Target) {
+    if(i==j){
+      common_list <- append(common_list,i)
+      common_list <- unique(common_list)
+    }
+    
+  }
+  
+}
+common_list
+length(common_list)
+```
+
+
+```{r}
+glimpse(qt4_6)
+unique(qt4_6)
+unique(qt4_6$eType) 
+unique(qt4_6$SourceLocation) 
+unique(qt4_6$TargetLocation) 
+unique(qt4_6$SourceLatitude) 
+unique(qt4_6$SourceLongitude) 
+unique(qt4_6$TargetLatitude) 
+unique(qt4_6$TargetLongitude) 
+unique(qt4_6$Source)
+unique(qt4_6$Target)
+unique(qt4_6$Weight) 
+
+
+range(qt4_6$Source) 
+range(qt4_6$Target) 
+range(qt4_6$Time) 
+income_cat_qt4 <- NULL
+
+
+hist(qt4_6$Weight)
+unique(qt4_6$Weight) 
+range(qt4_6$Weight) 
+```
+
+```{r}
+head(qt4_6)
+qt4_6 <- subset(qt4_6, select = -c(SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+qt4_6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation, TargetLocation)
+nrow(qt4_6) #115
+# No Duplicate rows in Travel Channel
+```
+
+```{r}
+target_count <- count(qt4_6, 'Target')
+target_count #625756 561157 616453 509607 (499467 657173)
+time_count <- count(qt4_6, 'Time')
+time_count <- time_count %>% filter(time_count$freq > 1)
+time_count #16486747 18214747 21152347 24608347 30137947 30224347
+weight_count <- count(qt4_6, 'Weight')
+weight_count #-1,4,(1,5),(3,6)
+sourceloc_count <- count(qt4_6, 'SourceLocation')
+sourceloc_count #0,3,2,1,(4,5)
+targetloc_count <- count(qt4_6, 'TargetLocation')
+targetloc_count #3,0,5,4,(1,2)
+```
+
+## Frequnecy are much larger than the Template. 
+## Time has only frequencies of 5 for all.
+## 
+
+
+```{r}
+target <- qt4_6 %>% filter(Target==625756 | Target==561157 | Target==616453 ) #24 vals; 
+weight <- qt4_6 %>% filter(Weight==-1 | Weight==4 | Weight==1 | Weight==5 ) #27 vals; 
+SLoc <- qt4_6 %>% filter(SourceLocation==0 | SourceLocation==3 | SourceLocation==2 ) #32; in order: 3,2,0
+TLoc <- qt4_6 %>% filter(TargetLocation==3 | TargetLocation==0 | TargetLocation==5 | TargetLocation==4) #30; 
+time <- qt4_6 %>% filter(Time==16486747 | Time==18214747 | Time==21152347 |Time==24608347 | Time==30137947 | Time==30224347 ) #12 
+df1 <- rbind(target, weight, SLoc, TLoc, time)
+nrow(df1) #117
+df1 <- df1[!duplicated(df1), ]
+nrow(df1) #37
+head(df1)
+unique(df1$Source) #13 People
+```
+
+
+```{r}
+# Target:70
+df1 %>% filter(Target==625756) #9 SourceLocation: 0 and 4
+df1 %>% filter(Target==625756 & SourceLocation==4) #629627,534034,599441,585212,643925,649553
+df1 %>% filter(Target==625756 & SourceLocation==0) #464459,568093,635665
+```
+
+```{r}
+# Target:499467
+df1 %>% filter(Target==499467) #7 SourceLocation: 1 and 3
+df1 %>% filter(Target==499467 & SourceLocation==1) #534034,629627,585212,599441
+df1 %>% filter(Target==499467 & SourceLocation==3) #635665,464459,568093
+```
+
+```{r}
+# Time: 16486747 18214747 21152347 24608347 30137947 30224347
+df1 %>% filter(Time==16486747)
+df1 %>% filter(Time==18214747)
+df1 %>% filter(Time==21152347)
+df1 %>% filter(Time==24608347)
+df1 %>% filter(Time==30137947)
+df1 %>% filter(Time==30224347)
+```
+
+```{r}
+# Weight:1
+df1 %>% filter(Weight==1)
+df1 %>% filter(Weight==2)
+df1 %>% filter(Weight==5)
+```
+
+```{r}
+nrow(qt4_23)
+qt4_23 <- subset(qt4_23, select = -c(SourceLocation,TargetLocation,SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # Source and Target Latitude and Longitude columns removed as all Null.
+
+qt4_23 %>% distinct(Source, etype, Target, Time, Weight)
+nrow(qt4_23)
+head(qt4_23)
+```
+
+
+```{r}
+unique(qt4_23$Source) 
+unique(qt4_23$Target)
+```
+
+
+```{r}
+nodes_common = NULL
+for (i in qt4_01$Source) {
+  for (j in qt4_6$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Target) {
+  for (j in qt4_6$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #568093 635665 464459
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in qt4_01$Source) {
+  for (j in qt4_4$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Target) {
+  for (j in qt4_4$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #616050
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in qt4_01$Source) {
+  for (j in qt4_5$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Target) {
+  for (j in qt4_5$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common # 599956 490041 533140 568093 632150 635665 616050 512397 623295 589639 550361 596193 464459 492777 570411 640464 591682 493044
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in qt4_01$Source) {
+  for (j in qt4_23$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_01$Target) {
+  for (j in qt4_23$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common # 512397 550287
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in qt4_6$Source) {
+  for (j in qt4_23$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_6$Target) {
+  for (j in qt4_23$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #Null
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in qt4_6$Source) {
+  for (j in qt4_4$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_6$Target) {
+  for (j in qt4_4$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #Null
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in qt4_23$Source) {
+  for (j in qt4_4$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_23$Target) {
+  for (j in qt4_4$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #Null 
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in qt4_23$Source) {
+  for (j in qt4_5$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_23$Target) {
+  for (j in qt4_5$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #512397
+length(nodes_common)
+```
+
+```{r}
+nodes_common = NULL
+for (i in qt4_4$Source) {
+  for (j in qt4_5$Source) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+for (i in qt4_23$Target) {
+  for (j in qt4_5$Target) {
+    if(i==j){
+      nodes_common <- append(nodes_common,i)
+      nodes_common <- unique(nodes_common)
+    }
+    
+  }
+  
+}
+nodes_common #616050
+length(nodes_common)
+```
+
+```{r}
+count(qt4_6, "Source") #538892,542965,572391 have travelled only once; Not in the common list
+```
+
