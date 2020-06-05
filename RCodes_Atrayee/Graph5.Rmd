@@ -489,3 +489,115 @@ count(qt5_6, "Source") #No person has travelled less than 10 times.7
 ```
 
 ## Like Graph4, no person has travelled for less than 10 times.
+
+## Demographic Channel:
+
+```{r}
+library(here)
+
+cat <- data.table::fread(here::here("data", "DemographicCategories.csv"))
+
+head(qt5_5)
+nrow(qt5_5)
+```
+
+
+
+```{r}
+glimpse(qt5_5)
+unique(qt5_5)
+unique(qt5_5$eType) # 5
+unique(qt5_5$SourceLocation) # NA
+unique(qt5_5$TargetLocation) # NA
+unique(qt5_5$SourceLatitude) # NA
+unique(qt5_5$SourceLongitude) # NA
+unique(qt5_5$TargetLatitude) # NA
+unique(qt5_5$TargetLongitude) # NA
+unique(qt5_5$Source)
+unique(qt5_5$Target)
+unique(qt5_5$Weight)
+
+
+qt5_5 <- subset(qt5_5, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+colnames(qt5_5)
+```
+
+```{r}
+# Income Categories:
+for (i in (qt5_5$Source)) {
+  for (j in (cat$NodeID)) {                   
+    if(i == j){
+      income_cat_qt5 <- append(income_cat_qt5,i)
+    }
+  }
+}
+
+print(income_cat_qt5) # income categories extracted
+unique(income_cat_qt5) # 3
+qt5_5_sub1 <- subset(qt5_5, qt5_5$Source == income_cat_qt5) # Subset of data with only income categories
+str(qt5_5_sub1)
+plot(qt5_5_sub1$Source, qt5_5_sub1$Weight) # Plot of Monetary income in each category
+```
+
+```{r}
+# Expense Categories:
+expense_cat_qt5 <- NULL
+for (k in qt5_5$Target) {
+  for(l in cat$NodeID){ 
+    if(k==l){
+      expense_cat_qt5 <- append(expense_cat_qt5, k)
+    }
+  }
+  
+}
+print(expense_cat_qt5) # expense categories extracted
+unique(expense_cat_qt5) # 27
+qt5_5_sub2 <- subset(qt5_5, qt5_5$Target == expense_cat_qt5) # Subset of data with only expense categories
+str(qt5_5_sub2)
+plot(qt5_5_sub2$Target, qt5_5_sub2$Weight) # Plot of Monetary expenses in each category
+
+```
+
+```{r}
+income_count <- count(income_cat_qt5) #552988 510031
+expense_count <- count(expense_cat_qt5) #459381 466907 473173 503701 527449
+time_count <- count(qt5_5, 'Time')
+time_count <- time_count %>% filter(time_count$freq > 1)
+time_count #31536000 
+weight_count <- count(qt5_5, 'Weight')
+weight_count #All frequncies 1.
+```
+
+## Based on Income:
+
+```{r}
+income <- qt5_5 %>% filter(Source==552988 | Source==510031)
+expense <- qt5_5 %>% filter(Target==459381 | Target==466907 | Target==473173 | Target==503701 | Target==527449)
+df1 <- rbind(income, expense)
+nrow(df1) #66
+df1 <- df1[!duplicated(df1), ]
+nrow(df1) #23
+head(df1)
+```
+
+## Based on Incomes:
+
+```{r}
+df1 %>% filter(Source==552988)
+df1 %>% filter(Source==510031)
+```
+
+## All Incomes occur all at once, at time: 31536000
+
+## For Expense Categories:
+
+```{r}
+df1 %>% filter(Target==459381)
+df1 %>% filter(Target==466907)
+df1 %>% filter(Target==473173)
+df1 %>% filter(Target==503701)
+df1 %>% filter(Target==527449)
+
+```
+
+## All Expenses occur all at once, at time: 31536000

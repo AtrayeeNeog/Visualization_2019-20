@@ -650,13 +650,110 @@ length(nodes_common)
 count(dt6, "Source") #82,83,84 have travelled only once; Do not appear in the common list
 ```
 
+## Demographic Channel
 
 ```{r}
+library(here)
 
+cat <- data.table::fread(here::here("data", "DemographicCategories.csv"))
+
+head(dt5)
+nrow(dt5)
 ```
 
 
 ```{r}
+glimpse(dt5)
+unique(dt5)
+unique(dt5$eType) # 5
+unique(dt5$SourceLocation) # NA
+unique(dt5$TargetLocation) # NA
+unique(dt5$SourceLatitude) # NA
+unique(dt5$SourceLongitude) # NA
+unique(dt5$TargetLatitude) # NA
+unique(dt5$TargetLongitude) # NA
+unique(dt5$Source)
+unique(dt5$Target)
+unique(dt5$Weight)
+
+
+dt5 <- subset(dt5, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+colnames(dt5)
+```
+
+```{r}
+# Income Categories:
+income_cat_dt <- NULL
+for (i in (dt5$Source)) {
+  for (j in (cat$NodeID)) {                   
+    if(i == j){
+      income_cat_dt <- append(income_cat_dt,i)
+    }
+  }
+}
+
+print(income_cat_dt) # income categories extracted
+unique(income_cat_dt) # 3
+dt5_sub1 <- subset(dt5, dt5$Source == income_cat_dt) # Subset of data with only income categories
+str(dt5_sub1)
+plot(dt5_sub1$Source, dt5_sub1$Weight) # Plot of Monetary income in each category
+```
+
+```{r}
+# Expense Categories:
+expense_cat_dt <- NULL
+for (k in dt5$Target) {
+  for(l in cat$NodeID){ 
+    if(k==l){
+      expense_cat_dt <- append(expense_cat_dt, k)
+    }
+  }
+  
+}
+print(expense_cat_dt) # expense categories extracted
+unique(expense_cat_dt) # 27
+dt5_sub2 <- subset(dt5, dt5$Target == expense_cat_dt) # Subset of data with only expense categories
+str(dt5_sub2)
+plot(dt5_sub2$Target, dt5_sub2$Weight) # Plot of Monetary expenses in each category
+```
+
+```{r}
+income_count <- count(income_cat_dt) #552988 510031 620120
+expense_count <- count(expense_cat_dt) #459381 473173 527449 503701  466907 523927 537281
+time_count <- count(dt5, 'Time')
+time_count <- time_count %>% filter(time_count$freq > 1)
+time_count #31536000 
+weight_count <- count(dt5, 'Weight')
+weight_count
+```
+
+```{r}
+income <- dt5 %>% filter(Source==552988 | Source==510031 | Source==620120)
+expense <- dt5 %>% filter(Target==459381 | Target==473173 | Target==527449 | Target==503701 | Target==466907 | Target==523927 | Target==537281)
+df1 <- rbind(income, expense)
+nrow(df1) #66
+df1 <- df1[!duplicated(df1), ]
+nrow(df1) #23
+head(df1)
+```
+
+```{r}
+df1 %>% filter(Source==552988)
+df1 %>% filter(Source==510031)
+df1 %>% filter(Source==620120)
+```
+
+## All Incomes at time 31536000
+
+```{r}
+df1 %>% filter(Target==459381)
+df1 %>% filter(Target==466907)
+df1 %>% filter(Target==473173)
+df1 %>% filter(Target==503701)
+df1 %>% filter(Target==527449)
+df1 %>% filter(Target==523927)
+df1 %>% filter(Target==537281)
 
 ```
 
+## All Expenses occur at 31536000
