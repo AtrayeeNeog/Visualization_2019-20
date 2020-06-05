@@ -188,47 +188,48 @@ targetloc_count #(0,5),4,(1,3),2
 
 ```{r}
 target <- qt5_6 %>% filter(Target==561157 | Target==616453 | Target==509607 ) #24 vals; 
-weight <- qt5_6 %>% filter(Weight==-1 | Weight==4 | Weight==1 | Weight==5 ) #27 vals; 
-SLoc <- qt5_6 %>% filter(SourceLocation==0 | SourceLocation==3 | SourceLocation==2 ) #32; in order: 3,2,0
-TLoc <- qt5_6 %>% filter(TargetLocation==3 | TargetLocation==0 | TargetLocation==5 | TargetLocation==4) #30; 
-time <- qt5_6 %>% filter(Time==1296000 | Time==1641600 | Time==6912000 |Time==8640000 | Time==8985600 | Time==9504000 | Time==10454400 | Time==11232000 | Time==12614400 | Time==14169600 ) #12 
+weight <- qt5_6 %>% filter(Weight==-1 | Weight==1 | Weight==3 | Weight==0 ) #27 vals; 
+SLoc <- qt5_6 %>% filter(SourceLocation==3 | SourceLocation==2 | SourceLocation==0 | SourceLocation==4 ) #32; in order: 3,2,0
+TLoc <- qt5_6 %>% filter(TargetLocation==0 | TargetLocation==5 | TargetLocation==4) #30; 
+time <- qt5_6 %>% filter(Time==1987200 | Time==3283200 | Time==4924800)
 df1 <- rbind(target, weight, SLoc, TLoc, time)
-nrow(df1) #400
+nrow(df1) #375
 df1 <- df1[!duplicated(df1), ]
-nrow(df1) #23
+nrow(df1) #22
 head(df1)
 unique(df1$Source) #5 People
 ```
 
+## MAximun repeated nodes like in Graph4. Only 5 unique persons.
+
 ```{r}
-# Target:
-df1 %>% filter(Target==625756)
+# Target:561157 616453 509607
 df1 %>% filter(Target==561157)
 df1 %>% filter(Target==616453)
+df1 %>% filter(Target==509607)
 ```
 
-```{r}
-# Time: 1296000 1641600 6912000 8640000 8985600 9504000 10454400 11232000 12614400 14169600
-df1 %>% filter(Time==1296000)
-df1 %>% filter(Time==1641600)
-df1 %>% filter(Time==6912000)
-df1 %>% filter(Time==8640000)
-df1 %>% filter(Time==8985600)
-df1 %>% filter(Time==9504000)
-df1 %>% filter(Time==9504000)
-df1 %>% filter(Time==10454400)
-df1 %>% filter(Time==11232000)
-df1 %>% filter(Time==12614400)
-df1 %>% filter(Time==14169600)
-```
+## 2 persons(619322,594308) visited same place from same location twice at different times. Not as a group, but individually.
+
 
 ```{r}
-# Weight:1
+# Time: 
+df1 %>% filter(Time==1987200)
+df1 %>% filter(Time==3283200)
+df1 %>% filter(Time==4924800)
+```
+
+## 1 value each. No repititions. 
+
+```{r}
+# Weight:-1,1,3,0
 df1 %>% filter(Weight==-1)
-df1 %>% filter(Weight==4)
 df1 %>% filter(Weight==1)
-df1 %>% filter(Weight==5)
+df1 %>% filter(Weight==3)
+df1 %>% filter(Weight==0)
 ```
+
+## Ususally for all travel channel analysis, found 1 or 2 nodes which visit the same target location more than once multiple times at different times. 
 
 ## Procurement Channel:
 
@@ -242,9 +243,12 @@ head(qt5_23)
 ```
 
 ```{r}
-unique(qt5_23$Source) #636721
-unique(qt5_23$Target) #585417 461577 629826 618398 655265 588802 499177 482579 638734 557626 492039 605235 590595
+unique(qt5_23$Source) 
+unique(qt5_23$Target)
 ```
+
+## 2 nodes: 619322,524153; Various items; No transactions
+## Only one selling by 619322, others all buying.
 
 ```{r}
 nodes_common = NULL
@@ -268,7 +272,7 @@ for (i in qt5_01$Target) {
   }
   
 }
-nodes_common #492850 569329 580798 464579 482012
+nodes_common #594308 483784 477657 619322 573137
 length(nodes_common)
 ```
 
@@ -320,7 +324,7 @@ for (i in qt5_01$Target) {
   }
   
 }
-nodes_common # 628320 546593 536906 483005 601496 639642 557269 579305 584457 516873 492850 569329 544636 580798 464579 636721 566580 657526 588172 585606 655963 541907 482012 571369 477374
+nodes_common # 594308 483784 549840 477657 619322 524153 573137 530990 631903 561819
 length(nodes_common)
 ```
 
@@ -346,7 +350,7 @@ for (i in qt5_01$Target) {
   }
   
 }
-nodes_common # 636721
+nodes_common # 619322 524153 631903 561819
 length(nodes_common)
 ```
 
@@ -372,7 +376,7 @@ for (i in qt5_6$Target) {
   }
   
 }
-nodes_common #Null
+nodes_common #619322
 length(nodes_common)
 ```
 
@@ -450,7 +454,7 @@ for (i in qt5_23$Target) {
   }
   
 }
-nodes_common #636721
+nodes_common #619322 524153 631903 561819
 length(nodes_common)
 ```
 
@@ -484,3 +488,4 @@ length(nodes_common)
 count(qt5_6, "Source") #No person has travelled less than 10 times.7
 ```
 
+## Like Graph4, no person has travelled for less than 10 times.
