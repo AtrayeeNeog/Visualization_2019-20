@@ -298,7 +298,7 @@ for (i in qt4_01$Target) {
   }
   
 }
-nodes_common #568093 635665 464459
+nodes_common #492850 569329 580798 464579 482012
 length(nodes_common)
 ```
 
@@ -324,7 +324,7 @@ for (i in qt4_01$Target) {
   }
   
 }
-nodes_common #616050
+nodes_common #NULL
 length(nodes_common)
 ```
 
@@ -350,7 +350,7 @@ for (i in qt4_01$Target) {
   }
   
 }
-nodes_common # 599956 490041 533140 568093 632150 635665 616050 512397 623295 589639 550361 596193 464459 492777 570411 640464 591682 493044
+nodes_common # 628320 546593 536906 483005 601496 639642 557269 579305 584457 516873 492850 569329 544636 580798 464579 636721 566580 657526 588172 585606 655963 541907 482012 571369 477374
 length(nodes_common)
 ```
 
@@ -376,7 +376,7 @@ for (i in qt4_01$Target) {
   }
   
 }
-nodes_common # 512397 550287
+nodes_common # 636721
 length(nodes_common)
 ```
 
@@ -480,7 +480,7 @@ for (i in qt4_23$Target) {
   }
   
 }
-nodes_common #512397
+nodes_common #636721
 length(nodes_common)
 ```
 
@@ -506,11 +506,11 @@ for (i in qt4_23$Target) {
   }
   
 }
-nodes_common #616050
+nodes_common #NULL
 length(nodes_common)
 ```
 
 ```{r}
-count(qt4_6, "Source") #538892,542965,572391 have travelled only once; Not in the common list
+count(qt4_6, "Source") #No person has travelled less than 10 times.
 ```
 
