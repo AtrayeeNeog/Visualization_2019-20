@@ -176,7 +176,7 @@ target_count <- count(qt4_6, 'Target')
 target_count #625756 561157 616453 509607 (499467 657173)
 time_count <- count(qt4_6, 'Time')
 time_count <- time_count %>% filter(time_count$freq > 1)
-time_count #16486747 18214747 21152347 24608347 30137947 30224347
+time_count #1296000 1641600 6912000 8640000 8985600 9504000 10454400 11232000 12614400 14169600
 weight_count <- count(qt4_6, 'Weight')
 weight_count #-1,4,(1,5),(3,6)
 sourceloc_count <- count(qt4_6, 'SourceLocation')
@@ -187,7 +187,6 @@ targetloc_count #3,0,5,4,(1,2)
 
 ## Frequnecy are much larger than the Template. 
 ## Time has only frequencies of 5 for all.
-## 
 
 
 ```{r}
@@ -195,46 +194,70 @@ target <- qt4_6 %>% filter(Target==625756 | Target==561157 | Target==616453 ) #2
 weight <- qt4_6 %>% filter(Weight==-1 | Weight==4 | Weight==1 | Weight==5 ) #27 vals; 
 SLoc <- qt4_6 %>% filter(SourceLocation==0 | SourceLocation==3 | SourceLocation==2 ) #32; in order: 3,2,0
 TLoc <- qt4_6 %>% filter(TargetLocation==3 | TargetLocation==0 | TargetLocation==5 | TargetLocation==4) #30; 
-time <- qt4_6 %>% filter(Time==16486747 | Time==18214747 | Time==21152347 |Time==24608347 | Time==30137947 | Time==30224347 ) #12 
+time <- qt4_6 %>% filter(Time==1296000 | Time==1641600 | Time==6912000 |Time==8640000 | Time==8985600 | Time==9504000 | Time==10454400 | Time==11232000 | Time==12614400 | Time==14169600 ) #12 
 df1 <- rbind(target, weight, SLoc, TLoc, time)
-nrow(df1) #117
+nrow(df1) #400
 df1 <- df1[!duplicated(df1), ]
-nrow(df1) #37
+nrow(df1) #23
 head(df1)
-unique(df1$Source) #13 People
+unique(df1$Source) #5 People
 ```
+
+## Re
 
 
 ```{r}
-# Target:70
-df1 %>% filter(Target==625756) #9 SourceLocation: 0 and 4
-df1 %>% filter(Target==625756 & SourceLocation==4) #629627,534034,599441,585212,643925,649553
-df1 %>% filter(Target==625756 & SourceLocation==0) #464459,568093,635665
+# Target:625756
+df1 %>% filter(Target==625756) 
 ```
 
-```{r}
-# Target:499467
-df1 %>% filter(Target==499467) #7 SourceLocation: 1 and 3
-df1 %>% filter(Target==499467 & SourceLocation==1) #534034,629627,585212,599441
-df1 %>% filter(Target==499467 & SourceLocation==3) #635665,464459,568093
-```
+## 7 nodes
+## No clusters formed based on Source Location/Weight/Time
 
 ```{r}
-# Time: 16486747 18214747 21152347 24608347 30137947 30224347
-df1 %>% filter(Time==16486747)
-df1 %>% filter(Time==18214747)
-df1 %>% filter(Time==21152347)
-df1 %>% filter(Time==24608347)
-df1 %>% filter(Time==30137947)
-df1 %>% filter(Time==30224347)
+# Target:561157
+df1 %>% filter(Target==561157) 
 ```
+
+## 5 nodes 
+## No clusters formed
+
+```{r}
+# Target:616453
+df1 %>% filter(Target==616453) 
+```
+
+## 4 nodes 
+## Same person 492850 travelled twice to the same location within days of each other.
+
+```{r}
+# Time: 1296000 1641600 6912000 8640000 8985600 9504000 10454400 11232000 12614400 14169600
+df1 %>% filter(Time==1296000)
+df1 %>% filter(Time==1641600)
+df1 %>% filter(Time==6912000)
+df1 %>% filter(Time==8640000)
+df1 %>% filter(Time==8985600)
+df1 %>% filter(Time==9504000)
+df1 %>% filter(Time==9504000)
+df1 %>% filter(Time==10454400)
+df1 %>% filter(Time==11232000)
+df1 %>% filter(Time==12614400)
+df1 %>% filter(Time==14169600)
+
+```
+
+## No useful information derived
+
 
 ```{r}
 # Weight:1
+df1 %>% filter(Weight==-1)
+df1 %>% filter(Weight==4)
 df1 %>% filter(Weight==1)
-df1 %>% filter(Weight==2)
 df1 %>% filter(Weight==5)
 ```
+
+## Procurement Channel:
 
 ```{r}
 nrow(qt4_23)
@@ -245,10 +268,11 @@ nrow(qt4_23)
 head(qt4_23)
 ```
 
+## Same Source, i.e. same person is both the buyer and the seller of different items. No Transactions like the Template.
 
 ```{r}
-unique(qt4_23$Source) 
-unique(qt4_23$Target)
+unique(qt4_23$Source) #636721
+unique(qt4_23$Target) #585417 461577 629826 618398 655265 588802 499177 482579 638734 557626 492039 605235 590595
 ```
 
 
