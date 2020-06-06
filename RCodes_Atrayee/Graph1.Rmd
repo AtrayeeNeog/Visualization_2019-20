@@ -574,6 +574,20 @@ count(qt1_6, "Source") #538892,542965,572391 have travelled only once; Not in th
 ## Communication Channel:
 
 ```{r}
+head(qt1_01)
+unique(qt1_01$Source)
+unique(qt1_01$Target)
+```
+
+```{r}
+contacter_count <- count(qt1_01, "Source") #492777,490041,550361,512397,533140
+contacted_count <- count(qt1_01, "Target") #493044,492777,490041,550361
+time_comm_count <- count(qt1_01, "Time")
 
 ```
+
+```{r}
+
+```
+
 
