@@ -580,14 +580,46 @@ unique(qt1_01$Target)
 ```
 
 ```{r}
-contacter_count <- count(qt1_01, "Source") #492777,490041,550361,512397,533140
+contacter_count <- count(qt1_01, "Source") #492777,490041,550361,512397,533140,568093
 contacted_count <- count(qt1_01, "Target") #493044,492777,490041,550361
 time_comm_count <- count(qt1_01, "Time")
 
 ```
 
 ```{r}
+contacter <- qt1_01 %>% filter(Source == 492777 |Source == 490041 |Source== 550361 | Source==512397 | Source==533140 |Source==568093)
+contacted <- qt1_01 %>% filter(Target == 493044 |Target == 492777 |Target== 490041 | Target==550361)
+df1 <- rbind(contacter, contacted) 
 
+```
+
+
+```{r}
+nrow(df1)
+df1 <- df1[!duplicated(df1), ]
+df1 <- subset(df1, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+
+nrow(df1) #108
+head(df1)
+```
+
+## Analysis for Contacter:
+
+```{r}
+df1 %>% filter(Source==492777) 
+df1 %>% filter(Source==490041) 
+df1 %>% filter(Source==550361)
+df1 %>% filter(Source==512397)
+df1 %>% filter(Source==533140)
+df1 %>% filter(Source==568093)
+
+```
+
+```{r}
+df1 %>% filter(Target==493044) 
+df1 %>% filter(Target==492777) 
+df1 %>% filter(Target==490041)
+df1 %>% filter(Target==550361)
 ```
 
 
