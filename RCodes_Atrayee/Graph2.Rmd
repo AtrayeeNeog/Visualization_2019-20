@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(here)
 library(tidyverse)
 library(plyr)
+library(ggplot2)
 ```
 
 ## R Markdown
@@ -667,4 +668,25 @@ communication %>% filter(Source==515794 & Target==505965 & eType == 1) #6
 communication %>% filter(Source==534449 & Target==544615 & eType == 0) #6
 communication %>% filter(Source==534449 & Target==544615 & eType == 1) #6
 ```
+
+## Visualizations:
+
+## Travel Channel:
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
