@@ -601,3 +601,31 @@ df1 %>% filter(Target==527449)
 ```
 
 ## All Expenses occur all at once, at time: 31536000
+
+## Visulaization
+
+## Travel Channel:
+
+```{r}
+## 561157 616453 509607
+head(target)
+target1 <- target %>% filter(Target==561157)
+target2 <- target %>% filter(Target==616453)
+target3 <- target %>% filter(Target==509607)
+```
+
+
+```{r}
+ggplot(target1, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph5 Travel Channel Analysis based on Target 561157",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph5 Travel Channel Analysis based on Target 616453",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph5 Travel Channel Analysis based on Target 509607",
+                                    x="Time", y = "Source")
+```
+
+
+
