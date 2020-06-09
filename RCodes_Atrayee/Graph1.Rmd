@@ -650,7 +650,7 @@ communication <- subset(communication, select = -c(Weight, SourceLocation, Targe
 head(communication)
 ```
 
-## Source and Target combo 1:
+## Source and Target combo:
 ```{r}
 communication %>% filter(Source==490041 & Target==589639 & eType == 0)
 communication %>% filter(Source==490041 & Target==589639 & eType == 1)
