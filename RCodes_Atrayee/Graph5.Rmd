@@ -627,5 +627,11 @@ ggplot(target3, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocat
                                     x="Time", y = "Source")
 ```
 
+```{r}
+ggplot(qt4_6, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill="brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Places visited-Graph5",
+                                                                    x="Targets", y = "Count")
+```
 
 
