@@ -679,3 +679,37 @@ communication %>% filter(Source==635665 & Target==492777 & eType == 1) #2
 
 ```
 
+
+## Visualizations:
+## Travel Channel:
+
+```{r}
+#625756 509607 499467
+head(target)
+target1 <- target %>% filter(Target==625756)
+target2 <- target %>% filter(Target==509607)
+target3 <- target %>% filter(Target==499467)
+```
+
+## Target Clusters:
+```{r}
+ggplot(target1, aes(x=Time, y=Source, color = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph1 Travel Channel Analysis based on Target 625756",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time, y=Source, color = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph1 Travel Channel Analysis based on Target 509607",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time, y=Source, color = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph1 Travel Channel Analysis based on Target 499467",
+                                    x="Time", y = "Source")
+```
+
+## Histogram for Targets:
+
+```{r}
+ggplot(qt1_6, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill="brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Places visited-Graph1",
+                                                                    x="Targets", y = "Count")
+```
+
