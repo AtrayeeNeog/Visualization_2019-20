@@ -866,3 +866,51 @@ communication %>% filter(Source==41 & Target==63 & eType == 1) #8
 
 ## Nodes which were common for Travel and Communication Channel and had travelled together have not contacted each other
 
+## Visualizations:
+## Travel Channel:
+```{r}
+head(target)
+target1 <- target %>% filter(Target==70)
+target2 <- target %>% filter(Target==71)
+target3 <- target %>% filter(Target==69)
+```
+
+## Target=70
+
+```{r}
+ggplot(target1, aes(x=Time, y=Source, color = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Template Travel Channel Analysis based on Target 70",
+                                    x="Time", y = "Source")
+```
+
+## Target=71
+
+```{r}
+ggplot(target2, aes(x=Time, y=Source, color = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Template Travel Channel Analysis based on Target 71",
+                                    x="Time", y = "Source")
+
+ggplot(target3, aes(x=Time, y=Source, color = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Template Travel Channel Analysis based on Target 69",
+                                    x="Time", y = "Source")
+```
+
+## Histograms:
+
+```{r}
+ggplot(dt6, aes(x=Target)) +
+  geom_histogram(fill="black", alpha=0.5, position="identity")+labs(title="Frequnecy of Places visited",
+                                                                    x="Targets", y = "Count")
+```
+
+
+```{r}
+ggplot(dt6, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill="brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Places visited-Template",
+                                                                    x="Targets", y = "Count") 
+```
+
+
+
+
