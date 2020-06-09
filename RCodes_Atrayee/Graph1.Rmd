@@ -693,13 +693,13 @@ target3 <- target %>% filter(Target==499467)
 
 ## Target Clusters:
 ```{r}
-ggplot(target1, aes(x=Time, y=Source, color = SourceLocation)) + 
+ggplot(target1, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
   geom_point(shape=23, size = 5)+labs(title="Graph1 Travel Channel Analysis based on Target 625756",
                                     x="Time", y = "Source")
-ggplot(target2, aes(x=Time, y=Source, color = SourceLocation)) + 
+ggplot(target2, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
   geom_point(shape=23, size = 5)+labs(title="Graph1 Travel Channel Analysis based on Target 509607",
                                     x="Time", y = "Source")
-ggplot(target3, aes(x=Time, y=Source, color = SourceLocation)) + 
+ggplot(target3, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
   geom_point(shape=23, size = 5)+labs(title="Graph1 Travel Channel Analysis based on Target 499467",
                                     x="Time", y = "Source")
 ```

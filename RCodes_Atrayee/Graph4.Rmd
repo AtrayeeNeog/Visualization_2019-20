@@ -515,3 +515,37 @@ length(nodes_common)
 count(qt4_6, "Source") #No person has travelled less than 10 times.
 ```
 
+## Visualizations:
+
+## Travel Channel:
+
+```{r}
+#625756 561157 616453
+head(target)
+target1 <- target %>% filter(Target==625756)
+target2 <- target %>% filter(Target==561157)
+target3 <- target %>% filter(Target==616453)
+```
+
+```{r}
+ggplot(target1, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph4 Travel Channel Analysis based on Target 625756",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph4 Travel Channel Analysis based on Target 561157",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph4 Travel Channel Analysis based on Target 616453",
+                                    x="Time", y = "Source")
+```
+
+```{r}
+ggplot(qt4_6, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill="brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Places visited-Graph4",
+                                                                    x="Targets", y = "Count")
+```
+
+
+
+
