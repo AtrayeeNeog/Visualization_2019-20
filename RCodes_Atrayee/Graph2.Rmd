@@ -613,66 +613,58 @@ count(qt2_01, vars = c("Source", "Target"))
 ```
 
 ```{r}
-communication1 <- qt2_01 %>% filter(Source==490041 & Target==589639)
-communication2 <- qt2_01 %>% filter(Source==492777 & Target==623295)
-communication3 <- qt2_01 %>% filter(Source==492777 & Target==635665)
-communication4 <- qt2_01 %>% filter(Source==599956 & Target==490041)
-communication5 <- qt2_01 %>% filter(Source==599956 & Target==589639)
-communication6 <- qt2_01 %>% filter(Source==599956 & Target==635665)
-communication7 <- qt2_01 %>% filter(Source==623295 & Target==635665)
-communication8 <- qt2_01 %>% filter(Source==635665 & Target==492777)
+communication1 <- qt2_01 %>% filter(Source==534449 & Target==629627)
+communication2 <- qt2_01 %>% filter(Source==572413 & Target==505965)
+communication3 <- qt2_01 %>% filter(Source==585212 & Target==644830)
+communication4 <- qt2_01 %>% filter(Source==629627 & Target==505965)
+communication5 <- qt2_01 %>% filter(Source==639051 & Target==477138)
+communication6 <- qt2_01 %>% filter(Source==629627 & Target==639051)
+communication7 <- qt2_01 %>% filter(Source==639051 & Target==629627)
+communication8 <- qt2_01 %>% filter(Source==505965 & Target==515794)
+communication9 <- qt2_01 %>% filter(Source==505965 & Target==629627)
+communication10 <- qt2_01 %>% filter(Source==515794 & Target==505965)
+communication11 <- qt2_01 %>% filter(Source==534449 & Target==544615)
 
-communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8)
-nrow(communication) #90
+communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8, communication9, communication10, communication11)
+nrow(communication) #141
 communication <- communication[!duplicated(communication),]
-nrow(communication) #90
+nrow(communication) #141
 
 communication <- subset(communication, select = -c(Weight, SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude))
 head(communication)
 ```
 
-```{r}
-communication1 <- qt2_01 %>% filter(Source==490041 & Target==589639)
-communication2 <- qt2_01 %>% filter(Source==492777 & Target==623295)
-communication3 <- qt2_01 %>% filter(Source==492777 & Target==635665)
-communication4 <- qt2_01 %>% filter(Source==599956 & Target==490041)
-communication5 <- qt2_01 %>% filter(Source==599956 & Target==589639)
-communication6 <- qt2_01 %>% filter(Source==599956 & Target==635665)
-communication7 <- qt2_01 %>% filter(Source==623295 & Target==635665)
-communication8 <- qt2_01 %>% filter(Source==635665 & Target==492777)
 
-communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8)
-nrow(communication) #90
-communication <- communication[!duplicated(communication),]
-nrow(communication) #90
-
-communication <- subset(communication, select = -c(Weight, SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude))
-head(communication)
-```
 
 ```{r}
-communication %>% filter(Source==490041 & Target==589639 & eType == 0) #6
-communication %>% filter(Source==490041 & Target==589639 & eType == 1) #5
+communication %>% filter(Source==534449 & Target==629627 & eType == 0) #5
+communication %>% filter(Source==534449 & Target==629627 & eType == 1) #10
 
-communication %>% filter(Source==492777 & Target==623295 & eType == 0) #4
-communication %>% filter(Source==492777 & Target==623295 & eType == 1) #6
+communication %>% filter(Source==572413 & Target==505965 & eType == 0) #6
+communication %>% filter(Source==572413 & Target==505965 & eType == 1) #8
 
-communication %>% filter(Source==492777 & Target==635665 & eType == 0) #4
-communication %>% filter(Source==492777 & Target==635665 & eType == 1) #6
+communication %>% filter(Source==585212 & Target==644830 & eType == 0) #14
+communication %>% filter(Source==585212 & Target==644830 & eType == 1) #0
 
-communication %>% filter(Source==599956 & Target==490041 & eType == 0) #5
-communication %>% filter(Source==599956 & Target==490041 & eType == 1) #9
+communication %>% filter(Source==629627 & Target==505965 & eType == 0) #4
+communication %>% filter(Source==629627 & Target==505965 & eType == 1) #9
 
-communication %>% filter(Source==599956 & Target==589639 & eType == 0) #4
-communication %>% filter(Source==599956 & Target==589639 & eType == 1) #9
+communication %>% filter(Source==639051 & Target==477138 & eType == 0) #10
+communication %>% filter(Source==639051 & Target==477138 & eType == 1) #3
 
-communication %>% filter(Source==599956 & Target==635665 & eType == 0) #9
-communication %>% filter(Source==599956 & Target==635665 & eType == 1) #3
+communication %>% filter(Source==629627 & Target==639051 & eType == 0) #9
+communication %>% filter(Source==629627 & Target==639051 & eType == 1) #3
 
-communication %>% filter(Source==623295 & Target==635665 & eType == 0) #3
-communication %>% filter(Source==623295 & Target==635665 & eType == 1) #7
+communication %>% filter(Source==505965 & Target==515794 & eType == 0) #10
+communication %>% filter(Source==505965 & Target==515794 & eType == 1) #2
 
-communication %>% filter(Source==635665 & Target==492777 & eType == 0) #8
-communication %>% filter(Source==635665 & Target==492777 & eType == 1) #2
+communication %>% filter(Source==505965 & Target==629627 & eType == 0) #11
+communication %>% filter(Source==505965 & Target==629627 & eType == 1) #1
+
+communication %>% filter(Source==515794 & Target==505965 & eType == 0) #6
+communication %>% filter(Source==515794 & Target==505965 & eType == 1) #6
+
+communication %>% filter(Source==534449 & Target==544615 & eType == 0) #6
+communication %>% filter(Source==534449 & Target==544615 & eType == 1) #6
 ```
 
