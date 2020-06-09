@@ -767,8 +767,8 @@ unique(dt01$Target)
 ```
 
 ```{r}
-contacter_count <- count(dt01, "Source") #492777,490041,550361,512397,533140,568093
-contacted_count <- count(dt01, "Target") #493044,492777,490041,550361
+contacter_count <- count(dt01, "Source")  ## 41-117 times
+contacted_count <- count(dt01, "Target") ## 41-70 times
 time_comm_count <- count(dt01, "Time")
 ```
 
@@ -805,28 +805,61 @@ df1 %>% filter(Target==550361)
 
 ## Combination for Source and Target:
 ```{r}
-count(dt01, vars = c("Source", "Target"))
+combo_count <- count(dt01, vars = c("Source", "Target")) ##(67-39(22)),(63-58(19)),(47-39(17)),(39-67(15))(63-41(14)),(34-37(13)),(27-37(12)),(41-56(12)),(41-63(12))
+
 ```
 
 ```{r}
-communication1 <- dt01 %>% filter(Source==490041 & Target==589639)
-communication2 <- dt01 %>% filter(Source==492777 & Target==623295)
-communication3 <- dt01 %>% filter(Source==492777 & Target==635665)
-communication4 <- dt01 %>% filter(Source==599956 & Target==490041)
-communication5 <- dt01 %>% filter(Source==599956 & Target==589639)
-communication6 <- dt01 %>% filter(Source==599956 & Target==635665)
-communication7 <- dt01 %>% filter(Source==623295 & Target==635665)
-communication8 <- dt01 %>% filter(Source==635665 & Target==492777)
+communication1 <- dt01 %>% filter(Source==67 & Target==39)
+communication2 <- dt01 %>% filter(Source==63 & Target==58)
+communication3 <- dt01 %>% filter(Source==47 & Target==39)
+communication4 <- dt01 %>% filter(Source==39 & Target==67)
+communication5 <- dt01 %>% filter(Source==63 & Target==41)
+communication6 <- dt01 %>% filter(Source==34 & Target==37)
+communication7 <- dt01 %>% filter(Source==27 & Target==37)
+communication8 <- dt01 %>% filter(Source==41 & Target==56)
+communication9 <- dt01 %>% filter(Source==41 & Target==63)
 
-communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8)
-nrow(communication) #90
+
+communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8, communication9)
+nrow(communication) #136
 communication <- communication[!duplicated(communication),]
-nrow(communication) #90
+nrow(communication) #136
 
 communication <- subset(communication, select = -c(Weight, SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude))
 head(communication)
 ```
 
+## Analysis for Source and Target
+
+```{r}
+communication %>% filter(Source==67 & Target==39 & eType == 0) #22
+communication %>% filter(Source==67 & Target==39 & eType == 1) #0
+
+communication %>% filter(Source==63 & Target==58 & eType == 0) #11
+communication %>% filter(Source==63 & Target==58 & eType == 1) #8
+
+communication %>% filter(Source==47 & Target==39 & eType == 0) #17
+communication %>% filter(Source==47 & Target==39 & eType == 1) #0
+
+communication %>% filter(Source==39 & Target==67 & eType == 0) #15
+communication %>% filter(Source==39 & Target==67 & eType == 1) #0
+
+communication %>% filter(Source==63 & Target==41 & eType == 0) #9
+communication %>% filter(Source==63 & Target==41 & eType == 1) #5
+
+communication %>% filter(Source==34 & Target==37 & eType == 0) #7
+communication %>% filter(Source==34 & Target==37 & eType == 1) #6
+
+communication %>% filter(Source==27 & Target==37 & eType == 0) #5
+communication %>% filter(Source==27 & Target==37 & eType == 1) #7
+
+communication %>% filter(Source==41 & Target==56 & eType == 0) #5
+communication %>% filter(Source==41 & Target==56 & eType == 1) #7
+
+communication %>% filter(Source==41 & Target==63 & eType == 0) #4
+communication %>% filter(Source==41 & Target==63 & eType == 1) #8
+```
 
 
 
