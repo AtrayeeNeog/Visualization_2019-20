@@ -859,7 +859,10 @@ communication %>% filter(Source==41 & Target==56 & eType == 1) #7
 
 communication %>% filter(Source==41 & Target==63 & eType == 0) #4
 communication %>% filter(Source==41 & Target==63 & eType == 1) #8
+
+
+
 ```
 
-
+## Nodes which were common for Travel and Communication Channel and had travelled together have not contacted each other
 
