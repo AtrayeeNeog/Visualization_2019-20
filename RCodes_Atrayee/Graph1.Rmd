@@ -713,3 +713,54 @@ ggplot(qt1_6, aes(x=Target)) +
                                                                     x="Targets", y = "Count")
 ```
 
+## Communication Channel:
+```{r}
+ggplot(qt1_01, aes(x=Source)) + 
+ geom_histogram(aes(y=..density..), fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Contacters-Graph1",
+                                                                    x="Source", y = "Count") 
+```
+
+```{r}
+ggplot(qt1_01, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Contacted-Graph1",
+                                                                    x="Target", y = "Count")
+```
+
+
+```{r}
+ggplot(qt1_01, aes(x=eType)) + 
+ geom_histogram(aes(y=..density..),fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of eTypes-Graph1",
+                                                                    x="eTypes", y = "Count")
+```
+
+```{r}
+communication1 <- qt1_01 %>% filter(Source==490041 & Target==589639)
+communication2 <- qt1_01 %>% filter(Source==492777 & Target==623295)
+communication3 <- qt1_01 %>% filter(Source==492777 & Target==635665)
+communication4 <- qt1_01 %>% filter(Source==599956 & Target==490041)
+communication5 <- qt1_01 %>% filter(Source==599956 & Target==589639)
+communication6 <- qt1_01 %>% filter(Source==599956 & Target==635665)
+communication7 <- qt1_01 %>% filter(Source==623295 & Target==635665)
+communication8 <- qt1_01 %>% filter(Source==635665 & Target==492777)
+
+communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8)
+nrow(communication) #90
+communication <- communication[!duplicated(communication),]
+nrow(communication) #90
+
+communication <- subset(communication, select = -c(Weight, SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude))
+head(communication)
+
+communication <- transform(communication, combo = paste(communication$Source, communication$Target, sep = ","))
+head(communication)
+```
+
+```{r}
+ggplot(communication, aes(x=combo, y=Time, color = eType, fill=eType)) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations Graph1 ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
