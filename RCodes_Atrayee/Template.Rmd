@@ -972,7 +972,19 @@ ggplot(communication, aes(x=combo, y=Time, color = eType, fill=eType)) +
                                     x="Source & Target Combination", y = "Time")
 ```
 
+## Procurement Channel:
 
+```{r}
+dt23
+```
+
+
+
+```{r}
+ggplot(dt23, aes(x=Source, y=Time, color = eType, fill=eType)) + 
+  geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Template ",
+                                    x="Source & Target Combination", y = "Time")
+```
 
 
 
