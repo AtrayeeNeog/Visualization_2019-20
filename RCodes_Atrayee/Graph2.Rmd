@@ -8,6 +8,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library(here)
 library(tidyverse)
 library(plyr)
+library(ggplot2)
 ```
 
 ## R Markdown
@@ -570,8 +571,8 @@ unique(qt2_01$Target)
 ```
 
 ```{r}
-contacter_count <- count(qt2_01, "Source") #492777,490041,550361,512397,533140,568093
-contacted_count <- count(qt2_01, "Target") #493044,492777,490041,550361
+contacter_count <- count(qt2_01, "Source") #629627-77
+contacted_count <- count(qt2_01, "Target") #629627-94
 time_comm_count <- count(qt2_01, "Time")
 ```
 
@@ -608,69 +609,153 @@ df1 %>% filter(Target==550361)
 
 ```{r}
 count(qt2_01, vars = c("Source", "Target"))
+## 534449-629627(15),572413-505965(14),585212-644830(14),629627-505965(13),639051-477138(13),629627-639051(12),639051-629627(12),
+## 505965-515794(12),505965-629627(12),515794-505965(12),534449-544615(12)				
 ```
 
 ```{r}
-communication1 <- qt2_01 %>% filter(Source==490041 & Target==589639)
-communication2 <- qt2_01 %>% filter(Source==492777 & Target==623295)
-communication3 <- qt2_01 %>% filter(Source==492777 & Target==635665)
-communication4 <- qt2_01 %>% filter(Source==599956 & Target==490041)
-communication5 <- qt2_01 %>% filter(Source==599956 & Target==589639)
-communication6 <- qt2_01 %>% filter(Source==599956 & Target==635665)
-communication7 <- qt2_01 %>% filter(Source==623295 & Target==635665)
-communication8 <- qt2_01 %>% filter(Source==635665 & Target==492777)
+communication1 <- qt2_01 %>% filter(Source==534449 & Target==629627)
+communication2 <- qt2_01 %>% filter(Source==572413 & Target==505965)
+communication3 <- qt2_01 %>% filter(Source==585212 & Target==644830)
+communication4 <- qt2_01 %>% filter(Source==629627 & Target==505965)
+communication5 <- qt2_01 %>% filter(Source==639051 & Target==477138)
+communication6 <- qt2_01 %>% filter(Source==629627 & Target==639051)
+communication7 <- qt2_01 %>% filter(Source==639051 & Target==629627)
+communication8 <- qt2_01 %>% filter(Source==505965 & Target==515794)
+communication9 <- qt2_01 %>% filter(Source==505965 & Target==629627)
+communication10 <- qt2_01 %>% filter(Source==515794 & Target==505965)
+communication11 <- qt2_01 %>% filter(Source==534449 & Target==544615)
 
-communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8)
-nrow(communication) #90
+communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8, communication9, communication10, communication11)
+nrow(communication) #141
 communication <- communication[!duplicated(communication),]
-nrow(communication) #90
+nrow(communication) #141
 
 communication <- subset(communication, select = -c(Weight, SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude))
 head(communication)
 ```
 
-```{r}
-communication1 <- qt2_01 %>% filter(Source==490041 & Target==589639)
-communication2 <- qt2_01 %>% filter(Source==492777 & Target==623295)
-communication3 <- qt2_01 %>% filter(Source==492777 & Target==635665)
-communication4 <- qt2_01 %>% filter(Source==599956 & Target==490041)
-communication5 <- qt2_01 %>% filter(Source==599956 & Target==589639)
-communication6 <- qt2_01 %>% filter(Source==599956 & Target==635665)
-communication7 <- qt2_01 %>% filter(Source==623295 & Target==635665)
-communication8 <- qt2_01 %>% filter(Source==635665 & Target==492777)
 
-communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8)
-nrow(communication) #90
+
+```{r}
+communication %>% filter(Source==534449 & Target==629627 & eType == 0) #5
+communication %>% filter(Source==534449 & Target==629627 & eType == 1) #10
+
+communication %>% filter(Source==572413 & Target==505965 & eType == 0) #6
+communication %>% filter(Source==572413 & Target==505965 & eType == 1) #8
+
+communication %>% filter(Source==585212 & Target==644830 & eType == 0) #14
+communication %>% filter(Source==585212 & Target==644830 & eType == 1) #0
+
+communication %>% filter(Source==629627 & Target==505965 & eType == 0) #4
+communication %>% filter(Source==629627 & Target==505965 & eType == 1) #9
+
+communication %>% filter(Source==639051 & Target==477138 & eType == 0) #10
+communication %>% filter(Source==639051 & Target==477138 & eType == 1) #3
+
+communication %>% filter(Source==629627 & Target==639051 & eType == 0) #9
+communication %>% filter(Source==629627 & Target==639051 & eType == 1) #3
+
+communication %>% filter(Source==505965 & Target==515794 & eType == 0) #10
+communication %>% filter(Source==505965 & Target==515794 & eType == 1) #2
+
+communication %>% filter(Source==505965 & Target==629627 & eType == 0) #11
+communication %>% filter(Source==505965 & Target==629627 & eType == 1) #1
+
+communication %>% filter(Source==515794 & Target==505965 & eType == 0) #6
+communication %>% filter(Source==515794 & Target==505965 & eType == 1) #6
+
+communication %>% filter(Source==534449 & Target==544615 & eType == 0) #6
+communication %>% filter(Source==534449 & Target==544615 & eType == 1) #6
+```
+
+## Visualizations:
+
+## Travel Channel:
+
+```{r}
+#499467 509607 625756
+head(target)
+target1 <- target %>% filter(Target==499467)
+target2 <- target %>% filter(Target==509607)
+target3 <- target %>% filter(Target==625756)
+```
+
+```{r}
+ggplot(target1, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph2 Travel Channel Analysis based on Target 499467",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph2 Travel Channel Analysis based on Target 509607",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time, y=Source, color = SourceLocation, fill = SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph2 Travel Channel Analysis based on Target 625756",
+                                    x="Time", y = "Source")
+```
+
+```{r}
+ggplot(qt2_6, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill="brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Places visited-Graph2",
+                                                                    x="Targets", y = "Count")
+```
+
+## Communication Channel:
+```{r}
+ggplot(qt2_01, aes(x=Source)) + 
+ geom_histogram(aes(y=..density..), fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Contacters-Graph2",
+                                                                    x="Sources", y = "Count") 
+```
+
+```{r}
+ggplot(qt2_01, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Contacted-Graph2",
+                                                                    x="Targets", y = "Count") 
+```
+
+```{r}
+communication1 <- qt2_01 %>% filter(Source==534449 & Target==629627)
+communication2 <- qt2_01 %>% filter(Source==572413 & Target==505965)
+communication3 <- qt2_01 %>% filter(Source==585212 & Target==644830)
+communication4 <- qt2_01 %>% filter(Source==629627 & Target==505965)
+communication5 <- qt2_01 %>% filter(Source==639051 & Target==477138)
+communication6 <- qt2_01 %>% filter(Source==629627 & Target==639051)
+communication7 <- qt2_01 %>% filter(Source==639051 & Target==629627)
+communication8 <- qt2_01 %>% filter(Source==505965 & Target==515794)
+communication9 <- qt2_01 %>% filter(Source==505965 & Target==629627)
+communication10 <- qt2_01 %>% filter(Source==515794 & Target==505965)
+communication11 <- qt2_01 %>% filter(Source==534449 & Target==544615)
+
+communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8, communication9, communication10, communication11)
+nrow(communication) #141
 communication <- communication[!duplicated(communication),]
-nrow(communication) #90
+nrow(communication) #141
 
 communication <- subset(communication, select = -c(Weight, SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude))
+head(communication)
+
+communication <- transform(communication, combo = paste(communication$Source, communication$Target, sep = ","))
 head(communication)
 ```
 
 ```{r}
-communication %>% filter(Source==490041 & Target==589639 & eType == 0) #6
-communication %>% filter(Source==490041 & Target==589639 & eType == 1) #5
-
-communication %>% filter(Source==492777 & Target==623295 & eType == 0) #4
-communication %>% filter(Source==492777 & Target==623295 & eType == 1) #6
-
-communication %>% filter(Source==492777 & Target==635665 & eType == 0) #4
-communication %>% filter(Source==492777 & Target==635665 & eType == 1) #6
-
-communication %>% filter(Source==599956 & Target==490041 & eType == 0) #5
-communication %>% filter(Source==599956 & Target==490041 & eType == 1) #9
-
-communication %>% filter(Source==599956 & Target==589639 & eType == 0) #4
-communication %>% filter(Source==599956 & Target==589639 & eType == 1) #9
-
-communication %>% filter(Source==599956 & Target==635665 & eType == 0) #9
-communication %>% filter(Source==599956 & Target==635665 & eType == 1) #3
-
-communication %>% filter(Source==623295 & Target==635665 & eType == 0) #3
-communication %>% filter(Source==623295 & Target==635665 & eType == 1) #7
-
-communication %>% filter(Source==635665 & Target==492777 & eType == 0) #8
-communication %>% filter(Source==635665 & Target==492777 & eType == 1) #2
+ggplot(communication, aes(x=combo, y=Time, color = eType, fill=eType)) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations Graph2 ",
+                                    x="Source & Target Combination", y = "Time")
 ```
+
+## Procurement Channel:
+```{r}
+ggplot(qt2_23, aes(x=Source, y=Time, color = eType, fill=eType)) + 
+  geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Graph2 ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+
+
+
+
+
 

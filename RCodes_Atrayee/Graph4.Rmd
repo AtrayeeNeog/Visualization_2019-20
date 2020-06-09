@@ -515,3 +515,128 @@ length(nodes_common)
 count(qt4_6, "Source") #No person has travelled less than 10 times.
 ```
 
+```{r}
+head(qt4_01)
+unique(qt4_01$Source)
+unique(qt4_01$Target)
+```
+
+```{r}
+contacter_count <- count(qt4_01, "Source") #464579,536906,579305,639642
+contacted_count <- count(qt4_01, "Target") #579305,639642,557269
+time_comm_count <- count(qt4_01, "Time")
+```
+
+## Combination of Source and Target:
+```{r}
+count(qt4_01, vars = c("Source", "Target")) #639642-557269(4),639642-557269(4),655963-579305(3),579305-639642(3)	
+```
+
+```{r}
+communication1 <- qt4_01 %>% filter(Source==639642 & Target==557269)
+communication2 <- qt4_01 %>% filter(Source==639642 & Target==557269)
+communication3 <- qt4_01 %>% filter(Source==655963 & Target==579305)
+communication4 <- qt4_01 %>% filter(Source==579305 & Target==639642)
+
+communication <- rbind(communication1, communication2, communication3, communication4)
+nrow(communication) #90
+communication <- communication[!duplicated(communication),]
+nrow(communication) #90
+
+communication <- subset(communication, select = -c(Weight, SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude))
+head(communication)
+
+communication <- transform(communication, combo = paste(communication$Source, communication$Target, sep = ","))
+head(communication)
+```
+```{r}
+communication %>% filter(Source==639642 & Target==557269 & eType == 0) #3
+communication %>% filter(Source==639642 & Target==557269 & eType == 1) #1
+
+communication %>% filter(Source==639642 & Target==557269 & eType == 0) #3
+communication %>% filter(Source==639642 & Target==557269 & eType == 1) #1
+
+communication %>% filter(Source==655963 & Target==579305 & eType == 0) #1
+communication %>% filter(Source==655963 & Target==579305 & eType == 1) #2
+
+communication %>% filter(Source==579305 & Target==639642 & eType == 0) #1
+communication %>% filter(Source==579305 & Target==639642 & eType == 1) #2
+
+```
+
+
+## Visualizations:
+
+
+```{r}
+ggplot(qt4_01, aes(x=Source)) + 
+ geom_histogram(aes(y=..density..), fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Contacters-Graph4",
+                                                                    x="Source", y = "Count")
+```
+
+```{r}
+ggplot(qt4_01, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Contacted-Graph4",
+                                                                    x="Targets", y = "Count")
+```
+
+```{r}
+ggplot(communication, aes(x=combo, y=Time, color = eType, fill=eType)) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations Graph4 ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+
+## Travel Channel:
+
+```{r}
+#625756 561157 616453
+head(target)
+target1 <- target %>% filter(Target==625756)
+target2 <- target %>% filter(Target==561157)
+target3 <- target %>% filter(Target==616453)
+```
+
+```{r}
+ggplot(target1, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph4 Travel Channel Analysis based on Target 625756",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph4 Travel Channel Analysis based on Target 561157",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+  geom_point(shape=23, size = 5)+labs(title="Graph4 Travel Channel Analysis based on Target 616453",
+                                    x="Time", y = "Source")
+```
+
+```{r}
+ggplot(qt4_6, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill="brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Places visited-Graph4",
+                                                                    x="Targets", y = "Count")
+```
+
+## Communication Channel:
+```{r}
+ggplot(qt4_01, aes(x=Source)) + 
+ geom_histogram(aes(y=..density..), fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Contacters-Graph4",
+                                                                    x="Sources", y = "Count") 
+```
+
+```{r}
+ggplot(qt4_01, aes(x=Target)) + 
+ geom_histogram(aes(y=..density..), fill = "brown")+
+ geom_density(alpha=.2, fill="#FF6666")+labs(title="Frequnecy of Contacted-Graph4",
+                                                                    x="Targets", y = "Count") 
+```
+
+## Procurement Channel:
+```{r}
+ggplot(qt4_23, aes(x=Source, y=Time, color = eType, fill=eType)) + 
+  geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Graph4 ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
