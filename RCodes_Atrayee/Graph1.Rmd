@@ -652,29 +652,29 @@ head(communication)
 
 ## Source and Target combo:
 ```{r}
-communication %>% filter(Source==490041 & Target==589639 & eType == 0)
-communication %>% filter(Source==490041 & Target==589639 & eType == 1)
+communication %>% filter(Source==490041 & Target==589639 & eType == 0) #6
+communication %>% filter(Source==490041 & Target==589639 & eType == 1) #5
 
-communication %>% filter(Source==492777 & Target==623295 & eType == 0)
-communication %>% filter(Source==492777 & Target==623295 & eType == 1)
+communication %>% filter(Source==492777 & Target==623295 & eType == 0) #4
+communication %>% filter(Source==492777 & Target==623295 & eType == 1) #6
 
-communication %>% filter(Source==492777 & Target==635665 & eType == 0)
-communication %>% filter(Source==492777 & Target==635665 & eType == 1)
+communication %>% filter(Source==492777 & Target==635665 & eType == 0) #4
+communication %>% filter(Source==492777 & Target==635665 & eType == 1) #6
 
-communication %>% filter(Source==599956 & Target==490041 & eType == 0)
-communication %>% filter(Source==599956 & Target==490041 & eType == 1)
+communication %>% filter(Source==599956 & Target==490041 & eType == 0) #5
+communication %>% filter(Source==599956 & Target==490041 & eType == 1) #9
 
-communication %>% filter(Source==599956 & Target==589639 & eType == 0)
-communication %>% filter(Source==599956 & Target==589639 & eType == 1)
+communication %>% filter(Source==599956 & Target==589639 & eType == 0) #4
+communication %>% filter(Source==599956 & Target==589639 & eType == 1) #9
 
-communication %>% filter(Source==599956 & Target==635665 & eType == 0)
-communication %>% filter(Source==599956 & Target==635665 & eType == 1)
+communication %>% filter(Source==599956 & Target==635665 & eType == 0) #9
+communication %>% filter(Source==599956 & Target==635665 & eType == 1) #3
 
-communication %>% filter(Source==623295 & Target==635665 & eType == 0)
-communication %>% filter(Source==623295 & Target==635665 & eType == 1)
+communication %>% filter(Source==623295 & Target==635665 & eType == 0) #3
+communication %>% filter(Source==623295 & Target==635665 & eType == 1) #7
 
-communication %>% filter(Source==635665 & Target==492777 & eType == 0)
-communication %>% filter(Source==635665 & Target==492777 & eType == 1)
+communication %>% filter(Source==635665 & Target==492777 & eType == 0) #8
+communication %>% filter(Source==635665 & Target==492777 & eType == 1) #2
 
 
 ```
