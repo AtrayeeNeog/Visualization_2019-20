@@ -757,3 +757,76 @@ df1 %>% filter(Target==537281)
 ```
 
 ## All Expenses occur at 31536000
+
+## Communication Channel:
+
+```{r}
+head(dt01)
+unique(dt01$Source)
+unique(dt01$Target)
+```
+
+```{r}
+contacter_count <- count(dt01, "Source") #492777,490041,550361,512397,533140,568093
+contacted_count <- count(dt01, "Target") #493044,492777,490041,550361
+time_comm_count <- count(dt01, "Time")
+```
+
+```{r}
+contacter <- dt01 %>% filter(Source == 492777 |Source == 490041 |Source== 550361 | Source==512397 | Source==533140 |Source==568093)
+contacted <- dt01 %>% filter(Target == 493044 |Target == 492777 |Target== 490041 | Target==550361)
+df1 <- rbind(contacter, contacted) 
+```
+
+```{r}
+nrow(df1)
+df1 <- df1[!duplicated(df1), ]
+df1 <- subset(df1, select = -c(SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude)) # SOurce and Target Latitude and Longitude columns removed as all Null.
+
+nrow(df1) #108
+head(df1)
+```
+
+```{r}
+df1 %>% filter(Source==492777) 
+df1 %>% filter(Source==490041) 
+df1 %>% filter(Source==550361)
+df1 %>% filter(Source==512397)
+df1 %>% filter(Source==533140)
+df1 %>% filter(Source==568093)
+```
+
+```{r}
+df1 %>% filter(Target==493044) 
+df1 %>% filter(Target==492777) 
+df1 %>% filter(Target==490041)
+df1 %>% filter(Target==550361)
+```
+
+## Combination for Source and Target:
+```{r}
+count(dt01, vars = c("Source", "Target"))
+```
+
+```{r}
+communication1 <- dt01 %>% filter(Source==490041 & Target==589639)
+communication2 <- dt01 %>% filter(Source==492777 & Target==623295)
+communication3 <- dt01 %>% filter(Source==492777 & Target==635665)
+communication4 <- dt01 %>% filter(Source==599956 & Target==490041)
+communication5 <- dt01 %>% filter(Source==599956 & Target==589639)
+communication6 <- dt01 %>% filter(Source==599956 & Target==635665)
+communication7 <- dt01 %>% filter(Source==623295 & Target==635665)
+communication8 <- dt01 %>% filter(Source==635665 & Target==492777)
+
+communication <- rbind(communication1, communication2, communication3, communication4, communication5, communication6, communication7, communication8)
+nrow(communication) #90
+communication <- communication[!duplicated(communication),]
+nrow(communication) #90
+
+communication <- subset(communication, select = -c(Weight, SourceLocation, TargetLocation, SourceLatitude, SourceLongitude, TargetLatitude, TargetLongitude))
+head(communication)
+```
+
+
+
+
