@@ -1,0 +1,213 @@
+---
+title: "Seed1-Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+library(plyr)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+# Load The Data:
+st1 <- data.table::fread(here::here("data","extractedSeeds" ,"Seed1-Graph2NonCom.csv"))
+head(st1)
+tail(st1)
+
+# Summarising the Data:
+summary(st1)
+nrow(st1)
+ncol(st1)
+
+# Differentiating between channels:
+#st1_01 <- st1 %>% filter(st1$eType == 0 | st1$eType == 1) # Communication Channel
+#nrow(st1_01) # 563
+st1_23 <- st1 %>% filter(st1$eType == 2 | st1$eType == 3) # Procurement Channel
+nrow(st1_23) # 3240
+st1_4 <- st1 %>% filter(st1$eType == 4) # Co-authorship Channel
+nrow(st1_4) # 204
+st1_5 <- st1 %>% filter(st1$eType == 5) # Demographic Channel
+nrow(st1_5) # 1105
+st1_6 <- st1 %>% filter(st1$eType == 6) # Travel Channel
+nrow(st1_6) # 1100
+# Highest data for Demographic, Communication and Travel Channel.
+```
+
+## Travel Channel:
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+glimpse(st1_6)
+unique(st1_6)
+unique(st1_6$eType) # 6
+unique(st1_6$SourceLocation) # 3 4 2 1 0 5
+unique(st1_6$TargetLocation) # 1 3 4 2 0 5
+unique(st1_6$SourceLatitude) # NA
+unique(st1_6$SourceLongitude) # NA
+unique(st1_6$TargetLatitude) # NA
+unique(st1_6$TargetLongitude) # NA
+unique(st1_6$Source) #78 80 77 79 82 83 84 73 75 74 39 40 41 87 85 86
+unique(st1_6$Target) #81 70 69 76 71 72
+unique(st1_6$Weight) #2 1 3 4 5 6
+
+
+range(st1_6$Source) # 39 87
+range(st1_6$Target) # 69 81
+range(st1_6$Time) # 11773606 31004806
+range(st1_6$Weight) #1 6
+
+hist(st1_6$Weight)
+unique(st1_6$Weight) #2 1 3 4 5 6
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+head(st1_6)
+st1_6 <- st1_6 %>% distinct(Source, etype, Target, Time, Weight, SourceLocation)
+
+nrow(st1_6) #220
+# No Duplicate rows in Travel Channel
+```
+
+```{r}
+target_count <- count(st1_6, 'Target') #561157,625756,616453,657173,509607,499467
+target_count
+time_count <- count(st1_6, 'Time')
+time_count <- time_count %>% filter(time_count$freq > 1)
+time_count
+weight_count <- count(st1_6, 'Weight')
+weight_count
+sourceloc_count <- count(st1_6, 'SourceLocation')
+sourceloc_count
+```
+
+```{r}
+head(target)
+target1 <- st1_6 %>% filter(Target==561157) # Source Location: 1,2,3,4
+target2 <- st1_6 %>% filter(Target==625756)
+target3 <- st1_6 %>% filter(Target==616453)
+target4 <- st1_6 %>% filter(Target==657173)
+target5 <- st1_6 %>% filter(Target==509607)
+target6 <- st1_6 %>% filter(Target==499467)
+
+```
+
+```{r}
+ggplot(target1, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=15, size = 5)+labs(title="Seed1 Travel Channel Analysis based on Target 561157",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=15, size = 5)+labs(title="Seed1 Travel Channel Analysis based on Target 625756",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=15, size = 5)+labs(title="Seed1 Travel Channel Analysis based on Target 616453",
+                                    x="Time", y = "Source")
+ggplot(target4, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=15, size = 5)+labs(title="Seed1 Travel Channel Analysis based on Target 657173",
+                                    x="Time", y = "Source")
+ggplot(target5, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=15, size = 5)+labs(title="Seed1 Travel Channel Analysis based on Target 509607",
+                                    x="Time", y = "Source")
+ggplot(target6, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=15, size = 5)+labs(title="Seed1 Travel Channel Analysis based on Target 499467",
+                                    x="Time", y = "Source")
+
+```
+
+## Procurement Channel:
+
+```{r}
+st1_23
+count(st1_23$Target)#458848(159),461577(138),469675(265),505462(250),521440(281),547205(343)
+item1 <- st1_23 %>% filter(Target == 547205)
+item2 <- st1_23 %>% filter(Target == 521440)
+item3 <- st1_23 %>% filter(Target == 469675)
+item4 <- st1_23 %>% filter(Target == 505462)
+item5 <- st1_23 %>% filter(Target == 458848)
+item6 <- st1_23 %>% filter(Target == 461577)
+
+ggplot(item1, aes(x=as.character(Source), y=Time/86400, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=15, size = 2)+labs(title="Source Target Combinations Seed1 ",
+                                    x="Source & Target Combination", y = "Time")
+ggplot(item2, aes(x=as.character(Source), y=Time/86400, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=15, size = 2)+labs(title="Source Target Combinations Seed1 ",
+                                    x="Source & Target Combination", y = "Time")
+ggplot(item3, aes(x=as.character(Source), y=Time/86400, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=15, size = 2)+labs(title="Source Target Combinations Seed1 ",
+                                    x="Source & Target Combination", y = "Time")
+ggplot(item4, aes(x=as.character(Source), y=Time/86400, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=15, size = 2)+labs(title="Source Target Combinations Seed1 ",
+                                    x="Source & Target Combination", y = "Time")
+ggplot(item5, aes(x=as.character(Source), y=Time/86400, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=15, size = 2)+labs(title="Source Target Combinations Seed1 ",
+                                    x="Source & Target Combination", y = "Time")
+ggplot(item6, aes(x=as.character(Source), y=Time/86400, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=15, size = 2)+labs(title="Source Target Combinations Seed1 ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+## Communication Channel:
+
+```{r}
+st1_com <- data.table::fread(here::here("data","extractedSeeds" ,"Seed1-Graph2Com.csv"))
+head(st1_com)
+tail(st1_com)
+
+# Summarising the Data:
+summary(st1_com)
+nrow(st1_com)
+ncol(st1_com)
+
+```
+
+
+```{r}
+contacter_count <- count(st1_com, "Source") #41,63,39,40,47,63,67
+contacted_count <- count(st1_com, "Target") #579305,639642,557269
+time_comm_count <- count(st1_com, "Time")
+```
+
+## Combination:
+```{r}
+count(st1_com, vars = c("Source", "Target")) 
+#554368-554368(30),638591-554368(18),462691-554368(11),554368-462691(9),583737-554368	(10)	
+
+```
+
+```{r}
+communication1 <- st1_com %>% filter(Source==554368 & Target==554368)
+communication2 <- st1_com %>% filter(Source==638591 & Target==554368)
+communication3 <- st1_com %>% filter(Source==462691 & Target==554368)
+communication4 <- st1_com %>% filter(Source==554368 & Target==462691)
+communication5 <- st1_com %>% filter(Source==583737 & Target==554368)
+
+communication <- rbind(communication1, communication2, communication3, communication4, communication5)
+nrow(communication) #90
+communication <- communication[!duplicated(communication),]
+nrow(communication) #90
+
+communication <- subset(communication, select = -c(Weight, SourceLocation))
+head(communication)
+
+communication <- transform(communication, combo = paste(communication$Source, communication$Target, sep = ","))
+head(communication)
+```
+
+```{r}
+ggplot(communication, aes(x=as.character(combo), y=Time/86400, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations Seed1 ",
+                                    x="Source & Target Combination", y = "Time")
+
+```
+
+
+
