@@ -759,7 +759,7 @@ head(communication)
 ```
 
 ```{r}
-ggplot(communication, aes(x=combo, y=Time, color = eType, fill=eType)) + 
+ggplot(communication, aes(x=as.character(combo), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations Graph1 ",
                                     x="Source & Target Combination", y = "Time")
 ```
@@ -771,7 +771,7 @@ qt1_23
 ```
 
 ```{r}
-ggplot(qt1_23, aes(x=Source, y=Time, color = eType, fill=eType)) + 
+ggplot(qt1_23, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Graph1 ",
                                     x="Source & Target Combination", y = "Time")
 ```

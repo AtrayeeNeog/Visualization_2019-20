@@ -634,7 +634,7 @@ ggplot(qt4_01, aes(x=Target)) +
 
 ## Procurement Channel:
 ```{r}
-ggplot(qt4_23, aes(x=Source, y=Time, color = eType, fill=eType)) + 
+ggplot(qt4_23, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Graph4 ",
                                     x="Source & Target Combination", y = "Time")
 ```

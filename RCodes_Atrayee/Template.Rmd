@@ -967,7 +967,7 @@ head(communication)
 
 
 ```{r}
-ggplot(communication, aes(x=combo, y=Time, color = eType, fill=eType)) + 
+ggplot(communication, aes(x=as.character(combo), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Template ",
                                     x="Source & Target Combination", y = "Time")
 ```
@@ -981,7 +981,7 @@ dt23
 
 
 ```{r}
-ggplot(dt23, aes(x=Source, y=Time, color = eType, fill=eType)) + 
+ggplot(dt23, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Template ",
                                     x="Source & Target Combination", y = "Time")
 ```
