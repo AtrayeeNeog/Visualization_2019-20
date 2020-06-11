@@ -878,7 +878,7 @@ target3 <- target %>% filter(Target==69)
 ## Target=70
 
 ```{r}
-ggplot(target1, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+ggplot(target1, aes(x=Time, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
   geom_point(shape=23, size = 5)+labs(title="Template Travel Channel Analysis based on Target 70",
                                     x="Time", y = "Source")
 ```
@@ -886,11 +886,11 @@ ggplot(target1, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocatio
 ## Target=71
 
 ```{r}
-ggplot(target2, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+ggplot(target2, aes(x=Time, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
   geom_point(shape=23, size = 5)+labs(title="Template Travel Channel Analysis based on Target 71",
                                     x="Time", y = "Source")
 
-ggplot(target3, aes(x=Time, y=Source, color = SourceLocation, fill=SourceLocation)) + 
+ggplot(target3, aes(x=Time, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
   geom_point(shape=23, size = 5)+labs(title="Template Travel Channel Analysis based on Target 69",
                                     x="Time", y = "Source")
 ```
@@ -967,7 +967,7 @@ head(communication)
 
 
 ```{r}
-ggplot(communication, aes(x=combo, y=Time, color = eType, fill=eType)) + 
+ggplot(communication, aes(x=as.character(combo), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Template ",
                                     x="Source & Target Combination", y = "Time")
 ```
@@ -981,7 +981,7 @@ dt23
 
 
 ```{r}
-ggplot(dt23, aes(x=Source, y=Time, color = eType, fill=eType)) + 
+ggplot(dt23, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+labs(title="Source Target Combinations Template ",
                                     x="Source & Target Combination", y = "Time")
 ```
