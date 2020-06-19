@@ -30,7 +30,7 @@
 * Start with the report and website content
 * Decide on the items(pictures and descriptions) to present
 
-### Next Meeting's agenda(June, 10th, 1pm)?
+### Next Meeting's agenda(June, 26th, 10am)?
 
 * Discussing our progress for the weekly
 * Discussing possible solutions
