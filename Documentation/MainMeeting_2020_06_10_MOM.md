@@ -29,6 +29,7 @@
 * Make a report before the deadline for revision from Prof. Preim
 * Start with the report and website content
 * Decide on the items(pictures and descriptions) to present
+* Check on automatic clustering algorithms 
 
 ### Next Meeting's agenda(June, 26th, 10am)?
 
