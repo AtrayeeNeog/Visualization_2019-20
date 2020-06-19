@@ -21,7 +21,7 @@
 
 ### What next?
 
-* Weekly meetings instead of two week meetings
+* Weekly meetings instead of two week meetings from now on
 * Further Literature review
 * Preparation of question 1 and 2 in the required format by the committee
 * Implement the discussed methods for question 3
@@ -29,7 +29,7 @@
 * Make a report before the deadline for revision from Prof. Preim
 * Start with the report and website content
 * Decide on the items(pictures and descriptions) to present
-* Check on automatic clustering algorithms 
+* Check on automatic clustering algorithms
 
 ### Next Meeting's agenda(June, 26th, 10am)?
 
