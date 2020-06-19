@@ -10,14 +10,12 @@
 
 * New seed network approach was done.
 * A presentation showing all the measurements with visualizations was presented
-* Histograms were replace by distribution curves and were created for all the measures
-* All the graphs of question 1 were compared to Template with Wasserstein metric
-* Different channels of all the graphs of question 1 were compared to Template with Wasserstein metric
-* The visualization for all the graphs and Template was presented
-* Parallel Coordinates for all the graphs was presented
-* Our conclusion for question 1 was given and discussed
-* The procedure for creating the graphs from seeds of question 2 was presented and discussed
-* The goodness of the seeds were presented
+* Our new approach for second question was explained
+* Template and graphs characteristics were discussed and how it changed our approach for the second question
+* Clustering the people in each channel based on different criteria was measured
+* People in each channel were also ranked based their proximity and most frequent items(places, items and etc.) were discussed
+* A proposition for how to go about question 3 and 4 was discussed
+* Our approach to comparing the seed networks with the new method was discussed.
 * Agenda for the next meeting(in two weeks) was discussed
 
 
