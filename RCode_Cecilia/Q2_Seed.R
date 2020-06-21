@@ -5,7 +5,6 @@ setwd('~/OVGU/Visualization_Project/MC1/data')
 Co_AuthC <- read.csv('eType4.csv')
 Sell_C <- read.csv('eType2.csv')
 Buy_C <- read.csv('eType3.csv')
-ProC <- read.csv('eType2n3.csv')
 DemoC <- read.csv('eType5.csv')
 TravelC <- read.csv('eType6.csv')
 
@@ -78,6 +77,9 @@ head(Seed_2) #Only 1 Co-authorship channel data
 # Person 538771 are only connected with other people by Co-Authership Channel
 Seed_538771 <- filter(Co_AuthC, Source == "538771")
 #Below are the all publications that Person 538771 involved with
+#Write a for loop to find out all records that related with these publications
+Pulication_579269 <- filter(Co_AuthC, Target == "579269")
+Seed2_eT4 <- filter_all(Co_AuthC$Target == Seed_538771$Target)
 
 
 #Seed3_Connections
@@ -117,4 +119,76 @@ Travel574136_04 <- filter(Travel_dedupted, SourceLocation == "4" & TargetLocatio
 #Besides 574136 itself, there are 22 Travel records, and related with 22 other people.
 Seed3_eT6 <- rbind(Travel574136_01,Travel574136_02,Travel574136_03,Travel574136_04)
 unique(Seed3_eT6$Source)
+       
+library(dplyr)
+library(ggplot2)
+library(hrbrthemes)
+       
+setwd('~/OVGU/Visualization_Project/graphsExtended')
+Seed1_Extend <- read.csv('Seed1-Graph2NonCom.csv')
+S1_extendT<- filter(Seed1_Extend, eType == "6")
+S1_extendT <- select(S1_extendT, -X)
+
+S1_extendT <- transform(S1_extendT, TargetLocation = case_when(
+    Target=="561157" ~ "0",
+    Target=="657173" ~ "1",
+    Target=="499467" ~ "2",
+    Target=="625756" ~ "3",
+    Target=="509607" ~ "4",
+    Target=="616453" ~ "5",
+  ))
+unique(S1_extendT$TargetLocation)
+unique(S1_extendT$Target)
+#drop duplicated data
+S1_extendT <-S1_extendT[!duplicated(S1_extendT), ]
+S1_extendT <-transform(S1_extendT ,Start_Day = Time/86400)
+S1_extendT<- transform(S1_extendT, End_Day = Start_Day + Weight)
+unique(S1_extendT$Source)
+
+#Plot Seed1_Travel records
+S1_extendT<- transform(S1_extendT, Target_location = as.character(TargetLocation))
+S1_extendT<- transform(S1_extendT, Person = as.character(Source))
+
+ggplot(S1_extendT, aes(x=Start_Day, y=Person, color=Target_location)) + 
+  geom_point(size=3,shape=15) +
+  theme_ipsum()
+unique(S3_extendT_d$Source)
+
+##Start with Seed3
+Seed3_Extend <- read.csv('Seed3-Graph2NonCom.csv')
+S3_extendT<- filter(Seed3_Extend, eType == "6")
+S3_extendT <- select(S3_extendT, -X)
+
+S3_extendT <- transform(S3_extendT, TargetLocation = case_when(
+  Target=="561157" ~ "0",
+  Target=="657173" ~ "1",
+  Target=="499467" ~ "2",
+  Target=="625756" ~ "3",
+  Target=="509607" ~ "4",
+  Target=="616453" ~ "5",
+))
+#Check if there is any N/A after new variable
+unique(S3_extendT$TargetLocation)
+unique(S3_extendT$Target)
+
+#drop duplicated data
+S3_extendT_d <-S3_extendT[!duplicated(S3_extendT), ]
+#Add Start_Day according to Time
+S3_extendT_d <-transform(S3_extendT ,Start_Day = Time/86400)
+S3_extendT_d<- transform(S3_extendT, End_Day = Start_Day + Weight)
+
+
+#Plot Seed1_Travel records
+S3_extendT_d<- transform(S3_extendT_d, Target_location = as.character(TargetLocation))
+S3_extendT_d<- transform(S3_extendT_d, Person = as.character(Source))
+
+ggplot(S3_extendT_d, aes(x=Start_Day, y=Person, color=Target_location)) + 
+  geom_point(size=3,shape=15) +
+  theme_ipsum()
+
+Seed3_ex <- semi_join(Seed3_eT6, Travel_dedupted,by="Source")
+
+
+
+
 

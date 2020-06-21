@@ -5,7 +5,6 @@ library(hrbrthemes)
 
 
 getwd()
-setwd('~/OVGU/Visualization_Project/Foto_supply')
 setwd('~/OVGU/Visualization_Project/MC1/data')
 G1 <- read.csv('Q1-Graph1.csv')
 G2 <- read.csv('Q1-Graph2.csv')
@@ -95,13 +94,15 @@ ggplot(group1) +
   
 #Plot Template_Travel records 
 Temp_Travel<- transform(Temp_Travel, Target_location = as.character(TargetLocation))
+Temp_Travel<- transform(Temp_Travel, Source_location = as.character(SourceLocation))
+
 Temp_Travel<- transform(Temp_Travel, Person = as.character(Source))
   
 
 ggplot(Temp_Travel) + 
   geom_segment( aes(x=Person, xend=Person, y=Start_Day, yend=End_Day), color="grey") +
-  geom_point( aes(x=Person, y=Start_Day,color=SourceLocation), size = 3) +
-  geom_point( aes(x=Person, y=End_Day,color=TargetLocation), size = 3) +   
+  geom_point( aes(x=Person, y=Start_Day,color=Source_location), size = 3) +
+  geom_point( aes(x=Person, y=End_Day,color=Target_location), size = 3) +   
   coord_flip()+
   theme_ipsum() +
   theme(
@@ -109,7 +110,8 @@ ggplot(Temp_Travel) +
   )+
   xlab("Person ID")
   ylab("Travel Data")
-  
+
+
 ggplot(Temp_Travel, aes(x=Start_Day, y=Person, color=Target_location)) + 
   geom_point(size=3,shape=15) +
   theme_ipsum()
@@ -117,14 +119,47 @@ ggplot(Temp_Travel, aes(x=Start_Day, y=Person, color=Target_location)) +
 #Plot G1_Travel records
 G1_Travel<- transform(G1_Travel, Target_location = as.character(TargetLocation))
 G1_Travel<- transform(G1_Travel, Person = as.character(Source))
+G1_Travel$Person <- factor(G1_Travel$Person,levels = c("629627", "599441", "585212", "534034",
+                                                       "572391", "538892", "542965",
+                                                       "464459", "568093", "635665",
+                                                       "649553", "570284", "643925"))
+#subset G2 from G1
+G2_from_G1 <- subset(G1_Travel, G1_Travel$Source == "629627")
+G2_from_G1_0 <- subset(G1_Travel, G1_Travel$Source == "599441")
+G2_from_G1_1 <- subset(G1_Travel, G1_Travel$Source == "585212")
+G2_from_G1_2 <- subset(G1_Travel, G1_Travel$Source == "534034")
+G2_from_G1_3 <- subset(G1_Travel, G1_Travel$Source == "572391")
+G2_from_G1_4 <- subset(G1_Travel, G1_Travel$Source == "538892")
+G2_from_G1_5 <- subset(G1_Travel, G1_Travel$Source == "542965")
+G2_from_G1_6 <- subset(G1_Travel, G1_Travel$Source == "464459")
+G2_from_G1_7 <- subset(G1_Travel, G1_Travel$Source == "568093")
+G2_from_G1_8 <- subset(G1_Travel, G1_Travel$Source == "635665")
+
+G2fG1 <- rbind(G2_from_G1,G2_from_G1_0,G2_from_G1_1,G2_from_G1_2,
+               G2_from_G1_3,G2_from_G1_4,G2_from_G1_5,G2_from_G1_6,
+               G2_from_G1_7,G2_from_G1_8)
 
 ggplot(G1_Travel, aes(x=Start_Day, y=Person, color=Target_location)) + 
   geom_point(size=3,shape=15) +
   theme_ipsum()
 
+
+G2fG1$Person <- factor(G2fG1$Person,levels = c("629627", "599441", "585212", "534034",
+                                                       "572391", "538892", "542965",
+                                                       "464459", "568093", "635665"))
+
+ggplot(G2fG1, aes(x=Start_Day, y=Person, color=Target_location)) + 
+  geom_point(size=3,shape=15) +
+  theme_ipsum()
+
+
 #Plot G2_Travel records
 G2_Travel<- transform(G2_Travel, Target_location = as.character(TargetLocation))
 G2_Travel<- transform(G2_Travel, Person = as.character(Source))
+G2_Travel$Person <- factor(G2_Travel$Person,levels = c("629627", "599441", "585212", "534034",
+                                                       "572391", "538892", "542965",
+                                                       "464459", "568093", "635665"))
+
 
 ggplot(G2_Travel, aes(x=Start_Day, y=Person, color=Target_location)) + 
   geom_point(size=3,shape=15) +
@@ -133,6 +168,11 @@ ggplot(G2_Travel, aes(x=Start_Day, y=Person, color=Target_location)) +
 #Plot G3_Travel records
 G3_Travel<- transform(G3_Travel, Target_location = as.character(TargetLocation))
 G3_Travel<- transform(G3_Travel, Person = as.character(Source))
+G3_Travel$Person <- factor(G3_Travel$Person,levels = c("629627", "599441", "585212", "534034",
+                                                       "464459", "568093", "635665",
+                                                       "649553", "643925", "570284",
+                                                       "538892", "542965",
+                                                       "643411", "612711", "598006" ))
 
 ggplot(G3_Travel, aes(x=Start_Day, y=Person, color=Target_location)) + 
   geom_point(size=3,shape=15) +

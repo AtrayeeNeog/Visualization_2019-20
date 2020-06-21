@@ -114,12 +114,7 @@ Travel_Location0_Day1 <- filter(Travel_Location0, Start_Day == '1')
 length(duplicated(Travel_Location0_Day1$Source)) == nrow(Travel_Location0_Day1) #No dulicated value in Source
 
 # Remove some meaningless information to make the data clear
-remove(Travel_Channel_Final)
-Travel_Channel_Final <- subset(Travel_Channel_New, select = -c(eType,TargetLongitude,TargetLatitude))
-remove(One_person)
-
-One_person <- filter(Travel_Channel_Final,Source == "508816")
-Second_person <- filter(Travel_Channel_Final,Source == "648412")
+drops <- c("eType","Target","Time","TargetLocation","TargetLongitude","TargetLatitude")
 
 ```
 
@@ -129,7 +124,6 @@ Second_person <- filter(Travel_Channel_Final,Source == "648412")
 You can also embed plots, for example:
 
 ```{r}
-
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
