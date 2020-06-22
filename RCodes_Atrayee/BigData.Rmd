@@ -1,0 +1,98 @@
+---
+title: "BigData-Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+library(plyr)
+```
+
+## Procurement Channel:
+
+```{r cars}
+# Load The Data:
+bg23 <- data.table::fread(here::here("data", "BigGraphData", "procurement.csv"))
+
+nrow(bg23)
+
+head(bg23)
+length(unique(bg23$Target))
+length(unique(bg23$Source))
+
+```
+
+
+
+```{r}
+#unique(bg23$Source) 
+#unique(bg23$Target)
+
+bg23[bg23$Target==641131 & bg23$eType == 2]
+
+bg23$Time[bg23$Target==641131]
+
+bg2 <- bg23 %>% filter(bg23$eType==2)
+bg3 <- bg23 %>% filter(bg23$eType==3)
+
+```
+
+```{r}
+items_sold <- count(bg2, c("Time", "Target")) # Trying to find interesting items which were sold multiple times.
+items_bought <- count(bg3, c("Time", "Target")) # Trying to find interesting items which were bought multiple times.
+
+#items_sold <- items_sold %>% filter(items_sold$freq >=7)
+#items_bought <- items_bought %>% filter(items_bought$freq >=7)
+
+max(items_sold$freq)
+max(items_bought$freq)
+
+#frequent_items <- intersect(items_sold$Target, items_bought$Target)
+#length(frequent_items)
+
+items <- count(bg23, c("Time", "Target"))
+max(items$freq)
+items <- items %>% filter(items$freq >=2)
+
+frequent_items <- items$Target
+length(frequent_items)
+
+```
+
+```{r}
+transactions <- bg23 %>% filter(bg23$Target==frequent_items)
+length(unique(transactions$Target))
+head(transactions)
+```
+
+
+
+```{r}
+multi_sources <- count(transactions, c("Target", "Source"))
+max(multi_sources$freq)
+unique(multi_sources$freq)
+
+multi_sources <- multi_sources %>% filter(multi_sources$freq >=7)
+nrow(multi_sources)
+
+multi_sources
+
+```
+
+```{r}
+hackers <- bg23 %>% filter(bg23$Source==multi_sources$Source & bg23$Target==multi_sources$Target)
+```
+
+
+
+```{r}
+ggplot(hackers, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+
+
+
