@@ -40,24 +40,18 @@ bg3 <- bg23 %>% filter(bg23$eType==3)
 ```
 
 ```{r}
-items_sold <- count(bg2, c("Time", "Target")) # Trying to find interesting items which were sold multiple times.
-items_bought <- count(bg3, c("Time", "Target")) # Trying to find interesting items which were bought multiple times.
+items_sold <- count(bg2, c("Target","Time")) # Trying to find interesting items which were sold multiple times.
+items_bought <- count(bg3, c("Target","Time")) # Trying to find interesting items which were bought multiple times.
 
-#items_sold <- items_sold %>% filter(items_sold$freq >=7)
-#items_bought <- items_bought %>% filter(items_bought$freq >=7)
+items_sold <- items_sold %>% filter(items_sold$freq >= 2)
+items_bought <- items_bought %>% filter(items_bought$freq >= 2)
 
 max(items_sold$freq)
 max(items_bought$freq)
 
-#frequent_items <- intersect(items_sold$Target, items_bought$Target)
-#length(frequent_items)
-
-items <- count(bg23, c("Time", "Target"))
-max(items$freq)
-items <- items %>% filter(items$freq >=2)
-
-frequent_items <- items$Target
+frequent_items <- intersect(items_sold$Target, items_bought$Target)
 length(frequent_items)
+
 
 ```
 
@@ -65,16 +59,20 @@ length(frequent_items)
 transactions <- bg23 %>% filter(bg23$Target==frequent_items)
 length(unique(transactions$Target))
 head(transactions)
+tail(transactions)
+
+nrow(transactions)
+length(unique(transactions$Time))
 ```
 
 
 
 ```{r}
-multi_sources <- count(transactions, c("Target", "Source"))
+multi_sources <- count(transactions, c("Source","Target"))
 max(multi_sources$freq)
 unique(multi_sources$freq)
 
-multi_sources <- multi_sources %>% filter(multi_sources$freq >=7)
+#multi_sources <- multi_sources %>% filter(multi_sources$freq >=7)
 nrow(multi_sources)
 
 multi_sources
@@ -82,7 +80,9 @@ multi_sources
 ```
 
 ```{r}
-hackers <- bg23 %>% filter(bg23$Source==multi_sources$Source & bg23$Target==multi_sources$Target)
+hackers <- bg23 %>% filter(bg23$Source==multi_sources$Source, bg23$Target==multi_sources$Target)
+count(hackers, "Time")
+
 ```
 
 
@@ -93,6 +93,12 @@ ggplot(hackers, aes(x=as.character(Source), y=Time, color = as.character(eType),
                                     x="Source & Target Combination", y = "Time")
 ```
 
+## Clustering:
+
+```{r}
+install.packages("klaR")
+library(klaR)
+```
 
 
 
