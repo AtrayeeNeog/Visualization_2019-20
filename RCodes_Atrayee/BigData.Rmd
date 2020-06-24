@@ -53,6 +53,8 @@ unique(items_sold$freq)
 items_sold <- items_sold %>% filter(items_sold$freq >= 7)
 items_bought <- items_bought %>% filter(items_bought$freq >= 7)
 
+items_sold$Source[items_sold$Target==643087]
+
 ```
 
 ```{r}
@@ -69,23 +71,17 @@ frequent_items<-intersect(items_sold$Target, items_bought$Target)
 
 ```{r}
 ## Extracting the rows for which Targets belong to the list of common items which were both sold and bought:
-transactions <- bg23 %>% filter(bg23$Target==frequent_items)
-length(unique(transactions$Target))
-head(transactions)
-tail(transactions)
-
-time <- count(transactions, "Time")
-max(time$freq)
-which(time$freq == 2) #1604,1630,2108
-time[2108,] #5937629,8915196,11505651
-
-transactions$Target[transactions$Time==5937629] #547205,552748
-transactions$Target[transactions$Time==8915196] #554011,560703
-transactions$Target[transactions$Time==11505651] #492039,469675
-
-transactions$Source[transactions$Time==5937629] #547205,552748
-transactions$Source[transactions$Time==8915196] #554011,560703
-transactions$Source[transactions$Time==11505651] #492039,469675
+for (i in bg23$Target) {
+  for (j in frequent_items) {
+    if(i==j){
+      trans <- bg23[bg23$Target==j]
+    } 
+    
+  }
+  
+}
+trans
+nrow(trans)
 
 
 ```
