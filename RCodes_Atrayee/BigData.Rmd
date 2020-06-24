@@ -74,7 +74,7 @@ frequent_items<-intersect(items_sold$Target, items_bought$Target)
 for (i in bg23$Target) {
   for (j in frequent_items) {
     if(i==j){
-      trans <- bg23[bg23$Target==j]
+      trans <- rbind(bg23[bg23$Target==j])
     } 
     
   }
@@ -86,30 +86,30 @@ nrow(trans)
 
 ```
 
-
-
 ```{r}
-multi_sources <- count(transactions, c("Target","Time"))
-max(multi_sources$freq)
-unique(multi_sources$freq)
-
-#multi_sources <- multi_sources %>% filter(multi_sources$freq >=7)
-nrow(multi_sources)
-
-multi_sources
-
-```
-
-```{r}
-hackers <- bg23 %>% filter(bg23$Source==multi_sources$Source, bg23$Target==multi_sources$Target)
-count(hackers, "Time")
-
+# 643087 589127 483999 520837 583906 555931 595800 597727 606994 569215 641131 590595 547205 631478 490745 552748 596301
+# 492039 469675 554011 597461 651537 544444 499177 614798 511389 461577 482579 654011 567511 605235 467222 649122 604359
+# 592419 525263 588802 485885 563055 544415 578918 560703 473475 586881 466410 543037 657187 482264 487668
 ```
 
 
 
 ```{r}
-ggplot(hackers, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+for (i in bg23$Target) {
+  if(i==589127){
+    trans <- bg23[bg23$Target==589127]
+  }
+  
+}
+trans
+```
+
+
+
+
+
+```{r}
+ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
                                     x="Source & Target Combination", y = "Time")
 ```
