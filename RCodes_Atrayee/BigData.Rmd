@@ -141,8 +141,7 @@ ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), f
 ```
 
 ```{r}
-#525263:S:606962,523415
-trans <- bg23[bg23$Target==560703]
+trans <- bg23[bg23$Target==567511]
 ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
                                     x="Source & Target Combination", y = "Time")
