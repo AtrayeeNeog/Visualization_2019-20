@@ -30,9 +30,9 @@ length(unique(bg23$Source))
 #unique(bg23$Source) 
 #unique(bg23$Target)
 
-bg23[bg23$Target==641131 & bg23$eType == 2]
+#bg23[bg23$Target==641131 & bg23$eType == 2]
 
-bg23$Time[bg23$Target==641131]
+#bg23$Time[bg23$Target==641131]
 
 bg2 <- bg23 %>% filter(bg23$eType==2)
 bg3 <- bg23 %>% filter(bg23$eType==3)
@@ -86,16 +86,11 @@ nrow(trans)
 
 ```
 
-```{r}
-# 595800 597727 606994 569215       
-```
-
-
 
 ```{r}
 for (i in bg23$Target) {
-  if(i==569215){
-    trans <- bg23[bg23$Target==569215]
+  if(i==525263){
+    trans <- bg23[bg23$Target==525263]
   }
   
 }
@@ -113,24 +108,50 @@ ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), f
 ```
 
 ```{r}
+# Sources which are similar to template.
 # 487668:S:644830,585212
-# 555931:S:457715,515079(2 times)
 # 482264:S:595104,570284
 # 657187:S:550287,512397
-# 543037:S:593129,462118;593129,494284(2 times)
-# 525263:S:606962,523415
-# 567511:S:562859,649391
 ```
 
+643087 589127 483999 520837 583906 555931 595800 597727 606994 569215 641131 590595 547205 631478 490745 552748 596301
+492039 469675 554011 597461 651537 544444 499177 614798 511389 461577 482579 654011 567511 605235 467222 649122 604359
+592419 525263 588802 485885 563055 544415 578918 560703 473475 586881 466410 543037 657187 482264 487668
 
-
-
-## Clustering:
 
 ```{r}
-install.packages("klaR")
-library(klaR)
+trans <- bg23[bg23$Target==487668]
+ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
+                                    x="Source & Target Combination", y = "Time")
 ```
+
+```{r}
+trans <- bg23[bg23$Target==482264]
+ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+```{r}
+trans <- bg23[bg23$Target==657187]
+ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+```{r}
+#525263:S:606962,523415
+trans <- bg23[bg23$Target==560703]
+ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+
+
+
+
 
 
 
