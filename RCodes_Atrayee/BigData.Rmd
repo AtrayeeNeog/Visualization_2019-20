@@ -53,7 +53,7 @@ unique(items_sold$freq)
 items_sold <- items_sold %>% filter(items_sold$freq >= 7)
 items_bought <- items_bought %>% filter(items_bought$freq >= 7)
 
-items_sold$Source[items_sold$Target==643087]
+#items_sold$Source[items_sold$Target==643087]
 
 ```
 
@@ -164,19 +164,87 @@ length(unique(bg6$Source))
 
 
 ```{r}
-bg6 <- bg6[-bg6$Weight==-1]
-nrow(bg6)
 colnames(bg6)
 bg6 <- subset(bg6, select = -c(SourceLatitude, TargetLatitude, SourceLongitude, TargetLongitude))
+
+bg6 <- bg6[!duplicated(bg6)]
+nrow(bg6)
+#bg6$Time <- floor(bg6$Time/(3600*7*24))
 ```
 
 ## Find the Locations visited at the same time:
 
 ```{r}
-location_clusters <- count(bg6, c("Source","Target","Time"))
+location_clusters <- count(bg6, c("Time"))
 nrow(location_clusters)
-location_clusters <- location_clusters %>% filter(location_clusters$freq > 1)
+min(location_clusters$freq)
+max(location_clusters$freq)
+location_clusters <- location_clusters %>% filter(location_clusters$freq <5)
+length(unique(location_clusters$Time))
+time <- unique(location_clusters$Time)
 
+```
+
+```{r}
+for (i in time) {
+  target1 <- bg6 %>% filter(Time == i)
+  if(length(target1) < 3){
+    bg6 <- bg6 %>% filter(Time!=i)
+    
+  }
+  
+}
+
+length(bg6$Source)
+```
+
+
+
+
+
+```{r}
+target1 <- bg6 %>% filter(Time == 20413606)
+target2 <- bg6 %>% filter(Target==509607)
+target3 <- bg6 %>% filter(Target==561157 & Time == 52 & SourceLocation==0)
+target4 <- bg6 %>% filter(Target==616453 & Time == 17915018)
+target5 <- bg6 %>% filter(Target==625756 & Time == 17915018)
+target6 <- bg6 %>% filter(Target==657173 & Time == 17915018)
+
+```
+
+```{r}
+ggplot(target3, aes(x=as.character(Source), y=Time, color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis based on Target 499467",
+                                    x="Source", y = "Time")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Clustering:
+
+```{r}
+library(klaR)
+colnames(bg6)
+clusters <- kmodes(bg6[,c(3,4,6)],6,iter.max = 10, weighted = FALSE)
+output <- cbind(bg6,clusters$cluster)
+colnames(output)[which(names(output) == "V2")] <- "cluster"
+output
+```
+
+```{r}
+plot(bg6[,c(3,4,6)],col= output$cluster)
 ```
 
 
