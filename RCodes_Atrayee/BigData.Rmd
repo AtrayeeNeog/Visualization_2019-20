@@ -175,13 +175,14 @@ nrow(bg6)
 ## Find the Locations visited at the same time:
 
 ```{r}
-location_clusters <- count(bg6, c("Time"))
+location_clusters <- count(bg6, c("Source"))
 nrow(location_clusters)
 min(location_clusters$freq)
 max(location_clusters$freq)
-location_clusters <- location_clusters %>% filter(location_clusters$freq <5)
+location_clusters <- location_clusters %>% filter(location_clusters$freq >=10 )
 length(unique(location_clusters$Time))
 time <- unique(location_clusters$Time)
+location_clusters$Source[location_clusters$freq==28] #643925
 
 ```
 
