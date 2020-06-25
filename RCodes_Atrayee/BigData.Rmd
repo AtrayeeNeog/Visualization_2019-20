@@ -175,28 +175,23 @@ nrow(bg6)
 ## Find the Locations visited at the same time:
 
 ```{r}
-location_clusters <- count(bg6, c("Source"))
+location_clusters <- count(bg6, c("Time"))
 nrow(location_clusters)
 min(location_clusters$freq)
 max(location_clusters$freq)
-location_clusters <- location_clusters %>% filter(location_clusters$freq >=10 )
-length(unique(location_clusters$Time))
-time <- unique(location_clusters$Time)
+unique(location_clusters$freq)
+location_clusters <- location_clusters %>% filter(location_clusters$freq >2 )
+#length(unique(location_clusters$Time))
+#time <- unique(location_clusters$Time)
 location_clusters$Source[location_clusters$freq==28] #643925
+length(unique(location_clusters$Source))
+
 
 ```
 
-```{r}
-for (i in time) {
-  target1 <- bg6 %>% filter(Time == i)
-  if(length(target1) < 3){
-    bg6 <- bg6 %>% filter(Time!=i)
-    
-  }
-  
-}
 
-length(bg6$Source)
+```{r}
+bg6[bg6$Time == 5961600 & bg6$Target == 499467 & bg6$SourceLocation ==0]
 ```
 
 
@@ -204,9 +199,9 @@ length(bg6$Source)
 
 
 ```{r}
-target1 <- bg6 %>% filter(Time == 20413606)
+target1 <- bg6 %>% filter(Target==509607 & SourceLocation == 3)
 target2 <- bg6 %>% filter(Target==509607)
-target3 <- bg6 %>% filter(Target==561157 & Time == 52 & SourceLocation==0)
+target3 <- bg6 %>% filter(Target==561157 & SourceLocation==0)
 target4 <- bg6 %>% filter(Target==616453 & Time == 17915018)
 target5 <- bg6 %>% filter(Target==625756 & Time == 17915018)
 target6 <- bg6 %>% filter(Target==657173 & Time == 17915018)
@@ -214,7 +209,7 @@ target6 <- bg6 %>% filter(Target==657173 & Time == 17915018)
 ```
 
 ```{r}
-ggplot(target3, aes(x=as.character(Source), y=Time, color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+ggplot(target3, aes(x=as.character(Source), y=Time, color = as.character(Source),fill=as.character(SourceLocation))) + 
   geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis based on Target 499467",
                                     x="Source", y = "Time")
 ```
