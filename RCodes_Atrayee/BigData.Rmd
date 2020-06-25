@@ -71,6 +71,7 @@ frequent_items<-intersect(items_sold$Target, items_bought$Target)
 
 ```{r}
 ## Extracting the rows for which Targets belong to the list of common items which were both sold and bought:
+# Don't run
 for (i in bg23$Target) {
   for (j in frequent_items) {
     if(i==j){
@@ -147,9 +148,36 @@ ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), f
                                     x="Source & Target Combination", y = "Time")
 ```
 
+## Travel Channel:
+
+```{r}
+# Load The Data:
+bg6 <- data.table::fread(here::here("data", "BigGraphData", "eType6.csv"))
+
+nrow(bg6)
+
+head(bg6)
+tail(bg6)
+length(unique(bg6$Target))
+length(unique(bg6$Source))
+```
 
 
+```{r}
+bg6 <- bg6[-bg6$Weight==-1]
+nrow(bg6)
+colnames(bg6)
+bg6 <- subset(bg6, select = -c(SourceLatitude, TargetLatitude, SourceLongitude, TargetLongitude))
+```
 
+## Find the Locations visited at the same time:
+
+```{r}
+location_clusters <- count(bg6, c("Source","Target","Time"))
+nrow(location_clusters)
+location_clusters <- location_clusters %>% filter(location_clusters$freq > 1)
+
+```
 
 
 

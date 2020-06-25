@@ -1,0 +1,71 @@
+---
+title: "Seed1-Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(here)
+library(tidyverse)
+library(plyr)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+# Load The Data:
+seed1 <- data.table::fread(here::here("data", "extractedSeeds", "Seed1-Graph2NonCom.csv"))
+seed1_2 <- seed1 %>% filter(seed1$eType==2)
+seed1_3 <- seed1 %>% filter(seed1$eType==3)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+items_sold <- count(seed1_2, c("Source","Target")) # Trying to find interesting items which were sold multiple times.
+items_bought <- count(seed1_3, c("Source","Target")) # Trying to find interesting items which were bought multiple times.
+# We need items which are sold and bought more than 7 times by the same people.
+
+max(items_sold$freq)
+min(items_sold$freq)
+max(items_bought$freq)
+min(items_bought$freq)
+unique(items_sold$freq)
+
+items_sold <- items_sold %>% filter(items_sold$freq >= 7)
+items_bought <- items_bought %>% filter(items_bought$freq >= 7)
+```
+
+```{r}
+## Items which are both sold and bought more than 7 times:
+frequent_items<-intersect(items_sold$Target, items_bought$Target)
+```
+
+```{r}
+trans <- seed1[seed1$Target==547205]
+ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+```{r}
+trans <- seed1[seed1$Target==469675]
+ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
+```{r}
+trans <- seed1[seed1$Target==461577]
+ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
+  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
+                                    x="Source & Target Combination", y = "Time")
+```
+
