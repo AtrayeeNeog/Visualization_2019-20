@@ -191,40 +191,125 @@ length(unique(location_clusters$Source))
 
 
 ```{r}
-bg6[bg6$Time == 5961600 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+#target1 <- bg6[bg6$Time == 5961600 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+#target2 <- bg6[bg6$Time == 7084800 & bg6$Target == 616453 & bg6$SourceLocation ==1]
+target3 <- bg6[bg6$Time == 259200 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+target4 <- bg6[bg6$Time == 950400 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+target5 <- bg6[bg6$Time == 4752000 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+target6 <- bg6[bg6$Time == 5961600 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+target7 <- bg6[bg6$Time == 14860800 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+target8 <- bg6[bg6$Time == 23587200 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+target9 <- bg6[bg6$Time == 24624000 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+target10 <- bg6[bg6$Time == 30931200 & bg6$Target == 499467 & bg6$SourceLocation ==0]
+
+target11 <- bg6[bg6$Time == 4752000 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target12 <- bg6[bg6$Time == 6134400 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target13 <- bg6[bg6$Time == 7689600 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target14 <- bg6[bg6$Time == 9936000 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target15 <- bg6[bg6$Time == 12700800 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target16 <- bg6[bg6$Time == 15811200 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target17 <- bg6[bg6$Time == 19353600 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target18 <- bg6[bg6$Time == 30137947 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target19 <- bg6[bg6$Time == 19353600 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target20 <- bg6[bg6$Time == 19353600 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target21 <- bg6[bg6$Time == 19353600 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target22 <- bg6[bg6$Time == 19353600 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+target23 <- bg6[bg6$Time == 19353600 & bg6$Target == 616453 & bg6$SourceLocation ==0]
+
+target24 <- bg6[bg6$Time == 3801600 & bg6$Target == 625756 & bg6$SourceLocation ==0]
+target25 <- bg6[bg6$Time == 6825600 & bg6$Target == 625756 & bg6$SourceLocation ==0]
+target26 <- bg6[bg6$Time == 15811200 & bg6$Target == 625756 & bg6$SourceLocation ==0]
+target27 <- bg6[bg6$Time == 26352000 & bg6$Target == 625756 & bg6$SourceLocation ==0]
+
+target28 <- bg6[bg6$Time == 5443200 & bg6$Target == 657173 & bg6$SourceLocation ==0]
+target29 <- bg6[bg6$Time == 7603200 & bg6$Target == 657173 & bg6$SourceLocation ==0]
+target30 <- bg6[bg6$Time == 8380800 & bg6$Target == 657173 & bg6$SourceLocation ==0]
+target31 <- bg6[bg6$Time == 9244800 & bg6$Target == 657173 & bg6$SourceLocation ==0]
+target32 <- bg6[bg6$Time == 9763200 & bg6$Target == 657173 & bg6$SourceLocation ==0]
+target33 <- bg6[bg6$Time == 10540800 & bg6$Target == 657173 & bg6$SourceLocation ==0]
+target34 <- bg6[bg6$Time == 17798400 & bg6$Target == 657173 & bg6$SourceLocation ==0]
+target35 <- bg6[bg6$Time == 21772800 & bg6$Target == 657173 & bg6$SourceLocation ==0]
+
+target36 <- bg6[bg6$Time == 16871206 & bg6$Target == 499467 & bg6$SourceLocation ==1]
+
+target37 <- bg6[bg6$Time == 29030400 & bg6$Target == 509607 & bg6$SourceLocation ==1]
+
+target38 <- bg6[bg6$Time == 7084800 & bg6$Target == 616453 & bg6$SourceLocation ==1]
+
+target39 <- bg6[bg6$Time == 17971200 & bg6$Target == 625756 & bg6$SourceLocation ==1]
+target40 <- bg6[bg6$Time == 31017600 & bg6$Target == 625756 & bg6$SourceLocation ==1]
+
+#target41 <- bg6[bg6$Time == 16093606 & bg6$Target == 509607 & bg6$SourceLocation ==2]
+
+target42 <- bg6[bg6$Time == 16093606 & bg6$Target == 561157 & bg6$SourceLocation ==2]
+
+target43 <- bg6[bg6$Time == 259200 & bg6$Target == 616453 & bg6$SourceLocation ==2]
+target44 <- bg6[bg6$Time == 24105600 & bg6$Target == 616453 & bg6$SourceLocation ==2]
+
+target45 <- bg6[bg6$Time == 24796800 & bg6$Target == 499467 & bg6$SourceLocation ==3]
+
+target46 <- bg6[bg6$Time == 19180800 & bg6$Target == 561157 & bg6$SourceLocation ==3]
+target47 <- bg6[bg6$Time == 30224347 & bg6$Target == 561157 & bg6$SourceLocation ==3]
+
+target48 <- bg6[bg6$Time == 7084800 & bg6$Target == 616453 & bg6$SourceLocation ==3]
+target49 <- bg6[bg6$Time == 11750400 & bg6$Target == 616453 & bg6$SourceLocation ==3]
+target50 <- bg6[bg6$Time == 13824000 & bg6$Target == 616453 & bg6$SourceLocation ==3]
+target51 <- bg6[bg6$Time == 19440000 & bg6$Target == 616453 & bg6$SourceLocation ==3]
+
+target52 <- bg6[bg6$Time == 13132800 & bg6$Target == 625756 & bg6$SourceLocation ==5]
+target53 <- bg6[bg6$Time == 30412800 & bg6$Target == 625756 & bg6$SourceLocation ==5]
+
+
+
+target499467 <- rbind(target3,target4,target5,target6,target7,target8,target9,target10,target36,target45)
+target509607 <- rbind(target37)
+target561157 <- rbind(target42,target46,target47)
+target616453 <- rbind(target48,target49,target50,target51, target44, target43, target38, target11,target12,target13,target14,target15,target16,target17,target18,target19,target20,target21,target22,target23)
+target625756 <- rbind(target52,target53,target39,target40,target24,target25,target26,target27)
+target657173 <- rbind(target28,target29,target30,target31,target32,target33,target34,target35)
+
+
 ```
 
 
-
-
-
-```{r}
-target1 <- bg6 %>% filter(Target==509607 & SourceLocation == 3)
-target2 <- bg6 %>% filter(Target==509607)
-target3 <- bg6 %>% filter(Target==561157 & SourceLocation==0)
-target4 <- bg6 %>% filter(Target==616453 & Time == 17915018)
-target5 <- bg6 %>% filter(Target==625756 & Time == 17915018)
-target6 <- bg6 %>% filter(Target==657173 & Time == 17915018)
-
+```{r fig.width=10, fig.height=10, echo=FALSE}
+ggplot(target499467, aes(x=(Time/86400), y=as.character(Source), color = as.character(SourceLocation),fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis for target499467",
+                                    x="Time", y = "Source")
 ```
 
-```{r}
-ggplot(target3, aes(x=as.character(Source), y=Time, color = as.character(Source),fill=as.character(SourceLocation))) + 
-  geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis based on Target 499467",
-                                    x="Source", y = "Time")
+```{r fig.width=10, fig.height=10, echo=FALSE}
+ggplot(target509607, aes(x=(Time/86400), y=as.character(Source), color = as.character(SourceLocation),fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis for target509607",
+                                    x="Time", y = "Source")
 ```
 
 
+```{r fig.width=10, fig.height=10, echo=FALSE}
+ggplot(target561157, aes(x=(Time/86400), y=as.character(Source), color = as.character(SourceLocation),fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis for target561157",
+                                    x="Time", y = "Source")
+```
 
 
+```{r fig.width=10, fig.height=15, echo=FALSE}
+ggplot(target616453, aes(x=(Time/86400), y=as.character(Source), color = as.character(SourceLocation),fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis for target616453",
+                                    x="Time", y = "Source")
+```
 
 
+```{r fig.width=10, fig.height=10, echo=FALSE}
+ggplot(target625756, aes(x=(Time/86400), y=as.character(Source), color = as.character(SourceLocation),fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis for target625756",
+                                    x="Time", y = "Source")
+```
 
-
-
-
-
-
+```{r fig.width=10, fig.height=10, echo=FALSE}
+ggplot(target657173, aes(x=(Time/86400), y=as.character(Source), color = as.character(SourceLocation),fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="Travel Channel Analysis for target657173",
+                                    x="Time", y = "Source")
+```
 
 
 
