@@ -10,17 +10,15 @@
 
 * Our new approach for third question was explained
 * Template Procurement channel patterns and Travel channel patterns were discussed
-* Our approach for Procurement channel and Travel channel 
-* People in each channel were also ranked based their proximity and most frequent items(places, items and etc.) were discussed
+* Our approach for Procurement channel and Travel channel in question 3 and how the Template findings effected it
 * A proposition for how to go about question 3 and 4 was discussed
-* Our approach to comparing the seed networks with the new method was discussed.
-* Agenda for the next meeting(in two weeks) was discussed
+* Presenting the list of the seed nodes that we found for question 3
+* Agenda for the next meeting(in one week) was discussed
+* Registration in the website and submission descriptions were discussed
 
 
 ### What next?
 
-* Weekly meetings instead of two week meetings from now on
-* Further Literature review
 * Preparation of question 1 and 2 in the required format by the committee
 * Implement the discussed methods for question 3
 * Start with the report
