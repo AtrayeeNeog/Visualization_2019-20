@@ -91,7 +91,7 @@ sourceloc_count
 ```
 
 ```{r}
-head(target)
+
 target1 <- st1_6 %>% filter(Target==561157) # Source Location: 1,2,3,4
 target2 <- st1_6 %>% filter(Target==625756)
 target3 <- st1_6 %>% filter(Target==616453)
