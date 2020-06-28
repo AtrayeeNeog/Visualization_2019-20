@@ -356,6 +356,31 @@ for (source in c(list1,list2,list3, list4)) {
 
 ```
 
+```{r}
+comm_proc1 <- data.table::fread(here::here("dataQ3", "ProcSeed1-GraphCom.csv"))
+comm_proc2 <- data.table::fread(here::here("dataQ3", "ProcSeed2-GraphCom.csv"))
+comm_proc3 <- data.table::fread(here::here("dataQ3", "ProcSeed3-GraphCom.csv"))
+
+
+list_comm1 <- c(unique(comm_proc1$Source), unique(comm_proc1$Target))
+list_comm2 <- c(unique(comm_proc2$Source), unique(comm_proc2$Target))
+list_comm3 <- c(unique(comm_proc3$Source), unique(comm_proc3$Target))
+```
+
+```{r}
+for (source in c(list1,list2,list3, list4)) {
+  for (source2 in list_comm3) {
+    if(source == source2){
+      print(source)
+    }
+    
+  }
+  
+}
+
+# from List comm 1: 534034
+```
+
 
 ## Clustering:
 
