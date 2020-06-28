@@ -342,7 +342,7 @@ list_proc3 <- c(500689, 509466, 459410, 638428, 519289, 630545, 564912, 566000, 
 ```
 
 ```{r}
-for (source in c(list1,list2,list3, list4)) {
+for (source in (list3)) {
   for (source2 in list_proc3) {
     if(source == source2){
       print(source)
@@ -351,10 +351,31 @@ for (source in c(list1,list2,list3, list4)) {
   }
   
 }
-## Sources found for procurement1: 534034, 592770
-## Sources found for procurement3: 598500
+## Sources found for procurement1 and list1: 534034
+## Sources found for procurement1 and list3: 592770
+## Sources found for procurement3 and list3: 598500
 
 ```
+
+```{r}
+cluster1 <- target625756 %>% filter(Source==592770)
+
+cluster11 <- target625756 %>% filter(c(Target==625756 & SourceLocation==5 & Time==13132800 ))
+```
+
+```{r}
+## Final travel nodes to be considered:
+## Sources found for procurement1 and list3: 592770
+## Sources found for procurement3 and list3: 598500
+
+clusterA <- target625756 %>% filter(c(Target==625756 & SourceLocation==5 & Time==30412800 ))
+clusterB <- target625756 %>% filter(c(Target==625756 & SourceLocation==5 & Time==13132800 ))
+
+
+```
+
+
+
 
 ```{r}
 comm_proc1 <- data.table::fread(here::here("dataQ3", "ProcSeed1-GraphCom.csv"))
@@ -362,14 +383,14 @@ comm_proc2 <- data.table::fread(here::here("dataQ3", "ProcSeed2-GraphCom.csv"))
 comm_proc3 <- data.table::fread(here::here("dataQ3", "ProcSeed3-GraphCom.csv"))
 
 
-list_comm1 <- c(unique(comm_proc1$Source), unique(comm_proc1$Target))
+list_comm1 <- c(unique(c(unique(comm_proc1$Source), unique(comm_proc1$Target))))
 list_comm2 <- c(unique(comm_proc2$Source), unique(comm_proc2$Target))
 list_comm3 <- c(unique(comm_proc3$Source), unique(comm_proc3$Target))
 ```
 
 ```{r}
-for (source in c(list1,list2,list3, list4)) {
-  for (source2 in list_comm3) {
+for (source in c(list1)) {
+  for (source2 in list_comm1) {
     if(source == source2){
       print(source)
     }
