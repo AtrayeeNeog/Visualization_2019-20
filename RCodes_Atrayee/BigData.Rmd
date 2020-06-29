@@ -371,6 +371,8 @@ cluster11 <- target625756 %>% filter(c(Target==625756 & SourceLocation==5 & Time
 clusterA <- target625756 %>% filter(c(Target==625756 & SourceLocation==5 & Time==30412800 ))
 clusterB <- target625756 %>% filter(c(Target==625756 & SourceLocation==5 & Time==13132800 ))
 
+write.csv(clusterA, "C:/Users/atray/OneDrive/Documents/GitHub/Visualization_2019-20/RCodes_Atrayee/dataQ3/cluster1_proc1.csv", row.names = FALSE)
+write.csv(clusterB, "C:/Users/atray/OneDrive/Documents/GitHub/Visualization_2019-20/RCodes_Atrayee/dataQ3/cluster2_proc3.csv", row.names = FALSE)
 
 ```
 
