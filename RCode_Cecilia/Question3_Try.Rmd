@@ -1,0 +1,147 @@
+---
+title: "Seed_extend"
+author: "Cecilia W"
+date: "6/25/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plyr)
+```
+
+
+## Seeds Procurement Channel:
+```{r}
+# Load The Data:
+getwd()
+setwd('~/OVGU/Visualization_Project/extractedSeeds')
+Seed1 <- read.csv('Seed1-Graph2NonCom.csv')
+Seed3 <- read.csv('Seed3-Graph2NonCom.csv')
+Seed1 <- select(Seed1, -SourceLocation)
+Seed3 <- select(Seed3, -SourceLocation)
+nrow(Seed1)
+nrow(Seed3)
+head(Seed1)
+head(Seed3)
+length(unique(Seed1$Target)) #887
+length(unique(Seed1$Source)) #57
+
+length(unique(Seed3$Target)) #979
+length(unique(Seed3$Source)) #75
+
+```
+
+
+```{r}
+Seed1_Sale <- filter(Seed1, eType =="2")
+Seed1_Purchase <- filter(Seed1, eType == "3")
+
+items_sold <- count(Seed1_Sale, c("Source","Target")) 
+# Trying to find interesting items which were sold multiple times.
+items_bought <- count(Seed1_Purchase, c("Source","Target")) 
+# Trying to find interesting items which were bought multiple times.
+# We need items which are sold and bought more than 7 times by the same people.
+max(items_sold$freq) #275
+min(items_sold$freq) #1
+max(items_bought$freq) #18
+min(items_bought$freq) #1
+unique(items_sold$freq)
+
+items_sold <- filter(items_sold, freq >= "7")
+items_bought <- filter(items_bought, freq >= "7")
+unique(items_sold$Target)
+unique(items_bought$Target)
+## Items which are both sold and bought more than 7 times:
+frequent_items<-intersect(items_sold$Target, items_bought$Target)
+
+target_count <- count(Travel_New, 'TargetLocation')
+target_count <- target_count[order(target_count$freq,decreasing = TRUE),]
+target_count 
+
+sourceloc_count <- count(Travel_New, 'SourceLocation')
+sourceloc_count <- sourceloc_count[order(sourceloc_count$freq,decreasing = TRUE),]
+sourceloc_count #4,1,2,5,0,3 in order However, Travel to location 4 is really high 55695
+
+
+travel_count <- count(Travel, c('SourceLocation','TargetLocation'))
+time_count <- time_count %>% filter(time_count$freq > 1)
+travel_count <- travel_count[order(travel_count$freq,decreasing = TRUE),]
+travel_count 
+
+
+```
+
+
+```{r}
+Seed3_Sale <- filter(Seed3, eType =="2")
+Seed3_Purchase <- filter(Seed3, eType == "3")
+
+S3Items_sold <- count(Seed3_Sale, c("Source","Target"))
+# Trying to find interesting items which were sold multiple times.
+S3Items_bought <- count(Seed3_Purchase, c("Source","Target"))
+# Trying to find interesting items which were bought multiple times.
+# We need items which are sold and bought more than 7 times by the same people.
+max(S3Items_sold$freq) #748
+min(S3Items_sold$freq) #1
+max(S3Items_bought$freq) #18
+min(S3Items_bought$freq) #1
+
+S3items_sold <- filter(S3Items_sold, freq >= "7")
+S3items_bought <- filter(S3Items_bought, freq >= "7")
+unique(S3items_sold$Target)
+unique(S3items_bought$Target)
+## Items which are both sold and bought more than 7 times:
+s3frequent_items<-intersect(S3items_sold$Target, S3items_bought$Target)
+
+```
+
+
+# BigGraph Travel Channel
+```{r}
+# Load The Data:
+getwd()
+setwd('~/OVGU/Visualization_Project/MC1/data')
+
+Travel <- read.csv("eType6.csv")
+Travel_dedupted <- Travel[!duplicated(Travel), ]
+
+## Each variable with it's Frequency Counts:
+
+target_count <- count(Travel, 'Target')
+target_count #499467 509607 561157 616453 625756 657173
+time_count <- count(Travel_dedupted, 'Time')
+time_count <- time_count %>% filter(time_count$freq > 1)
+time_count #The 
+weight_count <- count(Travel_dedupted, 'Weight')
+weight_count #-1,2,3,1,4,0 (in the freq order)
+sourceloc_count <- count(Travel_dedupted, 'SourceLocation')
+sourceloc_count #4,0,1,2,5,3 (in the freq order)
+targetloc_count <- count(Travel_dedupted, 'TargetLocation')
+targetloc_count #0,4,1,2,5,3 (in the freq order)
+
+Target <- filter(Travel_dedupted, Target =="561157" | Target == "509607" | Target == "657173") #169218 travel records; 
+weight <- filter(Travel_dedupted, Weight == '2' | Weight=='3' | Weight=='1' ) 
+sourceloc_count <- count(Travel_dedupted, 'SourceLocation')
+sourceloc_count #3,2,(0,4),1,5
+targetloc_count <- count(qt1_6, 'TargetLocation')
+targetloc_count #3,4,2,0,1,5
+
+```
+```
+
+
+
+## Extracting the top 3 most repeated values from each Column:
+{r}
+target <- filter(Travel_dedupted, Target=="561157" | Target=="509607" | Target=="657173" ) #24 vals; 
+
+
+```
+```{r}
+
+## Extract the top 3 most repeated values from each Column
+Target <- filter(Travel_dedupted, Target =="561157" | Target == "509607" | Target == "657173")
+Seed3_Purchase <- filter(Seed3, eType == "3")
+
+
