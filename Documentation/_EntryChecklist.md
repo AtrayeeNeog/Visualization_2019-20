@@ -8,9 +8,9 @@
 - [ ] Image 2:  Distribution Curves(3 measures)
 - [ ] Image 3:  Distribution Curves + Wasserstein Matrix
 - [ ] Image 4:  Gehpi Time Animation
-- [ ] Image 5:
-- [ ] Image 6:
-- [ ] Image 7:
+- [ ] Image 5:  Network Graph(Important Measure 1)
+- [ ] Image 6:  Network Graph(Important Measure 2)
+- [ ] Image 7:  Network Graph(Important Measure 3)
 
 
 ### Question 1.b:
