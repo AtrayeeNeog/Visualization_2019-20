@@ -3,25 +3,37 @@
 ### Question 1.a:
 * 7 Images and 500 Words
 
-- [ ] Text
+- [ ] Text  
 - [ ] Image 1:  Parallel Coordinates
+  * {Behnam}
 - [ ] Image 2:  Distribution Curves(3 measures)
+  * {Behnam}
 - [ ] Image 3:  Distribution Curves + Wasserstein Matrix
+  * {Atrayee, Behnam}
 - [ ] Image 4:  Gehpi Time Animation
+  * {Behnam}
 - [ ] Image 5:  Network Graph(Important Measure 1)
+  * {undecided}
 - [ ] Image 6:  Network Graph(Important Measure 2)
+  * {undecided}
 - [ ] Image 7:  Network Graph(Important Measure 3)
+  * {undecided}
 
 
 ### Question 1.b:
 * 5 Images and 300 Words
 
 - [ ] Text
-- [ ] Image 1
-- [ ] Image 2
-- [ ] Image 3
-- [ ] Image 4
-- [ ] Image 5
+- [ ] Image 1:  Communication, Arc
+  * {Behnam}
+- [ ] Image 2:  Travel, Tableau
+  * {undecided}
+- [ ] Image 3:  Procurement, Atrayee's
+  * {Atrayee}
+- [ ] Image 4:  Demographic, Scatter
+  * {Behnam)
+- [ ] Image 5:  Netowrk graph, channels
+  * {undecided}
 
 
 ### Question 2:
