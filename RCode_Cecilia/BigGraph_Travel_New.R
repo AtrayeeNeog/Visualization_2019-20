@@ -101,42 +101,18 @@ length(unique(All_group$Source)) #255
 People <- count(All_group,'Source')
 People_count <- People %>% filter(People$freq > 1)
 People_count 
-length(unique(People_count$Source)) #26
+length(unique(People_count$Source)) #6 Person 487429, 496822, 534034, 629627, 643925,649553    2
 
-#Take these 26 people out:
-Person474482 <- filter(All_group, Source == 474482)
-Person477796 <- filter(All_group, Source == 477796)
-Person481024 <- filter(All_group, Source == 481024)
-Person487429 <- filter(All_group, Source == 487429)
-Person496822 <- filter(All_group, Source == 496822)
-Person497849 <- filter(All_group, Source == 497849)
-Person527445 <- filter(All_group, Source == 527445)
-Person532180 <- filter(All_group, Source == 532180)
-Person532771 <- filter(All_group, Source == 532771)
-Person534034 <- filter(All_group, Source == 534034)
-Person547331 <- filter(All_group, Source == 547331)
-Person552646 <- filter(All_group, Source == 552646)
-Person559073 <- filter(All_group, Source == 559073)
-Person561770 <- filter(All_group, Source == 561770)
-Person563451 <- filter(All_group, Source == 563451)
-Person567595 <- filter(All_group, Source == 567595)
-Person571253 <- filter(All_group, Source == 571253)
-Person573991 <- filter(All_group, Source == 573991)
-Person603567 <- filter(All_group, Source == 603567)
-Person604700 <- filter(All_group, Source == 604700)
-Person629627 <- filter(All_group, Source == 629627)
-Person634208 <- filter(All_group, Source == 634208)
-Person643925 <- filter(All_group, Source == 643925)
-Person646955 <- filter(All_group, Source == 646955)
-Person649553 <- filter(All_group, Source == 649553)
-Person652298 <- filter(All_group, Source == 652298)
+#Take these 6 people out:
+Person487429 <- filter(Group_Travel, Source == 487429)
+Person496822 <- filter(Group_Travel, Source == 496822)
+Person534034 <- filter(Group_Travel, Source == 534034)
+Person629627 <- filter(Group_Travel, Source == 629627)
+Person643925 <- filter(Group_Travel, Source == 643925)
+Person649553 <- filter(Group_Travel, Source == 649553)
 
-
-Group_travel <- rbind(Person474482,Person477796,Person481024,Person487429,Person496822,Person497849,
-                      Person527445,Person532180,Person532771,Person534034,Person547331,Person552646,
-                      Person559073,Person561770,Person563451,Person567595,Person571253,Person573991,
-                      Person603567,Person604700,Person629627,Person634208,Person643925,Person646955,
-                      Person649553,Person652298)
+Group_travel <- rbind(Person487429, Person496822,Person534034,Person629627,Person643925,Person649553)
+Group_travel <- Group_travel[order(Group_travel$Time,decreasing = TRUE),]   
                       
 
 Group_travel<- transform(Group_travel, Start_Day = Time/86400)
