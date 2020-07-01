@@ -46,13 +46,13 @@
   * {Behnam}
 - [ ] Image 3: Seed Network Development III
   * {Behnam}
-- [ ] Image 4
+- [ ] Image 4: Seed Network channel I
   * {undecided}
-- [ ] Image 5
+- [ ] Image 5: Seed Network channel II
   * {undecided}
-- [ ] Image 6
+- [ ] Image 6: Seed Network channel III
   * {undecided}
-- [ ] Image 7
+- [ ] Image 7: Seed Network channel IV
   * {undecided}
 - [ ] Image 8
   * {undecided}
