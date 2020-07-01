@@ -92,11 +92,16 @@
 * 5 Images and 300 Words
 
 - [ ] Text
-- [ ] Image 1
-- [ ] Image 2
-- [ ] Image 3
-- [ ] Image 4
-- [ ] Image 5
+- [ ] Image 1:  Communication, Arc
+  * {Behnam}
+- [ ] Image 2:  Travel, Tableau
+  * {undecided}
+- [ ] Image 3:  Procurement, Atrayee's
+  * {Atrayee}
+- [ ] Image 4:  Demographic, Scatter
+  * {Behnam)
+- [ ] Image 5:  Netowrk graph, channels
+  * {Atrayee}
 
 
 ### Question 5:
