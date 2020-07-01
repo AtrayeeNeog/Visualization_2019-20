@@ -38,3 +38,35 @@
 - [ ] Image 8
 - [ ] Image 9
 - [ ] Image 10
+
+
+### Question 3:
+* 10 Images and 500 Words
+
+- [ ] Text
+- [ ] Image 1
+- [ ] Image 2
+- [ ] Image 3
+- [ ] Image 4
+- [ ] Image 5
+- [ ] Image 6
+- [ ] Image 7
+- [ ] Image 8
+- [ ] Image 9
+- [ ] Image 10
+
+
+### Question 4:
+* 5 Images and 300 Words
+
+- [ ] Text
+- [ ] Image 1
+- [ ] Image 2
+- [ ] Image 3
+- [ ] Image 4
+- [ ] Image 5
+
+
+### Question 5:
+
+- [ ] Text
