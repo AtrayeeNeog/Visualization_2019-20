@@ -33,32 +33,32 @@
 - [ ] Image 4:  Demographic, Scatter
   * {Behnam)
 - [ ] Image 5:  Netowrk graph, channels
-  * {undecided}
+  * {Atrayee}
 
 
 ### Question 2:
 * 10 Images and 500 Words
 
 - [ ] Text
-- [ ] Image 1: Seed Network Development I
+- [ ] Image 1:  Seed Network Development I/Animation
   * {Behnam}
-- [ ] Image 2: Seed Network Development II
+- [ ] Image 2:  Seed Network Development II/Animation
   * {Behnam}
-- [ ] Image 3: Seed Network Development III
+- [ ] Image 3:  Seed Network Development III/Animation
   * {Behnam}
-- [ ] Image 4: Seed Network channel I
+- [ ] Image 4:  Seed Network channel I
   * {undecided}
-- [ ] Image 5: Seed Network channel II
+- [ ] Image 5:  Seed Network channel II
   * {undecided}
-- [ ] Image 6: Seed Network channel III
+- [ ] Image 6:  Seed Network channel III
   * {undecided}
-- [ ] Image 7: Seed Network channel IV
+- [ ] Image 7:  Seed Network channel IV
   * {undecided}
-- [ ] Image 8
-  * {undecided}
-- [ ] Image 9
-  * {undecided}
-- [ ] Image 10
+- [ ] Image 8:  Extended graphs
+  * {Behnam}
+- [ ] Image 9:  Reduced graphs
+  * {Behnam}
+- [ ] Image 10: undecided
   * {undecided}
 
 
@@ -66,16 +66,26 @@
 * 10 Images and 500 Words
 
 - [ ] Text
-- [ ] Image 1
-- [ ] Image 2
-- [ ] Image 3
-- [ ] Image 4
-- [ ] Image 5
-- [ ] Image 6
-- [ ] Image 7
-- [ ] Image 8
-- [ ] Image 9
-- [ ] Image 10
+- [ ] Image 1:  Finding Procurement seeds I
+  * {Atrayee}
+- [ ] Image 2:  Finding Procurement seeds II
+  * {Atrayee}
+- [ ] Image 3:  Finding Travel seeds I
+  * {Atrayee, Behnam}
+- [ ] Image 4:  Finding Travel seeds II(crosscheck with Procurement)
+  * {Atrayee, Behnam}
+- [ ] Image 5:  Adding Communication patterns
+  * {Behnam}
+- [ ] Image 6:  Network graph, retrieved
+  * {Atrayee}
+- [ ] Image 7:  undecided
+  * {undecided}
+- [ ] Image 8:  undecided
+  * {undecided}
+- [ ] Image 9:  undecided
+  * {undecided}
+- [ ] Image 10: undecided
+  * {undecided}
 
 
 ### Question 4:
