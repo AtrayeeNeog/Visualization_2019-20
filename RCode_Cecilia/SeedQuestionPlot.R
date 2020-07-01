@@ -1,30 +1,35 @@
 
 library(tidyverse)
-
-install.packages("dplyr")
 library(igraph)
-library(networkD3)
 library(network)
-
 library(visNetwork)
 
+
 getwd()
-setwd('~/OVGU/Visualization_Project/graphsExtended')
+setwd('~/OVGU/Visualization_Project')
+Dome <- read.csv('DemographicCategories.csv')
 
 #get all datasets for the Network Analysis
-Seed1_Comm <- read.csv('Seed1-Graph2.csv')
+Seed1_Comm <- read.csv('Seed1-Graph2Com.csv')
 Seed1_Others <- read.csv('Seed1-Graph2NonCom.csv')
 Sedd1_CommC = select(Seed1_Comm, -X)
 Sedd1_OtherC = select(Seed1_Others, -X)
 Seed1_AllC = full_join(Sedd1_CommC,Sedd1_OtherC)
+unique(Seed1_AllC$Source)
+unique(Seed1_AllC$Target)
+
 
 Sources <- Seed1_AllC %>%
   distinct(Source) %>%
   rename(label = Source)
+Sources <- Sources %>% rowid_to_column("id")
+Try <- group_by(Sources,Dome,by="label","NodeID")
+
 
 Targets <- Seed1_AllC %>%
   distinct(Target) %>%
   rename(label = Target)
+Targets <- Targets %>% rowid_to_column("id")
 
 # Creating a Node List:
 nodes <- full_join(Sources, Targets, by = "label")
@@ -52,7 +57,7 @@ edges_Seed1
 
 
 # Creating a Network:
-routes_network_Seed1 <- network(edges_Seed1, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+routes_network_Seed1 <- network(edges_Seed1, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = TRUE)
 routes_network_Seed1
 class(routes_network_Seed1)
 
