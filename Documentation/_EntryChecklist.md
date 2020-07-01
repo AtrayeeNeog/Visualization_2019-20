@@ -40,16 +40,26 @@
 * 10 Images and 500 Words
 
 - [ ] Text
-- [ ] Image 1
-- [ ] Image 2
-- [ ] Image 3
+- [ ] Image 1: Seed Network Development I
+  * {Behnam}
+- [ ] Image 2: Seed Network Development II
+  * {Behnam}
+- [ ] Image 3: Seed Network Development III
+  * {Behnam}
 - [ ] Image 4
+  * {undecided}
 - [ ] Image 5
+  * {undecided}
 - [ ] Image 6
+  * {undecided}
 - [ ] Image 7
+  * {undecided}
 - [ ] Image 8
+  * {undecided}
 - [ ] Image 9
+  * {undecided}
 - [ ] Image 10
+  * {undecided}
 
 
 ### Question 3:
