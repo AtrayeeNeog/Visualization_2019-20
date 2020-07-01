@@ -4,13 +4,13 @@
 * 7 Images and 500 Words
 
 - [ ] Text
-- [ ] Image 1
-- [ ] Image 2
-- [ ] Image 3
-- [ ] Image 4
-- [ ] Image 5
-- [ ] Image 6
-- [ ] Image 7
+- [ ] Image 1:  Parallel Coordinates
+- [ ] Image 2:  Distribution Curves(3 measures)
+- [ ] Image 3:  Distribution Curves + Wasserstein Matrix
+- [ ] Image 4:  Gehpi Time Animation
+- [ ] Image 5:
+- [ ] Image 6:
+- [ ] Image 7:
 
 
 ### Question 1.b:
