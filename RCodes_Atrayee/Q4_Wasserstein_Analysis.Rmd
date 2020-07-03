@@ -287,7 +287,7 @@ wasserstein.test(dt_closeness, proc_s1_graph2_closeness)[spec.output]
 wasserstein.test(dt_closeness, proc_s3_graph2_closeness)[spec.output]
 ```
 
-## Travel Channel for Reduced Network:
+## Travel Channel for Reduced Network1:
 
 ```{r}
 s1 <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed1-Graph2FullyReduced.csv"))
@@ -332,9 +332,50 @@ ggplot(target6, aes(x=Time/86400, y=as.character(Source), color = as.character(S
                                     x="Time", y = "Source")
 ```
 
+# Reduced Network2:
 
+```{r}
+s3 <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed3-Graph2FullyReduced.csv"))
+s3_6 <- s3 %>% filter(eType == 6)
 
+head(s3_6)
+```
 
+```{r}
+target_count <- count(s3_6, 'Target')
+target_count
+
+```
+
+```{r}
+target1 <- s3_6 %>% filter(Target==499467)
+target2 <- s3_6 %>% filter(Target==509607)
+target3 <- s3_6 %>% filter(Target==561157)
+target4 <- s3_6 %>% filter(Target==616453)
+target5 <- s3_6 %>% filter(Target==625756)
+target6 <- s3_6 %>% filter(Target==657173)
+```
+
+```{r}
+ggplot(target1, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedSeed3 Travel Channel Analysis based on Target 499467",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedSeed3 Travel Channel Analysis based on Target 509607",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedSeed3 Travel Channel Analysis based on Target 561157",
+                                    x="Time", y = "Source")
+ggplot(target4, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedSeed3 Travel Channel Analysis based on Target 616453",
+                                    x="Time", y = "Source")
+ggplot(target5, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedSeed3 Travel Channel Analysis based on Target 625756",
+                                    x="Time", y = "Source")
+ggplot(target6, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedSeed3 Travel Channel Analysis based on Target 657173",
+                                    x="Time", y = "Source")
+```
 
 
 
