@@ -1,25 +1,42 @@
-### Travel selection reduction node list
+# Travel selection reduction node list
 
 
+### ProcSeed1:
+- 81 : a-4, b-3
 
-- 81 :
+[]
+- 69: a-7, b-3
+
+- 70: a-4, b-3, a-3, b-3
+target = 499467
+sourceLoc = 1; a = [493328, 534034, 469276, 585212]
+sourceLoc = 4; b = [535029, 477102, 494254]
+sourceLoc = 1; a = [488928, 570191, 494254]
+sourceLoc = 4; b = [482646, 523968, 612840]
+
+- 71: a-3, b-3, c-3:
+target = 657173
+sourceLoc = 3; a = [534034, 618893, 585212]
+sourceLoc = 5; b = [638684, 598500, 476945]
+sourceLoc = 4; c = [574889, 502823, 501111]
+
+- 72: a-3, b-3
+target = 509607
+sourceLoc = 1; a = [488928, 478093, 469276]
+sourceLoc = 5; b = [493328, 489824, 462278]
+
+- 76: a-4, b-3
 
 
+### ProcSeed3:
+- 81 : a-4, b-3
 
-- 69:
+- 69: a-7, b-3
 
+- 70: a-4, b-3, a-3, b-3
 
+- 71: a-3, b-3, c-3
 
-- 70:
+- 72: a-3, b-3
 
-
-
-- 71:
-
-
-
-- 72:
-
-
-
-- 76:
+- 76: a-4, b-3
