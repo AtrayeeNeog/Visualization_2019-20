@@ -21,6 +21,424 @@ library(plyr)
 #BiocManager::install("waddR")
 library(waddR)
 ```
+## Graphs 1-5:
+
+```{r}
+# Load The Data:
+dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
+qt1 <- data.table::fread(here::here("data", "Q1-Graph1.csv"))
+qt2 <- data.table::fread(here::here("data", "Q1-Graph2.csv"))
+qt3 <- data.table::fread(here::here("data", "Q1-Graph3.csv"))
+qt4 <- data.table::fread(here::here("data", "Q1-Graph4.csv"))
+qt5 <- data.table::fread(here::here("data", "Q1-Graph5.csv"))
+s1 <- data.table::fread(here::here("dataQ2","dfSeed1Reduced.csv"))
+s3 <- data.table::fread(here::here("dataQ2","dfSeed3Reduced.csv"))
+proc_s1_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed1-Graph2ReducedFinal.csv"))
+proc_s3_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed3-Graph2ReducedFinal.csv"))
+
+dt_network <- subset(dt, select = c(Source, Target, Weight))
+qt1_network <- subset(qt1, select = c(Source, Target, Weight))
+qt2_network <- subset(qt2, select = c(Source, Target, Weight))
+qt3_network <- subset(qt3, select = c(Source, Target, Weight))
+qt4_network <- subset(qt4, select = c(Source, Target, Weight))
+qt5_network <- subset(qt5, select = c(Source, Target, Weight))
+s1_network <- subset(s1, select = c(Source, Target, Weight))
+s3_network <- subset(s3, select = c(Source, Target, Weight))
+proc_s1_full_network <- subset(proc_s1_full, select = c(Source, Target, Weight))
+proc_s3_full_network <- subset(proc_s3_full, select = c(Source, Target, Weight))
+
+dt_edgelist <- dt_network
+dt_graph <- graph.data.frame(dt_edgelist, directed = TRUE)
+
+qt1_edgelist <- qt1_network
+qt1_graph <- graph.data.frame(qt1_edgelist, directed = TRUE)
+
+qt2_edgelist <- qt2_network
+qt2_graph <- graph.data.frame(qt2_edgelist, directed = TRUE)
+
+qt3_edgelist <- qt3_network
+qt3_graph <- graph.data.frame(qt3_edgelist, directed = TRUE)
+
+qt4_edgelist <- qt4_network
+qt4_graph <- graph.data.frame(qt4_edgelist, directed = TRUE)
+
+qt5_edgelist <- qt5_network
+qt5_graph <- graph.data.frame(qt5_edgelist, directed = TRUE)
+
+s1_edgelist <- s1_network
+s1_graph <- graph.data.frame(s1_edgelist, directed = TRUE)
+
+s3_edgelist <- s3_network
+s3_graph <- graph.data.frame(s3_edgelist, directed = TRUE)
+
+proc_s1_full_edgelist <- proc_s1_full_network
+proc_s1_full_graph <- graph.data.frame(proc_s1_full_edgelist, directed = TRUE)
+
+proc_s3_full_edgelist <- proc_s3_full_network
+proc_s3_full_graph <- graph.data.frame(proc_s3_full_edgelist, directed = TRUE)
+```
+
+## Wasserstein:
+## Degree:
+```{r}
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+
+
+dt_degree <- as.matrix(degree(dt_graph2))
+G1_degree <- as.matrix(degree(qt1_graph2))
+G2_degree <- as.matrix(degree(qt2_graph2))
+G3_degree <- as.matrix(degree(qt3_graph2))
+G4_degree <- as.matrix(degree(qt4_graph2))
+G5_degree <- as.matrix(degree(qt5_graph2))
+s1_degree <- as.matrix(degree(s1_graph2))
+s3_degree <- as.matrix(degree(s3_graph2))
+proc_s1_full_degree <- as.matrix(degree(proc_s1_full_graph2))
+proc_s3_full_degree <- as.matrix(degree(proc_s3_full_graph2))
+
+## Wasserstein Metric:
+wasserstein_metric(dt_degree, G1_degree)
+wasserstein_metric(dt_degree, G2_degree)
+wasserstein_metric(dt_degree, G3_degree)
+wasserstein_metric(dt_degree, G4_degree)
+wasserstein_metric(dt_degree, G5_degree)
+wasserstein_metric(dt_degree, s1_degree)
+wasserstein_metric(dt_degree, s3_degree)
+wasserstein_metric(dt_degree, proc_s1_full_degree)
+wasserstein_metric(dt_degree, proc_s3_full_degree)
+
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt_degree, G1_degree)[spec.output]
+wasserstein.test(dt_degree, G2_degree)[spec.output]
+wasserstein.test(dt_degree, G3_degree)[spec.output]
+wasserstein.test(dt_degree, G4_degree)[spec.output]
+wasserstein.test(dt_degree, G5_degree)[spec.output]
+wasserstein.test(dt_degree, s1_degree)[spec.output]
+wasserstein.test(dt_degree, s3_degree)[spec.output]
+wasserstein.test(dt_degree, proc_s1_full_degree)[spec.output]
+wasserstein.test(dt_degree, proc_s3_full_degree)[spec.output]
+
+```
+
+## Betweenness:
+
+```{r}
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = TRUE, remove.loops = FALSE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = TRUE, remove.loops = FALSE)
+
+
+dt <- as.matrix(betweenness(dt_graph2))
+G1 <- as.matrix(betweenness(qt1_graph2))
+G2 <- as.matrix(betweenness(qt2_graph2))
+G3 <- as.matrix(betweenness(qt3_graph2))
+G4 <- as.matrix(betweenness(qt4_graph2))
+G5 <- as.matrix(betweenness(qt5_graph2))
+s1 <- as.matrix(betweenness(s1_graph2))
+s3 <- as.matrix(betweenness(s3_graph2))
+proc_s1_full <- as.matrix(betweenness(proc_s1_full_graph2))
+proc_s3_full <- as.matrix(betweenness(proc_s3_full_graph2))
+
+## Wasserstein Metric:
+wasserstein_metric(dt, G1)
+wasserstein_metric(dt, G2)
+wasserstein_metric(dt, G3)
+wasserstein_metric(dt, G4)
+wasserstein_metric(dt, G5)
+wasserstein_metric(dt, s1)
+wasserstein_metric(dt, s3)
+wasserstein_metric(dt, proc_s1_full)
+wasserstein_metric(dt, proc_s3_full)
+
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt, G1)[spec.output]
+wasserstein.test(dt, G2)[spec.output]
+wasserstein.test(dt, G3)[spec.output]
+wasserstein.test(dt, G4)[spec.output]
+wasserstein.test(dt, G5)[spec.output]
+wasserstein.test(dt, s1)[spec.output]
+wasserstein.test(dt, s3)[spec.output]
+wasserstein.test(dt, proc_s1_full)[spec.output]
+wasserstein.test(dt, proc_s3_full)[spec.output]
+```
+
+## Closeness:
+```{r}
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+
+
+dt <- as.matrix(closeness(dt_graph2))
+G1 <- as.matrix(closeness(qt1_graph2))
+G2 <- as.matrix(closeness(qt2_graph2))
+G3 <- as.matrix(closeness(qt3_graph2))
+G4 <- as.matrix(closeness(qt4_graph2))
+G5 <- as.matrix(closeness(qt5_graph2))
+s1 <- as.matrix(closeness(s1_graph2))
+s3 <- as.matrix(closeness(s3_graph2))
+proc_s1_full <- as.matrix(closeness(proc_s1_full_graph2))
+proc_s3_full <- as.matrix(closeness(proc_s3_full_graph2))
+
+## Wasserstein Metric:
+wasserstein_metric(dt, G1)
+wasserstein_metric(dt, G2)
+wasserstein_metric(dt, G3)
+wasserstein_metric(dt, G4)
+wasserstein_metric(dt, G5)
+wasserstein_metric(dt, s1)
+wasserstein_metric(dt, s3)
+wasserstein_metric(dt, proc_s1_full)
+wasserstein_metric(dt, proc_s3_full)
+
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt, G1)[spec.output]
+wasserstein.test(dt, G2)[spec.output]
+wasserstein.test(dt, G3)[spec.output]
+wasserstein.test(dt, G4)[spec.output]
+wasserstein.test(dt, G5)[spec.output]
+wasserstein.test(dt, s1)[spec.output]
+wasserstein.test(dt, s3)[spec.output]
+wasserstein.test(dt, proc_s1_full)[spec.output]
+wasserstein.test(dt, proc_s3_full)[spec.output]
+
+```
+
+## Eigen Vector Centrality:
+```{r}
+
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = TRUE, remove.loops = FALSE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = TRUE, remove.loops = FALSE)
+
+
+dt <- as.matrix((eigen_centrality(dt_graph2))$vector)
+G1 <- as.matrix((eigen_centrality(qt1_graph2))$vector)
+G2 <- as.matrix((eigen_centrality(qt2_graph2))$vector)
+G3 <- as.matrix((eigen_centrality(qt3_graph2))$vector)
+G4 <- as.matrix((eigen_centrality(qt4_graph2))$vector)
+G5 <- as.matrix((eigen_centrality(qt5_graph2))$vector)
+s1 <- as.matrix((eigen_centrality(s1_graph2))$vector)
+s3 <- as.matrix((eigen_centrality(s3_graph2))$vector)
+proc_s1_full <- as.matrix((eigen_centrality(proc_s1_full_graph2))$vector)
+proc_s3_full <- as.matrix((eigen_centrality(proc_s3_full_graph2))$vector)
+
+## Wasserstein Metric:
+wasserstein_metric(dt, G1)
+wasserstein_metric(dt, G2)
+wasserstein_metric(dt, G3)
+wasserstein_metric(dt, G4)
+wasserstein_metric(dt, G5)
+wasserstein_metric(dt, s1)
+wasserstein_metric(dt, s3)
+wasserstein_metric(dt, proc_s1_full)
+wasserstein_metric(dt, proc_s3_full)
+
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt, G1)[spec.output]
+wasserstein.test(dt, G2)[spec.output]
+wasserstein.test(dt, G3)[spec.output]
+wasserstein.test(dt, G4)[spec.output]
+wasserstein.test(dt, G5)[spec.output]
+wasserstein.test(dt, s1)[spec.output]
+wasserstein.test(dt, s3)[spec.output]
+wasserstein.test(dt, proc_s1_full)[spec.output]
+wasserstein.test(dt, proc_s3_full)[spec.output]
+
+```
+
+## Page Rank:
+
+```{r}
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = TRUE, remove.loops = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = TRUE, remove.loops = FALSE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = TRUE, remove.loops = FALSE)
+
+
+dt <- as.matrix((page.rank(dt_graph2))$vector)
+G1 <- as.matrix((page.rank(qt1_graph2))$vector)
+G2 <- as.matrix((page.rank(qt2_graph2))$vector)
+G3 <- as.matrix((page.rank(qt3_graph2))$vector)
+G4 <- as.matrix((page.rank(qt4_graph2))$vector)
+G5 <- as.matrix((page.rank(qt5_graph2))$vector)
+s1 <- as.matrix((page.rank(s1_graph2))$vector)
+s3 <- as.matrix((page.rank(s3_graph2))$vector)
+proc_s1_full <- as.matrix((page.rank(proc_s1_full_graph2))$vector)
+proc_s3_full <- as.matrix((page.rank(proc_s3_full_graph2))$vector)
+
+## Wasserstein Metric:
+wasserstein_metric(dt, G1)
+wasserstein_metric(dt, G2)
+wasserstein_metric(dt, G3)
+wasserstein_metric(dt, G4)
+wasserstein_metric(dt, G5)
+wasserstein_metric(dt, s1)
+wasserstein_metric(dt, s3)
+wasserstein_metric(dt, proc_s1_full)
+wasserstein_metric(dt, proc_s3_full)
+
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt, G1)[spec.output]
+wasserstein.test(dt, G2)[spec.output]
+wasserstein.test(dt, G3)[spec.output]
+wasserstein.test(dt, G4)[spec.output]
+wasserstein.test(dt, G5)[spec.output]
+wasserstein.test(dt, s1)[spec.output]
+wasserstein.test(dt, s3)[spec.output]
+wasserstein.test(dt, proc_s1_full)[spec.output]
+wasserstein.test(dt, proc_s3_full)[spec.output]
+```
+
+## KNN:
+```{r}
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = TRUE, remove.loops = TRUE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = TRUE, remove.loops = TRUE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = TRUE, remove.loops = TRUE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = TRUE, remove.loops = TRUE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = TRUE, remove.loops = TRUE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = TRUE, remove.loops = TRUE)
+
+
+dt <- as.matrix((knn(dt_graph2))$knn)
+G1 <- as.matrix((knn(qt1_graph2))$knn)
+G2 <- as.matrix((knn(qt2_graph2))$knn)
+G3 <- as.matrix((knn(qt3_graph2))$knn)
+G4 <- as.matrix((knn(qt4_graph2))$knn)
+G5 <- as.matrix((knn(qt5_graph2))$knn)
+s1 <- as.matrix((knn(s1_graph2))$knn)
+s3 <- as.matrix((knn(s3_graph2))$knn)
+proc_s1_full <- as.matrix((knn(proc_s1_full_graph2))$knn)
+proc_s3_full <- as.matrix((knn(proc_s3_full_graph2))$knn)
+
+## Wasserstein Metric:
+wasserstein_metric(dt, G1)
+wasserstein_metric(dt, G2)
+wasserstein_metric(dt, G3)
+wasserstein_metric(dt, G4)
+wasserstein_metric(dt, G5)
+wasserstein_metric(dt, s1)
+wasserstein_metric(dt, s3)
+wasserstein_metric(dt, proc_s1_full)
+wasserstein_metric(dt, proc_s3_full)
+
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt, G1)[spec.output]
+wasserstein.test(dt, G2)[spec.output]
+wasserstein.test(dt, G3)[spec.output]
+wasserstein.test(dt, G4)[spec.output]
+wasserstein.test(dt, G5)[spec.output]
+wasserstein.test(dt, s1)[spec.output]
+wasserstein.test(dt, s3)[spec.output]
+wasserstein.test(dt, proc_s1_full)[spec.output]
+wasserstein.test(dt, proc_s3_full)[spec.output]
+```
+
+## Out Degree:
+
+```{r}
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+
+
+dt <- as.matrix(degree(dt_graph2, mode = "out"))
+G1 <- as.matrix(degree(qt1_graph2, mode = "out"))
+G2 <- as.matrix(degree(qt2_graph2, mode = "out"))
+G3 <- as.matrix(degree(qt3_graph2, mode = "out"))
+G4 <- as.matrix(degree(qt4_graph2, mode = "out"))
+G5 <- as.matrix(degree(qt5_graph2, mode = "out"))
+s1 <- as.matrix(degree(s1_graph2, mode = "out"))
+s3 <- as.matrix(degree(s3_graph2, mode = "out"))
+proc_s1_full <- as.matrix(degree(proc_s1_full_graph2, mode = "out"))
+proc_s3_full <- as.matrix(degree(proc_s3_full_graph2, mode = "out"))
+
+## Wasserstein Metric:
+wasserstein_metric(dt, G1)
+wasserstein_metric(dt, G2)
+wasserstein_metric(dt, G3)
+wasserstein_metric(dt, G4)
+wasserstein_metric(dt, G5)
+wasserstein_metric(dt, s1)
+wasserstein_metric(dt, s3)
+wasserstein_metric(dt, proc_s1_full)
+wasserstein_metric(dt, proc_s3_full)
+
+
+# Testing based on Wasserstein Distance:
+spec.output <- c("pval", "d.wass", "perc.loc", "perc.size", "perc.shape")
+wasserstein.test(dt, G1)[spec.output]
+wasserstein.test(dt, G2)[spec.output]
+wasserstein.test(dt, G3)[spec.output]
+wasserstein.test(dt, G4)[spec.output]
+wasserstein.test(dt, G5)[spec.output]
+wasserstein.test(dt, s1)[spec.output]
+wasserstein.test(dt, s3)[spec.output]
+wasserstein.test(dt, proc_s1_full)[spec.output]
+wasserstein.test(dt, proc_s3_full)[spec.output]
+```
+
+
+
+
 
 ## Fully Reduced ProcSeeds:
 
