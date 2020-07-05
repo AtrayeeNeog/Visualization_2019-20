@@ -22,13 +22,13 @@ library(plyr)
 library(waddR)
 ```
 
-## Fully Reduced:
+## Fully Reduced Seeds:
 
 ```{r}
 # Load The Data:
 dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
 proc_s1_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed1-Graph2ReducedFinal.csv"))
-proc_s3_full <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed3-Graph2FullyReduced.csv"))
+proc_s3_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed3-Graph2ReducedFinal.csv"))
 
 ```
 
