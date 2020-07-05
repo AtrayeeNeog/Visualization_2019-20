@@ -22,7 +22,7 @@ library(plyr)
 library(waddR)
 ```
 
-## Fully Reduced Seeds:
+## Fully Reduced ProcSeeds:
 
 ```{r}
 # Load The Data:
@@ -161,130 +161,130 @@ wasserstein.test(dt_page_rank, proc_s3_full_page_rank)[spec.output]
 ```
 
 
-## - Fixed Communication for Extended: 
+## Fully Reduced Seeds:  
 ```{r}
 # Load The Data:
 dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
-proc_s1 <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed1-FixedCommunication.csv"))
-proc_s3 <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed1-FixedCommunication.csv"))
+s1 <- data.table::fread(here::here("dataQ2","dfSeed1Reduced.csv"))
+s3 <- data.table::fread(here::here("dataQ2","dfSeed3Reduced.csv"))
 ```
 
 ```{r}
 dt_network <- subset(dt, select = c(Source, Target, Weight))
-proc_s1_network <- subset(proc_s1, select = c(Source, Target, Weight))
-proc_s3_network <- subset(proc_s3, select = c(Source, Target, Weight))
+s1_network <- subset(s1, select = c(Source, Target, Weight))
+s3_network <- subset(proc_s3, select = c(Source, Target, Weight))
 
 dt_edgelist <- dt_network
 dt_graph <- graph.data.frame(dt_edgelist, directed = TRUE)
 
-proc_s1_edgelist <- proc_s1_network
-proc_s1_graph <- graph.data.frame(proc_s1_edgelist, directed = TRUE)
+s1_edgelist <- s1_network
+s1_graph <- graph.data.frame(s1_edgelist, directed = TRUE)
 
-proc_s3_edgelist <- proc_s3_full_network
-proc_s3_graph <- graph.data.frame(proc_s3_edgelist, directed = TRUE)
+s3_edgelist <- s3_network
+s3_graph <- graph.data.frame(s3_edgelist, directed = TRUE)
 ```
 
 ## Wasserstein Method:
 ```{r}
 dt_graph2<-igraph::simplify(dt_graph, remove.multiple = FALSE, remove.loops = FALSE)
-proc_s1_graph2<-igraph::simplify(proc_s1_graph, remove.multiple = FALSE, remove.loops = FALSE)
-proc_s3_graph2<-igraph::simplify(proc_s3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = FALSE, remove.loops = FALSE)
 ```
 
 ## Degree:
 ```{r}
 dt_degree <- as.matrix(degree(dt_graph2))
-proc_s1_degree <- as.matrix(degree(proc_s1_graph2))
-proc_s3_degree <- as.matrix(degree(proc_s3_graph2))
+s1_degree <- as.matrix(degree(s1_graph2))
+s3_degree <- as.matrix(degree(s3_graph2))
 ```
 
 ```{r}
 # Testing based on Wasserstein Distance:
 spec.output <- c("pval", "d.wass", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
-wasserstein.test(dt_degree, proc_s1_degree)[spec.output]
-wasserstein.test(dt_degree, proc_s3_degree)[spec.output]
+wasserstein.test(dt_degree, s1_degree)[spec.output]
+wasserstein.test(dt_degree, s3_degree)[spec.output]
 ```
 
 ## Betweeness:
 
 ```{r}
 dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = FALSE)
-proc_s1_graph2<-igraph::simplify(proc_s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
-proc_s3_graph2<-igraph::simplify(proc_s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
 
 dt_betweeness <- as.matrix(betweenness(dt_graph2))
-proc_s1_betweeness <- as.matrix(betweenness(proc_s1_graph2))
-proc_s3_betweeness <- as.matrix(betweenness(proc_s3_graph2))
+s1_betweeness <- as.matrix(betweenness(s1_graph2))
+s3_betweeness <- as.matrix(betweenness(s3_graph2))
 ```
 
 ```{r}
 # Testing based on Wasserstein Distance:
 spec.output <- c("pval", "d.wass", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
-wasserstein.test(dt_betweeness, proc_s1_betweeness)[spec.output]
-wasserstein.test(dt_betweeness, proc_s3_betweeness)[spec.output]
+wasserstein.test(dt_betweeness, s1_betweeness)[spec.output]
+wasserstein.test(dt_betweeness, s3_betweeness)[spec.output]
 ```
 
 ## Eigen Centrality:
 
 ```{r}
 dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = FALSE)
-proc_s1_graph2<-igraph::simplify(proc_s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
-proc_s3_graph2<-igraph::simplify(proc_s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
 ```
 
 ```{r}
 dt_eigen_centrality <- as.matrix((eigen_centrality(dt_graph2))$vector)
-proc_s1_eigen_centrality <- as.matrix((eigen_centrality(proc_s1_graph2))$vector)
-proc_s3_eigen_centrality <- as.matrix((eigen_centrality(proc_s3_graph2))$vector)
+s1_eigen_centrality <- as.matrix((eigen_centrality(s1_graph2))$vector)
+s3_eigen_centrality <- as.matrix((eigen_centrality(s3_graph2))$vector)
 ```
 
 ```{r}
 # Testing based on Wasserstein Distance:
 spec.output <- c("pval","d.wass", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
-wasserstein.test(dt_eigen_centrality, proc_s1_eigen_centrality)[spec.output]
-wasserstein.test(dt_eigen_centrality, proc_s3_eigen_centrality)[spec.output]
+wasserstein.test(dt_eigen_centrality, s1_eigen_centrality)[spec.output]
+wasserstein.test(dt_eigen_centrality, s3_eigen_centrality)[spec.output]
 ```
 
 ## Page Rank:
 
 ```{r}
 dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = FALSE)
-proc_s1_graph2<-igraph::simplify(proc_s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
-proc_s3_graph2<-igraph::simplify(proc_s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = TRUE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = TRUE, remove.loops = FALSE)
 ```
 
 ```{r}
 dt_page_rank <- as.matrix((page.rank(dt_graph2))$vector)
-proc_s1_page_rank <- as.matrix((page.rank(proc_s1_graph2))$vector)
-proc_s3_page_rank <- as.matrix((page.rank(proc_s3_graph2))$vector)
+s1_page_rank <- as.matrix((page.rank(s1_graph2))$vector)
+s3_page_rank <- as.matrix((page.rank(s3_graph2))$vector)
 ```
 
 ```{r}
 # Testing based on Wasserstein Distance:
 spec.output <- c("pval","d.wass", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
-wasserstein.test(dt_page_rank, proc_s1_page_rank)[spec.output]
-wasserstein.test(dt_page_rank, proc_s3_page_rank)[spec.output]
+wasserstein.test(dt_page_rank, s1_page_rank)[spec.output]
+wasserstein.test(dt_page_rank, s3_page_rank)[spec.output]
 ```
 
 # Closeness:
 
 ```{r}
 dt_graph2<-igraph::simplify(dt_graph, remove.multiple = FALSE, remove.loops = FALSE)
-proc_s1_graph2<-igraph::simplify(proc_s1_graph2, remove.multiple = FALSE, remove.loops = FALSE)
-proc_s3_graph2<-igraph::simplify(proc_s3_graph2, remove.multiple = FALSE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph2, remove.multiple = FALSE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph2, remove.multiple = FALSE, remove.loops = FALSE)
 ```
 
 ```{r}
 dt_closeness <- as.matrix(closeness(dt_graph2))
-proc_s1_graph2_closeness <- as.matrix(closeness(proc_s1_graph2))
-proc_s3_graph2_closeness <- as.matrix(closeness(proc_s3_graph2))
+s1_graph2_closeness <- as.matrix(closeness(s1_graph2))
+s3_graph2_closeness <- as.matrix(closeness(s3_graph2))
 ```
 
 ```{r}
 # Testing based on Wasserstein Distance:
 spec.output <- c("pval", "d.wass", "d.wass^2", "perc.loc", "perc.size", "perc.shape")
-wasserstein.test(dt_closeness, proc_s1_graph2_closeness)[spec.output]
-wasserstein.test(dt_closeness, proc_s3_graph2_closeness)[spec.output]
+wasserstein.test(dt_closeness, s1_graph2_closeness)[spec.output]
+wasserstein.test(dt_closeness, s3_graph2_closeness)[spec.output]
 ```
 
 ## Travel Channel for Reduced Network1:
