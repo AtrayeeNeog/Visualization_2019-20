@@ -287,20 +287,108 @@ wasserstein.test(dt_closeness, s1_graph2_closeness)[spec.output]
 wasserstein.test(dt_closeness, s3_graph2_closeness)[spec.output]
 ```
 
-## Travel Channel for Reduced Network1:
+## Travel Channel for Reduced ProcSeed1:
 
 ```{r}
-s1 <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed1-Graph2ReducedFinal.csv"))
+proc_s1_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed1-Graph2ReducedFinal.csv"))
+proc_s1_6 <- proc_s1 %>% filter(eType == 6)
+
+head(proc_s1_6)
+
+```
+
+```{r}
+target_count <- count(proc_s1_6, 'Target')
+target_count
+```
+```{r}
+target1 <- proc_s1_6 %>% filter(Target==499467)
+target2 <- proc_s1_6 %>% filter(Target==509607)
+target3 <- proc_s1_6 %>% filter(Target==561157)
+target4 <- proc_s1_6 %>% filter(Target==616453)
+target5 <- proc_s1_6 %>% filter(Target==625756)
+target6 <- proc_s1_6 %>% filter(Target==657173)
+
+```
+
+```{r}
+ggplot(target1, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed1 Travel Channel Analysis based on Target 499467",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed1 Travel Channel Analysis based on Target 509607",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed1 Travel Channel Analysis based on Target 561157",
+                                    x="Time", y = "Source")
+ggplot(target4, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed1 Travel Channel Analysis based on Target 616453",
+                                    x="Time", y = "Source")
+ggplot(target5, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed1 Travel Channel Analysis based on Target 625756",
+                                    x="Time", y = "Source")
+ggplot(target6, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed1 Travel Channel Analysis based on Target 657173",
+                                    x="Time", y = "Source")
+```
+
+## Travel Channel for Reduced ProcSeed3:
+
+```{r}
+proc_s3_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed3-Graph2ReducedFinal.csv"))
+proc_s3_6 <- proc_s3 %>% filter(eType == 6)
+
+head(proc_s3_6)
+```
+
+```{r}
+target_count <- count(proc_s3_6, 'Target')
+target_count
+
+```
+
+```{r}
+target1 <- proc_s3_6 %>% filter(Target==499467)
+target2 <- proc_s3_6 %>% filter(Target==509607)
+target3 <- proc_s3_6 %>% filter(Target==561157)
+target4 <- proc_s3_6 %>% filter(Target==616453)
+target5 <- proc_s3_6 %>% filter(Target==625756)
+target6 <- proc_s3_6 %>% filter(Target==657173)
+```
+
+```{r}
+ggplot(target1, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed3 Travel Channel Analysis based on Target 499467",
+                                    x="Time", y = "Source")
+ggplot(target2, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed3 Travel Channel Analysis based on Target 509607",
+                                    x="Time", y = "Source")
+ggplot(target3, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed3 Travel Channel Analysis based on Target 561157",
+                                    x="Time", y = "Source")
+ggplot(target4, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed3 Travel Channel Analysis based on Target 616453",
+                                    x="Time", y = "Source")
+ggplot(target5, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed3 Travel Channel Analysis based on Target 625756",
+                                    x="Time", y = "Source")
+ggplot(target6, aes(x=Time/86400, y=as.character(Source), color = as.character(SourceLocation), fill=as.character(SourceLocation))) + 
+  geom_point(shape=23, size = 5)+labs(title="ReducedProcSeed3 Travel Channel Analysis based on Target 657173",
+                                    x="Time", y = "Source")
+```
+
+## Travel Channel for Reduced Seed1:
+
+```{r}
+s1 <- data.table::fread(here::here("dataQ2","dfSeed1Reduced.csv"))
 s1_6 <- s1 %>% filter(eType == 6)
 
 head(s1_6)
-
-```
-
-```{r}
 target_count <- count(s1_6, 'Target')
 target_count
+
 ```
+
 ```{r}
 target1 <- s1_6 %>% filter(Target==499467)
 target2 <- s1_6 %>% filter(Target==509607)
@@ -308,7 +396,6 @@ target3 <- s1_6 %>% filter(Target==561157)
 target4 <- s1_6 %>% filter(Target==616453)
 target5 <- s1_6 %>% filter(Target==625756)
 target6 <- s1_6 %>% filter(Target==657173)
-
 ```
 
 ```{r}
@@ -332,16 +419,13 @@ ggplot(target6, aes(x=Time/86400, y=as.character(Source), color = as.character(S
                                     x="Time", y = "Source")
 ```
 
-# Reduced Network2:
+## Travel Channel for Reduced Seed3:
 
 ```{r}
-s3 <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed3-Graph2FullyReduced.csv"))
+s3 <- data.table::fread(here::here("dataQ2","dfSeed3Reduced.csv"))
 s3_6 <- s3 %>% filter(eType == 6)
 
 head(s3_6)
-```
-
-```{r}
 target_count <- count(s3_6, 'Target')
 target_count
 
@@ -376,12 +460,6 @@ ggplot(target6, aes(x=Time/86400, y=as.character(Source), color = as.character(S
   geom_point(shape=23, size = 5)+labs(title="ReducedSeed3 Travel Channel Analysis based on Target 657173",
                                     x="Time", y = "Source")
 ```
-
-
-
-
-
-
 
 
 

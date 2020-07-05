@@ -18,7 +18,7 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r cars}
 # Load The Data:
-seed1 <- data.table::fread(here::here("data", "extractedSeeds", "Seed1-Graph2NonCom.csv"))
+seed1 <- data.table::fread(here::here("dataQ2","dfSeed1Reduced.csv"))
 seed1_2 <- seed1 %>% filter(seed1$eType==2)
 seed1_3 <- seed1 %>% filter(seed1$eType==3)
 
@@ -39,8 +39,8 @@ max(items_bought$freq)
 min(items_bought$freq)
 unique(items_sold$freq)
 
-items_sold <- items_sold %>% filter(items_sold$freq >= 7)
-items_bought <- items_bought %>% filter(items_bought$freq >= 7)
+#items_sold <- items_sold %>% filter(items_sold$freq >= 7)
+#items_bought <- items_bought %>% filter(items_bought$freq >= 7)
 ```
 
 ```{r}
@@ -55,17 +55,7 @@ ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), f
                                     x="Source & Target Combination", y = "Time")
 ```
 
-```{r}
-trans <- seed1[seed1$Target==469675]
-ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
-  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
-                                    x="Source & Target Combination", y = "Time")
-```
 
-```{r}
-trans <- seed1[seed1$Target==461577]
-ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
-  geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
-                                    x="Source & Target Combination", y = "Time")
-```
+
+
 

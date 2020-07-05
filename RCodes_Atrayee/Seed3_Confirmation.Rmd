@@ -13,7 +13,7 @@ library(plyr)
 
 ```{r cars}
 # Load The Data:
-seed3 <- data.table::fread(here::here("data", "extractedSeeds", "seed3-Graph2NonCom.csv"))
+seed3 <- data.table::fread(here::here("dataQ2","dfSeed3Reduced.csv"))
 seed3_2 <- seed3 %>% filter(seed3$eType==2)
 seed3_3 <- seed3 %>% filter(seed3$eType==3)
 ```
@@ -33,8 +33,8 @@ max(items_bought$freq)
 min(items_bought$freq)
 unique(items_sold$freq)
 
-items_sold <- items_sold %>% filter(items_sold$freq >= 7)
-items_bought <- items_bought %>% filter(items_bought$freq >= 7)
+#items_sold <- items_sold %>% filter(items_sold$freq >= 7)
+#items_bought <- items_bought %>% filter(items_bought$freq >= 7)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
@@ -43,7 +43,7 @@ frequent_items<-intersect(items_sold$Target, items_bought$Target)
 ```
 
 ```{r}
-trans <- seed3[seed3$Target==641131]
+trans <- seed3[seed3$Target==466410]
 ggplot(trans, aes(x=as.character(Source), y=Time, color = as.character(eType), fill=as.character(eType))) + 
   geom_point(shape=23, size = 5)+theme(axis.text.x=element_text(size=10, angle=90))+labs(title="Source Target Combinations for Big Graph ",
                                     x="Source & Target Combination", y = "Time")
