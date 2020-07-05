@@ -27,7 +27,7 @@ library(waddR)
 ```{r}
 # Load The Data:
 dt <- data.table::fread(here::here("data", "CGCS-Template.csv"))
-proc_s1_full <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed1-Graph2FullyReduced.csv"))
+proc_s1_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed1-Graph2ReducedFinal.csv"))
 proc_s3_full <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed3-Graph2FullyReduced.csv"))
 
 ```
@@ -290,7 +290,7 @@ wasserstein.test(dt_closeness, proc_s3_graph2_closeness)[spec.output]
 ## Travel Channel for Reduced Network1:
 
 ```{r}
-s1 <- data.table::fread(here::here("dataQ3","FinalGraphs", "dfProcSeed1-Graph2FullyReduced.csv"))
+s1 <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed1-Graph2ReducedFinal.csv"))
 s1_6 <- s1 %>% filter(eType == 6)
 
 head(s1_6)
