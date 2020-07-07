@@ -84,7 +84,7 @@ layout1 <- layout.fruchterman.reingold(dt_graph2, niter=5000) #Creating a layout
 #Node or Vetex Options: Size and Color
 V(dt_graph2)$color <- "grey"
 V(dt_graph2)[degree(dt_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(dt_graph2)$size=degree(dt_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(dt_graph2)$size=(degree(dt_graph, mode = "out")+30)/5 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
@@ -92,10 +92,10 @@ V(dt_graph2)$size=degree(dt_graph, mode = "in")/3 #because we have wide range, I
 #  3	      Document
 #  4	  Financial category
 #  5	      Country
-
-V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "cyan", 
-                             ifelse(Template_Attributes[V(dt_graph), 2] == 4, "brown",
-                                    ifelse(Template_Attributes[V(dt_graph), 2] == 5, "green", "orange")))
+c_person <- "blue"
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "blue", 
+                             ifelse(Template_Attributes[V(dt_graph), 2] == 2, "red",
+                                    ifelse(Template_Attributes[V(dt_graph), 2] == 5, "green", "yellow")))
 
 #Edge Options: Color
 E(dt_graph2)$color <- "grey"
@@ -252,8 +252,8 @@ layout1 <- layout.fruchterman.reingold(qt5_graph2, niter=1000) #Creating a layou
 
 #Node or Vetex Options: Size and Color
 V(qt5_graph2)$color <- "grey"
-V(qt5_graph2)[degree(qt5_graph, mode="in")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
-V(qt5_graph2)$size=degree(qt5_graph, mode = "in")/3 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+V(qt5_graph2)[degree(qt5_graph, mode="out")>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt5_graph2)$size=(degree(qt5_graph, mode = "out")+20)/10 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
 
 #NodeType	Description
 #  1	      Person
