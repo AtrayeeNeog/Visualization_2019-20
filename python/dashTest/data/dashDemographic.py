@@ -47,6 +47,7 @@ dfQ3Seed1 = pd.read_csv(pathCSV)
 pathCSV = str(path) + "\\dfProcSeed3-Graph2ReducedFinal.csv"
 dfQ3Seed3 = pd.read_csv(pathCSV)
 pathCSV = str(path) + "\\DemographicCategories.csv"
+dfCategory = pd.read_csv(pathCSV)
 
 #Calculating the measures
 # Creating empty Multi-way Directed graphs(repeated edges are considered) for each of the graphs
@@ -579,47 +580,27 @@ def update_graph(option_slctd):
 
     container = "Upper Graph: Template | Lower Graph: {}".format(title)
 
-    fig = go.Figure(data=
-            go.Parcoords(
-                line=dict(color=df['Time'],
-                          colorscale='Viridis',
-                          showscale=True,
-                          cmin=0,
-                          cmax=1),
+    f = plt.figure(figsize=(20, 10))
 
-                dimensions=list([
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='Time', values=df['Time']),
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='degree', values=df['Degree']),
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='out_degree', values=df['Out-Degree']),
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='closeness', values=df['Closeness_Centrality']),
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='betweenness', values=df['Betweenness_Centrality']),
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='eigenvector', values=df['Eigenvector_Centrality']),
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='pagerank', values=df['PageRank']),
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='avg_neighbor_deg', values=df['Average_Neighbor_Degree']),
-                    dict(range=[0, 1],
-                         constraintrange=[0, 1],
-                         label='KNN', values=df['KNN'])
-                ])
-            )
-    )
+    time0 = df[(df["eType"] == 0)]["Time"] / (24 * 3600)
+    time1 = df[(df["eType"] == 1)]["Time"] / (24 * 3600)
 
-    figT.update_layout(height=300, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
+    source0StringList, target0StringList = list(), list()
+    for edge in range(len(df[df["eType"] == 5])):
+        if (df[df["eType"] == 5].iloc[edge]["Source"] not in list(dfCategory["NodeID"])):
+            source0StringList.append([int(df[df["eType"] == 5].iloc[edge]["Source"])])
+            target0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Target"])]))
+        else:
+            source0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Target"])]))
+            target0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Source"])]))
+
+    source0StringList = [str(x) for x in source0StringList]
+    # target0StringList = [str(x) for x in target0StringList]
+    target0StringList = [dfCategory[dfCategory["NodeID"] == int(x[0])].iloc[0]["Category"] for x in target0StringList]
+    fig = px.scatter(x=source0StringList, y=target0StringList, size=df[df["eType"] == 5]["Weight"],
+                     color=target0StringList)
+
+    fig.update_layout(title_text="Degmographic channel for " + figName[figNameCount], )
     # fig.show()
     fig.update_layout(
         plot_bgcolor='white',
