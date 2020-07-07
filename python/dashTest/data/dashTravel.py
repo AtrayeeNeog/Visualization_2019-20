@@ -81,6 +81,24 @@ app.layout = html.Div([
                  )
                  ),
 
+    dcc.Dropdown(id="slct_target",
+                 options=[
+                     {"label": "Target 1", "value": "target1"},
+                     {"label": "Target 2", "value": "target2"},
+                     {"label": "Target 3", "value": "target3"},
+                     {"label": "Target 4", "value": "target4"},
+                     {"label": "Target 5", "value": "target5"},
+                     {"label": "Target 6", "value": "target6"},
+                     {"label": "Default", "value": "all"}],
+                 multi=True,
+                 value="all",
+                 placeholder="Select Graph to compare",
+                 style=dict(
+                     width='40%',
+                     verticalAlign="right"
+                 )
+                 ),
+
     html.Div(id='output_container', children=[]),
     html.Br(),
     html.Div([
@@ -103,9 +121,11 @@ app.layout = html.Div([
     [Output(component_id='output_container', component_property='children'),
      Output(component_id='template_graph', component_property='figure'),
      Output(component_id='comparison_graph', component_property='figure')],
-    [Input(component_id='slct_comparison_graph', component_property='value')]
+    [Input(component_id='slct_comparison_graph', component_property='value'),
+     Input(component_id='slct_target', component_property='value')]
 )
 def update_graph(option_slctd):
+
     print(option_slctd)
     print(type(option_slctd))
 
@@ -174,9 +194,11 @@ def update_graph(option_slctd):
         title = "Q3 Graph-2"
         df = dfQ3Seed3.copy()
 
-    df = df[(df["eType"] == 2) | (df["eType"] == 3)]
+    df = df[(df["eType"] == 6)]
+
 
     source0StringList = [str([x]) for x in df["Source"]]
+    target0StringList = [str([x]) for x in df["Target"]]
     etype0 = [str(x) for x in df["eType"]]
     weight0StringList = [int(abs(x)) for x in list(df["Weight"])]
     time0 = df[(df["eType"] == 2) | (df["eType"] == 3)]["Time"] / (24 * 3600)
@@ -202,4 +224,4 @@ def update_graph(option_slctd):
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
