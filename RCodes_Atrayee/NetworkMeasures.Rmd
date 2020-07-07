@@ -324,7 +324,6 @@ plot(proc_s3_full_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.lab
 ## Betweenness:
 
 ```{r}
-## Template:
 
 dt_graph2<-igraph::simplify(dt_graph, remove.multiple = TRUE, remove.loops = FALSE)
 qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = TRUE, remove.loops = FALSE)
@@ -337,6 +336,7 @@ s3_graph2<-igraph::simplify(s3_graph, remove.multiple = TRUE, remove.loops = FAL
 proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = TRUE, remove.loops = FALSE)
 proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = TRUE, remove.loops = FALSE)
 
+## Template:
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
 layout1 <- layout.fruchterman.reingold(dt_graph2, niter=5000) #Creating a layout object to tell iGraph what layout I want
@@ -775,5 +775,227 @@ E(proc_s3_full_graph2)$color <- "grey"
 plot(proc_s3_full_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
 ```
 
+## Closeness:
+
+```{r}
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+
+## Template:
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+layout1 <- layout.fruchterman.reingold(dt_graph2, niter=5000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(dt_graph2)$color <- "grey"
+V(dt_graph2)[closeness(dt_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(dt_graph2)$size=(closeness(dt_graph)+300)/20 #because we have wide range, I am dividing by 5 to keep the high in-degree nodes from overshadowing everything else.
+
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(dt_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(dt_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(dt_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(dt_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+## Graph1:
+layout1 <- layout.fruchterman.reingold(qt1_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(qt1_graph2)$color <- "grey"
+V(qt1_graph2)[closeness(qt1_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt1_graph2)$size=(closeness(qt1_graph)+300)/20
+
+
+V(qt1_graph2)$color <- ifelse(Template_Attributes[V(qt1_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(qt1_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(qt1_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(qt1_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(qt1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+## Graph2:
+layout1 <- layout.fruchterman.reingold(qt2_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(qt2_graph2)$color <- "grey"
+V(qt2_graph2)[closeness(qt2_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt2_graph2)$size=(closeness(qt2_graph)+300)/20
+
+
+V(qt2_graph2)$color <- ifelse(Template_Attributes[V(qt2_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(qt2_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(qt2_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(qt2_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(qt2_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+
+## Graph3:
+layout1 <- layout.fruchterman.reingold(qt3_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(qt3_graph2)$color <- "grey"
+V(qt3_graph2)[closeness(qt3_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt3_graph2)$size=(closeness(qt3_graph)+300)/20
+
+
+V(qt3_graph2)$color <- ifelse(Template_Attributes[V(qt3_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(qt3_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(qt3_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(qt3_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(qt3_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+
+## Graph4:
+layout1 <- layout.fruchterman.reingold(qt4_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(qt4_graph2)$color <- "grey"
+V(qt4_graph2)[closeness(qt4_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt4_graph2)$size=(closeness(qt4_graph)+300)/20
+
+
+V(qt4_graph2)$color <- ifelse(Template_Attributes[V(qt4_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(qt4_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(qt4_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(qt4_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(qt4_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+
+## Graph5:
+layout1 <- layout.fruchterman.reingold(qt5_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(qt5_graph2)$color <- "grey"
+V(qt5_graph2)[closeness(qt5_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(qt5_graph2)$size=(closeness(qt5_graph)+300)/20
+
+
+V(qt5_graph2)$color <- ifelse(Template_Attributes[V(qt5_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(qt5_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(qt5_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(qt5_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(qt5_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+
+## Seed1:
+layout1 <- layout.fruchterman.reingold(s1_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(s1_graph2)$color <- "grey"
+V(s1_graph2)[closeness(s1_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(s1_graph2)$size=(closeness(s1_graph)+300)/20
+
+
+V(s1_graph2)$color <- ifelse(Template_Attributes[V(s1_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(s1_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(s1_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(s1_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(s1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+
+## Seed3:
+layout1 <- layout.fruchterman.reingold(s3_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(s3_graph2)$color <- "grey"
+V(s3_graph2)[closeness(s3_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(s3_graph2)$size=(closeness(s3_graph)+300)/20
+
+
+V(s3_graph2)$color <- ifelse(Template_Attributes[V(s3_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(s3_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(s3_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(s3_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(s3_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+
+## Proc Seed1:
+layout1 <- layout.fruchterman.reingold(proc_s1_full_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(proc_s1_full_graph2)$color <- "grey"
+V(proc_s1_full_graph2)[closeness(proc_s1_full_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(proc_s1_full_graph2)$size=(closeness(proc_s1_full_graph)+300)/20
+
+
+V(proc_s1_full_graph2)$color <- ifelse(Template_Attributes[V(proc_s1_full_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(proc_s1_full_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(proc_s1_full_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(proc_s1_full_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(proc_s1_full_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+
+
+## Proc Seed3:
+layout1 <- layout.fruchterman.reingold(proc_s3_full_graph2, niter=1000) #Creating a layout object to tell iGraph what layout I want
+
+#Node or Vetex Options: Size and Color
+V(proc_s3_full_graph2)$color <- "grey"
+V(proc_s3_full_graph2)[closeness(proc_s3_full_graph)>8]$color <- "yellow"  #Destinguishing High Degree Nodes as yellow
+V(proc_s3_full_graph2)$size=(closeness(proc_s3_full_graph)+300)/20
+
+
+V(proc_s3_full_graph2)$color <- ifelse(Template_Attributes[V(proc_s3_full_graph), 2] == 1, c_person, 
+                             ifelse(Template_Attributes[V(proc_s3_full_graph), 2] == 2, c_item,
+                                    ifelse(Template_Attributes[V(proc_s3_full_graph), 2] == 5, c_country, c_rest)))
+
+#Edge Options: Color
+E(proc_s3_full_graph2)$color <- "grey"
+
+#Plotting, Now Specifying an arrow size and getting rid of arrow heads
+#We are letting the color and the size of the node indicate the directed nature of the graph
+plot(proc_s3_full_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA)
+```
 
 
