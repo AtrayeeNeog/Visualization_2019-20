@@ -115,7 +115,7 @@ def update_graph(option_slctd):
     # figT =
     df = df[(df["eType"] == 2) | (df["eType"] == 3)]
 
-    source0StringList = [str(x) for x in df["Source"]]
+    source0StringList = [str([x]) for x in df["Source"]]
     etype0 = [str(x) for x in df["eType"]]
     weight0StringList = [int(abs(x)) for x in list(df["Weight"])]
     time0 = df[(df["eType"] == 2) | (df["eType"] == 3)]["Time"] / (24 * 3600)
@@ -124,7 +124,7 @@ def update_graph(option_slctd):
     figT.update_layout(title_text="Procurement channel for " + title, )
     figT.update_yaxes(showticklabels=True)
 
-    figT.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
+    figT.update_layout(height=550, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
     figT.update_layout(
         title={
             'y': 1.0,
@@ -176,11 +176,30 @@ def update_graph(option_slctd):
 
     df = df[(df["eType"] == 2) | (df["eType"] == 3)]
 
+    source0StringList = [str([x]) for x in df["Source"]]
+    etype0 = [str(x) for x in df["eType"]]
+    weight0StringList = [int(abs(x)) for x in list(df["Weight"])]
+    time0 = df[(df["eType"] == 2) | (df["eType"] == 3)]["Time"] / (24 * 3600)
+
+    fig = px.scatter(x=source0StringList, y=time0, size=weight0StringList, color=etype0)
+    fig.update_layout(title_text="Procurement channel for " + title, )
+    fig.update_yaxes(showticklabels=True)
+
+    fig.update_layout(height=550, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
+    fig.update_layout(
+        title={
+            'y': 1.0,
+            'x': 0.3,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        xaxis_title="Person Id",
+        yaxis_title="Time(days)")
+
     container = "Upper Graph: Template | Lower Graph: {}".format(title)
 
-    return container, figT, figT
+    return container, figT, fig
 
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
