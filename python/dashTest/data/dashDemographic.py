@@ -54,7 +54,7 @@ dfCategory = pd.read_csv(pathCSV)
 # App layout
 app.layout = html.Div([
 
-    html.H1("Parallel Coordinates Comparisons", style={'text-align': 'center'}),
+    html.H1("Demographic Channel", style={'text-align': 'center'}),
 
 
 
@@ -62,15 +62,16 @@ app.layout = html.Div([
     dcc.Dropdown(id="slct_comparison_graph",
                  options=[
                      {"label": "test", "value": "test"},
-                     {"label": "Template vs Q1 Graph1", "value": "q1graph1"},
-                     {"label": "Template vs Q1 Graph2", "value": "q1graph2"},
-                     {"label": "Template vs Q1 Graph3", "value": "q1graph3"},
-                     {"label": "Template vs Q1 Graph4", "value": "q1graph4"},
-                     {"label": "Template vs Q1 Graph5", "value": "q1graph5"},
-                     {"label": "Template vs Q2 Graph1", "value": "q2graph1"},
-                     {"label": "Template vs Q2 Graph3", "value": "q2graph3"},
-                     {"label": "Template vs Q3 Graph1", "value": "q3graph1"},
-                     {"label": "Template vs Q3 Graph2", "value": "q3graph2"}],
+                     {"label": "Template", "value": "q1graph1"},
+                     {"label": "Q1 Graph1", "value": "q1graph1"},
+                     {"label": "Q1 Graph2", "value": "q1graph2"},
+                     {"label": "Q1 Graph3", "value": "q1graph3"},
+                     {"label": "Q1 Graph4", "value": "q1graph4"},
+                     {"label": "Q1 Graph5", "value": "q1graph5"},
+                     {"label": "Q2 Graph1", "value": "q2graph1"},
+                     {"label": "Q2 Graph3", "value": "q2graph3"},
+                     {"label": "Q3 Graph1", "value": "q3graph1"},
+                     {"label": "Q3 Graph2", "value": "q3graph2"}],
                  multi=False,
                  value="Initial",
                  style={'width': "40%"}
@@ -108,6 +109,50 @@ def update_graph(option_slctd):
     title = "Template"
 
     # figT =
+    source0StringList, target0StringList, weight0StringList = list(), list(), list()
+    data = dict()
+    for edge in range(len(df[df["eType"] == 5])):
+        if (df[df["eType"] == 5].iloc[edge]["Source"] not in list(dfCategory["NodeID"])):
+            source0StringList.append([int(df[df["eType"] == 5].iloc[edge]["Source"])])
+            target0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Target"])]))
+            weight0StringList.append([int(df[df["eType"] == 5].iloc[edge]["Weight"])])
+
+        else:
+            source0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Target"])]))
+            target0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Source"])]))
+            weight0StringList.append([-1 * int(df[df["eType"] == 5].iloc[edge]["Weight"])])
+
+    source0StringList = [str(x) for x in source0StringList]
+    # target0StringList = [str(x) for x in target0StringList]
+    weight0StringList = [int(abs(x[0])) for x in weight0StringList]
+    target0StringList = [dfCategory[dfCategory["NodeID"] == int(x[0])].iloc[0]["Category"] for x in target0StringList]
+
+    for i in range(len(source0StringList)):
+        data[str(i)] = [target0StringList[i], source0StringList[i], weight0StringList[i]]
+
+    sorted_data = sorted(data.items(), key=operator.itemgetter(1))
+
+    target0StringList = [row[1][0] for row in sorted_data]
+    source0StringList = [row[1][1] for row in sorted_data]
+    weight0StringList = [row[1][2] for row in sorted_data]
+
+    # df[df["eType"] == 5]["Weight"]
+    # source0StringList = source0StringList + [source0StringList[0]] * 29
+    # target0StringList = target0StringList + list(dfCategory["Category"])
+    # weight0StringList = weight0StringList + [0] * 29
+
+    figT = px.scatter(x=source0StringList, y=target0StringList, size=weight0StringList, color=target0StringList)
+    figT.update_layout(title_text="Degmographic channel for " + title, )
+    figT.update_yaxes(showticklabels=False)
+
+    figT.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
+    figT.update_layout(
+        title={
+            'y': 1.0,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'})
+
 
     if option_slctd == "default":
         title = "Template"
@@ -195,7 +240,7 @@ def update_graph(option_slctd):
             'xanchor': 'center',
             'yanchor': 'top'})
 
-    return container, fig, fig
+    return container, figT, fig
 
 
 # ------------------------------------------------------------------------------
