@@ -73,8 +73,12 @@ app.layout = html.Div([
                      {"label": "Q3 Graph2", "value": "q3graph2"},
                      {"label": "Default", "value": "test"}],
                  multi=False,
-                 value="Initial",
-                 style={'width': "40%"}
+                 value="template",
+                 placeholder="Select Graph to compare",
+                 style=dict(
+                     width='40%',
+                     verticalAlign="right"
+                 )
                  ),
 
     html.Div(id='output_container', children=[]),
@@ -226,11 +230,6 @@ def update_graph(option_slctd):
     target0StringList = [row[1][0] for row in sorted_data]
     source0StringList = [row[1][1] for row in sorted_data]
     weight0StringList = [row[1][2] for row in sorted_data]
-
-    # df[df["eType"] == 5]["Weight"]
-    # source0StringList = source0StringList + [source0StringList[0]] * 29
-    # target0StringList = target0StringList + list(dfCategory["Category"])
-    # weight0StringList = weight0StringList + [0] * 29
 
     fig = px.scatter(x=source0StringList, y=target0StringList, size=weight0StringList, color=target0StringList)
     fig.update_layout(title_text="Degmographic channel for " + title, )
