@@ -19,6 +19,7 @@ from tqdm import trange
 from tqdm import tqdm
 import os.path
 from pathlib import Path
+import operator
 
 app = dash.Dash(__name__)
 
@@ -55,6 +56,9 @@ app.layout = html.Div([
 
     html.H1("Parallel Coordinates Comparisons", style={'text-align': 'center'}),
 
+
+
+
     dcc.Dropdown(id="slct_comparison_graph",
                  options=[
                      {"label": "test", "value": "test"},
@@ -74,8 +78,16 @@ app.layout = html.Div([
 
     html.Div(id='output_container', children=[]),
     html.Br(),
-    dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': True}),
-    dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': True})
+    html.Div([
+        dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': True}),
+    ], style={'width': '49%', 'display': 'inline-block', 'padding': '0 20'}),
+    html.Div([
+        dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': True})
+    ], style={'display': 'inline-block', 'width': '49%'})
+
+
+
+
 
 ])
 
@@ -92,11 +104,10 @@ def update_graph(option_slctd):
     print(option_slctd)
     print(type(option_slctd))
 
-
+    df = dfTemplate
     title = "Template"
 
     # figT =
-    title = "Template"
 
     if option_slctd == "default":
         title = "Template"
@@ -140,35 +151,43 @@ def update_graph(option_slctd):
 
     container = "Upper Graph: Template | Lower Graph: {}".format(title)
 
-    f = plt.figure(figsize=(20, 10))
-
-    time0 = df[(df["eType"] == 0)]["Time"] / (24 * 3600)
-    time1 = df[(df["eType"] == 1)]["Time"] / (24 * 3600)
-
-    source0StringList, target0StringList = list(), list()
+    source0StringList, target0StringList, weight0StringList = list(), list(), list()
+    data = dict()
     for edge in range(len(df[df["eType"] == 5])):
         if (df[df["eType"] == 5].iloc[edge]["Source"] not in list(dfCategory["NodeID"])):
             source0StringList.append([int(df[df["eType"] == 5].iloc[edge]["Source"])])
             target0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Target"])]))
+            weight0StringList.append([int(df[df["eType"] == 5].iloc[edge]["Weight"])])
+
         else:
             source0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Target"])]))
             target0StringList.append(list([int(df[df["eType"] == 5].iloc[edge]["Source"])]))
+            weight0StringList.append([-1 * int(df[df["eType"] == 5].iloc[edge]["Weight"])])
 
     source0StringList = [str(x) for x in source0StringList]
     # target0StringList = [str(x) for x in target0StringList]
+    weight0StringList = [int(abs(x[0])) for x in weight0StringList]
     target0StringList = [dfCategory[dfCategory["NodeID"] == int(x[0])].iloc[0]["Category"] for x in target0StringList]
-    fig = px.scatter(x=source0StringList, y=target0StringList, size=df[df["eType"] == 5]["Weight"],
-                     color=target0StringList)
 
+    for i in range(len(source0StringList)):
+        data[str(i)] = [target0StringList[i], source0StringList[i], weight0StringList[i]]
+
+    sorted_data = sorted(data.items(), key=operator.itemgetter(1))
+
+    target0StringList = [row[1][0] for row in sorted_data]
+    source0StringList = [row[1][1] for row in sorted_data]
+    weight0StringList = [row[1][2] for row in sorted_data]
+
+    # df[df["eType"] == 5]["Weight"]
+    # source0StringList = source0StringList + [source0StringList[0]] * 29
+    # target0StringList = target0StringList + list(dfCategory["Category"])
+    # weight0StringList = weight0StringList + [0] * 29
+
+    fig = px.scatter(x=source0StringList, y=target0StringList, size=weight0StringList, color=target0StringList)
     fig.update_layout(title_text="Degmographic channel for " + title, )
-    # fig.show()
-    fig.update_layout(
-        plot_bgcolor='white',
-        paper_bgcolor='white',
-        title_text="Parallel Coordinates of " + str(title) + "'s all the measurements"
-    )
-    # fig.update_layout(height=450, width=1500)
-    fig.update_layout(height=300, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
+    fig.update_yaxes(showticklabels=False)
+
+    fig.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
     fig.update_layout(
         title={
             'y': 1.0,
