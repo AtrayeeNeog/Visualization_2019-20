@@ -145,13 +145,15 @@ def update_graph(option_slctd):
     figT.update_layout(title_text="Degmographic channel for " + title, )
     figT.update_yaxes(showticklabels=False)
 
-    figT.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
+    figT.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
     figT.update_layout(
         title={
             'y': 1.0,
             'x': 0.3,
             'xanchor': 'center',
-            'yanchor': 'top'})
+            'yanchor': 'top'},
+        xaxis_title = "Person Id",
+        yaxis_title = "Category")
 
 
     if option_slctd == "default":
@@ -234,17 +236,20 @@ def update_graph(option_slctd):
     fig.update_layout(title_text="Degmographic channel for " + title, )
     fig.update_yaxes(showticklabels=False)
 
-    fig.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
+    fig.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
     fig.update_layout(
         title={
             'y': 1.0,
             'x': 0.3,
             'xanchor': 'center',
-            'yanchor': 'top'})
+            'yanchor': 'top'},
+        xaxis_title="Person Id",
+        yaxis_title="Category"
+    )
 
     return container, figT, fig
 
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
