@@ -13,6 +13,10 @@ qt2 <- data.table::fread(here::here("data", "Q1-Graph2.csv"))
 qt3 <- data.table::fread(here::here("data", "Q1-Graph3.csv"))
 qt4 <- data.table::fread(here::here("data", "Q1-Graph4.csv"))
 qt5 <- data.table::fread(here::here("data", "Q1-Graph5.csv"))
+s1 <- data.table::fread(here::here("dataQ2","dfSeed1Reduced.csv"))
+s3 <- data.table::fread(here::here("dataQ2","dfSeed3Reduced.csv"))
+proc_s1_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed1-Graph2ReducedFinal.csv"))
+proc_s3_full <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed3-Graph2ReducedFinal.csv"))
 
 dt_network <- subset(dt, select = c(Source, Target, Weight))
 qt1_network <- subset(qt1, select = c(Source, Target, Weight))
@@ -20,6 +24,10 @@ qt2_network <- subset(qt2, select = c(Source, Target, Weight))
 qt3_network <- subset(qt3, select = c(Source, Target, Weight))
 qt4_network <- subset(qt4, select = c(Source, Target, Weight))
 qt5_network <- subset(qt5, select = c(Source, Target, Weight))
+s1_network <- subset(s1, select = c(Source, Target, Weight))
+s3_network <- subset(s3, select = c(Source, Target, Weight))
+proc_s1_full_network <- subset(proc_s1_full, select = c(Source, Target, Weight))
+proc_s3_full_network <- subset(proc_s3_full, select = c(Source, Target, Weight))
 
 dt_edgelist <- dt_network
 dt_graph <- graph.data.frame(dt_edgelist, directed = TRUE)
@@ -39,19 +47,32 @@ qt4_graph <- graph.data.frame(qt4_edgelist, directed = TRUE)
 qt5_edgelist <- qt5_network
 qt5_graph <- graph.data.frame(qt5_edgelist, directed = TRUE)
 
+s1_edgelist <- s1_network
+s1_graph <- graph.data.frame(s1_edgelist, directed = TRUE)
 
-dt_graph2<-simplify(dt_graph)
-qt1_graph2<-simplify(qt1_graph)
-qt2_graph2<-simplify(qt2_graph)
-qt3_graph2<-simplify(qt3_graph)
-qt4_graph2<-simplify(qt4_graph)
-qt5_graph2<-simplify(qt5_graph)
+s3_edgelist <- s3_network
+s3_graph <- graph.data.frame(s3_edgelist, directed = TRUE)
+
+proc_s1_full_edgelist <- proc_s1_full_network
+proc_s1_full_graph <- graph.data.frame(proc_s1_full_edgelist, directed = TRUE)
+
+proc_s3_full_edgelist <- proc_s3_full_network
+proc_s3_full_graph <- graph.data.frame(proc_s3_full_edgelist, directed = TRUE)
+
+dt_graph2<-igraph::simplify(dt_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt1_graph2<-igraph::simplify(qt1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt2_graph2<-igraph::simplify(qt2_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt3_graph2<-igraph::simplify(qt3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt4_graph2<-igraph::simplify(qt4_graph, remove.multiple = FALSE, remove.loops = FALSE)
+qt5_graph2<-igraph::simplify(qt5_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s1_graph2<-igraph::simplify(s1_graph, remove.multiple = FALSE, remove.loops = FALSE)
+s3_graph2<-igraph::simplify(s3_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s1_full_graph2<-igraph::simplify(proc_s1_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+proc_s3_full_graph2<-igraph::simplify(proc_s3_full_graph, remove.multiple = FALSE, remove.loops = FALSE)
+
 ########################################
 # TEMPLATE ANALYSIS #
 ########################################
-
-#Removing Self-Loops (Repondents Nominating Themselves)
-dt_graph2 <- simplify(dt_graph)
 
 #Import the sample_attributes
 Template_Attributes=data.table::fread(here::here("data", "CGCS-Template-NodeTypes.csv"))
@@ -72,8 +93,8 @@ V(dt_graph2)$size=degree(dt_graph, mode = "in")/3 #because we have wide range, I
 #  4	  Financial category
 #  5	      Country
 
-V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "blue", 
-                             ifelse(Template_Attributes[V(dt_graph), 2] == 4, "red",
+V(dt_graph2)$color <- ifelse(Template_Attributes[V(dt_graph), 2] == 1, "cyan", 
+                             ifelse(Template_Attributes[V(dt_graph), 2] == 4, "brown",
                                     ifelse(Template_Attributes[V(dt_graph), 2] == 5, "green", "orange")))
 
 #Edge Options: Color
