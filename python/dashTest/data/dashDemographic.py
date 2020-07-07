@@ -61,8 +61,7 @@ app.layout = html.Div([
 
     dcc.Dropdown(id="slct_comparison_graph",
                  options=[
-                     {"label": "test", "value": "test"},
-                     {"label": "Template", "value": "q1graph1"},
+                     {"label": "Template", "value": "template"},
                      {"label": "Q1 Graph1", "value": "q1graph1"},
                      {"label": "Q1 Graph2", "value": "q1graph2"},
                      {"label": "Q1 Graph3", "value": "q1graph3"},
@@ -71,7 +70,8 @@ app.layout = html.Div([
                      {"label": "Q2 Graph1", "value": "q2graph1"},
                      {"label": "Q2 Graph3", "value": "q2graph3"},
                      {"label": "Q3 Graph1", "value": "q3graph1"},
-                     {"label": "Q3 Graph2", "value": "q3graph2"}],
+                     {"label": "Q3 Graph2", "value": "q3graph2"},
+                     {"label": "Default", "value": "test"}],
                  multi=False,
                  value="Initial",
                  style={'width': "40%"}
@@ -80,10 +80,10 @@ app.layout = html.Div([
     html.Div(id='output_container', children=[]),
     html.Br(),
     html.Div([
-        dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': True}),
+        dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
     ], style={'width': '49%', 'display': 'inline-block', 'padding': '0 20'}),
     html.Div([
-        dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': True})
+        dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
     ], style={'display': 'inline-block', 'width': '49%'})
 
 
@@ -149,7 +149,7 @@ def update_graph(option_slctd):
     figT.update_layout(
         title={
             'y': 1.0,
-            'x': 0.5,
+            'x': 0.3,
             'xanchor': 'center',
             'yanchor': 'top'})
 
@@ -194,6 +194,8 @@ def update_graph(option_slctd):
         title = "Q3 Graph-2"
         df = dfQ3Seed3.copy()
 
+    df = df[df["eType"] == 5]
+
     container = "Upper Graph: Template | Lower Graph: {}".format(title)
 
     source0StringList, target0StringList, weight0StringList = list(), list(), list()
@@ -236,7 +238,7 @@ def update_graph(option_slctd):
     fig.update_layout(
         title={
             'y': 1.0,
-            'x': 0.5,
+            'x': 0.3,
             'xanchor': 'center',
             'yanchor': 'top'})
 
