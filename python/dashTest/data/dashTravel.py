@@ -108,7 +108,7 @@ app.layout = html.Div([
                      options=[
                          {"label": "Template", "value": "template"}],
                      multi=True,
-                     value="template",
+                     value=[],
                      placeholder="Select Graph to compare",
                      style=dict(
                          width='80%',
@@ -147,7 +147,7 @@ app.layout = html.Div([
                      options=[
                          {"label": "Template", "value": "template"}],
                      multi=True,
-                     value="template",
+                     value=[],
                      placeholder="Select Graph to compare",
                      style=dict(
                          width='80%',
@@ -238,14 +238,18 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         title = "Q3 Graph-2"
         df = dfQ3Seed3.copy()
 
-    container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
-
     df = df[df["eType"] == 6]
+
+    if len(slct_graph_target) > 0:
+        df2 = df.copy()
+        df = df[df["eType"] == -100]
+        for target in slct_graph_target:
+            df = df.append(df2[df2["Target"] == target])
+
     sourceIn = [str([x]) for x in df['Source']]
     targetIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
-    fig = px.scatter(x=df["Time"], y=sourceIn, color=targetIn,
-                     size=weightIn, hover_data=[weightIn])
+    fig = px.scatter(x=df["Time"], y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
 
     if slct_comparison_graph2_value == "default":
         title = "Template"
@@ -292,11 +296,20 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         df = dfQ3Seed3.copy()
 
     df = df[df["eType"] == 6]
+
+    if len(slct_graph2_target) > 0:
+        df2 = df.copy()
+        df = df[df["eType"] == -100]
+        for target in slct_graph2_target:
+            df = df.append(df2[df2["Target"] == target])
+
     sourceIn = [str([x]) for x in df['Source']]
     targetIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
     figT = px.scatter(x=df["Time"], y=sourceIn, color=targetIn,
                       size=weightIn, hover_data=[weightIn])
+
+    container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 
     return container, fig, figT
 
