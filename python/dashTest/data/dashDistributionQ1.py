@@ -26,7 +26,7 @@ app = dash.Dash(__name__)
 
 # ------------------------------------------------------------------------------
 # Import and clean data (importing csv into pandas)
-path = Path(__file__).parent / "\\OVGU\\WiSe19_20\\VA project\\GitHub\\Visuaization_2019-20\\python\\dashTest\\data"
+path = Path(__file__).parent / "C:\\Users\\atray\\OneDrive\\Documents\\GitHub\\Visualization_2019-20\\python\\dashTest\\data"
 pathCSV = str(path) + "\\CGCS-Template.csv"
 dfTemplate = pd.read_csv(pathCSV)
 # dfTemplate = pd.read_csv("CGCS-Template.csv")
