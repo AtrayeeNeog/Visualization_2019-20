@@ -235,7 +235,7 @@ app.layout = html.Div([
 
     dcc.Dropdown(id="slct_measure",
                  options=[
-                     {"label": "test", "value": "test"},
+                     {"label": "Default", "value": "test"},
                      {"label": "Betweeenness centrality", "value": "betweenness"},
                      {"label": "Eigenvector centrality", "value": "eigenvector"},
                      {"label": "Out-Degree", "value": "out_degree"},
@@ -509,19 +509,21 @@ def update_graph(option_slctd):
     # Create distplot with custom bin_size
     fig = ff.create_distplot(hist_data, group_labels, bin_size=4, show_hist=False)
 
-    fig.update_layout(
-        title="Distribution curve for " + str(measure),
-        xaxis_title="Frequency",
-        yaxis_title="Probability",
-        font=dict(
-            family="Courier New, monospace",
-            size=18,
-            color="#7f7f7f"
-        )
-    )
+    # fig.update_layout(
+    #     title="Distribution curve for " + str(measure),
+    #     xaxis_title="Frequency",
+    #     yaxis_title="Probability",
+    #     font=dict(
+    #         family="Courier New, monospace",
+    #         size=18,
+    #         color="#7f7f7f"
+    #     )
+    # )
 
     container = "Upper Graph: Template | Lower Graph: {}".format(measure)
     container = str(container)
+
+
 
     return container, fig
 
