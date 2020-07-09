@@ -72,7 +72,7 @@ app.layout = html.Div([
                      {"label": "PageRank", "value": "page_rank"},
                      {"label": "Default", "value": "test"}],
                  multi=False,
-                 value="template",
+                 value="out_degree",
                  placeholder="Select Graph to compare",
                  style=dict(
                      width='40%',
@@ -249,7 +249,7 @@ def update_graph(option_slctd):
         degreeQ2Seed3 = nx.eigenvector_centrality(q2seed3G)
         degreeQ3Seed1 = nx.eigenvector_centrality(q3seed1G)
         degreeQ3Seed3 = nx.eigenvector_centrality(q3seed3G)
-        measure = "Eigenvector_Centrality"
+        measure = "Eigenvector Centrality"
 
     elif option_slctd == "out_degree":
 
@@ -291,7 +291,7 @@ def update_graph(option_slctd):
         degreeQ2Seed3 = nx.closeness_centrality(q2seed3G)
         degreeQ3Seed1 = nx.closeness_centrality(q3seed1G)
         degreeQ3Seed3 = nx.closeness_centrality(q3seed3G)
-        measure = "Closeness_Centrality"
+        measure = "Closeness Centrality"
 
     elif option_slctd == "average_neighbor_degree":
 
@@ -305,7 +305,7 @@ def update_graph(option_slctd):
         degreeQ2Seed3 = nx.average_neighbor_degree(q2seed3G)
         degreeQ3Seed1 = nx.average_neighbor_degree(q3seed1G)
         degreeQ3Seed3 = nx.average_neighbor_degree(q3seed3G)
-        measure = "Average_Neighbor_Degree"
+        measure = "Average Neighbor Degree"
 
     elif option_slctd == "knn":
 
@@ -400,11 +400,13 @@ def update_graph(option_slctd):
         x10 = df[0]
 
     # Group data together
-    hist_data = [x1, x2, x3, x4, x5, x6, x7, x8, x9, x10]
+    # hist_data = [x1, x2, x3, x4, x5, x6, x7, x8, x9, x10]
+    hist_data = [x1, x2, x3, x4, x5, x6]
 
-    group_labels = ['Template', 'Q1 Graph 1', 'Q1 Graph 2', 'Q1 Graph 3', 'Q1 Graph 4', 'Q1 Graph 5', 'Q2 Graph 1',
-                    'Q2 Graph 3', 'Q3 Graph 1', 'Q3 Graph 2']
+    # group_labels = ['Template', 'Q1 Graph 1', 'Q1 Graph 2', 'Q1 Graph 3', 'Q1 Graph 4', 'Q1 Graph 5', 'Q2 Graph 1',
+    #                 'Q2 Graph 3', 'Q3 Graph 1', 'Q3 Graph 2']
 
+    group_labels = ['Template', 'Q1 Graph 1', 'Q1 Graph 2', 'Q1 Graph 3', 'Q1 Graph 4', 'Q1 Graph 5']
     # Create distplot with custom bin_size
     fig = ff.create_distplot(hist_data, group_labels, bin_size=4, show_hist=False)
 
@@ -435,4 +437,4 @@ def update_graph(option_slctd):
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
