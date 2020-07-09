@@ -192,7 +192,7 @@ def update_graph(option_slctd):
 
     df = df[df["eType"] == 5]
 
-    container = "Upper Graph: Template | Lower Graph: {}".format(title)
+    container = "Left Graph: Template " + str("     "*50) + "| Right Graph: {}".format(title)
 
     source0StringList, target0StringList, weight0StringList = list(), list(), list()
     data = dict()
