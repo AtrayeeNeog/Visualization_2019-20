@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab79100b-26d4-479d-8a96-72f51fa32aa0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/dashTravelQ1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/dashTravelQ4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/dashTravelQ3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dashTravelQ4.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashTravelQ2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +53,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/dashTravelQ1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
@@ -61,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/dashTravelQ4.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/dashTravelQ2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="123" column="69" selection-start-line="123" selection-start-column="69" selection-end-line="123" selection-end-column="69" />
+            <state relative-caret-position="260">
+              <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -78,27 +79,6 @@
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/dashDistribution2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="414" column="17" selection-start-line="414" selection-start-column="17" selection-end-line="414" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/dashDistributionQ1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="439" column="30" selection-start-line="439" selection-start-column="30" selection-end-line="439" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -157,6 +137,8 @@
         <option value="$PROJECT_DIR$/data/dashTravel.py" />
         <option value="$PROJECT_DIR$/data/dashTravelQ1.py" />
         <option value="$PROJECT_DIR$/data/dashTravelQ4.py" />
+        <option value="$PROJECT_DIR$/data/dashTravelQ2.py" />
+        <option value="$PROJECT_DIR$/data/dashTravelQ3.py" />
       </list>
     </option>
   </component>
@@ -368,6 +350,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/dashTravelQ1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="128" column="53" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/dashTravelQ4.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -375,10 +364,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/dashTravelQ1.py">
+    <entry file="file://$PROJECT_DIR$/data/dashTravelQ3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="128" column="53" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="53" />
+        <state relative-caret-position="20">
+          <caret line="121" column="69" selection-start-line="121" selection-start-column="69" selection-end-line="121" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dashTravelQ2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="124" column="39" selection-start-line="124" selection-start-column="39" selection-end-line="124" selection-end-column="39" />
         </state>
       </provider>
     </entry>
