@@ -137,7 +137,7 @@ def update_graph(option_slctd):
     weight0StringList = [row[1][2] for row in sorted_data]
 
     figT = px.scatter(x=source0StringList, y=target0StringList, size=weight0StringList, color=target0StringList)
-    figT.update_layout(title_text="Degmographic channel for " + title, )
+    figT.update_layout(title_text="Demographic channel for " + title, )
     figT.update_yaxes(showticklabels=False)
 
     figT.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
@@ -222,7 +222,8 @@ def update_graph(option_slctd):
     weight0StringList = [row[1][2] for row in sorted_data]
 
     fig = px.scatter(x=source0StringList, y=target0StringList, size=weight0StringList, color=target0StringList)
-    fig.update_layout(title_text="Degmographic channel for " + title, )
+
+    fig.update_layout(title_text="Demographic channel for " + title, )
     fig.update_yaxes(showticklabels=False)
 
     fig.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
