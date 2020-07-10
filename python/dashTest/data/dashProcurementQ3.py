@@ -86,13 +86,7 @@ app.layout = html.Div([
         dcc.Dropdown(id="slct_comparison_graph",
                      options=[
                          {"label": "Template", "value": "template"},
-                         {"label": "Q1 Graph1", "value": "q1graph1"},
                          {"label": "Q1 Graph2", "value": "q1graph2"},
-                         {"label": "Q1 Graph3", "value": "q1graph3"},
-                         {"label": "Q1 Graph4", "value": "q1graph4"},
-                         {"label": "Q1 Graph5", "value": "q1graph5"},
-                         {"label": "Q2 Graph1", "value": "q2graph1"},
-                         {"label": "Q2 Graph3", "value": "q2graph3"},
                          {"label": "Q3 Graph1", "value": "q3graph1"},
                          {"label": "Q3 Graph2", "value": "q3graph2"},
                          {"label": "Default", "value": "test"}],
