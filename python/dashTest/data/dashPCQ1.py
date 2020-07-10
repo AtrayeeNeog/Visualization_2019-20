@@ -445,7 +445,7 @@ app.layout = html.Div([
                      {"label": "Template vs Q1 Graph2", "value": "q1graph2"},
                      {"label": "Template vs Q1 Graph3", "value": "q1graph3"},
                      {"label": "Template vs Q1 Graph4", "value": "q1graph4"},
-                     {"label": "Template vs Q1 Graph5", "value": "q1graph5"},],
+                     {"label": "Template vs Q1 Graph5", "value": "q1graph5"}],
                  multi=False,
                  value="Initial",
                  style={'width': "40%"}
