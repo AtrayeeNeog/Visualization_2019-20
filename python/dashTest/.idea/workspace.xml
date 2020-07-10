@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ab79100b-26d4-479d-8a96-72f51fa32aa0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashCommunicationQ1.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashCommunicationQ1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashCommunicationQ2.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashCommunicationQ2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashCommunicationQ3.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashCommunicationQ3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dashProcurementQ3.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashProcurementQ3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/dashProcurementQ3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-880">
-              <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
+            <state relative-caret-position="180">
+              <caret line="111" column="69" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -66,11 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/dashCommunicationQ1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
               <caret line="566" column="5" selection-start-line="566" selection-start-column="5" selection-end-line="566" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/dashProcurementQ2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="113" column="69" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -88,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/data/dashCommunicationQ3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
-              <caret line="563" column="5" lean-forward="true" selection-start-line="549" selection-start-column="4" selection-end-line="563" selection-end-column="5" />
+              <caret line="563" column="5" selection-start-line="549" selection-start-column="4" selection-end-line="563" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -154,14 +161,14 @@
         <option value="$PROJECT_DIR$/data/dashTravelQ3.py" />
         <option value="$PROJECT_DIR$/data/dashProcurement.py" />
         <option value="$PROJECT_DIR$/data/dashProcurementQ1.py" />
-        <option value="$PROJECT_DIR$/data/dashProcurementQ2.py" />
-        <option value="$PROJECT_DIR$/data/dashProcurementQ3.py" />
         <option value="$PROJECT_DIR$/data/dashDemographicQ2.py" />
         <option value="$PROJECT_DIR$/data/dashDemographicQ3.py" />
         <option value="$PROJECT_DIR$/data/dashCommunication.py" />
         <option value="$PROJECT_DIR$/data/dashCommunicationQ3.py" />
         <option value="$PROJECT_DIR$/data/dashCommunicationQ2.py" />
         <option value="$PROJECT_DIR$/data/dashCommunicationQ1.py" />
+        <option value="$PROJECT_DIR$/data/dashProcurementQ2.py" />
+        <option value="$PROJECT_DIR$/data/dashProcurementQ3.py" />
       </list>
     </option>
   </component>
@@ -395,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/dashProcurementQ2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="90" column="69" selection-start-line="90" selection-start-column="69" selection-end-line="90" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/dashDemographicQ2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -419,13 +419,6 @@
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dashProcurementQ3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-880">
-          <caret line="103" column="26" selection-start-line="103" selection-start-column="26" selection-end-line="103" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -449,7 +442,7 @@
     <entry file="file://$PROJECT_DIR$/data/dashCommunicationQ3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
-          <caret line="563" column="5" lean-forward="true" selection-start-line="549" selection-start-column="4" selection-end-line="563" selection-end-column="5" />
+          <caret line="563" column="5" selection-start-line="549" selection-start-column="4" selection-end-line="563" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -464,6 +457,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="566" column="5" selection-start-line="566" selection-start-column="5" selection-end-line="566" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dashProcurementQ2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="113" column="69" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dashProcurementQ3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="111" column="69" selection-start-line="111" selection-start-column="69" selection-end-line="111" selection-end-column="69" />
         </state>
       </provider>
     </entry>
