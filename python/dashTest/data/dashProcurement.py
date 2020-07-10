@@ -73,7 +73,7 @@ all_options = {
 # App layout
 app.layout = html.Div([
 
-    html.H1("Travel Channel", style={'text-align': 'center'}),
+    html.H1("Procurement Channel", style={'text-align': 'center'}),
 
 
 
@@ -171,7 +171,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value):
     print(slct_comparison_graph_value)
     print(type(slct_comparison_graph_value))
     df = dfTemplate
-    title = "Travel"
+    title = "Procurement"
     if slct_comparison_graph_value == "default":
         title = "Template"
         df = dfTemplate.copy()
@@ -232,7 +232,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value):
                       size=weightIn, hover_data=[weightIn])
 
     fig.update_layout(
-        title="Travel Channel of " + str(title),
+        title="Procurement Channel of " + str(title),
         xaxis_title="Source Id",
         yaxis_title="Time(days)",
         font=dict(
@@ -302,7 +302,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value):
                       size=weightIn, hover_data=[weightIn])
 
     figT.update_layout(
-        title="Travel Channel of " + str(title),
+        title="Procurement Channel of " + str(title),
         xaxis_title="Source Id",
         yaxis_title="Time(days)",
         font=dict(
