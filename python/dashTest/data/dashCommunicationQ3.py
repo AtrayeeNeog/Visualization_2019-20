@@ -353,6 +353,22 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         height=300,
         margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
     )
+    fig.update_layout(
+        title={
+            'text': "Communication Channel for " + str(title),
+            'y': 0.99,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        xaxis_title="Time(days)",
+        yaxis_title="Source Id",
+        font=dict(
+            family="Courier New, monospace",
+            size=14,
+            color="#000000"
+        )
+    )
+
     fig.update_xaxes(range=[0, 365])
 
     if slct_comparison_graph2_value == "default":
@@ -531,6 +547,21 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
     )
     figT.update_xaxes(range=[0, 365])
+    figT.update_layout(
+        title={
+            'text': "Communication Channel for " + str(title),
+            'y': 0.99,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        xaxis_title="Time(days)",
+        yaxis_title="Source Id",
+        font=dict(
+            family="Courier New, monospace",
+            size=14,
+            color="#000000"
+        )
+    )
 
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
