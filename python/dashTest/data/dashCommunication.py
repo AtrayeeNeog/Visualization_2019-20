@@ -104,21 +104,13 @@ app.layout = html.Div([
                          verticalAlign="right"
                      )
                      ),
-        dcc.Dropdown(id="target_radio",
-                     options=[
-                         {"label": "Template", "value": "template"}],
-                     multi=True,
-                     value=[],
-                     placeholder="Select Graph to compare",
-                     style=dict(
-                         width='80%',
-                         verticalAlign="right"
-                     )
-                     ),
+        dcc.RadioItems(id="arc_radio1"),
         # dcc.RadioItems(id='target_radio'),
 
-        dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
-    ], style={'width': '49%', 'display': 'inline-block', 'padding': '0 20'}),
+
+    ]),
+
+    dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
 
 
     html.Div([
@@ -143,20 +135,11 @@ app.layout = html.Div([
                          verticalAlign="right"
                      )
                      ),
-        dcc.Dropdown(id="target2_radio",
-                     options=[
-                         {"label": "Template", "value": "template"}],
-                     multi=True,
-                     value=[],
-                     placeholder="Select Graph to compare",
-                     style=dict(
-                         width='80%',
-                         verticalAlign="right"
-                     )
-                     ),
-        dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
-    ], style={'display': 'inline-block', 'width': '49%'})
+        dcc.RadioItems(id="arc_radio2")
 
+    ]),
+
+    dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
 
 
 
@@ -166,18 +149,6 @@ app.layout = html.Div([
 
 # ------------------------------------------------------------------------------
 # Connect the Plotly graphs with Dash Components
-@app.callback(
-    Output('target_radio', 'options'),
-    [Input(component_id='slct_comparison_graph', component_property='value')])
-def set_cities_options(selected_graph):
-    return [{'label': i, 'value': i} for i in all_options[selected_graph]]
-
-
-@app.callback(
-    Output('target2_radio', 'options'),
-    [Input(component_id='slct_comparison_graph2', component_property='value')])
-def set_cities_options(selected_graph):
-    return [{'label': i, 'value': i} for i in all_options[selected_graph]]
 
 
 @app.callback(
@@ -186,10 +157,10 @@ def set_cities_options(selected_graph):
      Output(component_id='comparison_graph', component_property='figure')],
     [Input(component_id='slct_comparison_graph', component_property='value'),
      Input(component_id='slct_comparison_graph2', component_property='value'),
-     Input(component_id='target_radio', component_property='value'),
-     Input(component_id='target2_radio', component_property='value')]
+     Input(component_id='arc_radio1', component_property='value'),
+     Input(component_id='arc_radio2', component_property='value')]
 )
-def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct_graph_target, slct_graph2_target):
+def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct_arc1, slct_arc2):
     print(slct_comparison_graph_value)
     print(type(slct_comparison_graph_value))
     df = dfTemplate
@@ -238,18 +209,131 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         title = "Q3 Graph-2"
         df = dfQ3Seed3.copy()
 
-    df = df[df["eType"] == 6]
+    # df = dfGraph2
+    df_eT0People = list(df[df["eType"] == 0]["Source"]) + list(
+        df[df["eType"] == 0]["Target"])
+    df_eT1People = list(df[df["eType"] == 1]["Source"]) + list(
+        df[df["eType"] == 1]["Target"])
+    df_eT01People = list(dict.fromkeys(list(df_eT0People) + list(df_eT1People)))
+    df_eT01People = [str(x) for x in df_eT01People]
 
-    if len(slct_graph_target) > 0:
-        df2 = df.copy()
-        df = df[df["eType"] == -100]
-        for target in slct_graph_target:
-            df = df.append(df2[df2["Target"] == target])
+    f = plt.figure(figsize=(20, 10))
 
-    sourceIn = [str([x]) for x in df['Source']]
-    targetIn = [str(x) for x in df['SourceLocation']]
-    weightIn = [abs(int(x)) for x in df['Weight']]
-    fig = px.scatter(x=df["Time"], y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
+    # adding a title for the whole graph
+    f.suptitle('Time versus Source and Target for Template', fontsize=36)
+
+    time0 = df[(df["eType"] == 0)]["Time"] / (24 * 3600)
+    time1 = df[(df["eType"] == 1)]["Time"] / (24 * 3600)
+
+    source0StringList = [str(x) for x in df[(df["eType"] == 0)]['Source']]
+    target0StringList = [str(x) for x in df[(df["eType"] == 0)]['Target']]
+    source0IndexList = [str([df_eT01People.index(i)]) for i in source0StringList]
+    target0IndexList = [str([df_eT01People.index(i)]) for i in target0StringList]
+
+    source1StringList = [str(x) for x in df[(df["eType"] == 1)]['Source']]
+    target1StringList = [str(x) for x in df[(df["eType"] == 1)]['Target']]
+    source1IndexList = [str([df_eT01People.index(i)]) for i in source1StringList]
+    target1IndexList = [str([df_eT01People.index(i)]) for i in target1StringList]
+
+    fig = go.Figure()
+
+    fig.add_trace(go.Scatter(
+        x=time0,
+        y=source0IndexList,
+        mode="markers",
+        marker_color='rgba(44, 130, 201, 1)',
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=time0,
+        y=target0IndexList,
+        mode="markers",
+        marker_color='rgba(137, 196, 244, 1)',
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=time1,
+        y=source1IndexList,
+        mode="markers",
+        marker_color='rgba(0, 177, 106, 1)',
+    ))
+
+    fig.add_trace(go.Scatter(
+        x=time1,
+        y=target1IndexList,
+        mode="markers",
+        marker_color='rgba(123, 239, 178, 1)',
+    ))
+
+    fig.update_xaxes(
+        range=[0, max(list(time0))],
+        zeroline=False,
+    )
+
+    fig.update_yaxes(
+        range=[-1, len(df_eT01People)],
+        zeroline=False,
+    )
+
+    path1 = []
+    for i in range(len(time0)):
+        middlepart = str(
+            (df_eT01People.index(source0StringList[i]) + df_eT01People.index(target0StringList[i])) / 2)
+        nextStr = "M " + str(list(time0)[i]) + "," + str(
+            df_eT01People.index(source0StringList[i])) + " Q " + str(
+            list(time0)[i] + 2 * (float(middlepart) / 5)) + "," + middlepart + " " + str(
+            list(time0)[i]) + "," + str(df_eT01People.index(target0StringList[i]))
+        path1.append(nextStr)
+    # print(path1)
+    type1 = ["path"] * len(time0)
+    # path1=[nextStr]
+    line_color1 = ["RoyalBlue"] * len(time0)
+
+    shapes1 = []
+    # Quadratic Bezier Curves
+    for i in range(len(time0)):
+        shapes1.append(dict(
+            type=type1[i],
+            path=path1[i],
+            line_color=line_color1[i], ),
+        )
+
+    path1 = []
+    for i in range(len(time1)):
+        middlepart = str(
+            (df_eT01People.index(source1StringList[i]) + df_eT01People.index(target1StringList[i])) / 2)
+        nextStr = "M " + str(list(time1)[i]) + "," + str(
+            df_eT01People.index(source1StringList[i])) + " Q " + str(
+            list(time1)[i] + 2 * (float(middlepart) / 5)) + "," + middlepart + " " + str(
+            list(time1)[i]) + "," + str(
+            df_eT01People.index(target1StringList[i]))
+        path1.append(nextStr)
+    # print(path1)
+    type1 = ["path"] * len(time1)
+    # path1=[nextStr]
+    line_color1 = ["LightSeaGreen"] * len(time1)
+
+    shapes2 = []
+    # Quadratic Bezier Curves
+    for i in range(len(time1)):
+        shapes2.append(dict(
+            type=type1[i],
+            path=path1[i],
+            line_color=line_color1[i], ),
+        )
+
+    # shapes1.append(shapes2)
+    fig.update_layout(
+        shapes=shapes1 + shapes2,
+        yaxis=dict(
+            autorange=True,
+            showgrid=False,
+            ticks="",
+            showticklabels=False
+        ),
+        height=300,
+        margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
+    )
 
     if slct_comparison_graph2_value == "default":
         title = "Template"
@@ -295,19 +379,130 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         title = "Q3 Graph-2"
         df = dfQ3Seed3.copy()
 
-    df = df[df["eType"] == 6]
+    df_eT0People = list(df[df["eType"] == 0]["Source"]) + list(
+        df[df["eType"] == 0]["Target"])
+    df_eT1People = list(df[df["eType"] == 1]["Source"]) + list(
+        df[df["eType"] == 1]["Target"])
+    df_eT01People = list(dict.fromkeys(list(df_eT0People) + list(df_eT1People)))
+    df_eT01People = [str(x) for x in df_eT01People]
 
-    if len(slct_graph2_target) > 0:
-        df2 = df.copy()
-        df = df[df["eType"] == -100]
-        for target in slct_graph2_target:
-            df = df.append(df2[df2["Target"] == target])
+    f = plt.figure(figsize=(20, 10))
 
-    sourceIn = [str([x]) for x in df['Source']]
-    targetIn = [str(x) for x in df['SourceLocation']]
-    weightIn = [abs(int(x)) for x in df['Weight']]
-    figT = px.scatter(x=df["Time"], y=sourceIn, color=targetIn,
-                      size=weightIn, hover_data=[weightIn])
+    # adding a title for the whole graph
+    f.suptitle('Time versus Source and Target for Template', fontsize=36)
+
+    time0 = df[(df["eType"] == 0)]["Time"] / (24 * 3600)
+    time1 = df[(df["eType"] == 1)]["Time"] / (24 * 3600)
+
+    source0StringList = [str(x) for x in df[(df["eType"] == 0)]['Source']]
+    target0StringList = [str(x) for x in df[(df["eType"] == 0)]['Target']]
+    source0IndexList = [str([df_eT01People.index(i)]) for i in source0StringList]
+    target0IndexList = [str([df_eT01People.index(i)]) for i in target0StringList]
+
+    source1StringList = [str(x) for x in df[(df["eType"] == 1)]['Source']]
+    target1StringList = [str(x) for x in df[(df["eType"] == 1)]['Target']]
+    source1IndexList = [str([df_eT01People.index(i)]) for i in source1StringList]
+    target1IndexList = [str([df_eT01People.index(i)]) for i in target1StringList]
+
+    figT = go.Figure()
+
+    figT.add_trace(go.Scatter(
+        x=time0,
+        y=source0IndexList,
+        mode="markers",
+        marker_color='rgba(44, 130, 201, 1)',
+    ))
+
+    figT.add_trace(go.Scatter(
+        x=time0,
+        y=target0IndexList,
+        mode="markers",
+        marker_color='rgba(137, 196, 244, 1)',
+    ))
+
+    figT.add_trace(go.Scatter(
+        x=time1,
+        y=source1IndexList,
+        mode="markers",
+        marker_color='rgba(0, 177, 106, 1)',
+    ))
+
+    figT.add_trace(go.Scatter(
+        x=time1,
+        y=target1IndexList,
+        mode="markers",
+        marker_color='rgba(123, 239, 178, 1)',
+    ))
+
+    figT.update_xaxes(
+        range=[0, max(list(time0))],
+        zeroline=False,
+    )
+
+    figT.update_yaxes(
+        range=[-1, len(df_eT01People)],
+        zeroline=False,
+    )
+
+    path1 = []
+    for i in range(len(time0)):
+        middlepart = str(
+            (df_eT01People.index(source0StringList[i]) + df_eT01People.index(target0StringList[i])) / 2)
+        nextStr = "M " + str(list(time0)[i]) + "," + str(
+            df_eT01People.index(source0StringList[i])) + " Q " + str(
+            list(time0)[i] + 2 * (float(middlepart) / 5)) + "," + middlepart + " " + str(
+            list(time0)[i]) + "," + str(df_eT01People.index(target0StringList[i]))
+        path1.append(nextStr)
+    # print(path1)
+    type1 = ["path"] * len(time0)
+    # path1=[nextStr]
+    line_color1 = ["RoyalBlue"] * len(time0)
+
+    shapes1 = []
+    # Quadratic Bezier Curves
+    for i in range(len(time0)):
+        shapes1.append(dict(
+            type=type1[i],
+            path=path1[i],
+            line_color=line_color1[i], ),
+        )
+
+    path1 = []
+    for i in range(len(time1)):
+        middlepart = str(
+            (df_eT01People.index(source1StringList[i]) + df_eT01People.index(target1StringList[i])) / 2)
+        nextStr = "M " + str(list(time1)[i]) + "," + str(
+            df_eT01People.index(source1StringList[i])) + " Q " + str(
+            list(time1)[i] + 2 * (float(middlepart) / 5)) + "," + middlepart + " " + str(
+            list(time1)[i]) + "," + str(
+            df_eT01People.index(target1StringList[i]))
+        path1.append(nextStr)
+    # print(path1)
+    type1 = ["path"] * len(time1)
+    # path1=[nextStr]
+    line_color1 = ["LightSeaGreen"] * len(time1)
+
+    shapes2 = []
+    # Quadratic Bezier Curves
+    for i in range(len(time1)):
+        shapes2.append(dict(
+            type=type1[i],
+            path=path1[i],
+            line_color=line_color1[i], ),
+        )
+
+    # shapes1.append(shapes2)
+    figT.update_layout(
+        shapes=shapes1 + shapes2,
+        yaxis=dict(
+            autorange=True,
+            showgrid=False,
+            ticks="",
+            showticklabels=False
+        ),
+        height=300,
+        margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
+    )
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 
