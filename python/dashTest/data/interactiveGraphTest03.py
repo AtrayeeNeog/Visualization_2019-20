@@ -40,7 +40,8 @@ dfSeed3Com = pd.read_csv(pathCSV)
 pathCSV = str(path) + "\\Seed3-Graph2NonCom.csv"
 dfSeed3NonCom = pd.read_csv(pathCSV)
 
-dfSeed1_Lvl2 = dfSeed1Com.append(dfSeed1NonCom)
+# dfSeed1_Lvl2 = dfSeed1Com.append(dfSeed1NonCom)
+
 
 dfSeed1_Lvl2G = nx.MultiDiGraph()
 dfSeed1_Lvl2Tuple = [tuple([x, y]) for x, y in zip(dfSeed1_Lvl2["Source"], dfSeed1_Lvl2["Target"])]
@@ -103,4 +104,5 @@ g = Network(height="1000px", width="1500px", notebook=True)
 g.toggle_hide_edges_on_drag(False)
 g.barnes_hut()
 g.from_nx(dfSeed1_Lvl2G)
-g.show("Seed1Extended.html")
+# g.show("Seed1Extended.html")
+g.show("Seed1Level2.html")
