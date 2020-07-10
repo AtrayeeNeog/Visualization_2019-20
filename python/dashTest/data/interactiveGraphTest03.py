@@ -31,6 +31,16 @@ pathCSV = str(path) + "\\DemographicCategories.csv"
 dfCategory = pd.read_csv(pathCSV)
 pathCSV = str(path) + "\\dfSeed1_Lvl1.csv"
 dfSeed1_Lvl1 = pd.read_csv(pathCSV)
+pathCSV = str(path) + "\\Seed1-Graph2Com.csv"
+dfSeed1Com = pd.read_csv(pathCSV)
+pathCSV = str(path) + "\\Seed1-Graph2NonCom.csv"
+dfSeed1NonCom = pd.read_csv(pathCSV)
+pathCSV = str(path) + "\\Seed3-Graph2Com.csv"
+dfSeed3Com = pd.read_csv(pathCSV)
+pathCSV = str(path) + "\\Seed3-Graph2NonCom.csv"
+dfSeed3NonCom = pd.read_csv(pathCSV)
+
+dfSeed1_Lvl2 = dfSeed1Com.append(dfSeed1NonCom)
 
 dfSeed1_Lvl2G = nx.MultiDiGraph()
 dfSeed1_Lvl2Tuple = [tuple([x, y]) for x, y in zip(dfSeed1_Lvl2["Source"], dfSeed1_Lvl2["Target"])]
@@ -45,13 +55,14 @@ people = people + list(dict.fromkeys(list(dfSeed1_Lvl2[dfSeed1_Lvl2["eType"] != 
 for node in tqdm(list(dict.fromkeys(list(dfSeed1_Lvl2[dfSeed1_Lvl2["eType"] == 5]["Source"]) +
                                     list(dfSeed1_Lvl2[dfSeed1_Lvl2["eType"] == 5]["Target"])))):
 
-  if(node not in list(dfCategory["NodeID"])):
-    people = people + list([node])
+  if node not in list(dfCategory["NodeID"]):
+
+        people = people + list([node])
 
 items = [item for item in list(dict.fromkeys(list(dfSeed1_Lvl2["Source"]) + list(dfSeed1_Lvl2["Target"]))) if item not in people]
 
-fig = plt.figure(figsize=(15, 15))
-pos = nx.kamada_kawai_layout(dfSeed1_Lvl2G) # positions for all nodes
+# fig = plt.figure(figsize=(15, 15))
+# pos = nx.kamada_kawai_layout(dfSeed1_Lvl2G) # positions for all nodes
 
 # # nodes
 # nx.draw_networkx_nodes(dfSeed1_Lvl2G, pos,
@@ -92,4 +103,4 @@ g = Network(height="1000px", width="1500px", notebook=True)
 g.toggle_hide_edges_on_drag(False)
 g.barnes_hut()
 g.from_nx(dfSeed1_Lvl2G)
-g.show("sth2.html")
+g.show("Seed1Extended.html")
