@@ -100,11 +100,26 @@ app.layout = html.Div([
                      value="template",
                      placeholder="Select Graph to compare",
                      style=dict(
-                         width='50%',
+                         width='40%',
                          verticalAlign="right"
                      )
                      ),
-        dcc.RadioItems(id="arc_radio1"),
+        dcc.RadioItems(id="arc_radio1",
+                       options=[
+                            {"label": "Add Arc", "value": "True"},
+                            {"label": "Only Points", "value": "False"}],
+                       value='True',
+                       style=dict(
+                           width='40%',
+                           verticalAlign="left"
+                       )
+                       ),
+        # dcc.RadioItems(id="arc_radio1",
+        #                style=dict(
+        #                     width='40%',
+        #                     verticalAlign="left"
+        #                )
+        #                ),
         # dcc.RadioItems(id='target_radio'),
 
 
@@ -131,11 +146,20 @@ app.layout = html.Div([
                      value="template",
                      placeholder="Select Graph to compare",
                      style=dict(
-                         width='50%',
+                         width='40%',
                          verticalAlign="right"
                      )
                      ),
-        dcc.RadioItems(id="arc_radio2")
+        dcc.RadioItems(id="arc_radio2",
+                       options=[
+                            {"label": "Add Arc", "value": "True"},
+                            {"label": "Only Points", "value": "False"}],
+                       value='True',
+                       style=dict(
+                           width='40%',
+                           verticalAlign="left"
+                       )
+                       ),
 
     ]),
 
@@ -326,9 +350,12 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
             line_color=line_color1[i], ),
         )
 
+    if slct_arc1 == "True":
+        fig.update_layout(
+            shapes=shapes1 + shapes2
+        )
     # shapes1.append(shapes2)
     fig.update_layout(
-        shapes=shapes1 + shapes2,
         yaxis=dict(
             autorange=True,
             showgrid=False,
@@ -501,8 +528,11 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         )
 
     # shapes1.append(shapes2)
+    if slct_arc2 == "True":
+        figT.update_layout(
+            shapes=shapes1 + shapes2,
+        )
     figT.update_layout(
-        shapes=shapes1 + shapes2,
         yaxis=dict(
             autorange=True,
             showgrid=False,
@@ -522,4 +552,4 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
