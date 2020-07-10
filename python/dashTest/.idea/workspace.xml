@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab79100b-26d4-479d-8a96-72f51fa32aa0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/interactiveGraphTest03.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/interactiveGraphTest02.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/interactiveGraphTest02.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/interactiveGraphTest03.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/interactiveGraphTest03.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/interactiveGraphTest03.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+            <state relative-caret-position="340">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -517,8 +516,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/interactiveGraphTest03.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+        <state relative-caret-position="340">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
