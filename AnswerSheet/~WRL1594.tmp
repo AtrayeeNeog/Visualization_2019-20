@@ -25,17 +25,17 @@ be easily edited that way</title>
  <o:DocumentProperties>
   <o:Author>Whiting, Mark A</o:Author>
   <o:LastAuthor>Atrayee Neog</o:LastAuthor>
-  <o:Revision>34</o:Revision>
-  <o:TotalTime>1583</o:TotalTime>
+  <o:Revision>26</o:Revision>
+  <o:TotalTime>1453</o:TotalTime>
   <o:Created>2020-07-10T11:28:00Z</o:Created>
-  <o:LastSaved>2020-07-10T19:14:00Z</o:LastSaved>
-  <o:Pages>21</o:Pages>
-  <o:Words>2679</o:Words>
-  <o:Characters>15272</o:Characters>
+  <o:LastSaved>2020-07-10T17:04:00Z</o:LastSaved>
+  <o:Pages>20</o:Pages>
+  <o:Words>2170</o:Words>
+  <o:Characters>12374</o:Characters>
   <o:Company>Pacific Northwest Versions panel</o:Company>
-  <o:Lines>127</o:Lines>
-  <o:Paragraphs>35</o:Paragraphs>
-  <o:CharactersWithSpaces>17916</o:CharactersWithSpaces>
+  <o:Lines>103</o:Lines>
+  <o:Paragraphs>29</o:Paragraphs>
+  <o:CharactersWithSpaces>14515</o:CharactersWithSpaces>
   <o:Version>15.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
@@ -45,8 +45,6 @@ be easily edited that way</title>
  <w:WordDocument>
   <w:View>Print</w:View>
   <w:Zoom>149</w:Zoom>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -897,12 +895,6 @@ p.msonormal0, li.msonormal0, div.msonormal0
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;
 	color:black;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -919,193 +911,174 @@ div.WordSection1
 	{page:WordSection1;}
  /* List Definitions */
  @list l0
-	{mso-list-id:123355539;
-	mso-list-type:hybrid;
-	mso-list-template-ids:-1051822430 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
-@list l0:level1
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0B7;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:Symbol;}
-@list l0:level2
-	{mso-level-number-format:bullet;
-	mso-level-text:o;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:"Courier New";}
-@list l0:level3
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:Wingdings;}
-@list l0:level4
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0B7;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:Symbol;}
-@list l0:level5
-	{mso-level-number-format:bullet;
-	mso-level-text:o;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:"Courier New";}
-@list l0:level6
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:Wingdings;}
-@list l0:level7
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0B7;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:Symbol;}
-@list l0:level8
-	{mso-level-number-format:bullet;
-	mso-level-text:o;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:"Courier New";}
-@list l0:level9
-	{mso-level-number-format:bullet;
-	mso-level-text:\F0A7;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;
-	font-family:Wingdings;}
-@list l1
 	{mso-list-id:640773642;
 	mso-list-template-ids:-1714013702;}
-@list l1:level1
+@list l0:level1
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:36.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level2
+@list l0:level2
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:72.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level3
+@list l0:level3
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:108.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level4
+@list l0:level4
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:144.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level5
+@list l0:level5
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:180.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level6
+@list l0:level6
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:216.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level7
+@list l0:level7
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:252.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level8
+@list l0:level8
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:288.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l1:level9
+@list l0:level9
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:324.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
-@list l2
+@list l1
 	{mso-list-id:925380288;
 	mso-list-type:hybrid;
 	mso-list-template-ids:-2061701352 134807553 134807555 134807557 134807553 134807555 134807557 134807553 134807555 134807557;}
-@list l2:level1
+@list l1:level1
 	{mso-level-number-format:bullet;
 	mso-level-text:\F0B7;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:Symbol;}
-@list l2:level2
+@list l1:level2
 	{mso-level-number-format:bullet;
 	mso-level-text:o;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:"Courier New";}
-@list l2:level3
+@list l1:level3
 	{mso-level-number-format:bullet;
 	mso-level-text:\F0A7;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:Wingdings;}
-@list l2:level4
+@list l1:level4
 	{mso-level-number-format:bullet;
 	mso-level-text:\F0B7;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:Symbol;}
-@list l2:level5
+@list l1:level5
 	{mso-level-number-format:bullet;
 	mso-level-text:o;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:"Courier New";}
-@list l2:level6
+@list l1:level6
 	{mso-level-number-format:bullet;
 	mso-level-text:\F0A7;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:Wingdings;}
-@list l2:level7
+@list l1:level7
 	{mso-level-number-format:bullet;
 	mso-level-text:\F0B7;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:Symbol;}
-@list l2:level8
+@list l1:level8
 	{mso-level-number-format:bullet;
 	mso-level-text:o;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:"Courier New";}
-@list l2:level9
+@list l1:level9
 	{mso-level-number-format:bullet;
 	mso-level-text:\F0A7;
 	mso-level-tab-stop:none;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;
 	font-family:Wingdings;}
-@list l3
+@list l2
 	{mso-list-id:1667131389;
 	mso-list-template-ids:593533478;}
-@list l3:level1
+@list l2:level1
 	{mso-level-start-at:2;
 	mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level7
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3
+	{mso-list-id:2081246727;
+	mso-list-template-ids:1310076202;}
+@list l3:level1
+	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:36.0pt;
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
@@ -1145,54 +1118,6 @@ div.WordSection1
 	mso-level-number-position:left;
 	text-indent:-18.0pt;}
 @list l3:level9
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:324.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4
-	{mso-list-id:2081246727;
-	mso-list-template-ids:1310076202;}
-@list l4:level1
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:36.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4:level2
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:72.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4:level3
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:108.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4:level4
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:144.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4:level5
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:180.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4:level6
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:216.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4:level7
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:252.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4:level8
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:288.0pt;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l4:level9
 	{mso-level-number-format:alpha-lower;
 	mso-level-tab-stop:324.0pt;
 	mso-level-number-position:left;
@@ -1293,38 +1218,30 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:DE;font-weight:
 normal'><o:p></o:p></span></h3>
 
-<h3 style='margin:0cm;margin-bottom:.0001pt'><span class=SpellE><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'>Seyedbehnam</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'> <span
-class=SpellE>Beladi</span>,</span><span style='font-weight:normal'> </span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'>Otto von
-Guericke University Magdeburg, </span><span lang=DE style='font-size:11.0pt;
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-mso-ansi-language:DE;font-weight:normal'><a
-href="mailto:seyedbehnam.beladi@ovgu.de"><span lang=EN-GB style='mso-ansi-language:
-EN-GB'>seyedbehnam.beladi@ovgu.de</span></a></span><span lang=DE
+font-weight:normal'>Seyedbehnam Beladi,</span><span style='font-weight:normal'>
+</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;font-weight:
+normal'>Otto von Guericke University Magdeburg, </span><span lang=DE
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:DE;font-weight:
+normal'><a href="mailto:seyedbehnam.beladi@ovgu.de"><span lang=EN-GB
+style='mso-ansi-language:EN-GB'>seyedbehnam.beladi@ovgu.de</span></a></span><span
+lang=DE style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'> </span><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'><o:p></o:p></span></h3>
 
-<h3 style='margin:0cm;margin-bottom:.0001pt'><span class=SpellE><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'>Xiongjun</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'> Wang, Otto von
-Guericke University Magdeburg<o:p></o:p></span></h3>
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+font-weight:normal'>Xiongjun Wang, Otto von Guericke University Magdeburg<o:p></o:p></span></h3>
 
 <p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
@@ -1359,25 +1276,27 @@ mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>Tools Used:<o:p></o:p><
 
 <p class=MsoNormal><i><span lang=EN-US style='font-size:11.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>R/<span
-class=SpellE>RStudio</span><o:p></o:p></span></i></p>
+minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>R/RStudio<o:p></o:p></span></i></p>
 
 <p class=MsoNormal><i><span lang=EN-US style='font-size:11.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>Python/<span
-class=SpellE>Colab</span>/Jupyter<o:p></o:p></span></i></p>
+minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>Python/Colab/Jupyter<o:p></o:p></span></i></p>
+
+<p class=MsoNormal><i><span lang=EN-US style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>Python
+packages(Networkx)<o:p></o:p></span></i></p>
 
 <p class=MsoNormal><i><span lang=EN-US style='font-size:11.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>Tableau<o:p></o:p></span></i></p>
 
-<p class=MsoNormal><span class=SpellE><i><span lang=EN-US style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:
-EN-US'>Gephi</span></i></span><span lang=EN-US style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US;mso-bidi-font-style:
-italic'><o:p></o:p></span></p>
+<p class=MsoNormal><i><span lang=EN-US style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'>Gephi</span></i><span
+lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+mso-ansi-language:EN-US;mso-bidi-font-style:italic'><o:p></o:p></span></p>
 
 <p class=MsoNormal><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
@@ -1464,14 +1383,13 @@ minor-latin;mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoNormal><span lang=EN-US style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 color:#555555;background:white;mso-ansi-language:EN-US'>Center for Global Cyber
 Strategy (CGCS) researchers have used the data donated by the white hat groups
-to create anonymized profiles of the <span class=SpellE>groups.One</span> such
-profile has been identified by CGCS sociopsychologists as most likely to
-resemble the structure of the group who accidentally caused this internet
-outage. You have been asked to examine CGCS records and identify those groups
-who most closely resemble the identified profile</span><span lang=EN-US
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-mso-ansi-language:EN-US'><o:p></o:p></span></p>
+to create anonymized profiles of the groups.One such profile has been
+identified by CGCS sociopsychologists as most likely to resemble the structure
+of the group who accidentally caused this internet outage. You have been asked
+to examine CGCS records and identify those groups who most closely resemble the
+identified profile</span><span lang=EN-US style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-US'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
 style='mso-bidi-font-weight:normal'><span lang=EN-US style='font-size:11.0pt;
@@ -1500,7 +1418,7 @@ text1;mso-ansi-language:EN-US'><o:p></o:p></span></b></p>
 
 <ol start=1 type=a>
  <li class=MsoNormal style='color:#555555;mso-margin-top-alt:auto;mso-margin-bottom-alt:
-     auto;mso-list:l1 level1 lfo3;tab-stops:list 36.0pt;background:white'><span
+     auto;mso-list:l0 level1 lfo3;tab-stops:list 36.0pt;background:white'><span
      lang=EN-US style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'>Compare
      the five candidate subgraphs to the provided template. Show where the two
@@ -1520,7 +1438,7 @@ EN-US'>The five candidate subgraphs were compared with the Template using the
 similarity measures:<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l2 level1 lfo5'><![if !supportLists]><span
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
 lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
 Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
 style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1532,7 +1450,7 @@ style='mso-spacerun:yes'>                                                       
 </span><o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l2 level1 lfo5'><![if !supportLists]><span
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
 lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
 Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
 style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1542,7 +1460,7 @@ font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-fo
 color:windowtext;mso-ansi-language:EN-US'>Betweenness<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l2 level1 lfo5'><![if !supportLists]><span
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
 lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
 Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
 style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1552,7 +1470,7 @@ font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-fo
 color:windowtext;mso-ansi-language:EN-US'>Closeness<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l2 level1 lfo5'><![if !supportLists]><span
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
 lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
 Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
 style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1562,7 +1480,7 @@ font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-fo
 color:windowtext;mso-ansi-language:EN-US'>Eigen Vector Centrality<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l2 level1 lfo5'><![if !supportLists]><span
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
 lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
 Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
 style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1572,7 +1490,7 @@ font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-fo
 color:windowtext;mso-ansi-language:EN-US'>KNN<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l2 level1 lfo5'><![if !supportLists]><span
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
 lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
 Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
 style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1581,8 +1499,8 @@ font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-fo
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 color:windowtext;mso-ansi-language:EN-US'>Out Degree<o:p></o:p></span></p>
 
-<p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l2 level1 lfo5'><![if !supportLists]><span
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l1 level1 lfo5'><![if !supportLists]><span
 lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
 Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
 style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1591,13 +1509,7 @@ font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-fo
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 color:windowtext;mso-ansi-language:EN-US'>Page Rank<o:p></o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
-lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
-EN-US'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span lang=EN-US
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
@@ -1662,11 +1574,11 @@ the various factors contributing to the similarities or dissimilarities. The
 Wasserstein metric is a distance measure that measures the similarity between
 two probability distributions by estimating the cost for moving or turning one
 distribution into another. In our case, the lower the Wasserstein metric, the
-more similar the graph is to the Template. The p-<span class=SpellE>val</span>
-represents the confidence of the Wasserstein metric in determining how similar
-or different the two distributions are. The confidence of the similarity or
-dissimilarity depends on three factors: size of the network, shape of the
-network and the location of the nodes in the network. <o:p></o:p></span></p>
+more similar the graph is to the Template. The p-val represents the confidence
+of the Wasserstein metric in determining how similar or different the two
+distributions are. The confidence of the similarity or dissimilarity depends on
+three factors: size of the network, shape of the network and the location of
+the nodes in the network. <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span lang=EN-US
@@ -1740,89 +1652,13 @@ minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
 EN-US'>Based on the Parallel Coordinates and the high p-values, three measures
 namely, Out-Degree, Betweenness and the Eigen Centrality were selected to
 further emphasize on the similarities and dissimilarities between the subgraphs
-and the Template. The reason for choosing these particular measures is listed
-as below:<o:p></o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo7'><![if !supportLists]><span
-lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
-Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
-style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><span
-lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
-EN-US'>Out-Degree</span></b><span lang=EN-US style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext;mso-ansi-language:EN-US'>: Out-Degree measures the number of edges
-going out of a particular node in a directed graph. For the Networks given to
-us, the nodes which have edges going out of them are those belonging to
-persons. Since we want to extract a network of hackers, it is important to
-understand how the connections of person-to-person more than person-to-item or
-person-to-category. Out-Degree helps highlight the similarities between these person-to-person
-interactions between the Template and all other Networks.<o:p></o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo7'><![if !supportLists]><span
-lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
-Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
-style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><span
-lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
-EN-US'>Betweenness</span></b><span lang=EN-US style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext;mso-ansi-language:EN-US'>: Betweenness centrality measures the
-number of shortest paths passing through a node. It measures the importance of
-a node based on how centrally it is located in a network. The higher the
-betweenness of a node, the more information passes through that node and the
-more central or important it is. Hence, betweenness is an important measure to understand
-the activities of the central or important nodes and how they influence the
-network. <o:p></o:p></span></p>
-
-<p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo7'><![if !supportLists]><span
-lang=EN-US style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:
-Symbol;mso-bidi-font-family:Symbol;color:windowtext;mso-ansi-language:EN-US'><span
-style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><b style='mso-bidi-font-weight:normal'><span
-lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
-EN-US'>Eigen Centrality</span></b><span lang=EN-US style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext;mso-ansi-language:EN-US'>: In order to extract a network of
-hackers, who have created the outage, it is not only important to understand which
-nodes are central to the network but also how the central nodes are connected
-to each other. The Eigen Vector Centrality scores the nodes based on how many
-important nodes they themselves are connected to. A node having high <span
-class=SpellE><span class=GramE>eigen</span></span> vector score means it is
-connected to other nodes which also have a very high <span class=SpellE>eigen</span>
-vector score. This is useful in our analysis, as it highlights the network of
-important hacker networks and their connections.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify'><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;
-mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span lang=EN-US
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
-EN-US'>For the further visualization of these differences, Network Graphs were
-created. Each Network Graph has different types of nodes color coded on the
-basis of Person (blue), Product Category (red), Country (green), Financial
-Category and Document (yellow). The node sizes are proportional to the values
-of each measure, the higher the value of the measure, the bigger the node size.
-Subgraph 1 and 2 are the closest to the Template from the Network Graph
-depictions. <o:p></o:p></span></p>
+and the Template. For the further visualization of these differences, Network
+Graphs were created. Each Network Graph has different types of nodes color
+coded on the basis of Person (blue), Product Category (red), Country (green),
+Financial Category and Document (yellow). The node sizes are proportional to the
+values of each measure, the higher the value of the measure, the bigger the
+node size. Subgraph 1 and 2 are the closest to the Template from the Network
+Graph depictions. <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span lang=EN-US
@@ -1981,31 +1817,12 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
 EN-US'><o:p></o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify'><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;
-mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify'><span lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;
-mso-ansi-language:EN-US'>For all the similarity measure distributions and the
-Wasserstein metrics values, subgraph 2 resembles the Template the most except
-in the Eigen Vector Centrality. As shown in the pie-charts for the Matrix
-above, the main reason for the Template and the Subgraph2 being different for
-the Eigen Vector Centrality is due to the difference in the shapes of the two
-Networks. The distances among the central or “important” nodes may have a wide
-range as compared to the distances between the central nodes for Template or
-Subgraph 1. This might be a cause for the difference in the shape of these
-networks. However, if we look at the Page Rank similarity measure (which is the
-normalized Eigen Vector Centrality measure), this difference in the shape is
-compensated by the normalization and as a result has resulted in Subgraph 2
-showing very high similarity with the Template with very high confidence (p-values).
-With all the above rationale in mind, we can conclude that Subgraph 2 is the
-most similar to the Template, more than Subgraph 1. This shall further be
-proved in part b. <o:p></o:p></span></p>
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+lang=EN-US style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
+EN-US'>Based on the Visualizations above and the Wasserstein metrics, subgraph
+2 resembles the Template the most. This shall further be proved in part b.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
@@ -2016,7 +1833,7 @@ EN-US'><o:p>&nbsp;</o:p></span></i></b></p>
 
 <ol start=2 type=a>
  <li class=MsoNormal style='color:#555555;mso-margin-top-alt:auto;mso-margin-bottom-alt:
-     auto;mso-list:l1 level1 lfo3;tab-stops:list 36.0pt;background:white'><span
+     auto;mso-list:l0 level1 lfo3;tab-stops:list 36.0pt;background:white'><span
      lang=EN-US style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
      mso-fareast-font-family:"Times New Roman";mso-ansi-language:EN-US'>Which
      key parts of the best match help discriminate it from the other potential
@@ -2230,39 +2047,17 @@ findings in no more than ten images and 500 words.<o:p></o:p></span></p>
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span lang=EN-US style='font-size:10.5pt;
 font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-US'>The main objective of this task was to see if any of
-the Seeds given to us, leads to other potential networks that could have been
-involved. For this the first step was to extract all the nodes in every channel
-which were directly connected to these 3 Seeds. The networks obtained were very
-large and needed to be filtered further. <span
-style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+mso-ansi-language:EN-US'>To analyze the networks and investigate if any of the
+retrieved Seed networks show similarity to the Template, we take help from the
+patterns discovered in the various channels from question 1. Here a comparison
+has also been done with Subgraph 2 from question 1, to see how the new networks
+compare to the best result from question 1. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-US style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-US'>The second step was to divide the 3 networks into
-Channels and extract the persons who were central to these networks. In order
-to do this, initially the Degree Centrality measure was used to extract the
-nodes which had more than a minimum value for this measure in order to make the
-network a little smaller for analysis. The reduced networks were then analyzed
-on the basis of the patterns for the different channels that were retrieved from
-the question 1 analysis.<span style='mso-spacerun:yes'>  </span>Only those
-nodes which extensively followed the required patterns from each of these
-channels were kept in the final networks. It was seen that Seed 1 and Seed 3
-led to two potential networks, but Seed 2 did not lead to any network and only
-was limited to the Co-Authorship Channel.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-US style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-US'>The results for the two Seed Networks (Q2G1 and Q2G2)
-have been compared to the Template and the best result from question 1,
-Subgraph 2.<o:p></o:p></span></p>
-
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-US style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+background:white'><b style='mso-bidi-font-weight:normal'><span lang=EN-US
+style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
+"Times New Roman";mso-bidi-font-family:Calibri;color:black;mso-themecolor:text1;
+mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></b></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2311,8 +2106,8 @@ mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
 mso-ansi-language:EN-IN'>The Travel Channel showed a bit more optimistic
 results in terms of similar trends to the Template. For each Target, both Seed
 1 and Seed 3 network shows multiple instances for people travelling in clusters
-from the same Source location (depicted by the <span class=SpellE>colors</span>)
-and at the same time, similar to the Template. <o:p></o:p></span></p>
+from the same Source location (depicted by the colors) and at the same time,
+similar to the Template. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
