@@ -73,7 +73,7 @@ all_options = {
 # App layout
 app.layout = html.Div([
 
-    html.H1("Travel Channel", style={'text-align': 'center'}),
+    html.H1("Communication Channel", style={'text-align': 'center'}),
 
 
 
@@ -242,6 +242,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         y=source0IndexList,
         mode="markers",
         marker_color='rgba(44, 130, 201, 1)',
+        name="Email Sender",
     ))
 
     fig.add_trace(go.Scatter(
@@ -249,6 +250,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         y=target0IndexList,
         mode="markers",
         marker_color='rgba(137, 196, 244, 1)',
+        name="Email Receiver",
     ))
 
     fig.add_trace(go.Scatter(
@@ -256,6 +258,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         y=source1IndexList,
         mode="markers",
         marker_color='rgba(0, 177, 106, 1)',
+        name="Caller",
     ))
 
     fig.add_trace(go.Scatter(
@@ -263,6 +266,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         y=target1IndexList,
         mode="markers",
         marker_color='rgba(123, 239, 178, 1)',
+        name="Call Receiver",
     ))
 
     fig.update_xaxes(
@@ -334,6 +338,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         height=300,
         margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
     )
+    fig.update_xaxes(range=[0, 365])
 
     if slct_comparison_graph2_value == "default":
         title = "Template"
@@ -411,6 +416,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         y=source0IndexList,
         mode="markers",
         marker_color='rgba(44, 130, 201, 1)',
+        name="Email Sender",
     ))
 
     figT.add_trace(go.Scatter(
@@ -418,6 +424,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         y=target0IndexList,
         mode="markers",
         marker_color='rgba(137, 196, 244, 1)',
+        name="Email Receiver",
     ))
 
     figT.add_trace(go.Scatter(
@@ -425,6 +432,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         y=source1IndexList,
         mode="markers",
         marker_color='rgba(0, 177, 106, 1)',
+        name="Caller",
     ))
 
     figT.add_trace(go.Scatter(
@@ -432,6 +440,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         y=target1IndexList,
         mode="markers",
         marker_color='rgba(123, 239, 178, 1)',
+        name="Call Receiver",
     ))
 
     figT.update_xaxes(
@@ -503,6 +512,8 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         height=300,
         margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
     )
+    figT.update_xaxes(range=[0, 365])
+
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 
