@@ -307,4 +307,4 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value):
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
