@@ -25,29 +25,27 @@ be easily edited that way</title>
  <o:DocumentProperties>
   <o:Author>Whiting, Mark A</o:Author>
   <o:LastAuthor>Behnam Beladi</o:LastAuthor>
-  <o:Revision>103</o:Revision>
-  <o:TotalTime>2181</o:TotalTime>
+  <o:Revision>72</o:Revision>
+  <o:TotalTime>2084</o:TotalTime>
   <o:Created>2020-07-10T11:28:00Z</o:Created>
-  <o:LastSaved>2020-07-11T21:46:00Z</o:LastSaved>
+  <o:LastSaved>2020-07-11T20:08:00Z</o:LastSaved>
   <o:Pages>25</o:Pages>
-  <o:Words>3245</o:Words>
-  <o:Characters>16874</o:Characters>
+  <o:Words>3012</o:Words>
+  <o:Characters>17171</o:Characters>
   <o:Company>Pacific Northwest Versions panel</o:Company>
-  <o:Lines>383</o:Lines>
-  <o:Paragraphs>126</o:Paragraphs>
-  <o:CharactersWithSpaces>19993</o:CharactersWithSpaces>
+  <o:Lines>143</o:Lines>
+  <o:Paragraphs>40</o:Paragraphs>
+  <o:CharactersWithSpaces>20143</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
-<link rel=dataStoreItem href="index_files/item0044.xml"
-target="index_files/props045.xml">
 <link rel=themeData href="index_files/themedata.thmx">
 <link rel=colorSchemeMapping href="index_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
   <w:Zoom>90</w:Zoom>
-  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -759,22 +757,6 @@ p.MsoFooter, li.MsoFooter, div.MsoFooter
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;
 	color:black;}
-p.MsoCaption, li.MsoCaption, div.MsoCaption
-	{mso-style-priority:35;
-	mso-style-qformat:yes;
-	mso-style-next:Normal;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:10.0pt;
-	margin-left:0cm;
-	mso-pagination:widow-orphan;
-	font-size:9.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	color:#1F497D;
-	mso-themecolor:text2;
-	font-style:italic;}
 a:link, span.MsoHyperlink
 	{mso-style-priority:99;
 	color:blue;
@@ -973,9 +955,9 @@ span.FooterChar
 	mso-hansi-font-family:"Times New Roman";
 	mso-bidi-font-family:"Times New Roman";
 	color:black;}
-span.SpellE
+span.GramE
 	{mso-style-name:"";
-	mso-spl-e:yes;}
+	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -1580,7 +1562,7 @@ mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-GB'>Team Members:<o:p></o:p
 <h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-font-weight:normal'>Seyedbehnam <span class=SpellE>Beladi,Otto</span> von
+font-weight:normal'>Seyedbehnam <span class=GramE>Beladi,Otto</span> von
 Guericke University Magdeburg,</span><span style='font-size:11.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;mso-bidi-font-style:italic'> </span><span
@@ -1596,20 +1578,17 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 font-weight:normal;mso-bidi-font-weight:bold;mso-bidi-font-style:italic'>PRIMARY<o:p></o:p></span></h3>
 
-<h3 style='margin:0cm;margin-bottom:.0001pt'><span class=SpellE><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'>Atrayee</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'> <span
-class=SpellE>Neog,Otto</span> von Guericke University Magdeburg, </span><u><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:blue;font-weight:normal'>atrayee.neog@ovgu.de</span></u><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'><o:p></o:p></span></h3>
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+font-weight:normal'>Atrayee <span class=GramE>Neog,Otto</span> von Guericke
+University Magdeburg, </span><u><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:blue;
+font-weight:normal'>atrayee.neog@ovgu.de</span></u><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+font-weight:normal'><o:p></o:p></span></h3>
 
 <h3 style='margin:0cm;margin-bottom:.0001pt'><span lang=DE style='font-size:
 11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
@@ -1691,19 +1670,15 @@ minor-latin;mso-bidi-font-style:italic'>R/RStudio<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;mso-bidi-font-style:italic'>Python/<span class=SpellE>Colab</span>/<span
-class=SpellE>Jupyter</span>/dash/<span class=SpellE>Networkx</span><o:p></o:p></span></p>
+minor-latin;mso-bidi-font-style:italic'>Python/Colab/Jupyter<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
 minor-latin;mso-bidi-font-style:italic'>Tableau<o:p></o:p></span></p>
 
-<p class=MsoNormal><span class=SpellE><span style='font-size:11.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;mso-bidi-font-style:italic'>Gephi</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-mso-bidi-font-style:italic'><o:p></o:p></span></p>
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin;mso-bidi-font-style:italic'>Gephi<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
@@ -1717,7 +1692,7 @@ this submission in total?<o:p></o:p></span></b></p>
 
 <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;mso-bidi-font-style:italic'>900 hours in total<b style='mso-bidi-font-weight:
+minor-latin;mso-bidi-font-style:italic'>800 hours in total<b style='mso-bidi-font-weight:
 normal'><o:p></o:p></b></span></p>
 
 <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
@@ -1782,8 +1757,8 @@ minor-latin'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 color:#555555;background:white'>Center for Global Cyber Strategy (CGCS)
 researchers have used the data donated by the white hat groups to create
-anonymized profiles of the <span class=SpellE>groups.One</span> such profile
-has been identified by CGCS sociopsychologists as most likely to resemble the
+anonymized profiles of the <span class=GramE>groups.One</span> such profile has
+been identified by CGCS sociopsychologists as most likely to resemble the
 structure of the group who accidentally caused this internet outage. You have
 been asked to examine CGCS records and identify those groups who most closely
 resemble the identified profile</span><span style='font-size:11.0pt;font-family:
@@ -1806,66 +1781,126 @@ minor-latin;color:black;mso-themecolor:text1'>1 –– </span></b><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;color:black;mso-themecolor:text1;mso-bidi-font-weight:bold'>Using
-visual analytics, compare the template subgraph <span class=SpellE>subgraph</span>
-with the potential matches provided. Show where the two graphs agree and
-disagree. Use your tool to answer the following questions:</span><b
-style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;color:black;mso-themecolor:
-text1'><o:p></o:p></span></b></p>
+visual analytics, compare the template subgraph with the potential matches
+provided. Show where the two graphs agree and disagree. Use your tool to answer
+the following questions:</span><b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;color:black;mso-themecolor:text1'><o:p></o:p></span></b></p>
 
 <ol start=1 type=a>
  <li class=MsoNormal style='color:#555555;mso-margin-top-alt:auto;mso-margin-bottom-alt:
      auto;mso-list:l3 level1 lfo1;tab-stops:list 36.0pt;background:white'><span
      style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
-     mso-fareast-font-family:"Times New Roman"'>Compare the five candidate subgraphs
-     to the provided template subgraph. Show where the two graphs agree and
-     disagree. Which subgraph matches the template subgraph the best? Please
-     limit your answer to seven images and 500 words.<o:p></o:p></span></li>
+     mso-fareast-font-family:"Times New Roman"'>Compare the five candidate
+     subgraphs to the provided template. Show where the two graphs agree and
+     disagree. Which subgraph matches the template the best? Please limit your
+     answer to seven images and 500 words.<o:p></o:p></span></li>
 </ol>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
 style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'>Ans:<o:p></o:p></span></b></p>
+color:windowtext'>Ans: </span></b><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext'>The five candidate subgraphs were compared with the Template
+using the similarity measures:<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l4 level1 lfo2'><![if !supportLists]><span
+style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:windowtext'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>Degree<span
+style='mso-spacerun:yes'>                        </span><span
+style='mso-spacerun:yes'>                                                           </span><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l4 level1 lfo2'><![if !supportLists]><span
+style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:windowtext'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>Betweenness<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l4 level1 lfo2'><![if !supportLists]><span
+style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:windowtext'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>Closeness<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l4 level1 lfo2'><![if !supportLists]><span
+style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:windowtext'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>Eigen Vector Centrality<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l4 level1 lfo2'><![if !supportLists]><span
+style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:windowtext'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>KNN<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l4 level1 lfo2'><![if !supportLists]><span
+style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:windowtext'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>Out Degree<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l4 level1 lfo2'><![if !supportLists]><span
+style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol;color:windowtext'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>Page Rank<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>The fastest and
-easiest way to compare the subgraphs is using their network analysis and
-comparing the values for different measures. As you can see in </span><!--[if supportFields]><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>REF
-_Ref45402321 \h <span style='mso-element:field-separator'></span></span><![endif]-->Figure
-<span style='mso-no-proof:yes'>1</span><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><!--[if gte mso 9]><xml>
- <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400300032003300320031000000</w:data>
-</xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>, some of these
-measures such as Degree, Betweenness and etc. are visualized as parallel
-coordinates (PCs) for all of the subgraphs. <span
-style='mso-spacerun:yes'> </span>Each of the subgraphs were then compared with the
-template subgraph. Based on the certain patterns that emerges in these graphs,
-subgraphs 1 and 2 are seem to be the most similar to the template compared to
-the other subgraphs.<o:p></o:p></span></p>
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify;page-break-after:
-avoid'><span lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>For the
+comparison, a parallel coordinate was plotted to visualize the trends for each
+of the measures. As can be seen from the gif below, on interacting with the
+PCs, certain trends emerge for the measures between the Template and Subgraphs
+1 and 2, pointing towards their similarity with the Template.<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
+EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
  coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
  filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
@@ -1891,40 +1926,11 @@ mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x
  <v:imagedata src="index_files/image001.gif" o:title="PCQ1test"/>
  <o:lock v:ext="edit" cropping="t"/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=600 height=336
-src="index_files/image001.gif" alt=PCQ1test v:shapes="Picture_x0020_6"><![endif]></span></p>
-
-<p class=MsoCaption align=center style='text-align:center'><a
-name="_Ref45402321">Figure </a><!--[if supportFields]><span style='mso-bookmark:
-_Ref45402321'></span><span style='mso-element:field-begin'></span><span
-style='mso-bookmark:_Ref45402321'><span style='mso-spacerun:yes'> </span>SEQ Figure
-\* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='mso-bookmark:_Ref45402321'><span style='mso-no-proof:yes'>1</span></span><!--[if supportFields]><span
-style='mso-bookmark:_Ref45402321'></span><span style='mso-element:field-end'></span><![endif]--><span
-style='mso-bookmark:_Ref45402321'></span>. Parallel coordinates allow us to observe
-the distribution of all the similarity measures at the same time<span
+src="index_files/image001.gif" alt=PCQ1test v:shapes="Picture_x0020_6"><![endif]></span><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
 
-<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>In order to
-quantify these comparisons a Wasserstein-based test was done between each subgraph
-and the template subgraph for each measure. The Wasserstein metric is a distance
-measure that measures the similarity between two probability distributions by
-estimating the cost for moving or turning one distribution into another. The
-test outputs a Wasserstein metric and a p-Value which depends on three factors:
-size of the network, shape of the network and the location of the nodes in the
-network.<o:p></o:p></span></p>
-
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
@@ -1935,27 +1941,31 @@ minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p><
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Comparisons in </span><!--[if supportFields]><span
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>The second point
+of comparison was to do a Wasserstein based test for these distributions. The
+test consists of Wasserstein metric, the p-value and the 3 possible factors
+contributing to the similarities or dissimilarities. The Wasserstein metric is
+a distance measure that measures the similarity between two probability
+distributions by estimating the cost for moving or turning one distribution
+into another. In our case, the lower the Wasserstein metric, the more similar
+the graph is to the Template. The p-val represents the confidence of the
+Wasserstein metric in determining how similar or different the two
+distributions are. The confidence of the similarity or dissimilarity depends on
+three factors: size of the network, shape of the network and the location of
+the nodes in the network. <o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>REF
-_Ref45402298 \h <span style='mso-element:field-separator'></span></span><![endif]-->Figure
-<span style='mso-no-proof:yes'>2</span><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><!--[if gte mso 9]><xml>
- <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400300032003200390038000000</w:data>
-</xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> shows that subgraph
-1 and 2 are overall more similar to the template subgraph due to more similar distributions,
-smaller Wasserstein metrics with higher confidence factor denoted by the
-p-value in most measures.<o:p></o:p></span></p>
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>A Matrix has been
+plotted showing the comparison for the various distributions for Template and
+the subgraphs. The two values represent the Wasserstein metric and the p-value
+for the distribution measures. The pie chart represents which among the three
+factors contributes the most to the two distributions being dissimilar. As can
+be seen from the distributions and the Wasserstein metrics, subgraph 1 and 2
+have higher similarity to the Template for <span class=GramE>most</span> number
+of measures with very high confidence factor denoted by the p-value. <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -1964,57 +1974,21 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
+auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span lang=EN-GB
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify;page-break-after:
-avoid'><span lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2"
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
+EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_2"
  o:spid="_x0000_i1052" type="#_x0000_t75" style='width:526.2pt;height:369.6pt;
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image002.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=702 height=493
-src="index_files/image003.jpg" v:shapes="Picture_x0020_2"><![endif]></span></p>
+src="index_files/image038.jpg" v:shapes="Picture_x0020_2"><![endif]></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
 
-<p class=MsoCaption align=center style='text-align:center'><a
-name="_Ref45402298">Figure </a><!--[if supportFields]><span style='mso-bookmark:
-_Ref45402298'></span><span style='mso-element:field-begin'></span><span
-style='mso-bookmark:_Ref45402298'><span style='mso-spacerun:yes'> </span>SEQ Figure
-\* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='mso-bookmark:_Ref45402298'><span style='mso-no-proof:yes'>2</span></span><!--[if supportFields]><span
-style='mso-bookmark:_Ref45402298'></span><span style='mso-element:field-end'></span><![endif]--><span
-style='mso-bookmark:_Ref45402298'></span>. Comparison of subgraphs for each
-distribution measure. Distribution curves are compared in each cell.
-Wasserstein metric and p-Value are also written and besides contribution
-percentage of three factors(location, size and shape) are presented in form of
-pie charts.<span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
-
-<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
@@ -2042,10 +2016,11 @@ minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p><
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Based on high
-p-values, three measures were selected to further investigate similarities and
-dissimilarities between the subgraphs. The measures and the reason for choosing
-them are listed below:<o:p></o:p></span></p>
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Based on the
+Parallel Coordinates and the high p-values, three measures namely, Out-Degree,
+Betweenness and the Eigen Centrality were selected to further emphasize on the
+similarities and dissimilarities between the subgraphs and the Template. The
+reason for choosing these particular measures is listed as below:<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo3'><![if !supportLists]><span
@@ -2058,11 +2033,14 @@ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Out-Degree</span></b><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> measures the
-number of edges going out for each node in a directed graph. In this particular
-case, out-going nodes usually belong to person IDs. Since the core of a hacker
-group is these persons, Out-Degrees help embolden the effect of people on the
-network analysis.<o:p></o:p></span></p>
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>: Out-Degree
+measures the number of edges going out of a particular node in a directed
+graph. For the Networks given to us, the nodes which have edges going out of
+them are those belonging to persons. Since we want to extract a network of
+hackers, it is important to understand how the connections of person-to-person
+more than person-to-item or person-to-category. Out-Degree helps highlight the
+similarities between these person-to-person interactions between the Template
+and all other Networks.<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo3'><![if !supportLists]><span
@@ -2075,24 +2053,13 @@ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Betweenness</span></b><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> <b>Centrality</b>
-measures the number of shortest paths passing through a node. It measures the
-importance of a node based on how centrally it is located in a network. Therefore,
-this measure <o:p></o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo3'><![if !supportLists]><span
-style='font-size:11.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
-mso-bidi-font-family:Symbol;color:windowtext'><span style='mso-list:Ignore'>·<span
-style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-theme-font:minor-latin;color:windowtext'>The higher the betweenness of
-a node, the more information passes through that node and the more central or
-important it is. Hence, betweenness is an important measure to understand the
-activities of the central or important nodes and how they influence the
-network. <o:p></o:p></span></p>
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>: Betweenness
+centrality measures the number of shortest paths passing through a node. It
+measures the importance of a node based on how centrally it is located in a
+network. The higher the betweenness of a node, the more information passes
+through that node and the more central or important it is. Hence, betweenness
+is an important measure to understand the activities of the central or
+important nodes and how they influence the network. <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l0 level1 lfo3'><![if !supportLists]><span
@@ -2125,12 +2092,12 @@ auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>For the further
-visualization of these differences, Network Graphs were created. Each Network Graph
-has different types of nodes color coded on the basis of Person (blue), Product
-Category (red), Country (green), Financial Category and Document (yellow). The
-node sizes are proportional to the values of each measure, the higher the value
-of the measure, the bigger the node size. Subgraph 1 and 2 are the closest to
-the template subgraph from the Network Graph depictions. <o:p></o:p></span></p>
+visualization of these differences, Network Graphs were created. Each Network
+Graph has different types of nodes color coded on the basis of Person (blue),
+Product Category (red), Country (green), Financial Category and Document
+(yellow). The node sizes are proportional to the values of each measure, the
+higher the value of the measure, the bigger the node size. Subgraph 1 and 2 are
+the closest to the Template from the Network Graph depictions. <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -2171,7 +2138,7 @@ EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1051" type="#_x0
  style='width:454.8pt;height:244.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image004.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=606 height=326
-src="index_files/image005.gif" v:shapes="_x0000_i1051"><![endif]></span></i></b><b
+src="index_files/image039.gif" v:shapes="_x0000_i1051"><![endif]></span></i></b><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
@@ -2205,7 +2172,7 @@ EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4"
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image006.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=624 height=382
-src="index_files/image007.gif" v:shapes="Picture_x0020_4"><![endif]></span></i></b><b
+src="index_files/image040.gif" v:shapes="Picture_x0020_4"><![endif]></span></i></b><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
@@ -2227,7 +2194,7 @@ EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image008.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=624 height=394
-src="index_files/image009.gif" v:shapes="Picture_x0020_5"><![endif]></span></i></b><b
+src="index_files/image041.gif" v:shapes="Picture_x0020_5"><![endif]></span></i></b><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
@@ -2239,8 +2206,8 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>To enunciate
 these differences even more, an interactive plot is created which compares the
-Distributions of the template subgraph with the various Subgraphs for these
-three similarity measures. <o:p></o:p></span></p>
+Distributions of the Template with the various Subgraphs for these three
+similarity measures. <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -2286,20 +2253,20 @@ text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-ser
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>For
 all the similarity measure distributions and the Wasserstein metrics values,
-subgraph 2 resembles the template subgraph the most except in the Eigen Vector
+subgraph 2 resembles the Template the most except in the Eigen Vector
 Centrality. As shown in the pie-charts for the Matrix above, the main reason
-for the template subgraph and the Subgraph2 being different for the Eigen
-Vector Centrality is due to the difference in the shapes of the two Networks.
-The distances among the central or “important” nodes may have a wide range as
-compared to the distances between the central nodes for the template subgraph
-or Subgraph 1. This might be a cause for the difference in the shape of these
+for the Template and the Subgraph2 being different for the Eigen Vector
+Centrality is due to the difference in the shapes of the two Networks. The
+distances among the central or “important” nodes may have a wide range as
+compared to the distances between the central nodes for the Template or
+Subgraph 1. This might be a cause for the difference in the shape of these
 networks. However, if we look at the Page Rank similarity measure (which is the
 normalized Eigen Vector Centrality measure), this difference in the shape is
 compensated by the normalization and as a result has resulted in Subgraph 2
-showing very high similarity with the template subgraph with very high
-confidence (p-values). With all the above rationale in mind, we can conclude
-that <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Subgraph
-2 is the most similar to the template subgraph. </i></b><o:p></o:p></span></p>
+showing very high similarity with the Template with very high confidence
+(p-values). With all the above rationale in mind, we can conclude that <b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Subgraph
+2 is the most similar to the Template. </i></b><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
@@ -2324,8 +2291,8 @@ color:#555555'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#555555'>An overview of the data distribution for each Channel (<span
-class=SpellE>eType</span>) is depicted below:<o:p></o:p></span></p>
+color:#555555'>An overview of the data distribution for each Channel (eType) is
+depicted below:<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2340,7 +2307,7 @@ color:#555555;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:sh
  height:226.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image011.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=657 height=302
-src="index_files/image012.gif" v:shapes="Picture_x0020_7"><![endif]></span><span
+src="index_files/image042.gif" v:shapes="Picture_x0020_7"><![endif]></span><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
 "Times New Roman";color:#555555'><o:p></o:p></span></p>
 
@@ -2348,11 +2315,10 @@ style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-fon
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
 color:#555555'>To further analyze the key similarities and differences between
-the subgraphs and template subgraph, an in-depth analysis was done for each
-Channel of the network. Certain patterns emerged from this analysis of the
-Travel, Procurement, Demographic and the Communication Channels which further
-proved that the subgraph 2 is the most similar to the template subgraph. The
-patterns are as follows:<o:p></o:p></span></p>
+the subgraphs and Template, an in-depth analysis was done for each Channel of
+the network. Certain patterns emerged from this analysis of the Travel, Procurement,
+Demographic and the Communication Channels which further proved that the
+subgraph 2 is the most similar to the Template. The patterns are as follows:<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2364,13 +2330,13 @@ text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><spa
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
 "Times New Roman";color:#555555'>Procurement Channel</span></b><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#555555'>: For the template subgraph, subgraph 1 and 2,
-there was just one seller (Source) and one buyer (Source) who have sold and
-bought one item (Target) multiple number of times at different times, i.e.,
-there were distinct transactions between two Sources for one Target item. For
-subgraph 4 and 5, there were Sources who have sold or bought the same item or
-multiple items more than once. There were no such distinct transactions for subgraphs
-4 and 5.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+"Times New Roman";color:#555555'>: For the Template, subgraph 1 and 2, there
+was just one seller (Source) and one buyer (Source) who have sold and bought
+one item (Target) multiple number of times at different times, i.e., there were
+distinct transactions between two Sources for one Target item. For subgraph 4
+and 5, there were Sources who have sold or bought the same item or multiple
+items more than once. There were no such distinct transactions for subgraphs 4
+and 5.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2416,11 +2382,11 @@ style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-fon
 "Times New Roman";color:#555555'>Travel Channel:<span
 style='mso-spacerun:yes'>  </span></span></b><span style='font-size:10.5pt;
 font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#555555'>For template subgraph, subgraph 1 and 2, Sources have travelled
-from the same Source Location to the same Target Location in clusters at around
-the same time. These clusters emerge for each Target Location. Some of these
-Sources have also travelled to multiple locations together. These clusters do
-not appear for subgraphs 4 and 5.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
+color:#555555'>For Template, subgraph 1 and 2, Sources have travelled from the
+same Source Location to the same Target Location in clusters at around the same
+time. These clusters emerge for each Target Location. Some of these Sources
+have also travelled to multiple locations together. These clusters do not
+appear for subgraphs 4 and 5.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2451,9 +2417,9 @@ style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-fon
 "Times New Roman";color:#555555'>Demographic Channel: </span></b><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
 "Times New Roman";color:#555555'>The Demographic Channel data was reported for
-the end of the year and for template subgraph, Subgraphs 1 and 2, the pattern
-for income and expenses in the various categories is similar to each other
-unlike Subgraphs 4 and 5. <o:p></o:p></span></p>
+the end of the year and for Template, Subgraphs 1 and 2, the pattern for income
+and expenses in the various categories is similar to each other unlike
+Subgraphs 4 and 5. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2494,14 +2460,14 @@ style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-fon
 "Times New Roman";color:#555555'>Communication Channel: </span></b><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
 "Times New Roman";color:#555555'>For this particular channel, there were very
-frequent communications between certain Sources for template subgraph, subgraph
-1 and 2, however the pattern of communication for subgraph 2 is much closer to
-the template subgraph than that of subgraph 1.<span style='mso-spacerun:yes'> 
-</span>The frequency of communication for subgraph 4 and 5 is very less. As the
-communication channel constitutes the largest part of the template subgraph and
-subgraphs, the similarity between subgraph 2 and template subgraph more than
-subgraph 1 can be the reason for subgraph 2 being slightly more similar to the template
-subgraph than subgraph 1. <o:p></o:p></span></p>
+frequent communications between certain Sources for Template, subgraph 1 and 2,
+however the pattern of communication for subgraph 2 is much closer to the
+Template than that of subgraph 1.<span style='mso-spacerun:yes'>  </span>The
+frequency of communication for subgraph 4 and 5 is very less. As the
+communication channel constitutes the largest part of the Template and
+subgraphs, the similarity between subgraph 2 and Template more than subgraph 1
+can be the reason for subgraph 2 being slightly more similar to the Template
+than subgraph 1. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2537,7 +2503,7 @@ minor-latin;color:black;mso-themecolor:text1'> – </span><span style='font-size:
 10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;background:white'>CGCS
 has a set of “seed” IDs that may be members of other potential networks that
 could have been involved. Take a look at the very large graph. Can you
-determine if those IDs lead to other networks that matches the template subgraph?
+determine if those IDs lead to other networks that matches the template?
 Describe your process and findings in no more than ten images and 500 words.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
@@ -2567,7 +2533,8 @@ Channel.<o:p></o:p></span></p>
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;color:#555555;background:white'>The graph building
-process for each of the seeds is depicted below as a four stage process: <o:p></o:p></span></p>
+process for each of the seeds is depicted below as a <span class=GramE>four
+stage</span> process: <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l6 level1 lfo4;
@@ -2594,9 +2561,9 @@ font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
 color:#555555'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span dir=LTR></span><span style='font-size:
 10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;background:white'>Extended:
-Selected the nodes (persons) relevant for the Networks (through a minimum
-threshold criteria for Closeness Centrality); all nodes connected to these
-clusters were added<o:p></o:p></span></p>
+Selected the nodes (persons) relevant for the Networks (through a <span
+class=GramE>minimum threshold criteria</span> for Closeness Centrality); all
+nodes connected to these clusters were added<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l6 level1 lfo4;
@@ -2693,8 +2660,8 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;color:#555555;background:white'>The results for
-the two Seed Networks (Q2G1 and Q2G2) have been compared to the template subgraph
-and the best result from question 1, Subgraph 2.<o:p></o:p></span></p>
+the two Seed Networks (Q2G1 and Q2G2) have been compared to the Template and
+the best result from question 1, Subgraph 2.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2715,9 +2682,9 @@ transaction each between two nodes. From our analysis we have derived that the
 rest of the nodes have either sold/bought an item multiple times to/from
 various Sources. The maximum number of transactions between two people have
 been only two times in the Seed 1 and Seed 3 networks. This is not particularly
-the trend like the template subgraph but we know that there have been
-transactions between two persons, even though less frequent than the template
-subgraph. </span><span lang=EN-IN style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+the trend like the Template but we know that there have been transactions
+between two persons, even though less frequent than the Template. </span><span
+lang=EN-IN style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Arial;
 color:#444444;mso-ansi-language:EN-IN'><o:p></o:p></span></p>
 
@@ -2745,10 +2712,10 @@ Channel: </span></b><span lang=EN-IN style='font-size:11.0pt;font-family:"Calibr
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
 mso-ansi-language:EN-IN'>The Travel Channel showed a bit more optimistic
-results in terms of similar trends to the template subgraph. For each Target,
-both Seed 1 and Seed 3 network shows multiple instances for people travelling
-in clusters from the same Source location (depicted by the <span class=SpellE>colors</span>)
-and at the same time, similar to the template subgraph. <o:p></o:p></span></p>
+results in terms of similar trends to the Template. For each Target, both Seed
+1 and Seed 3 network shows multiple instances for people travelling in clusters
+from the same Source location (depicted by the colors) and at the same time,
+similar to the Template. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><span lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;
@@ -2816,13 +2783,13 @@ Channel: </span></b><span lang=EN-IN style='font-size:11.0pt;font-family:"Calibr
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
 mso-ansi-language:EN-IN'>As for the Communication Channel, the only trend that
-was evident from the template subgraph was the frequent amount of calls and
-emails in between certain Sources. This was shown both for Seed 1 Network and
-Seed 3 Network that there were very frequent communications between certain
-Sources, however the range of frequencies for communication was slightly more
-in Seed 1 Network than Seed 3 Network, which makes Seed 1 Network slightly more
-similar to the template subgraph as the proportion of Communication data is
-dominant in every network. <o:p></o:p></span></p>
+was evident from the Template was the frequent amount of calls and emails in
+between certain Sources. This was shown both for Seed 1 Network and Seed 3
+Network that there were very frequent communications between certain Sources,
+however the range of frequencies for communication was slightly more in Seed 1
+Network than Seed 3 Network, which makes Seed 1 Network slightly more similar
+to the Template as the proportion of Communication data is dominant in every
+network. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><span lang=EN-IN style='font-size:11.0pt;font-family:"Calibri",sans-serif;
@@ -2866,8 +2833,8 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;color:black;mso-themecolor:text1'> – </span><span style='font-size:
 10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;background:white'>Optional:
 Take a look at the very large graph. Can you find other subgraphs that match
-the template subgraph provided? Describe your process and your findings in no
-more than ten images and 500 words.<o:p></o:p></span></p>
+the template provided? Describe your process and your findings in no more than
+ten images and 500 words.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2876,13 +2843,13 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;color:black;mso-themecolor:text1'>Ans:</span></b><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'> In order to find other Subgraphs from the Big Graph that
-resemble the template subgraph, we use the patterns from each channel and try
-to extract the Sources which show similar patterns to the template subgraph for
-each channel. We start with the Procurement Channel for the reason that it had
-lesser number of datasets and would be easier to find the patterns that we are
-looking for. We then analyze the Travel Channel, the Communication Channel and
-at last add the Demographic and Co-Authorship Channel data for the Sources
-retrieved from the previous three channels.<o:p></o:p></span></p>
+resemble the Template, we use the patterns from each channel and try to extract
+the Sources which show similar patterns to the Template for each channel. We
+start with the Procurement Channel for the reason that it had lesser number of
+datasets and would be easier to find the patterns that we are looking for. We
+then analyze the Travel Channel, the Communication Channel and at last add the
+Demographic and Co-Authorship Channel data for the Sources retrieved from the
+previous three channels.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:11.0pt;font-family:
@@ -2916,21 +2883,27 @@ auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l7 level
 background:white'><![if !supportLists]><span style='font-size:11.0pt;
 font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
 color:#444444'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-font-family:Arial;color:#444444'>Extended : Adding all other channels
-to the retrieved set of seeds<o:p></o:p></span></p>
+</span></span></span><![endif]><span dir=LTR></span><span class=GramE><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444'>Extended :</span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444'> Adding all other
+channels to the retrieved set of seeds<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l7 level1 lfo5;
 background:white'><![if !supportLists]><span style='font-size:11.0pt;
 font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
 color:#444444'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-font-family:Arial;color:#444444'>Reduced : Filtration using
+</span></span></span><![endif]><span dir=LTR></span><span class=GramE><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444'>Reduced :</span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444'> Filtration using
 Communication Channel<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
@@ -2994,13 +2967,12 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'> The first step was to
 make a list of sellers and buyers who have made transactions equal to or more
-than seven times (same as the template subgraph). With this list, a set of
-frequent items list was created for items which appeared in both the Sellers
-and Buyers list. Each of the transactions for these items were then analyzed
-and there emerged 3 sets of Source (Buyers and Sellers) and Targets, that
-showed similar trends as the template subgraph, which is, there were frequent
-transactions between these 3 sets of Buyers and Sellers for the same Target
-Item.<o:p></o:p></span></p>
+than seven times (same as the Template). With this list, a set of frequent
+items list was created for items which appeared in both the Sellers and Buyers list.
+Each of the transactions for these items were then analyzed and there emerged 3
+sets of Source (Buyers and Sellers) and Targets, that showed similar trends as
+the Template, which is, there were frequent transactions between these 3 sets
+of Buyers and Sellers for the same Target Item.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><span lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;
@@ -3102,13 +3074,13 @@ minor-latin;mso-bidi-font-family:Arial;color:#444444'>Communication Channel: </s
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'>The extended graphs when
-analyzed, had data which needed to be filtered to make it more similar to the template
-subgraph network. The main point for filtration was the frequency for the
+analyzed, had data which needed to be filtered to make it more similar to the
+Template network. The main point for filtration was the frequency for the
 communication between different Sources. The extended graphs contained Sources which
 had contacted others only once or twice. These Sources were removed and only
 nodes with Sources more than a minimum number of calls or emails were kept in
-the network to reduce the Network size to an optimum for comparison with the template
-subgraph.<o:p></o:p></span></p>
+the network to reduce the Network size to an optimum for comparison with the
+Template.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:11.0pt;font-family:
@@ -3159,8 +3131,8 @@ minor-latin;mso-bidi-font-family:Arial;color:#444444'>Demographic Channel: </spa
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'>The Demographic Channel
-analysis for the reduced network showed the similar trends as template subgraph
-as can be seen below.<o:p></o:p></span></p>
+analysis for the reduced network showed the similar trends as Template as can
+be seen below.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><b style='mso-bidi-font-weight:normal'><span lang=EN-GB
@@ -3190,7 +3162,7 @@ background:white'><b style='mso-bidi-font-weight:normal'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'>Hence, we have Q3G1 and
-Q3G2 from this analysis which resemble the template subgraph.<o:p></o:p></span></b></p>
+Q3G2 from this analysis which resemble the Template.<o:p></o:p></span></b></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 margin-left:18.0pt;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -3224,10 +3196,10 @@ font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roma
 color:#555555'>To finally conclude as to which group had caused the outage, a
 comparison is made between Subgraph2 from question 1 (Q1G2), Seed1 Network
 (Q2G1), Seed3 Network (Q2G2) from question 2, the two networks retrieved from
-question 3 (Q3G1 and Q3G2) and the template subgraph. The same analysis was
-made with Parallel Coordinates for the 7 measures. Like in Q1 part a certain
-trends emerged showing the similarities between Subgraph 2 from question 1 and
-the Seed 1 Network from question 2 with the template subgraph.<o:p></o:p></span></p>
+question 3 (Q3G1 and Q3G2) and the Template. The same analysis was made with
+Parallel Coordinates for the 7 measures. Like in Q1 part a <span class=GramE>certain
+trends</span> emerged showing the similarities between Subgraph 2 from question
+1 and the Seed 1 Network from question 2 with the Template.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -3278,7 +3250,7 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 color:#555555'>The Matrix below makes comparisons for the 7 similarity
 measures, with the help of Wasserstein Metric and the distribution curves. For
 most of the similarity measures, Subgraph2 from Question 1 and Seed 1 Network
-from Question 2 are the closest resemblances to the template subgraph.<span
+from Question 2 are the closest resemblances to the Template.<span
 style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
@@ -3295,7 +3267,7 @@ EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8"
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image031.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=624 height=566
-src="index_files/image032.gif" v:shapes="Picture_x0020_8"><![endif]></span></i></b><span
+src="index_files/image043.gif" v:shapes="Picture_x0020_8"><![endif]></span></i></b><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -3309,10 +3281,10 @@ color:#555555;background:white'>The Network Graphs were created with the
 measures Out Degree, Betweenness and Eigen Centrality to further analyze the
 similarities and dissimilarities between all the candidate graphs.<span
 style='mso-spacerun:yes'>  </span>The Networks further emphasize the similarity
-between Subgraph 2 and Seed 1 Graph with the template subgraph. However, in
-this particular Visualization, the Seed 3 network also shows certain
-resemblance to the template subgraph. Hence further analysis is done to see how
-the distributions for each of the measures compare with each other. <o:p></o:p></span></p>
+between Subgraph 2 and Seed 1 Graph with the Template. However, in this
+particular Visualization, the Seed 3 network also shows certain resemblance to
+the Template. Hence further analysis is done to see how the distributions for
+each of the measures compare with each other. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
@@ -3329,7 +3301,7 @@ color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if
  height:289.2pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image033.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=613 height=386
-src="index_files/image034.gif" v:shapes="Picture_x0020_12"><![endif]></span><span
+src="index_files/image044.gif" v:shapes="Picture_x0020_12"><![endif]></span><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -3344,7 +3316,7 @@ color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if
  height:280.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image035.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=624 height=374
-src="index_files/image036.gif" v:shapes="Picture_x0020_14"><![endif]></span><span
+src="index_files/image045.gif" v:shapes="Picture_x0020_14"><![endif]></span><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -3360,8 +3332,8 @@ color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 color:#555555;background:white'>The Distributions for Out Degree and Eigen
 Centrality are observed a bit more closely in an interactive manner to
-emphasize on the similarities between template subgraph, Subgraph 2 and the
-Seed 1 Network.<o:p></o:p></span></p>
+emphasize on the similarities between Template, Subgraph 2 and the Seed 1
+Network.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
@@ -3391,7 +3363,7 @@ color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 color:#555555;background:white'>The distributions for the three measures on
 closer look make it again clear that the Seed 1 network (Q2G1) is more similar
-to template subgraph than Subgraph 2 (Q1G2).<o:p></o:p></span></p>
+to Template than Subgraph 2 (Q1G2).<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -3478,10 +3450,9 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'>The dataset was too large
 and complex to visualize or interpret in one go and needed to be divided into
-parts for better interpretability. Also, defining the whole dataset as a graph <span
-class=SpellE>dataframe</span> and finding subgraphs or any other graph related
-characteristics was computationally impossible.<b style='mso-bidi-font-weight:
-normal'><o:p></o:p></b></span></p>
+parts for better interpretability. Also, defining the whole dataset as a graph
+dataframe and finding subgraphs or any other graph related characteristics was
+computationally impossible.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -3497,8 +3468,8 @@ style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
 </span></span></span><![endif]><span dir=LTR></span><span style='font-size:
 11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-font-family:Arial;color:#444444'>R libraries like <span class=SpellE>fread</span>
-and ff package were able to load the large dataset quickly.<b style='mso-bidi-font-weight:
+mso-bidi-font-family:Arial;color:#444444'>R libraries like fread and ff package
+were able to load the large dataset quickly.<b style='mso-bidi-font-weight:
 normal'><o:p></o:p></b></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
@@ -3509,9 +3480,9 @@ style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
 </span></span></span><![endif]><span dir=LTR></span><span style='font-size:
 11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-font-family:Arial;color:#444444'>Using online tools like <span
-class=SpellE>Colab</span> helped optimize the use of RAM and gave us more
-computational power.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+mso-bidi-font-family:Arial;color:#444444'>Using online tools like Colab helped
+optimize the use of RAM and gave us more computational power.<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
 
 <p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l1 level1 lfo7;background:
