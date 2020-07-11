@@ -1665,3 +1665,494 @@ q3g2full <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Ta
 saveNetwork(q3g2full, file = "q3g2full.html")
 ```
 
+## Question 2:
+## Seed 1:
+```{r}
+s1_red <- data.table::fread(here::here("dataQ2","dfSeed1Reduced.csv"))
+s1_l1 <- data.table::fread(here::here("dataQ2","InitialGraphs", "dfSeed1_Lvl1.csv"))
+s1_l2 <- data.table::fread(here::here("dataQ2","InitialGraphs", "dfSeed1_Lvl2.csv"))
+#s1 <- data.table::fread(here::here("dataQ3","InitialGraphs", "dfProcSeed3-Graph2Full.csv"))
+```
+
+## Reduced:
+
+```{r}
+Sources <- s1_red %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s1_red %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s1_red %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+
+arr <- array()
+for(node in nodes$label){
+  
+    #arr <- append(c(arr), c(Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType))
+  arr <- rbind(arr, Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType)
+  
+  
+}
+## Proc seed 3:
+nodes_g3 <- mutate(nodes, id = arr[2:84])
+edges_g3 <- mutate(edges, from = from - 1, to = to - 1)
+q2s1 <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Target = "to", 
+             NodeID = "label", Group = "id", Value = "weight", linkDistance = 300,
+             opacity = 1, fontSize = 16, zoom = TRUE, legend = TRUE)
+
+saveNetwork(q2s1, file = "q2s1.html")
+```
+
+## Level 1:
+```{r}
+Sources <- s1_l1 %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s1_l1 %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s1_l1 %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+
+arr <- array()
+for(node in nodes$label){
+  
+    #arr <- append(c(arr), c(Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType))
+  arr <- rbind(arr, Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType)
+  
+  
+}
+## Proc seed 3:
+nodes_g3 <- mutate(nodes, id = arr[2:3])
+edges_g3 <- mutate(edges, from = from - 1, to = to - 1)
+q2s1l1 <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Target = "to", 
+             NodeID = "label", Group = "id", Value = "weight", linkDistance = 300,
+             opacity = 1, fontSize = 16, zoom = TRUE, legend = TRUE)
+
+saveNetwork(q2s1l1, file = "q2s1L1.html")
+```
+
+## Level 2:
+
+```{r}
+Sources <- s1_l2 %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s1_l2 %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s1_l2 %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+
+arr <- array()
+for(node in nodes$label){
+  
+    #arr <- append(c(arr), c(Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType))
+  arr <- rbind(arr, Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType)
+  
+  
+}
+## Proc seed 3:
+nodes_g3 <- mutate(nodes, id = arr[2:3587])
+edges_g3 <- mutate(edges, from = from - 1, to = to - 1)
+q2s1l2 <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Target = "to", 
+             NodeID = "label", Group = "id", Value = "weight", linkDistance = 300,
+             opacity = 1, fontSize = 16, zoom = TRUE, legend = TRUE)
+
+saveNetwork(q2s1l2, file = "q2s1L2.html")
+```
+
+## Extended:
+
+```{r}
+
+```
+
+
+## Seed 2:
+```{r}
+#s2_red <- data.table::fread(here::here("dataQ2","dfSeed2Reduced.csv"))
+s2_l1 <- data.table::fread(here::here("dataQ2","InitialGraphs", "dfSeed1_Lvl1.csv"))
+s2_l2 <- data.table::fread(here::here("dataQ2","InitialGraphs", "dfSeed1_Lvl2.csv"))
+#s2 <- data.table::fread(here::here("dataQ3","InitialGraphs", "dfProcSeed3-Graph2Full.csv"))
+```
+
+
+```{r}
+Sources <- s2_l1 %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s2_l1 %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s2_l1 %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+
+arr <- array()
+for(node in nodes$label){
+  
+    #arr <- append(c(arr), c(Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType))
+  arr <- rbind(arr, Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType)
+  
+  
+}
+## Proc seed 3:
+nodes_g3 <- mutate(nodes, id = arr[2:3])
+edges_g3 <- mutate(edges, from = from - 1, to = to - 1)
+q2s2l1 <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Target = "to", 
+             NodeID = "label", Group = "id", Value = "weight", linkDistance = 300,
+             opacity = 1, fontSize = 16, zoom = TRUE, legend = TRUE)
+
+saveNetwork(q2s2l1, file = "q2s2L1.html")
+```
+
+## Level 2:
+
+```{r}
+Sources <- s2_l2 %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s2_l2 %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s2_l2 %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+
+arr <- array()
+for(node in nodes$label){
+  
+    #arr <- append(c(arr), c(Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType))
+  arr <- rbind(arr, Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType)
+  
+  
+}
+## Proc seed 3:
+nodes_g3 <- mutate(nodes, id = arr[2:3587])
+edges_g3 <- mutate(edges, from = from - 1, to = to - 1)
+q2s2l2 <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Target = "to", 
+             NodeID = "label", Group = "id", Value = "weight", linkDistance = 300,
+             opacity = 1, fontSize = 16, zoom = TRUE, legend = TRUE)
+
+saveNetwork(q2s2l2, file = "q2s2L2.html")
+```
+
+## Seed 3:
+```{r}
+s3_red <- data.table::fread(here::here("dataQ2","dfSeed3Reduced.csv"))
+s3_l1 <- data.table::fread(here::here("dataQ2","InitialGraphs", "dfSeed3_Lvl1.csv"))
+s3_l2 <- data.table::fread(here::here("dataQ2","InitialGraphs", "dfSeed3_Lvl2.csv"))
+#s3 <- data.table::fread(here::here("dataQ3","InitialGraphs", "dfProcSeed3-Graph2Full.csv"))
+```
+
+## Reduced:
+```{r}
+Sources <- s3_red %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s3_red %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s3_red %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+
+arr <- array()
+for(node in nodes$label){
+  
+    #arr <- append(c(arr), c(Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType))
+  arr <- rbind(arr, Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType)
+  
+  
+}
+## Proc seed 3:
+nodes_g3 <- mutate(nodes, id = arr[2:97])
+edges_g3 <- mutate(edges, from = from - 1, to = to - 1)
+q2s3 <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Target = "to", 
+             NodeID = "label", Group = "id", Value = "weight", linkDistance = 300,
+             opacity = 1, fontSize = 16, zoom = TRUE, legend = TRUE)
+
+saveNetwork(q2s3, file = "q2s3.html")
+```
+
+## Level 1:
+```{r}
+Sources <- s3_l1 %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s3_l1 %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s3_l1 %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+
+arr <- array()
+for(node in nodes$label){
+  
+    #arr <- append(c(arr), c(Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType))
+  arr <- rbind(arr, Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType)
+  
+  
+}
+## Proc seed 3:
+nodes_g3 <- mutate(nodes, id = arr[2:3])
+edges_g3 <- mutate(edges, from = from - 1, to = to - 1)
+q2s3l1 <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Target = "to", 
+             NodeID = "label", Group = "id", Value = "weight", linkDistance = 300,
+             opacity = 1, fontSize = 16, zoom = TRUE, legend = TRUE)
+
+saveNetwork(q2s3l1, file = "q2s3L1.html")
+```
+
+## Level2:
+```{r}
+Sources <- s3_l2 %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s3_l2 %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s3_l2 %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+
+arr <- array()
+for(node in nodes$label){
+  
+    #arr <- append(c(arr), c(Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType))
+  arr <- rbind(arr, Graph_Attributes[Graph_Attributes$NodeID==node]$NodeType)
+  
+  
+}
+## Proc seed 3:
+nodes_g3 <- mutate(nodes, id = arr[2:3238])
+edges_g3 <- mutate(edges, from = from - 1, to = to - 1)
+q2s3l2 <- forceNetwork(Links = edges_g3, Nodes = nodes_g3, Source = "from", Target = "to", 
+             NodeID = "label", Group = "id", Value = "weight", linkDistance = 300,
+             opacity = 1, fontSize = 16, zoom = TRUE, legend = TRUE)
+
+saveNetwork(q2s3l2, file = "q2s3L2.html")
+```
+
