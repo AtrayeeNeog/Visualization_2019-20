@@ -116,7 +116,7 @@
 - [ ] Image 9:  Procurement, dash
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 10: Demographic, dash
+- [x] Image 10: Demographic, dash
   * {-Behnam: plot, record}
 
 ---------------------------
