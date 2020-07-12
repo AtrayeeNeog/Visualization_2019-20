@@ -38,7 +38,7 @@
 - [x] Image 2:  Travel, dash
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 3:  Procurement, dash
+- [x] Image 3:  Procurement, dash
   * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 4:  Demographic, dash
@@ -68,7 +68,7 @@
 - [x] Image 5:  Travel, dash
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 6:  Procurement, dash
+- [x] Image 6:  Procurement, dash
   * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 7:  Demographic, dash
