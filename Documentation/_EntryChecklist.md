@@ -8,7 +8,7 @@
 - [x] Image 1:  Parallel Coordinates
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 2:  Distribution Curves(3 measures)
+- [x] Image 2:  Distribution Curves(3 measures)
   * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 3:  Distribution Curves + Wasserstein Matrix
@@ -128,7 +128,7 @@
 - [ ] Image 1:  Parallel Coordinates
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 2:  Distribution Curves(3 measures)
+- [x] Image 2:  Distribution Curves(3 measures)
   * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 3:  Distribution Curves + Wasserstein Matrix
