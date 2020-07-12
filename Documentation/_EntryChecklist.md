@@ -98,22 +98,22 @@
 - [ ] Image 4:  Finding Travel seeds II(crosscheck with Procurement)
   * {Atrayee, Behnam}
 <br/><br/>
-- [ ] Image 5:  Adding Communication patterns
+- [ ] Image 5:  Seed Network Development I/Animation
   * {Behnam}
 <br/><br/>
-- [ ] Image 6:  Network graph, retrieved
+- [ ] Image 6:  Seed Network Development II/Animation
   * {Atrayee}
 <br/><br/>
-- [ ] Image 7:  undecided
+- [ ] Image 7:  Communication, Arc
   * {undecided}
 <br/><br/>
-- [ ] Image 8:  undecided
+- [x] Image 8:  Travel, dash
   * {undecided}
 <br/><br/>
-- [ ] Image 9:  undecided
+- [ ] Image 9:  Procurement, dash
   * {undecided}
 <br/><br/>
-- [ ] Image 10: undecided
+- [ ] Image 10: Demographic, dash
   * {undecided}
 
 ---------------------------
