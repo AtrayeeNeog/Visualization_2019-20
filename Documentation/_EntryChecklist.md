@@ -6,25 +6,25 @@
 - [ ] Text:
     {Atrayee, Behnam}
 - [ ] Image 1:  Parallel Coordinates
-  * {Behnam}
+  * {Behnam: plot, record}
 <br/><br/>
 - [ ] Image 2:  Distribution Curves(3 measures)
-  * {Behnam}
+  * {Behnam: plot, record}
 <br/><br/>
 - [x] Image 3:  Distribution Curves + Wasserstein Matrix
   * {Atrayee, Behnam}
 <br/><br/>
 - [ ] Image 4:  Gehpi Time Animation
-  * {Behnam}
+  * {Behnam: plot, record}
 <br/><br/>
 - [x] Image 5:  Network Graph(Important Measure 1)
-  * {Atrayee}
+  * {Atrayee: plot, edit Behnam: edit}
 <br/><br/>
 - [x] Image 6:  Network Graph(Important Measure 2)
-  * {Atrayee}
+  * {Atrayee: plot, edit Behnam: edit}
 <br/><br/>
 - [x] Image 7:  Network Graph(Important Measure 3)
-  * {Atrayee}
+  * {Atrayee: plot, edit Behnam: edit}
 
 ---------------------------
 ### Question 1.b:
@@ -51,14 +51,14 @@
 * 10 Images and 500 Words
 
 - [ ] Text
-- [ ] Image 1:  Seed Network Development I/Animation
-  * {Behnam}
+- [x] Image 1:  Seed Network Development I/Animation
+  * {Atrayee: plot, edit Behnam: record, edit}
 <br/><br/>
-- [ ] Image 2:  Seed Network Development II/Animation
-  * {Behnam}
+- [x] Image 2:  Seed Network Development II/Animation
+  * {Atrayee: plot, edit Behnam: record, edit}
 <br/><br/>
-- [ ] Image 3:  Seed Network Development III/Animation
-  * {Behnam}
+- [x] Image 3:  Seed Network Development III/Animation
+  * {Atrayee: plot, edit Behnam: record, edit}
 <br/><br/>
 - [ ] Image 4:   Communication, Arc
   * {undecided}
@@ -98,11 +98,11 @@
 - [ ] Image 4:  Finding Travel seeds II(crosscheck with Procurement)
   * {Atrayee, Behnam}
 <br/><br/>
-- [ ] Image 5:  Seed Network Development I/Animation
-  * {Behnam}
+- [x] Image 5:  Seed Network Development I/Animation
+  * {Atrayee:plot, Behnam:record}
 <br/><br/>
-- [ ] Image 6:  Seed Network Development II/Animation
-  * {Atrayee}
+- [x] Image 6:  Seed Network Development II/Animation
+  * {Atrayee:plot, Behnam:record}
 <br/><br/>
 - [ ] Image 7:  Communication, Arc
   * {undecided}
