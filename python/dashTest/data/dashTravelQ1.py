@@ -241,7 +241,17 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
     sourceIn = [str([x]) for x in df['Source']]
     targetIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
-    fig = px.scatter(x=df["Time"], y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
+    fig = px.scatter(x=df["Time"]/(24*3600), y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
+    fig.update_layout(title_text="Travel channel for " + title, )
+    fig.update_layout(
+        title={
+            'y': 0.93,
+            'x': 0.3,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        xaxis_title="Time (days)",
+        yaxis_title="Source (Person) Id"
+    )
 
     if slct_comparison_graph2_value == "default":
         title = "Template"
@@ -298,8 +308,18 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
     sourceIn = [str([x]) for x in df['Source']]
     targetIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
-    figT = px.scatter(x=df["Time"], y=sourceIn, color=targetIn,
+    figT = px.scatter(x=df["Time"]/(24*3600), y=sourceIn, color=targetIn,
                       size=weightIn, hover_data=[weightIn])
+    figT.update_layout(title_text="Travel channel for " + title, )
+    figT.update_layout(
+        title={
+            'y': 0.93,
+            'x': 0.3,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        xaxis_title="Time (days)",
+        yaxis_title="Source (Person) Id"
+    )
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 
