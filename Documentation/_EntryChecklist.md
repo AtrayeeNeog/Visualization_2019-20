@@ -108,16 +108,16 @@
   * {-Atrayee:plot, -Behnam:record}
 <br/><br/>
 - [ ] Image 7:  Communication, Arc
-  * {undecided}
+  * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 8:  Travel, dash
-  * {undecided}
+  * {-Behnam: plot, record}
 <br/><br/>
 - [ ] Image 9:  Procurement, dash
-  * {undecided}
+  * {-Behnam: plot, record}
 <br/><br/>
 - [ ] Image 10: Demographic, dash
-  * {undecided}
+  * {-Behnam: plot, record}
 
 ---------------------------
 ### Question 4:
