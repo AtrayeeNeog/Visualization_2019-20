@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab79100b-26d4-479d-8a96-72f51fa32aa0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index.htm" beforeDir="false" afterPath="$PROJECT_DIR$/../../AnswerSheet/index.htm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/filelist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AnswerSheet/index_files/filelist.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image002.tif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image014.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../../AnswerSheet/index_files/image014.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image038.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image039.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image040.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image041.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image042.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image043.gif" beforeDir="false" afterPath="$PROJECT_DIR$/../../AnswerSheet/index_files/image043.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image044.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/image045.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../AnswerSheet/index_files/props045.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../AnswerSheet/index_files/props045.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashTravelQ1.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashTravelQ1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashTravelQ2.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashTravelQ2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashTravelQ3.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashTravelQ3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/data/dashTravelQ3.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="310" column="15" selection-start-line="310" selection-start-column="15" selection-end-line="310" selection-end-column="15" />
+              <caret line="298" selection-start-line="298" selection-end-line="298" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -529,7 +513,7 @@
     <entry file="file://$PROJECT_DIR$/data/dashTravelQ3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="310" column="15" selection-start-line="310" selection-start-column="15" selection-end-line="310" selection-end-column="15" />
+          <caret line="298" selection-start-line="298" selection-end-line="298" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
