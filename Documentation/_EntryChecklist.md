@@ -14,7 +14,7 @@
 - [x] Image 3:  Distribution Curves + Wasserstein Matrix
   * {-Atrayee, -Behnam}
 <br/><br/>
-- [ ] Image 4:  Gehpi Time Animation
+- [x] Image 4:  Gehpi Time Animation
   * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 5:  Network Graph(Important Measure 1)
@@ -44,7 +44,7 @@
 - [x] Image 4:  Demographic, dash
   * {-Behnam: plot, record)
 <br/><br/>
-- [ ] Image 5:  barchart
+- [x] Image 5:  barchart
   * {-Atrayee: plot, edit -Behnam:edit}
 
 ---------------------------
