@@ -32,7 +32,7 @@
 
 - [ ] Text:
     {-Atrayee, -Behnam}
-- [ ] Image 1:  Communication, Arc
+- [x] Image 1:  Communication, Arc
   * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 2:  Travel, dash
@@ -62,7 +62,7 @@
 - [x] Image 3:  Seed Network Development III/Animation
   * {-Atrayee: plot, edit -Behnam: record, edit}
 <br/><br/>
-- [ ] Image 4:   Communication, Arc
+- [x] Image 4:   Communication, Arc
   * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 5:  Travel, dash
@@ -107,7 +107,7 @@
 - [x] Image 6:  Seed Network Development II/Animation
   * {-Atrayee:plot, -Behnam:record}
 <br/><br/>
-- [ ] Image 7:  Communication, Arc
+- [x] Image 7:  Communication, Arc
   * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 8:  Travel, dash
