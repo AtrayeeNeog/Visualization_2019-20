@@ -5,7 +5,7 @@
 
 - [ ] Text:
     {-Atrayee, -Behnam}
-- [ ] Image 1:  Parallel Coordinates
+- [x] Image 1:  Parallel Coordinates
   * {-Behnam: plot, record}
 <br/><br/>
 - [ ] Image 2:  Distribution Curves(3 measures)
