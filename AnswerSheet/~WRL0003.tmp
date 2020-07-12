@@ -25,30 +25,28 @@ be easily edited that way</title>
  <o:DocumentProperties>
   <o:Author>Whiting, Mark A</o:Author>
   <o:LastAuthor>Behnam Beladi</o:LastAuthor>
-  <o:Revision>190</o:Revision>
-  <o:TotalTime>2492</o:TotalTime>
+  <o:Revision>218</o:Revision>
+  <o:TotalTime>2800</o:TotalTime>
   <o:Created>2020-07-10T11:28:00Z</o:Created>
-  <o:LastSaved>2020-07-12T12:52:00Z</o:LastSaved>
-  <o:Pages>31</o:Pages>
-  <o:Words>2923</o:Words>
-  <o:Characters>16667</o:Characters>
+  <o:LastSaved>2020-07-12T23:00:00Z</o:LastSaved>
+  <o:Pages>38</o:Pages>
+  <o:Words>3022</o:Words>
+  <o:Characters>17232</o:Characters>
   <o:Company>Pacific Northwest Versions panel</o:Company>
-  <o:Lines>138</o:Lines>
-  <o:Paragraphs>39</o:Paragraphs>
-  <o:CharactersWithSpaces>19551</o:CharactersWithSpaces>
+  <o:Lines>143</o:Lines>
+  <o:Paragraphs>40</o:Paragraphs>
+  <o:CharactersWithSpaces>20214</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
-<link rel=dataStoreItem href="index_files/item0044.xml"
-target="index_files/props045.xml">
+<link rel=dataStoreItem href="index_files/item0045.xml"
+target="index_files/props046.xml">
 <link rel=themeData href="index_files/themedata.thmx">
 <link rel=colorSchemeMapping href="index_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
   <w:Zoom>110</w:Zoom>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -824,8 +822,7 @@ p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
 	mso-fareast-font-family:"Times New Roman";
 	color:windowtext;}
 p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{mso-style-noshow:yes;
-	mso-style-priority:34;
+	{mso-style-priority:34;
 	mso-style-unhide:no;
 	mso-style-qformat:yes;
 	margin-top:0cm;
@@ -841,8 +838,7 @@ p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
 	mso-fareast-theme-font:minor-fareast;
 	color:black;}
 p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{mso-style-noshow:yes;
-	mso-style-priority:34;
+	{mso-style-priority:34;
 	mso-style-unhide:no;
 	mso-style-qformat:yes;
 	mso-style-type:export-only;
@@ -859,8 +855,7 @@ p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphC
 	mso-fareast-theme-font:minor-fareast;
 	color:black;}
 p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{mso-style-noshow:yes;
-	mso-style-priority:34;
+	{mso-style-priority:34;
 	mso-style-unhide:no;
 	mso-style-qformat:yes;
 	mso-style-type:export-only;
@@ -877,8 +872,7 @@ p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagrap
 	mso-fareast-theme-font:minor-fareast;
 	color:black;}
 p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{mso-style-noshow:yes;
-	mso-style-priority:34;
+	{mso-style-priority:34;
 	mso-style-unhide:no;
 	mso-style-qformat:yes;
 	mso-style-type:export-only;
@@ -983,12 +977,6 @@ span.FooterChar
 	mso-hansi-font-family:"Times New Roman";
 	mso-bidi-font-family:"Times New Roman";
 	color:black;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -1475,14 +1463,10 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 font-weight:normal;mso-bidi-font-weight:bold;mso-bidi-font-style:italic'>PRIMARY<o:p></o:p></span></h3>
 
-<h3 style='margin:0cm;margin-bottom:.0001pt'><span class=SpellE><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'>Atrayee</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'> <span
-class=SpellE>Neog</span>, Otto von Guericke University Magdeburg, </span><u><span
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+font-weight:normal'>Atrayee Neog, Otto von Guericke University Magdeburg, </span><u><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:blue;font-weight:normal'>atrayee.neog@ovgu.de</span></u><span
@@ -1490,19 +1474,15 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'><o:p></o:p></span></h3>
 
-<h3 style='margin:0cm;margin-bottom:.0001pt'><span class=SpellE><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+font-weight:normal'>Xiongjun Wang, Otto von Guericke University Magdeburg, </span><u><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'>Xiongjun</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'> Wang, Otto von
-Guericke University Magdeburg, </span><u><span lang=EN-GB style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-theme-font:minor-latin;color:#3333FF;mso-ansi-language:EN-GB;
-font-weight:normal'><a href="mailto:xiongjun.wang@st.ovgu.de"><span lang=EN-US
-style='mso-ansi-language:EN-US'>xiongjun.wang@st.ovgu.de</span></a><o:p></o:p></span></u></h3>
+minor-latin;mso-bidi-theme-font:minor-latin;color:#3333FF;mso-ansi-language:
+EN-GB;font-weight:normal'><a href="mailto:xiongjun.wang@st.ovgu.de"><span
+lang=EN-US style='mso-ansi-language:EN-US'>xiongjun.wang@st.ovgu.de</span></a><o:p></o:p></span></u></h3>
 
 <h3 style='margin:0cm;margin-bottom:.0001pt'><span lang=DE style='font-size:
 11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
@@ -1532,10 +1512,10 @@ Preim, <a href="mailto:bernhard.preim@ovgu.de">bernhard.preim@ovgu.de</a><o:p></
 <h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-font-weight:normal'>Monique <span class=SpellE>Meuschke</span>, </span><u><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:#3333FF;font-weight:normal'>meuschke@isg.cs.uni-magdeburg.de</span></u><span
+font-weight:normal'>Monique Meuschke, </span><u><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:#3333FF;font-weight:normal'>meuschke@isg.cs.uni-magdeburg.de</span></u><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 background:yellow;mso-highlight:yellow;mso-bidi-font-style:italic'><br>
@@ -1571,19 +1551,15 @@ minor-latin;mso-bidi-font-style:italic'>R/RStudio<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;mso-bidi-font-style:italic'>Python/<span class=SpellE>Colab</span>/<span
-class=SpellE>Jupyter</span>/dash/<span class=SpellE>Networkx</span><o:p></o:p></span></p>
+minor-latin;mso-bidi-font-style:italic'>Python/Colab/Jupyter/dash/Networkx<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
 minor-latin;mso-bidi-font-style:italic'>Tableau<o:p></o:p></span></p>
 
-<p class=MsoNormal><span class=SpellE><span style='font-size:11.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;mso-bidi-font-style:italic'>Gephi</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-mso-bidi-font-style:italic'><o:p></o:p></span></p>
+<p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin;mso-bidi-font-style:italic'>Gephi<o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
@@ -1660,9 +1636,9 @@ mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme
 minor-latin'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
-color:#555555;background:white'>Center for Global Cyber Strategy (CGCS) researchers
-have used the data donated by the white hat groups to create anonymized
-profiles of the groups. One such profile has been identified by CGCS
+color:#555555;background:white'>Center for Global Cyber Strategy (CGCS)
+researchers have used the data donated by the white hat groups to create
+anonymized profiles of the groups. One such profile has been identified by CGCS
 sociopsychologists as most likely to resemble the structure of the group who
 accidentally caused this internet outage. You have been asked to examine CGCS
 records and identify those groups who most closely resemble the identified
@@ -1709,21 +1685,21 @@ style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 color:windowtext'>Ans:<o:p></o:p></span></b></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+<p class=MsoListParagraph style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:0cm;mso-add-space:auto;page-break-after:avoid'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>The fastest and
-easiest way to compare the subgraphs is using their network analysis and
-comparing their values for different measures. As you can see in </span><!--[if supportFields]><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45402321 \h <span style='mso-element:
-field-separator'></span></span><![endif]-->Figure <span style='mso-no-proof:
-yes'>1</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>The starting
+point to compare the subgraphs is using their graph attributes as similarity measures.
+</span><!--[if supportFields]><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><!--[if gte mso 9]><xml>
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
+style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>REF
+_Ref45402321 \h <span style='mso-element:field-separator'></span></span><![endif]-->Figure
+<span style='mso-no-proof:yes'>1</span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext'><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400300032003300320031000000</w:data>
 </xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
@@ -1731,21 +1707,17 @@ font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-fo
 color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>, some of these
-measures such as Degree, Betweenness and etc. are visualized as parallel
-coordinates (PCs) for all of the subgraphs.<span style='mso-spacerun:yes'> 
-</span>Each of the subgraphs were then compared with the template subgraph. Based
-on the certain patterns that emerges in these graphs, subgraphs 1 and 2 are
-seem to be the most similar to the template compared to the other subgraphs.<o:p></o:p></span></p>
-
-<p class=MsoListParagraph align=center style='mso-margin-top-alt:auto;
-mso-margin-bottom-alt:auto;margin-left:0cm;mso-add-space:auto;text-align:center;
-page-break-after:avoid'><span lang=EN-GB style='font-size:11.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
- id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
- path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> visualizes seven
+of these measures as parallel coordinates (PCs) for all of the subgraphs. Each
+of the subgraphs were then compared with the template subgraph. Based on the
+certain patterns that emerges in these graphs, subgraphs 1 and 2 seem to be the
+most similar to the template compared to other subgraphs.</span><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
+EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
  <v:stroke joinstyle="miter"/>
  <v:formulas>
   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
@@ -1763,7 +1735,7 @@ color:windowtext;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v
  </v:formulas>
  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
  <o:lock v:ext="edit" aspectratio="t"/>
-</v:shapetype><v:shape id="Picture_x0020_6" o:spid="_x0000_i1053" type="#_x0000_t75"
+</v:shapetype><v:shape id="Picture_x0020_6" o:spid="_x0000_i1054" type="#_x0000_t75"
  alt="PCQ1test" style='width:787.8pt;height:441.6pt;visibility:visible;
  mso-wrap-style:square'>
  <v:imagedata src="index_files/image001.gif" o:title="PCQ1test"/>
@@ -1779,50 +1751,42 @@ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endi
 style='mso-bookmark:_Ref45402321'><span style='mso-no-proof:yes'>1</span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45402321'></span><span style='mso-element:field-end'></span><![endif]--><span
 style='mso-bookmark:_Ref45402321'></span>. Parallel coordinates allow us to
-observe the distribution of all the similarity measures at the same time<span
+observe the distribution of all the similarity measures at the same time. Color
+scale is based on time; 0:Jan 1st, 2025; 1: Jan 1st, 2026<span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
 
-<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>To quantify these
+comparisons, a Wasserstein-based test was done between each subgraph and the
+template for each measure. The Wasserstein metric measures the similarity
+between two probability distributions by estimating the cost for moving or
+turning one distribution into another. The test outputs a Wasserstein metric, a
+p-Value (depicting confidence in the similarity) and three contributing
+factors: size of the network, shape of the network and the location of the
+nodes in the network.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>In order to
-quantify these comparisons a Wasserstein-based test was done between each
-subgraph and the template subgraph for each measure. The Wasserstein metric is
-a distance measure that measures the similarity between two probability
-distributions by estimating the cost for moving or turning one distribution
-into another. The test outputs a Wasserstein metric and a p-Value which depends
-on three factors: size of the network, shape of the network and the location of
-the nodes in the network.<o:p></o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Comparisons in </span><!--[if supportFields]><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45402298 \h <span style='mso-element:
-field-separator'></span></span><![endif]-->Figure <span style='mso-no-proof:
-yes'>2</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><!--[if gte mso 9]><xml>
+style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>REF
+_Ref45402298 \h <span style='mso-element:field-separator'></span></span><![endif]-->Figure
+<span style='mso-no-proof:yes'>2</span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext'><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400300032003200390038000000</w:data>
 </xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
@@ -1831,9 +1795,14 @@ color:windowtext'><span style='mso-element:field-end'></span></span><![endif]-->
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> shows that
-subgraph 1 and 2 are overall more similar to the template subgraph due to more
-similar distributions, smaller Wasserstein metrics with higher confidence
-factor denoted by the p-value in most measures.<o:p></o:p></span></p>
+subgraph 1 and 2 are overall more similar to the template due to more similar
+distributions, smaller Wasserstein metrics with higher confidence factor
+denoted by the p-value in most measures.<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;mso-add-space:auto'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -1871,11 +1840,11 @@ page-break-after:avoid'><span lang=EN-GB style='font-size:11.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 color:windowtext;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_2" o:spid="_x0000_i1052" type="#_x0000_t75" style='width:667.2pt;
+ id="Picture_x0020_2" o:spid="_x0000_i1053" type="#_x0000_t75" style='width:667.2pt;
  height:468.6pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image002.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=890 height=625
-src="index_files/image003.jpg" v:shapes="Picture_x0020_2"><![endif]></span></p>
+src="index_files/image038.jpg" v:shapes="Picture_x0020_2"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45402298">Figure </a><!--[if supportFields]><span style='mso-bookmark:
@@ -1973,10 +1942,10 @@ font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-fo
 color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> visualize the
-network graphs of subgraphs. Color indicates the node Types: Person (blue),
-Product Category (red), Country (green), Financial Category and Document
-(yellow). Node sizes are proportional to the corresponding measures.<o:p></o:p></span></p>
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> visualize the subgraphs
+network. Color indicates the node Types: Person (blue), Product Category (red),
+Country (green), Financial Category and Document (yellow). Node sizes are
+proportional to the corresponding measures.<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -2014,11 +1983,11 @@ normal'><i style='mso-bidi-font-style:normal'><span lang=EN-GB
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
-EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1051" type="#_x0000_t75"
+EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1052" type="#_x0000_t75"
  style='width:715.8pt;height:526.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image004.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=954 height=702
-src="index_files/image005.jpg" v:shapes="_x0000_i1051"><![endif]></span></i></b></p>
+src="index_files/image039.jpg" v:shapes="_x0000_i1052"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45441727">Figure </a><!--[if supportFields]><span style='mso-bookmark:
@@ -2028,14 +1997,14 @@ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endi
 style='mso-bookmark:_Ref45441727'><span style='mso-no-proof:yes'>3</span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45441727'></span><span style='mso-element:field-end'></span><![endif]--><span
 style='mso-bookmark:_Ref45441727'></span>. <b>Out-Degree</b> measures the
-number of edges going out for each node in a directed graph. In this particular
-case, out-going nodes usually belong to person IDs. Since the core of a hacker
-group is these persons, Out-Degrees help embolden the effect of people on the
-network analysis.<b style='mso-bidi-font-weight:normal'><span style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-theme-font:minor-latin;color:windowtext;font-style:normal;mso-bidi-font-style:
-italic'><o:p></o:p></span></b></p>
+number of edges going out from each node in a directed graph. In this
+particular case, out-going nodes usually belong to person IDs. Since the core
+of a hacker group is these people, Out-Degrees help embolden their effect on
+the network analysis.<b style='mso-bidi-font-weight:normal'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;font-style:normal;
+mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
@@ -2062,11 +2031,11 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
 EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4"
- o:spid="_x0000_i1050" type="#_x0000_t75" style='width:736.2pt;height:529.2pt;
+ o:spid="_x0000_i1051" type="#_x0000_t75" style='width:736.2pt;height:529.2pt;
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image006.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=982 height=706
-src="index_files/image007.jpg" v:shapes="Picture_x0020_4"><![endif]></span></i></b></p>
+src="index_files/image040.jpg" v:shapes="Picture_x0020_4"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45441732">Figure </a><!--[if supportFields]><span style='mso-bookmark:
@@ -2075,12 +2044,12 @@ style='mso-bookmark:_Ref45441732'><span style='mso-spacerun:yes'> </span>SEQ
 Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
 style='mso-bookmark:_Ref45441732'><span style='mso-no-proof:yes'>4</span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45441732'></span><span style='mso-element:field-end'></span><![endif]--><span
-style='mso-bookmark:_Ref45441732'></span>. <b>Betweenness Centrality</b> measures
-the number of shortest paths passing through a node. It measures the importance
-of a node based on how centrally it is located in a network. Therefore, this
-measure helps us compare central and important nodes in the networks.<b
-style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+style='mso-bookmark:_Ref45441732'></span>. <b>Betweenness Centrality</b>
+measures the number of shortest paths passing through a node. It measures the
+importance of a node based on how centrally it is located in a network.
+Therefore, this measure helps us compare central and important nodes in the
+networks.<b style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 color:windowtext;font-style:normal;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
 
@@ -2097,11 +2066,11 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
 EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
- o:spid="_x0000_i1049" type="#_x0000_t75" style='width:732pt;height:513.6pt;
+ o:spid="_x0000_i1050" type="#_x0000_t75" style='width:732pt;height:513.6pt;
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image008.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=976 height=685
-src="index_files/image009.jpg" v:shapes="Picture_x0020_5"><![endif]></span></i></b></p>
+src="index_files/image041.jpg" v:shapes="Picture_x0020_5"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45441736">Figure </a><!--[if supportFields]><span style='mso-bookmark:
@@ -2169,17 +2138,23 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast align=center style='mso-margin-top-alt:auto;
-mso-margin-bottom-alt:auto;margin-left:0cm;mso-add-space:auto;text-align:center'><span
-lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
-EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_3"
- o:spid="_x0000_i1048" type="#_x0000_t75" alt="CurveQ1" style='width:849.6pt;
- height:479.4pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image010.gif" o:title="CurveQ1"/>
+mso-margin-bottom-alt:auto;margin-left:0cm;mso-add-space:auto;text-align:center;
+page-break-after:avoid'><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_3" o:spid="_x0000_i1049" type="#_x0000_t75" style='width:849.6pt;
+ height:424.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image010.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=1133 height=639
-src="index_files/image010.gif" alt=CurveQ1 v:shapes="Picture_x0020_3"><![endif]></span><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1133 height=566
+src="index_files/image010.gif" v:shapes="Picture_x0020_3"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>6</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. distribution<span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
@@ -2193,21 +2168,87 @@ mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtex
 text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>For
-all the similarity measure distributions and the Wasserstein metrics values, subgraph
-2 resembles the template subgraph the most except in the Eigen Vector
+all the similarity measure distributions and the Wasserstein metrics values,
+subgraph 2 resembles the template subgraph the most except in the Eigen Vector
 Centrality. As shown in the pie-charts for the Matrix above, the main reason
 for the template subgraph and the Subgraph2 being different for the Eigen
 Vector Centrality is due to the difference in the shapes of the two Networks.
 The distances among the central or “important” nodes may have a wide range as
 compared to the distances between the central nodes for the template subgraph
-or Subgraph 1. This might be a cause for the difference in the shape of these
+or Subgraph 1. This might be a cause for the difference in the shape of <o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>these
 networks. However, if we look at the Page Rank similarity measure (which is the
 normalized Eigen Vector Centrality measure), this difference in the shape is
 compensated by the normalization and as a result has resulted in Subgraph 2
 showing very high similarity with the template subgraph with very high
-confidence (p-values). With all the above rationale in mind, we can conclude
-that <b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Subgraph
-2 is the most similar to the template subgraph. </i></b><o:p></o:p></span></p>
+confidence (p-values). <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1048"
+ type="#_x0000_t75" style='width:922.8pt;height:453.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image012.gif" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1230 height=605
+src="index_files/image012.gif" v:shapes="_x0000_i1048"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>7</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. gephi<span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>With
+all the above rationale in mind, we can conclude that <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>Subgraph 2 is the most similar to
+the template subgraph. </i></b><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
@@ -2219,9 +2260,9 @@ minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p><
  <li class=MsoNormal style='color:#555555;mso-margin-top-alt:auto;mso-margin-bottom-alt:
      auto;mso-list:l2 level1 lfo1;tab-stops:list 36.0pt;background:white'><span
      style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
-     mso-fareast-font-family:"Times New Roman"'>Which key parts of the best
-     match help discriminate it from the other potential matches? Please limit
-     your answer to five images and 300 words.<o:p></o:p></span></li>
+     mso-fareast-font-family:"Times New Roman"'>Which key parts of the best match
+     help discriminate it from the other potential matches? Please limit your
+     answer to five images and 300 words.<o:p></o:p></span></li>
 </ol>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
@@ -2272,19 +2313,18 @@ mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_7" o:spid="_x000
  <v:imagedata src="index_files/image011.png" o:title="" croptop="3602f"
   cropbottom="4588f" cropleft="3194f" cropright="2701f"/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=665 height=294
-src="index_files/image012.gif" v:shapes="Picture_x0020_7"><![endif]></span></p>
+src="index_files/image042.gif" v:shapes="Picture_x0020_7"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45445228">Figure </a><!--[if supportFields]><span style='mso-bookmark:
 _Ref45445228'></span><span style='mso-element:field-begin'></span><span
 style='mso-bookmark:_Ref45445228'><span style='mso-spacerun:yes'> </span>SEQ
 Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='mso-bookmark:_Ref45445228'><span style='mso-no-proof:yes'>6</span></span><!--[if supportFields]><span
+style='mso-bookmark:_Ref45445228'><span style='mso-no-proof:yes'>8</span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45445228'></span><span style='mso-element:field-end'></span><![endif]--><span
 style='mso-bookmark:_Ref45445228'></span>. An overview of the data distribution
-for each “<span class=SpellE>eType</span>”.<span style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#555555'><o:p></o:p></span></p>
+for each “eType”.<span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#555555'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2306,24 +2346,23 @@ auto;text-align:center;page-break-after:avoid;background:white'><span
 lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
 mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1046" type="#_x0000_t75"
- alt="ProcQ1" style='width:976.2pt;height:354.6pt;visibility:visible;
- mso-wrap-style:square'>
- <v:imagedata src="index_files/image013.gif" o:title="ProcQ1"/>
+ style='width:976.8pt;height:346.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image020.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=1302 height=473
-src="index_files/image013.gif" alt=ProcQ1 v:shapes="_x0000_i1046"><![endif]></span></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1302 height=462
+src="index_files/image020.gif" v:shapes="_x0000_i1046"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
 style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
-field-separator'></span><![endif]--><span style='mso-no-proof:yes'>7</span><!--[if supportFields]><span
-style='mso-element:field-end'></span><![endif]-->. <b>Procurement channel</b>.
-In subgraphs 1, 2 and 3 there is only one item that’s been sold from one seller
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>9</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. <b>Procurement channel</b>. In
+subgraphs 1, 2 and 3 there is only one item that’s been sold from one seller
 (Source) to one buyer (Source) which is the same as the template subgraph.
 There were no such distinct transactions for subgraphs 4 and 5.<span
-style='mso-spacerun:yes'>  </span>Color: “<span class=SpellE>eType</span>”,
-shape: item Id<span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#555555'><o:p></o:p></span></p>
+style='mso-spacerun:yes'>  </span>Color: “eType”, shape: item Id<span
+style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#555555'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2337,20 +2376,21 @@ mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
 mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_16" o:spid="_x0000_i1045"
  type="#_x0000_t75" style='width:985.8pt;height:358.8pt;visibility:visible;
  mso-wrap-style:square'>
- <v:imagedata src="index_files/image043.gif" o:title=""/>
+ <v:imagedata src="index_files/image014.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1314 height=478
-src="index_files/image043.gif" v:shapes="Picture_x0020_16"><![endif]></span></p>
+src="index_files/image014.gif" v:shapes="Picture_x0020_16"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
-style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span><![endif]--><span
-style='mso-no-proof:yes'>8</span><!--[if supportFields]><span style='mso-element:
-field-end'></span><![endif]-->. <b>Travel Channel</b>. Colors distinguish
-countries, size the length of travel and travel records are being filtered
-based on targets. Similar clusters seem to appear in the template subgraph and
-subgraphs 1, 2 and 3.<span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#555555'><o:p></o:p></span></p>
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>10</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. <b>Travel Channel</b>.
+Colors distinguish countries, size the length of travel and travel records are
+being filtered based on targets. Similar clusters seem to appear in the
+template subgraph and subgraphs 1, 2 and 3.<span style='font-size:10.5pt;
+font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#555555'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2362,10 +2402,10 @@ text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><spa
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
 "Times New Roman";color:#555555'>Demographic Channel: </span></b><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#555555'>The Demographic Channel data was reported for the
-end of the year and for template subgraph, Subgraphs 1 and 2, the pattern for
-income and expenses in the various categories is similar to each other unlike
-Subgraphs 4 and 5. <o:p></o:p></span></p>
+"Times New Roman";color:#555555'>The Demographic Channel data was reported for
+the end of the year and for template subgraph, Subgraphs 1 and 2, the pattern
+for income and expenses in the various categories is similar to each other
+unlike Subgraphs 4 and 5. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2377,18 +2417,25 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
 color:#555555'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-GB style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#555555;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_17" o:spid="_x0000_i1044" type="#_x0000_t75" alt="DemographicQ1"
- style='width:515.4pt;height:234pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image015.gif" o:title="DemographicQ1"/>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_17" o:spid="_x0000_i1044"
+ type="#_x0000_t75" style='width:974.4pt;height:441.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image015.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=687 height=312
-src="index_files/image015.gif" alt=DemographicQ1 v:shapes="Picture_x0020_17"><![endif]></span><span
-style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
-"Times New Roman";color:#555555'><o:p></o:p></span></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1299 height=589
+src="index_files/image015.gif" v:shapes="Picture_x0020_17"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>11</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->.<span style='font-size:10.5pt;
+font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#555555'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2420,18 +2467,30 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
 color:#555555'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-GB style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#555555;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_11" o:spid="_x0000_i1043" type="#_x0000_t75" alt="CommQ1"
- style='width:507.6pt;height:258.6pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image016.gif" o:title="CommQ1"/>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_11" o:spid="_x0000_i1043"
+ type="#_x0000_t75" style='width:987pt;height:492pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image016.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=677 height=345
-src="index_files/image016.gif" alt=CommQ1 v:shapes="Picture_x0020_11"><![endif]></span><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1316 height=656
+src="index_files/image016.gif" v:shapes="Picture_x0020_11"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>12</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. communication q1<span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
 "Times New Roman";color:#555555'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
+"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
+color:#555555'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 margin-left:18.0pt;background:white'><span style='font-size:10.5pt;font-family:
@@ -2480,8 +2539,7 @@ Channel.<o:p></o:p></span></p>
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;color:#555555;background:white'>The graph building
-process for each of the seeds is depicted below as a <span class=GramE>four
-stage</span> process: <o:p></o:p></span></p>
+process for each of the seeds is depicted below as a four stage process: <o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l4 level1 lfo2;
@@ -2508,9 +2566,9 @@ font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
 color:#555555'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span dir=LTR></span><span style='font-size:
 10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;background:white'>Extended:
-Selected the nodes (persons) relevant for the Networks (through a <span
-class=GramE>minimum threshold criteria</span> for Closeness Centrality); all
-nodes connected to these clusters were added<o:p></o:p></span></p>
+Selected the nodes (persons) relevant for the Networks (through a minimum
+threshold criteria for Closeness Centrality); all nodes connected to these
+clusters were added<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l4 level1 lfo2;
@@ -2527,16 +2585,22 @@ text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><spa
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'>Seed 1:<o:p></o:p></span></b></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-GB style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_26"
- o:spid="_x0000_i1042" type="#_x0000_t75" alt="Q2Seed1" style='width:467.4pt;
- height:224.4pt;visibility:visible;mso-wrap-style:square'>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_26" o:spid="_x0000_i1042" type="#_x0000_t75" alt="Q2Seed1"
+ style='width:991.8pt;height:475.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image017.gif" o:title="Q2Seed1"/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=623 height=299
-src="index_files/image017.gif" alt=Q2Seed1 v:shapes="Picture_x0020_26"><![endif]></span><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1322 height=634
+src="index_files/image017.gif" alt=Q2Seed1 v:shapes="Picture_x0020_26"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>13</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. seed 1 animation<span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -2555,16 +2619,22 @@ text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><spa
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-GB style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_13"
- o:spid="_x0000_i1041" type="#_x0000_t75" alt="Q2Seed2" style='width:514.2pt;
- height:247.2pt;visibility:visible;mso-wrap-style:square'>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_13" o:spid="_x0000_i1041" type="#_x0000_t75" alt="Q2Seed2"
+ style='width:1000.2pt;height:480.6pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image018.gif" o:title="Q2Seed2"/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=686 height=330
-src="index_files/image018.gif" alt=Q2Seed2 v:shapes="Picture_x0020_13"><![endif]></span><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1334 height=641
+src="index_files/image018.gif" alt=Q2Seed2 v:shapes="Picture_x0020_13"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>14</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. seed 2 animation<span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -2583,16 +2653,22 @@ text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><spa
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></b></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-GB style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1040"
- type="#_x0000_t75" alt="Q2Seed3" style='width:520.2pt;height:275.4pt;
- visibility:visible;mso-wrap-style:square'>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" alt="Q2Seed3" style='width:910.8pt;
+ height:481.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image019.gif" o:title="Q2Seed3"/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=694 height=367
-src="index_files/image019.gif" alt=Q2Seed3 v:shapes="_x0000_i1040"><![endif]></span><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1214 height=642
+src="index_files/image019.gif" alt=Q2Seed3 v:shapes="_x0000_i1040"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>15</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. seed 3 animation<span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -2624,31 +2700,44 @@ style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-fon
 mso-ansi-language:EN-IN'>: </span></b><span lang=EN-IN style='font-size:10.5pt;
 font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
 mso-bidi-font-family:Calibri;color:black;mso-themecolor:text1;mso-ansi-language:
-EN-IN'>From the Procurement Channel Analysis, Seed 1 and Seed 3 have one
-transaction each between two nodes. From our analysis we have derived that the
-rest of the nodes have either sold/bought an item multiple times to/from
-various Sources. The maximum number of transactions between two people have
-been only two times in the Seed 1 and Seed 3 networks. This is not particularly
-the trend like the template subgraph but we know that there have been
-transactions between two persons, even though less frequent than the template subgraph.
-</span><span lang=EN-IN style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+EN-IN'>From the Procurement Channel Analysis, Seed 1 and Seed 3 have one transaction
+each between two nodes. From our analysis we have derived that the rest of the
+nodes have either sold/bought an item multiple times to/from various Sources.
+The maximum number of transactions between two people have been only two times
+in the Seed 1 and Seed 3 networks. This is not particularly the trend like the
+template subgraph but we know that there have been transactions between two
+persons, even though less frequent than the template subgraph. </span><span
+lang=EN-IN style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 mso-fareast-font-family:"Times New Roman";mso-bidi-font-family:Arial;
 color:#444444;mso-ansi-language:EN-IN'><o:p></o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-background:white'><span lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_27"
- o:spid="_x0000_i1039" type="#_x0000_t75" alt="ProcQ2" style='width:511.8pt;
- height:242.4pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image020.gif" o:title="ProcQ2"/>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_27" o:spid="_x0000_i1039"
+ type="#_x0000_t75" style='width:968.4pt;height:343.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image026.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=682 height=323
-src="index_files/image020.gif" alt=ProcQ2 v:shapes="Picture_x0020_27"><![endif]></span><span
-lang=EN-IN style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+</v:shape><![endif]--><![if !vml]><img border=0 width=1291 height=458
+src="index_files/image026.gif" v:shapes="Picture_x0020_27"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>16</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. procure q 2<span lang=EN-IN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-IN'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+background:white'><span lang=EN-IN style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
+mso-ansi-language:EN-IN'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2660,9 +2749,9 @@ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
 mso-ansi-language:EN-IN'>The Travel Channel showed a bit more optimistic
 results in terms of similar trends to the template subgraph. For each Target,
-both Seed 1 and Seed 3 network shows multiple instances for people travelling in
-clusters from the same Source location (depicted by the <span class=SpellE>colors</span>)
-and at the same time, similar to the template subgraph. <o:p></o:p></span></p>
+both Seed 1 and Seed 3 network shows multiple instances for people travelling
+in clusters from the same Source location (depicted by the colors) and at the
+same time, similar to the template subgraph. <o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;text-align:center;background:white'><span lang=EN-GB style='font-size:
@@ -2672,10 +2761,10 @@ mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;mso-no-proof:
 yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_20" o:spid="_x0000_i1038"
  type="#_x0000_t75" style='width:998.4pt;height:362.4pt;visibility:visible;
  mso-wrap-style:square'>
- <v:imagedata src="index_files/image042.gif" o:title=""/>
+ <v:imagedata src="index_files/image021.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1331 height=483
-src="index_files/image042.gif" v:shapes="Picture_x0020_20"><![endif]></span><span
+src="index_files/image021.gif" v:shapes="Picture_x0020_20"><![endif]></span><span
 lang=EN-IN style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-IN'><o:p></o:p></span></p>
@@ -2699,18 +2788,24 @@ normal'> </b>for Seed 1 and Seed 3. The main source of income was still from
 the category “Money income before Taxes” which was also the case for Subgraph
 2. <o:p></o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-background:white'><b style='mso-bidi-font-weight:normal'><span lang=EN-GB
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
-mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_21" o:spid="_x0000_i1037"
- type="#_x0000_t75" alt="DemographicQ2" style='width:508.8pt;height:251.4pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image022.gif" o:title="DemographicQ2"/>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
+color:#444444;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_21" o:spid="_x0000_i1037" type="#_x0000_t75" style='width:990pt;
+ height:448.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image022.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=678 height=335
-src="index_files/image022.gif" alt=DemographicQ2 v:shapes="Picture_x0020_21"><![endif]></span></b><b
+</v:shape><![endif]--><![if !vml]><img border=0 width=1320 height=598
+src="index_files/image022.gif" v:shapes="Picture_x0020_21"><![endif]></span></b></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>17</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. demographic<b
 style='mso-bidi-font-weight:normal'><span lang=EN-IN style='font-size:11.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
@@ -2745,18 +2840,25 @@ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
 mso-ansi-language:EN-IN'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-background:white'><span lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_18"
- o:spid="_x0000_i1036" type="#_x0000_t75" alt="CommQ2" style='width:519pt;
- height:280.2pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image023.gif" o:title="CommQ2"/>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_18" o:spid="_x0000_i1036"
+ type="#_x0000_t75" style='width:981.6pt;height:486pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image023.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=692 height=374
-src="index_files/image023.gif" alt=CommQ2 v:shapes="Picture_x0020_18"><![endif]></span><span
-lang=EN-IN style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+</v:shape><![endif]--><![if !vml]><img border=0 width=1309 height=648
+src="index_files/image023.gif" v:shapes="Picture_x0020_18"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>18</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. comm q2<span lang=EN-IN
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-IN'><o:p></o:p></span></p>
 
@@ -2791,10 +2893,10 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;color:black;mso-themecolor:text1'>Ans:</span></b><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
-background:white'> In order to find other Subgraphs from the Big Graph that resemble
-the template subgraph, we use the patterns from each channel and try to extract
-the Sources which show similar patterns to the template subgraph for each
-channel. We start with the Procurement Channel for the reason that it had
+background:white'> In order to find other Subgraphs from the Big Graph that
+resemble the template subgraph, we use the patterns from each channel and try
+to extract the Sources which show similar patterns to the template subgraph for
+each channel. We start with the Procurement Channel for the reason that it had
 lesser number of datasets and would be easier to find the patterns that we are
 looking for. We then analyze the Travel Channel, the Communication Channel and
 at last add the Demographic and Co-Authorship Channel data for the Sources
@@ -2832,27 +2934,21 @@ auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l5 level
 background:white'><![if !supportLists]><span style='font-size:11.0pt;
 font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
 color:#444444'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span dir=LTR></span><span class=GramE><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444'>Extended :</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444'> Adding all other
-channels to the retrieved set of seeds<o:p></o:p></span></p>
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Arial;color:#444444'>Extended : Adding all other channels
+to the retrieved set of seeds<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-align:justify;text-indent:-18.0pt;mso-list:l5 level1 lfo3;
 background:white'><![if !supportLists]><span style='font-size:11.0pt;
 font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol;
 color:#444444'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span dir=LTR></span><span class=GramE><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444'>Reduced :</span></span><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444'> Filtration using
+</span></span></span><![endif]><span dir=LTR></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:Arial;color:#444444'>Reduced : Filtration using
 Communication Channel<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
@@ -2861,17 +2957,24 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'>Q3G1:<o:p></o:p></span></b></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><span lang=EN-GB style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
-color:#444444;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_19" o:spid="_x0000_i1035" type="#_x0000_t75" alt="Q3Seed1"
- style='width:491.4pt;height:255pt;visibility:visible;mso-wrap-style:square'>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_19" o:spid="_x0000_i1035"
+ type="#_x0000_t75" alt="Q3Seed1" style='width:929.4pt;height:483pt;
+ visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image024.gif" o:title="Q3Seed1"/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=655 height=340
-src="index_files/image024.gif" alt=Q3Seed1 v:shapes="Picture_x0020_19"><![endif]></span><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1239 height=644
+src="index_files/image024.gif" alt=Q3Seed1 v:shapes="Picture_x0020_19"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>19</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. graph building<span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'><o:p></o:p></span></p>
@@ -2888,18 +2991,24 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'><o:p>&nbsp;</o:p></span></b></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
-lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
-mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_30" o:spid="_x0000_i1034"
- type="#_x0000_t75" alt="Q3Seed2" style='width:497.4pt;height:255.6pt;
- visibility:visible;mso-wrap-style:square'>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
+color:#444444;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_30" o:spid="_x0000_i1034" type="#_x0000_t75" alt="Q3Seed2"
+ style='width:940.8pt;height:483.6pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image025.gif" o:title="Q3Seed2"/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=663 height=341
-src="index_files/image025.gif" alt=Q3Seed2 v:shapes="Picture_x0020_30"><![endif]></span></b><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1254 height=645
+src="index_files/image025.gif" alt=Q3Seed2 v:shapes="Picture_x0020_30"><![endif]></span></b></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>20</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. graph building<span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -2914,27 +3023,33 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;color:black;mso-themecolor:text1'>Procurement Channel:</span></b><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444'> The first step was to
-make a list of sellers and buyers who have made transactions equal to or more
-than seven times (same as the template subgraph). With this list, a set of
-frequent items list was created for items which appeared in both the Sellers
-and Buyers list. Each of the transactions for these items were then analyzed
-and there emerged 3 sets of Source (Buyers and Sellers) and Targets, that
-showed similar trends as the template subgraph, which is, there were frequent
-transactions between these 3 sets of Buyers and Sellers for the same Target
-Item.<o:p></o:p></span></p>
+minor-latin;mso-bidi-font-family:Arial;color:#444444'> The first step was to make
+a list of sellers and buyers who have made transactions equal to or more than
+seven times (same as the template subgraph). With this list, a set of frequent
+items list was created for items which appeared in both the Sellers and Buyers
+list. Each of the transactions for these items were then analyzed and there
+emerged 3 sets of Source (Buyers and Sellers) and Targets, that showed similar
+trends as the template subgraph, which is, there were frequent transactions
+between these 3 sets of Buyers and Sellers for the same Target Item.<o:p></o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-background:white'><span lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_28"
- o:spid="_x0000_i1033" type="#_x0000_t75" alt="ProcQ3" style='width:525.6pt;
- height:259.2pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image026.gif" o:title="ProcQ3"/>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_28" o:spid="_x0000_i1033"
+ type="#_x0000_t75" style='width:968.4pt;height:343.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image013.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=701 height=346
-src="index_files/image026.gif" alt=ProcQ3 v:shapes="Picture_x0020_28"><![endif]></span><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1291 height=458
+src="index_files/image013.gif" v:shapes="Picture_x0020_28"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>21</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. procure q3<span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'><o:p></o:p></span></p>
@@ -2946,12 +3061,12 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'>Travel Channel: </span></b><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444'>The next step was to
-analyze the Travel Channel. For this, Tableau Software was used to extract the
-nodes which have travelled together from the same Source Location to the same
-Target Location at the same time. For each Target Location such clusters were
-in large numbers and all the Sources belonging to these clusters were kept in a
-list, List 1.<o:p></o:p></span></p>
+minor-latin;mso-bidi-font-family:Arial;color:#444444'>The next step was to analyze
+the Travel Channel. For this, Tableau Software was used to extract the nodes
+which have travelled together from the same Source Location to the same Target
+Location at the same time. For each Target Location such clusters were in large
+numbers and all the Sources belonging to these clusters were kept in a list,
+List 1.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:11.0pt;font-family:
@@ -2984,10 +3099,10 @@ mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;mso-no-proof:
 yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_23" o:spid="_x0000_i1032"
  type="#_x0000_t75" style='width:994.2pt;height:344.4pt;visibility:visible;
  mso-wrap-style:square'>
- <v:imagedata src="index_files/image041.gif" o:title=""/>
+ <v:imagedata src="index_files/image027.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1326 height=459
-src="index_files/image041.gif" v:shapes="Picture_x0020_23"><![endif]></span><span
+src="index_files/image027.gif" v:shapes="Picture_x0020_23"><![endif]></span><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'><o:p></o:p></span></p>
@@ -3029,8 +3144,8 @@ analyzed, had data which needed to be filtered to make it more similar to the
 template subgraph network. The main point for filtration was the frequency for
 the communication between different Sources. The extended graphs contained
 Sources which had contacted others only once or twice. These Sources were
-removed and only nodes with Sources more than a minimum number of calls or emails
-were kept in the network to reduce the Network size to an optimum for
+removed and only nodes with Sources more than a minimum number of calls or
+emails were kept in the network to reduce the Network size to an optimum for
 comparison with the template subgraph.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
@@ -3052,18 +3167,24 @@ text-align:justify;background:white'><span style='font-size:11.0pt;font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
 color:#444444'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-background:white'><b style='mso-bidi-font-weight:normal'><span lang=EN-GB
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
-mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_25" o:spid="_x0000_i1031"
- type="#_x0000_t75" alt="CommQ3" style='width:516pt;height:273.6pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image028.gif" o:title="CommQ3"/>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
+color:#444444;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_25" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:976.2pt;
+ height:483.6pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image028.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=688 height=365
-src="index_files/image028.gif" alt=CommQ3 v:shapes="Picture_x0020_25"><![endif]></span></b><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1302 height=645
+src="index_files/image028.gif" v:shapes="Picture_x0020_25"><![endif]></span></b></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>22</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. comm q3<span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'><o:p></o:p></span></p>
@@ -3085,18 +3206,18 @@ minor-latin;mso-bidi-font-family:Arial;color:#444444'>The Demographic Channel
 analysis for the reduced network showed the similar trends as template subgraph
 as can be seen below.<o:p></o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-background:white'><b style='mso-bidi-font-weight:normal'><span lang=EN-GB
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;background:white'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
 mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_24" o:spid="_x0000_i1030"
- type="#_x0000_t75" alt="DemographicQ3" style='width:503.4pt;height:238.2pt;
- visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image029.gif" o:title="DemographicQ3"/>
+ type="#_x0000_t75" style='width:978.6pt;height:444pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image029.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=671 height=318
-src="index_files/image029.gif" alt=DemographicQ3 v:shapes="Picture_x0020_24"><![endif]></span></b><b
+</v:shape><![endif]--><![if !vml]><img border=0 width=1305 height=592
+src="index_files/image029.gif" v:shapes="Picture_x0020_24"><![endif]></span></b><b
 style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
@@ -3146,12 +3267,11 @@ style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-fon
 font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
 color:#555555'>To finally conclude as to which group had caused the outage, a
 comparison is made between Subgraph2 from question 1 (Q1G2), Seed1 Network
-(Q2G1), Seed3 Network (Q2G2) from question 2, the two networks retrieved from
-question 3 (Q3G1 and Q3G2) and the template subgraph. The same analysis was
-made with Parallel Coordinates for the 7 measures. Like in Q1 part a <span
-class=GramE>certain trends</span> emerged showing the similarities between
-Subgraph 2 from question 1 and the Seed 1 Network from question 2 with the
-template subgraph.<o:p></o:p></span></p>
+(Q2G1), Seed3 Network (Q2G2) from question 2, the two networks retrieved from question
+3 (Q3G1 and Q3G2) and the template subgraph. The same analysis was made with
+Parallel Coordinates for the 7 measures. Like in Q1 part a certain trends
+emerged showing the similarities between Subgraph 2 from question 1 and the
+Seed 1 Network from question 2 with the template subgraph.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -3199,11 +3319,11 @@ color:#555555'><o:p>&nbsp;</o:p></span></p>
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
-color:#555555'>The Matrix below makes comparisons for the 7 similarity
-measures, with the help of Wasserstein Metric and the distribution curves. For
-most of the similarity measures, Subgraph2 from Question 1 and Seed 1 Network
-from Question 2 are the closest resemblances to the template subgraph. <span
-style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+color:#555555'>The Matrix below makes comparisons for the 7 similarity measures,
+with the help of Wasserstein Metric and the distribution curves. For most of
+the similarity measures, Subgraph2 from Question 1 and Seed 1 Network from
+Question 2 are the closest resemblances to the template subgraph.<span
+style='mso-spacerun:yes'>  </span><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
@@ -3220,7 +3340,7 @@ mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Pictur
  <v:imagedata src="index_files/image031.png" o:title="" croptop="1f"
   cropbottom="415f"/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=726 height=654
-src="index_files/image014.gif" v:shapes="Picture_x0020_8"><![endif]></span></i></b><span
+src="index_files/image043.gif" v:shapes="Picture_x0020_8"><![endif]></span></i></b><span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -3247,41 +3367,42 @@ color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-page-break-after:avoid;background:white'><span lang=EN-GB style='font-size:
-10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_12"
- o:spid="_x0000_i1027" type="#_x0000_t75" style='width:684.6pt;height:491.4pt;
- visibility:visible;mso-wrap-style:square'>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_12" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:684.6pt;
+ height:491.4pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image033.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=913 height=655
-src="index_files/image021.jpg" v:shapes="Picture_x0020_12"><![endif]></span></p>
+src="index_files/image044.jpg" v:shapes="Picture_x0020_12"><![endif]></span></p>
 
-<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
-field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
-<span style='mso-element:field-separator'></span><![endif]--><span
-style='mso-no-proof:yes'>9</span><!--[if supportFields]><span style='mso-element:
-field-end'></span><![endif]-->. Out-Degree<span style='font-size:10.5pt;
-font-family:"Source Sans Pro",sans-serif;color:#555555;background:white'><o:p></o:p></span></p>
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>23</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. Out-Degree<span
+style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
+background:white'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-page-break-after:avoid;background:white'><span lang=EN-GB style='font-size:
-10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;background:white;
-mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_14"
- o:spid="_x0000_i1026" type="#_x0000_t75" style='width:713.4pt;height:502.8pt;
- visibility:visible;mso-wrap-style:square'>
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_14" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:713.4pt;
+ height:502.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image035.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=951 height=670
-src="index_files/image027.jpg" v:shapes="Picture_x0020_14"><![endif]></span></p>
+src="index_files/image045.jpg" v:shapes="Picture_x0020_14"><![endif]></span></p>
 
-<p class=MsoCaption>Figure <!--[if supportFields]><span style='mso-element:
-field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC
-<span style='mso-element:field-separator'></span><![endif]--><span
-style='mso-no-proof:yes'>10</span><!--[if supportFields]><span
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>24</span><!--[if supportFields]><span
 style='mso-element:field-end'></span><![endif]-->. Eigenvector<span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
@@ -3309,15 +3430,22 @@ color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-background:white'><span lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
 color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_15" o:spid="_x0000_i1025" type="#_x0000_t75" alt="CurveQ4"
- style='width:496.2pt;height:286.2pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src="index_files/image037.gif" o:title="CurveQ4"/>
+ id="Picture_x0020_15" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:964.2pt;
+ height:480.6pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image037.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
-</v:shape><![endif]--><![if !vml]><img border=0 width=662 height=382
-src="index_files/image037.gif" alt=CurveQ4 v:shapes="Picture_x0020_15"><![endif]></span><span
+</v:shape><![endif]--><![if !vml]><img border=0 width=1286 height=641
+src="index_files/image037.gif" v:shapes="Picture_x0020_15"><![endif]></span></p>
+
+<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span><![endif]--><span style='mso-no-proof:yes'>25</span><!--[if supportFields]><span
+style='mso-element:field-end'></span><![endif]-->. distribution q4<span
 style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p></o:p></span></p>
 
@@ -3416,10 +3544,9 @@ style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'>The dataset was too large
 and complex to visualize or interpret in one go and needed to be divided into
-parts for better interpretability. Also, defining the whole dataset as a graph <span
-class=SpellE>dataframe</span> and finding subgraphs or any other graph related
-characteristics was computationally impossible.<b style='mso-bidi-font-weight:
-normal'><o:p></o:p></b></span></p>
+parts for better interpretability. Also, defining the whole dataset as a graph
+dataframe and finding subgraphs or any other graph related characteristics was
+computationally impossible.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -3435,8 +3562,8 @@ style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
 </span></span></span><![endif]><span dir=LTR></span><span style='font-size:
 11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-font-family:Arial;color:#444444'>R libraries like <span class=SpellE>fread</span>
-and ff package were able to load the large dataset quickly.<b style='mso-bidi-font-weight:
+mso-bidi-font-family:Arial;color:#444444'>R libraries like fread and ff package
+were able to load the large dataset quickly.<b style='mso-bidi-font-weight:
 normal'><o:p></o:p></b></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
@@ -3447,9 +3574,9 @@ style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
 </span></span></span><![endif]><span dir=LTR></span><span style='font-size:
 11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-font-family:Arial;color:#444444'>Using online tools like <span
-class=SpellE>Colab</span> helped optimize the use of RAM and gave us more
-computational power.<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+mso-bidi-font-family:Arial;color:#444444'>Using online tools like Colab helped
+optimize the use of RAM and gave us more computational power.<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
 
 <p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;mso-add-space:auto;text-indent:-18.0pt;mso-list:l0 level1 lfo5;background:
