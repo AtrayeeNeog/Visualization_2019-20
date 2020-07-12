@@ -59,23 +59,7 @@ app.layout = html.Div([
 
 
 
-    dcc.Dropdown(id="slct_comparison_graph",
-                 options=[
-                     {"label": "Template", "value": "template"},
-                     {"label": "Q1 Graph1", "value": "q1graph1"},
-                     {"label": "Q1 Graph2", "value": "q1graph2"},
-                     {"label": "Q1 Graph3", "value": "q1graph3"},
-                     {"label": "Q1 Graph4", "value": "q1graph4"},
-                     {"label": "Q1 Graph5", "value": "q1graph5"},
-                     {"label": "Default", "value": "default"}],
-                 multi=False,
-                 value="template",
-                 placeholder="Select Graph to compare",
-                 style=dict(
-                     width='40%',
-                     verticalAlign="right"
-                 )
-                 ),
+
 
     html.Div(id='output_container', children=[]),
     html.Br(),
@@ -83,7 +67,24 @@ app.layout = html.Div([
         dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
     ], style={'width': '49%', 'display': 'inline-block', 'padding': '0 20'}),
     html.Div([
-        dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
+        dcc.Dropdown(id="slct_comparison_graph",
+                     options=[
+                         {"label": "Template", "value": "template"},
+                         {"label": "Q1 Graph1", "value": "q1graph1"},
+                         {"label": "Q1 Graph2", "value": "q1graph2"},
+                         {"label": "Q1 Graph3", "value": "q1graph3"},
+                         {"label": "Q1 Graph4", "value": "q1graph4"},
+                         {"label": "Q1 Graph5", "value": "q1graph5"},
+                         {"label": "Default", "value": "default"}],
+                     multi=False,
+                     value="template",
+                     placeholder="Select Graph to compare",
+                     style=dict(
+                         width='60%',
+                         verticalAlign="right"
+                     )
+        ),
+        dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False}),
     ], style={'display': 'inline-block', 'width': '49%'})
 
 
@@ -143,7 +144,7 @@ def update_graph(option_slctd):
     figT.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
     figT.update_layout(
         title={
-            'y': 1.0,
+            'y': 0.98,
             'x': 0.3,
             'xanchor': 'center',
             'yanchor': 'top'},
@@ -229,7 +230,7 @@ def update_graph(option_slctd):
     fig.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
     fig.update_layout(
         title={
-            'y': 1.0,
+            'y': 0.98,
             'x': 0.3,
             'xanchor': 'center',
             'yanchor': 'top'},

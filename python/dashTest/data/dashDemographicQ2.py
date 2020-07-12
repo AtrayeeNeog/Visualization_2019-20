@@ -58,29 +58,27 @@ app.layout = html.Div([
 
 
 
-
-    dcc.Dropdown(id="slct_comparison_graph",
-                 options=[
-                     {"label": "Template", "value": "template"},
-                     {"label": "Q1 Graph2", "value": "q1graph2"},
-                     {"label": "Q2 Graph1", "value": "q2graph1"},
-                     {"label": "Q2 Graph3", "value": "q2graph3"},
-                     {"label": "Default", "value": "test"}],
-                 multi=False,
-                 value="template",
-                 placeholder="Select Graph to compare",
-                 style=dict(
-                     width='40%',
-                     verticalAlign="right"
-                 )
-                 ),
-
     html.Div(id='output_container', children=[]),
     html.Br(),
     html.Div([
         dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
     ], style={'width': '49%', 'display': 'inline-block', 'padding': '0 20'}),
     html.Div([
+        dcc.Dropdown(id="slct_comparison_graph",
+                     options=[
+                         {"label": "Template", "value": "template"},
+                         {"label": "Q1 Graph2", "value": "q1graph2"},
+                         {"label": "Q2 Graph1", "value": "q2graph1"},
+                         {"label": "Q2 Graph3", "value": "q2graph3"},
+                         {"label": "Default", "value": "test"}],
+                     multi=False,
+                     value="template",
+                     placeholder="Select Graph to compare",
+                     style=dict(
+                         width='40%',
+                         verticalAlign="right"
+                     )
+                     ),
         dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
     ], style={'display': 'inline-block', 'width': '49%'})
 
@@ -146,7 +144,7 @@ def update_graph(option_slctd):
     figT.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 50})
     figT.update_layout(
         title={
-            'y': 1.0,
+            'y': 0.98,
             'x': 0.3,
             'xanchor': 'center',
             'yanchor': 'top'},
@@ -232,7 +230,7 @@ def update_graph(option_slctd):
     fig.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 50})
     fig.update_layout(
         title={
-            'y': 1.0,
+            'y': 0.98,
             'x': 0.3,
             'xanchor': 'center',
             'yanchor': 'top'},
