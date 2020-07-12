@@ -41,7 +41,7 @@
 - [ ] Image 3:  Procurement, dash
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 4:  Demographic, dash
+- [x] Image 4:  Demographic, dash
   * {-Behnam: plot, record)
 <br/><br/>
 - [ ] Image 5:  barchart
@@ -71,7 +71,7 @@
 - [ ] Image 6:  Procurement, dash
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 7:  Demographic, dash
+- [x] Image 7:  Demographic, dash
   * {-Behnam: plot, record}
 <br/><br/>
 - [ ] Image 8:  undecided
