@@ -33,16 +33,16 @@
 - [ ] Text:
     {-Atrayee, -Behnam}
 - [ ] Image 1:  Communication, Arc
-  * {-Behnam}
+  * {-Behnam: plot, record}
 <br/><br/>
 - [x] Image 2:  Travel, dash
-  * {undecided}
+  * {-Behnam: plot, record}
 <br/><br/>
 - [ ] Image 3:  Procurement, dash
-  * {-Atrayee}
+  * {-Behnam: plot, record}
 <br/><br/>
 - [ ] Image 4:  Demographic, dash
-  * {-Behnam)
+  * {-Behnam: plot, record)
 <br/><br/>
 - [ ] Image 5:  barchart
   * {-Atrayee: plot, edit -Behnam:edit}
@@ -74,11 +74,11 @@
 - [ ] Image 7:  Demographic, dash
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 8:  Extended graphs
-  * {-Behnam}
+- [ ] Image 8:  undecided
+  * {undecided}
 <br/><br/>
-- [ ] Image 9:  Reduced graphs
-  * {-Behnam}
+- [ ] Image 9:  undecided
+  * {undecided}
 <br/><br/>
 - [ ] Image 10: undecided
   * {undecided}
