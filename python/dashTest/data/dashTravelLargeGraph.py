@@ -26,11 +26,11 @@ app = dash.Dash(__name__)
 # ------------------------------------------------------------------------------
 # Import and clean data (importing csv into pandas)
 path = Path(__file__).parent / "\\OVGU\\WiSe19_20\\VA project\\GitHub\\Visuaization_2019-20\\python\\dashTest\\data"
-pathCSV = str(path) + "\\CGCS-Template.csv"
+pathCSV = str(path) + "\\dfTravel.csv"
 dfTravel = pd.read_csv(pathCSV)
 
 all_options = {
-    'template': list(dict.fromkeys(dfTravel[dfTravel['eType'] == 6]["Target"])),
+    'travel': list(dict.fromkeys(dfTravel[dfTravel['eType'] == 6]["Target"])),
 }
 
 
@@ -50,19 +50,9 @@ app.layout = html.Div([
     html.Div([
         dcc.Dropdown(id="slct_comparison_graph",
                      options=[
-                         {"label": "Template", "value": "template"},
-                         {"label": "Q1 Graph1", "value": "q1graph1"},
-                         {"label": "Q1 Graph2", "value": "q1graph2"},
-                         {"label": "Q1 Graph3", "value": "q1graph3"},
-                         {"label": "Q1 Graph4", "value": "q1graph4"},
-                         {"label": "Q1 Graph5", "value": "q1graph5"},
-                         {"label": "Q2 Graph1", "value": "q2graph1"},
-                         {"label": "Q2 Graph3", "value": "q2graph3"},
-                         {"label": "Q3 Graph1", "value": "q3graph1"},
-                         {"label": "Q3 Graph2", "value": "q3graph2"},
-                         {"label": "Default", "value": "test"}],
+                         {"label": "Travel channel", "value": "travel"}],
                      multi=False,
-                     value="template",
+                     value="travel",
                      placeholder="Select Graph to compare",
                      style=dict(
                          width='50%',
@@ -71,19 +61,19 @@ app.layout = html.Div([
                      ),
         dcc.Dropdown(id="target_radio",
                      options=[
-                         {"label": "Template", "value": "template"}],
+                         {"label": "Travel channel", "value": "travel"}],
                      multi=True,
                      value=[],
-                     placeholder="Select Graph to compare",
+                     placeholder="Select Targets to display",
                      style=dict(
-                         width='80%',
+                         width='60%',
                          verticalAlign="right"
                      )
                      ),
         # dcc.RadioItems(id='target_radio'),
 
-        dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
-    ], style={'width': '49%', 'display': 'inline-block', 'padding': '0 20'}),
+        dcc.Graph(id='travel_graph', figure={}, config={'displayModeBar': False}),
+    ], style={'width': '99%', 'display': 'inline-block', 'padding': '0 20'}),
 
 
 
@@ -102,72 +92,18 @@ app.layout = html.Div([
 def set_cities_options(selected_graph):
     return [{'label': i, 'value': i} for i in all_options[selected_graph]]
 
-
 @app.callback(
-    Output('target2_radio', 'options'),
-    [Input(component_id='slct_comparison_graph2', component_property='value')])
-def set_cities_options(selected_graph):
-    return [{'label': i, 'value': i} for i in all_options[selected_graph]]
-
-
-@app.callback(
-    [Output(component_id='output_container', component_property='children'),
-     Output(component_id='travel_graph', component_property='figure')],
+    Output(component_id='travel_graph', component_property='figure'),
     [Input(component_id='slct_comparison_graph', component_property='value'),
-     Input(component_id='slct_comparison_graph2', component_property='value'),
-     Input(component_id='target_radio', component_property='value'),
-     Input(component_id='target2_radio', component_property='value')]
+     Input(component_id='target_radio', component_property='value')]
 )
-def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct_graph_target, slct_graph2_target):
+def update_graph(slct_comparison_graph_value, slct_graph_target):
     print(slct_comparison_graph_value)
     print(type(slct_comparison_graph_value))
-    df = dfTemplate
-    title = "Travel"
-    if slct_comparison_graph_value == "default":
-        title = "Template"
-        df = dfTemplate.copy()
-
-    if slct_comparison_graph_value == "template":
-        title = "Template"
-        df = dfTemplate.copy()
-
-    elif slct_comparison_graph_value == "q1graph1":
-        title = "Q1 Graph-1"
-        df = dfGraph1.copy()
-
-    elif slct_comparison_graph_value == "q1graph2":
-        title = "Q1 Graph-2"
-        df = dfGraph2.copy()
-
-    elif slct_comparison_graph_value == "q1graph3":
-        title = "Q1 Graph-3"
-        df = dfGraph3.copy()
-
-    elif slct_comparison_graph_value == "q1graph4":
-        title = "Q1 Graph-4"
-        df = dfGraph4.copy()
-
-    elif slct_comparison_graph_value == "q1graph5":
-        title = "Q1 Graph-5"
-        df = dfGraph5.copy()
-
-    elif slct_comparison_graph_value == "q2graph1":
-        title = "Q2 Graph-1"
-        df = dfQ2Seed1.copy()
-
-    elif slct_comparison_graph_value == "q2graph3":
-        title = "Q2 Graph-3"
-        df = dfQ2Seed3.copy()
-
-    elif slct_comparison_graph_value == "q3graph1":
-        title = "Q3 Graph-1"
-        df = dfQ3Seed1.copy()
-
-    elif slct_comparison_graph_value == "q3graph2":
-        title = "Q3 Graph-2"
-        df = dfQ3Seed3.copy()
+    df = dfTravel
 
     df = df[df["eType"] == 6]
+    title = "Travel channel"
 
     if len(slct_graph_target) > 0:
         df2 = df.copy()
@@ -176,73 +112,29 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
             df = df.append(df2[df2["Target"] == target])
 
     sourceIn = [str([x]) for x in df['Source']]
-    targetIn = [str(x) for x in df['SourceLocation']]
+    targetIn = [str([x]) for x in df['Target']]
+    sourceLocIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
-    fig = px.scatter(x=df["Time"], y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
+    fig = px.scatter(x=df["Time"]/(3600*24), y=sourceIn, color=sourceLocIn, symbol=targetIn,
+                     size=weightIn, hover_data=[weightIn])
+    fig.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 30})
 
-    if slct_comparison_graph2_value == "default":
-        title = "Template"
-        df = dfTemplate.copy()
+    fig.update_layout(
+        title="Selected Targets: " + str(slct_graph_target),
+        yaxis_title="Source Id",
+        xaxis_title="Time(days)",
+        font=dict(
+            family="Courier New, monospace",
+            size=18,
+            color="#000000"
+        )
+    )
 
-    if slct_comparison_graph2_value == "template":
-        title = "Template"
-        df = dfTemplate.copy()
+    # container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 
-    elif slct_comparison_graph2_value == "q1graph1":
-        title = "Q1 Graph-1"
-        df = dfGraph1.copy()
-
-    elif slct_comparison_graph2_value == "q1graph2":
-        title = "Q1 Graph-2"
-        df = dfGraph2.copy()
-
-    elif slct_comparison_graph2_value == "q1graph3":
-        title = "Q1 Graph-3"
-        df = dfGraph3.copy()
-
-    elif slct_comparison_graph2_value == "q1graph4":
-        title = "Q1 Graph-4"
-        df = dfGraph4.copy()
-
-    elif slct_comparison_graph2_value == "q1graph5":
-        title = "Q1 Graph-5"
-        df = dfGraph5.copy()
-
-    elif slct_comparison_graph2_value == "q2graph1":
-        title = "Q2 Graph-1"
-        df = dfQ2Seed1.copy()
-
-    elif slct_comparison_graph2_value == "q2graph3":
-        title = "Q2 Graph-3"
-        df = dfQ2Seed3.copy()
-
-    elif slct_comparison_graph2_value == "q3graph1":
-        title = "Q3 Graph-1"
-        df = dfQ3Seed1.copy()
-
-    elif slct_comparison_graph2_value == "q3graph2":
-        title = "Q3 Graph-2"
-        df = dfQ3Seed3.copy()
-
-    df = df[df["eType"] == 6]
-
-    if len(slct_graph2_target) > 0:
-        df2 = df.copy()
-        df = df[df["eType"] == -100]
-        for target in slct_graph2_target:
-            df = df.append(df2[df2["Target"] == target])
-
-    sourceIn = [str([x]) for x in df['Source']]
-    targetIn = [str(x) for x in df['SourceLocation']]
-    weightIn = [abs(int(x)) for x in df['Weight']]
-    figT = px.scatter(x=df["Time"], y=sourceIn, color=targetIn,
-                      size=weightIn, hover_data=[weightIn])
-
-    container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
-
-    return container, fig, figT
+    return fig
 
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
