@@ -453,8 +453,8 @@ app.layout = html.Div([
 
     html.Div(id='output_container', children=[]),
     html.Br(),
-    dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': True}),
-    dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': True})
+    dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
+    dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
 
 ])
 
@@ -481,6 +481,7 @@ def update_graph(option_slctd):
     go.Parcoords(
         line=dict(color=df['Time'],
                   colorscale='Viridis',
+                  colorbar={"title": "Time"},
                   showscale=True,
                   cmin=0,
                   cmax=1),
@@ -579,6 +580,7 @@ def update_graph(option_slctd):
                 line=dict(color=df['Time'],
                           colorscale='Viridis',
                           showscale=True,
+                          colorbar={"title": "Time"},
                           cmin=0,
                           cmax=1),
 
@@ -623,12 +625,12 @@ def update_graph(option_slctd):
     )
     # fig.update_layout(height=450, width=1500)
     fig.update_layout(height=300, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
-    fig.update_layout(
-        title={
-            'y': 1.0,
-            'x': 0.5,
-            'xanchor': 'center',
-            'yanchor': 'top'})
+    fig.update_layout(title={
+                            'y': 1.0,
+                            'x': 0.5,
+                            'xanchor': 'center',
+                            'yanchor': 'top'}
+                      )
 
     return container, figT, fig
 
