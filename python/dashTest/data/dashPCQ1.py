@@ -482,6 +482,7 @@ def update_graph(option_slctd):
         line=dict(color=df['Time'],
                   colorscale='Viridis',
                   showscale=True,
+                  colorbar={"title": "Time"},
                   cmin=0,
                   cmax=1),
 
@@ -579,6 +580,7 @@ def update_graph(option_slctd):
                 line=dict(color=df['Time'],
                           colorscale='Viridis',
                           showscale=True,
+                          colorbar={"title": "Time"},
                           cmin=0,
                           cmax=1),
 
