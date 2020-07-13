@@ -4,7 +4,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-library('igraph')
+library(igraph)
 ```
 
 ## R Markdown
