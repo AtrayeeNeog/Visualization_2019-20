@@ -142,7 +142,7 @@ def update_graph(slct_comparison_graph_value, slct_graph_target):
 
     fig = px.scatter(x=df["Time"]/(24*3600), y=sourceIn, color=etypeIn, size=weightIn,
                      hover_data=[weightIn], symbol=targetIn)
-    fig.update_layout(height=600, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
+    fig.update_layout(height=700, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 

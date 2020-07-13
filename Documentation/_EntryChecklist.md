@@ -125,20 +125,20 @@
 
 - [ ] Text:
     {-Atrayee, -Behnam}
-- [ ] Image 1:  Parallel Coordinates
-  * {-Behnam: plot, record}
+- [x] Image 1:  Parallel Coordinates
+  * {-Behnam: plot, record, programming}
 <br/><br/>
 - [x] Image 2:  Distribution Curves(3 measures)
-  * {-Behnam: plot, record}
+  * {-Behnam: plot, record, programming}
 <br/><br/>
 - [x] Image 3:  Distribution Curves + Wasserstein Matrix
-  * {-Atrayee, -Behnam}
+  * {-Atrayee: plot, design, calculation, programming -Behnam: edit, design}
 <br/><br/>
 - [x] Image 4:  Network Graph(Important Measure 1)
-  * {-Atrayee: plot, edit -Behnam: edit}
+  * {-Atrayee: plot, edit, programming -Behnam: edit}
 <br/><br/>
 - [x] Image 5:  Network Graph(Important Measure 2)
-  * {-Atrayee: plot, edit -Behnam: edit}
+  * {-Atrayee: plot, edit, programming -Behnam: edit}
 
 ---------------------------
 ### Question 5:
