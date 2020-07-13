@@ -25,29 +25,29 @@ be easily edited that way</title>
  <o:DocumentProperties>
   <o:Author>Whiting, Mark A</o:Author>
   <o:LastAuthor>Behnam Beladi</o:LastAuthor>
-  <o:Revision>276</o:Revision>
-  <o:TotalTime>3040</o:TotalTime>
+  <o:Revision>293</o:Revision>
+  <o:TotalTime>3090</o:TotalTime>
   <o:Created>2020-07-10T11:28:00Z</o:Created>
-  <o:LastSaved>2020-07-13T13:38:00Z</o:LastSaved>
-  <o:Pages>36</o:Pages>
-  <o:Words>2801</o:Words>
-  <o:Characters>15971</o:Characters>
+  <o:LastSaved>2020-07-13T15:00:00Z</o:LastSaved>
+  <o:Pages>37</o:Pages>
+  <o:Words>2747</o:Words>
+  <o:Characters>15659</o:Characters>
   <o:Company>Pacific Northwest Versions panel</o:Company>
-  <o:Lines>133</o:Lines>
-  <o:Paragraphs>37</o:Paragraphs>
-  <o:CharactersWithSpaces>18735</o:CharactersWithSpaces>
+  <o:Lines>130</o:Lines>
+  <o:Paragraphs>36</o:Paragraphs>
+  <o:CharactersWithSpaces>18370</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
 </xml><![endif]-->
-<link rel=dataStoreItem href="index_files/item0036.xml"
-target="index_files/props037.xml">
+<link rel=dataStoreItem href="index_files/item0042.xml"
+target="index_files/props043.xml">
 <link rel=themeData href="index_files/themedata.thmx">
 <link rel=colorSchemeMapping href="index_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
+  <w:Zoom>95</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -785,8 +785,7 @@ p.MsoCaption, li.MsoCaption, div.MsoCaption
 	mso-themecolor:text2;
 	font-style:italic;}
 a:link, span.MsoHyperlink
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
+	{mso-style-priority:99;
 	color:blue;
 	text-decoration:underline;
 	text-underline:single;}
@@ -986,9 +985,6 @@ span.FooterChar
 span.SpellE
 	{mso-style-name:"";
 	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -1357,7 +1353,7 @@ ul
 	font-family:"Times New Roman",serif;}
 </style>
 <![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="1054"/>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
 </xml><![endif]--><!--[if gte mso 9]><xml>
  <o:shapelayout v:ext="edit">
   <o:idmap v:ext="edit" data="1"/>
@@ -1444,41 +1440,44 @@ mso-bidi-theme-font:minor-latin;color:#3333FF;mso-ansi-language:EN-GB;
 font-weight:normal'><a href="mailto:xiongjun.wang@st.ovgu.de"><span lang=EN-US
 style='mso-ansi-language:EN-US'>xiongjun.wang@st.ovgu.de</span></a><o:p></o:p></span></u></h3>
 
-<h3 style='margin:0cm;margin-bottom:.0001pt'><span lang=DE style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-theme-font:minor-latin;mso-ansi-language:DE;font-weight:normal'>Uli
-Niemann, </span><u><span lang=DE style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:#3333FF;
-mso-ansi-language:DE;font-weight:normal'><a href="mailto:uli.niemann@ovgu.de">uli.niemann@ovgu.de</a></span></u><span
-lang=DE style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span class=SpellE><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:DE;font-weight:
-normal'><o:p></o:p></span></h3>
-
-<h3 style='margin:0cm;margin-bottom:.0001pt'><span lang=DE style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-theme-font:minor-latin;mso-ansi-language:DE;font-weight:normal'>Kai
-Lawonn, <a href="mailto:kai.lawonn@uni-jena.de">kai.lawonn@uni-jena.de</a><o:p></o:p></span></h3>
-
-<h3 style='margin:0cm;margin-bottom:.0001pt'><span lang=DE style='font-size:
-11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-theme-font:minor-latin;mso-ansi-language:DE;font-weight:normal'>Bernhard
-Preim, <a href="mailto:bernhard.preim@ovgu.de">bernhard.preim@ovgu.de</a><o:p></o:p></span></h3>
+minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'>Uli</span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;font-weight:normal'> Niemann,
+Knowledge Management &amp; Discovery Lab, uli.niemann@ovgu.de, University of
+Magdeburg, Germany<o:p></o:p></span></h3>
 
 <h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-font-weight:normal'>Monique <span class=SpellE>Meuschke</span>, </span><u><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:#3333FF;font-weight:normal'>meuschke@isg.cs.uni-magdeburg.de</span></u><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-background:yellow;mso-highlight:yellow;mso-bidi-font-style:italic'><br>
+font-weight:normal'>Kai <span class=SpellE>Lawonn</span>, Institute of Computer
+Science, University of Jena, Germany, <a href="mailto:kai.lawonn@uni-jena.de">kai.lawonn@uni-jena.de</a><o:p></o:p></span></h3>
+
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+font-weight:normal'>Bernhard <span class=SpellE>Preim</span>, Department of
+Simulation and Graphics, University of Magdeburg, Germany,<o:p></o:p></span></h3>
+
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+font-weight:normal'><a href="mailto:bernhard@isg.cs.uni-magdeburg.de">bernhard@isg.cs.uni-magdeburg.de</a><o:p></o:p></span></h3>
+
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+font-weight:normal'>Monique <span class=SpellE>Meuschke</span>, Department of
+Simulation and Graphics, University of Magdeburg and Institute of Computer Science,
+University of Jena, Germany, meuschke@isg.cs.uni-magdeburg.de<o:p></o:p></span></h3>
+
+<h3 style='margin:0cm;margin-bottom:.0001pt'><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;background:yellow;mso-highlight:
+yellow;mso-bidi-font-style:italic'><br>
 </span><i><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
 minor-latin'><br style='mso-special-character:line-break'>
@@ -1600,9 +1599,9 @@ mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme
 minor-latin'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
-color:#555555;background:white'>Center for Global Cyber Strategy (CGCS)
-researchers have used the data donated by the white hat groups to create
-anonymized profiles of the groups. One such profile has been identified by CGCS
+color:#555555;background:white'>Center for Global Cyber Strategy (CGCS) researchers
+have used the data donated by the white hat groups to create anonymized
+profiles of the groups. One such profile has been identified by CGCS
 sociopsychologists as most likely to resemble the structure of the group who
 accidentally caused this internet outage. You have been asked to examine CGCS
 records and identify those groups who most closely resemble the identified
@@ -1644,38 +1643,39 @@ minor-latin;color:black;mso-themecolor:text1'><o:p></o:p></span></b></p>
 </ol>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
-style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+style='mso-bidi-font-weight:normal'><span style='font-size:16.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 color:windowtext'>Answer:<o:p></o:p></span></b></p>
 
 <p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;page-break-after:avoid'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>The starting
-point to compare the subgraphs is using their graph attributes as similarity
-measures. </span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45402321 \h<span
-style='mso-spacerun:yes'>  </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]-->Figure-<span
-style='mso-no-proof:yes'>1</span><span style='font-size:11.0pt;font-family:
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>The starting point to compare
+the subgraphs is using their graph attributes as similarity measures. </span><!--[if supportFields]><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>REF _Ref45402321
+\h<span style='mso-spacerun:yes'>  </span>\* MERGEFORMAT <span
+style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure-<span
+style='mso-no-proof:yes'>1</span></span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><!--[if gte mso 9]><xml>
+ <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400300032003300320031000000</w:data>
+</xml><![endif]--></span><!--[if supportFields]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><!--[if gte mso 9]><xml>
- <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400300032003300320031000000</w:data>
-</xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> visualizes eight
-measures as parallel coordinates (PCs) for each subgraph. Each subgraph was
-then compared to template subgraph. Subgraph-1 and subgraph-2 seem have more
-patterns matching the template compared to other subgraphs.<o:p></o:p></span></p>
+color:windowtext'> visualizes eight measures in a parallel coordinate plot (PCs)
+for each subgraph. Each subgraph was then compared to template subgraph.
+Subgraph-1 and subgraph-2 appear to have more patterns matching the template
+compared to other subgraphs.<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle align=center style='mso-margin-top-alt:
 auto;mso-margin-bottom-alt:auto;margin-left:0cm;mso-add-space:auto;text-align:
@@ -1713,61 +1713,71 @@ color:windowtext;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v
  <v:imagedata src="index_files/image001.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1050 height=469
-src="index_files/image001.gif" v:shapes="Picture_x0020_6"><![endif]></span></p>
+src="index_files/image001.gif" v:shapes="Picture_x0020_6"><![endif]></span><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><o:p></o:p></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
-name="_Ref45402321">Figure </a><!--[if supportFields]><span style='mso-bookmark:
-_Ref45402321'></span><span style='mso-element:field-begin'></span><span
-style='mso-bookmark:_Ref45402321'><span style='mso-spacerun:yes'> </span>SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='mso-bookmark:_Ref45402321'><span style='mso-no-proof:yes'>1</span></span><!--[if supportFields]><span
+name="_Ref45402321"><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure
+</span></a><!--[if supportFields]><span style='mso-bookmark:_Ref45402321'></span><span
+style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref45402321'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span></span><![endif]--><span style='mso-bookmark:
+_Ref45402321'><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-no-proof:yes'>1</span></span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45402321'></span><span style='mso-element:field-end'></span><![endif]--><span
-style='mso-bookmark:_Ref45402321'></span>. Parallel coordinates allow us to
-observe the distribution of all the similarity measures at the same time.
-Color-scale is based on time (0-1<span class=GramE>) :</span>
-(1.1.2025-1.1.2026)<span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+style='mso-bookmark:_Ref45402321'></span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'>. Parallel coordinates allow us to observe the distribution of all
+the similarity measures at the same time. Color-scale is based on time (0-1) :
+(1.1.2025-1.1.2026)</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>To quantify these
-comparisons, a Wasserstein-based test was done between each subgraph and
-template for each measure. The Wasserstein metric measures the similarity
-between two probability distributions by estimating the cost of turning one
-distribution into another. The test outputs a Wasserstein metric, p-Value
-(depicting confidence in the similarity) and three contributing factors:
-network size, network shape and nodes location in the network.<o:p></o:p></span></p>
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>To quantify these comparisons,
+a Wasserstein-based test was done between each subgraph and template for each
+measure. The Wasserstein metric measures the similarity between two probability
+distributions by estimating the cost of turning one distribution into another.
+The test outputs a Wasserstein metric, p-Value (depicting confidence in the
+similarity) and three contributing factors: network size, network shape and
+nodes location in the network.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Most measures in </span><!--[if supportFields]><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45402298 \h <span style='mso-element:
-field-separator'></span></span><![endif]-->Figure-<span style='mso-no-proof:
-yes'>2</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>Most measures in </span><!--[if supportFields]><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>REF _Ref45402298 \h <span
+style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure-<span
+style='mso-no-proof:yes'>2</span></span><span style='font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400300032003200390038000000</w:data>
-</xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+</xml><![endif]--></span><!--[if supportFields]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> show smaller
-Wasserstein metrics with higher confidence factor denoted by the p-value and
-more similar distributions between subgraph-1 and subgraph-2 and template.<o:p></o:p></span></p>
+color:windowtext'> show smaller Wasserstein metrics with higher confidence
+factor denoted by the p-value and more similar distributions between subgraph-1
+and subgraph-2 and template.<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -1801,31 +1811,38 @@ minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p><
 
 <p class=MsoListParagraphCxSpLast align=center style='mso-margin-top-alt:auto;
 mso-margin-bottom-alt:auto;margin-left:0cm;mso-add-space:auto;text-align:center;
-page-break-after:avoid'><!--[if gte vml 1]><v:shape id="Picture_x0020_2"
- o:spid="_x0000_s1053" type="#_x0000_t75" style='width:667.2pt;height:468.6pt;
- visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=890 height=625
-src="index_files/image003.gif" v:shapes="Picture_x0020_2"><![endif]></p>
+page-break-after:avoid'><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_2" o:spid="_x0000_i1053" type="#_x0000_t75" style='width:667.2pt;
+ height:457.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image004.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=890 height=610
+src="index_files/image002.jpg" v:shapes="Picture_x0020_2"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
-name="_Ref45402298">Figure </a><!--[if supportFields]><span style='mso-bookmark:
-_Ref45402298'></span><span style='mso-element:field-begin'></span><span
-style='mso-bookmark:_Ref45402298'><span style='mso-spacerun:yes'> </span>SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='mso-bookmark:_Ref45402298'><span style='mso-no-proof:yes'>2</span></span><!--[if supportFields]><span
+name="_Ref45402298"><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure
+</span></a><!--[if supportFields]><span style='mso-bookmark:_Ref45402298'></span><span
+style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref45402298'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span></span><![endif]--><span style='mso-bookmark:
+_Ref45402298'><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-no-proof:yes'>2</span></span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45402298'></span><span style='mso-element:field-end'></span><![endif]--><span
-style='mso-bookmark:_Ref45402298'></span>. Comparison of subgraphs for each
-distribution measure. Distribution curves are compared in each cell.
-Wasserstein metric and p-Value are also written. Contribution percentage of
-three factors (location, size and shape) are presented by pie-charts.<span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
+style='mso-bookmark:_Ref45402298'></span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'>. Comparison of subgraphs for each distribution measure.
+Distribution curves are compared in each cell. Wasserstein metric and p-Value
+are also written. Contribution percentage of three factors (location, size and
+shape) are presented by pie-charts.</span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext'><o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -1853,65 +1870,68 @@ minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p><
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Based on high
-p-values, three measures were selected to further investigate similarities and
-dissimilarities between the subgraphs. </span><!--[if supportFields]><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45441727 \h <span style='mso-element:
-field-separator'></span></span><![endif]-->Figure-<span style='mso-no-proof:
-yes'>3</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'>Based on high p-values, three
+measures were selected to further investigate similarities and dissimilarities
+between the subgraphs. </span><!--[if supportFields]><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>REF _Ref45441727 \h <span
+style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure-<span
+style='mso-no-proof:yes'>3</span></span><span style='font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400340031003700320037000000</w:data>
-</xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+</xml><![endif]--></span><!--[if supportFields]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>, </span><!--[if supportFields]><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45441732 \h <span style='mso-element:
-field-separator'></span></span><![endif]-->Figure-<span style='mso-no-proof:
-yes'>4</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+color:windowtext'>, </span><!--[if supportFields]><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>REF _Ref45441732 \h<span
+style='mso-spacerun:yes'>  </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure-<span
+style='mso-no-proof:yes'>4</span></span><span style='font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400340031003700330032000000</w:data>
-</xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+</xml><![endif]--></span><!--[if supportFields]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> and </span><!--[if supportFields]><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45441736 \h <span style='mso-element:
-field-separator'></span></span><![endif]-->Figure-<span style='mso-no-proof:
-yes'>5</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+color:windowtext'> and </span><!--[if supportFields]><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>REF _Ref45441736 \h <span
+style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure-<span
+style='mso-no-proof:yes'>5</span></span><span style='font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400340031003700330036000000</w:data>
-</xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+</xml><![endif]--></span><!--[if supportFields]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'> visualize the
-subgraphs network. Colors indicate the node Types: Person (blue), Product
-Category (red), Country (green), Financial Category and Document (yellow). Node
-sizes are proportional to the magnitude of the measures.<o:p></o:p></span></p>
+color:windowtext'> visualize the subgraphs network. Colors indicate the node
+Types: Person (blue), Product Category (red), Country (green), Financial
+Category and Document (yellow). Node sizes are proportional to the magnitude of
+the measures.<o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -1944,33 +1964,40 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></i></b></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_3" o:spid="_x0000_s1052" type="#_x0000_t75" style='width:715.8pt;
- height:526.8pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=954 height=702
-src="index_files/image005.gif" v:shapes="Picture_x0020_3"><![endif]></p>
+auto;text-align:center;page-break-after:avoid'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
+EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1052" type="#_x0000_t75"
+ style='width:715.8pt;height:503.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=954 height=671
+src="index_files/image003.jpg" v:shapes="_x0000_i1052"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
-name="_Ref45441727">Figure </a><!--[if supportFields]><span style='mso-bookmark:
-_Ref45441727'></span><span style='mso-element:field-begin'></span><span
-style='mso-bookmark:_Ref45441727'><span style='mso-spacerun:yes'> </span>SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='mso-bookmark:_Ref45441727'><span style='mso-no-proof:yes'>3</span></span><!--[if supportFields]><span
+name="_Ref45441727"><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure
+</span></a><!--[if supportFields]><span style='mso-bookmark:_Ref45441727'></span><span
+style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref45441727'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span></span><![endif]--><span style='mso-bookmark:
+_Ref45441727'><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-no-proof:yes'>3</span></span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45441727'></span><span style='mso-element:field-end'></span><![endif]--><span
-style='mso-bookmark:_Ref45441727'></span>. <b>Out-Degree</b> measures the
-number of edges going out from each node in a directed graph. In this
-particular case, out-going nodes usually belong to person IDs. Since the core
-of a hacker group is these people, Out-Degrees help embolden their effect on
-the network analysis.<b style='mso-bidi-font-weight:normal'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;font-style:normal;
-mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+style='mso-bookmark:_Ref45441727'></span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'>. <b>Out-Degree</b> measures the number of edges going out from
+each node in a directed graph. In this particular case, out-going nodes usually
+belong to person IDs. Since the core of a hacker group is these people,
+Out-Degrees help embolden their effect on the network analysis.</span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext;font-style:normal;mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
 style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
@@ -1991,28 +2018,37 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></i></b></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_4" o:spid="_x0000_s1051" type="#_x0000_t75" style='width:736.2pt;
- height:529.2pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=982 height=706
-src="index_files/image007.gif" v:shapes="Picture_x0020_4"><![endif]></p>
+auto;text-align:center;page-break-after:avoid'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
+EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4"
+ o:spid="_x0000_i1051" type="#_x0000_t75" style='width:736.2pt;height:529.2pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image009.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=982 height=706
+src="index_files/image007.jpg" v:shapes="Picture_x0020_4"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
-name="_Ref45441732">Figure </a><!--[if supportFields]><span style='mso-bookmark:
-_Ref45441732'></span><span style='mso-element:field-begin'></span><span
-style='mso-bookmark:_Ref45441732'><span style='mso-spacerun:yes'> </span>SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='mso-bookmark:_Ref45441732'><span style='mso-no-proof:yes'>4</span></span><!--[if supportFields]><span
+name="_Ref45441732"><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure
+</span></a><!--[if supportFields]><span style='mso-bookmark:_Ref45441732'></span><span
+style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref45441732'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span></span><![endif]--><span style='mso-bookmark:
+_Ref45441732'><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-no-proof:yes'>4</span></span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45441732'></span><span style='mso-element:field-end'></span><![endif]--><span
-style='mso-bookmark:_Ref45441732'></span>. <b>Betweenness Centrality</b> measures
-the number of shortest paths passing through a node and the importance of it
-based on how central it is in the network. Therefore, this measure helps us
-compare central and important nodes.<b style='mso-bidi-font-weight:normal'><span
+style='mso-bookmark:_Ref45441732'></span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'>. <b>Betweenness Centrality</b> measures the number of shortest
+paths passing through a node and the importance of it based on how central it
+is in the network. Therefore, this measure helps us compare central and
+important nodes.</span><b style='mso-bidi-font-weight:normal'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;font-style:normal;
@@ -2025,33 +2061,42 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></i></b></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_5" o:spid="_x0000_s1050" type="#_x0000_t75" style='width:732pt;
- height:513.6pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=976 height=685
-src="index_files/image009.gif" v:shapes="Picture_x0020_5"><![endif]></p>
-
-<p class=MsoCaption align=center style='text-align:center'><a
-name="_Ref45441736">Figure </a><!--[if supportFields]><span style='mso-bookmark:
-_Ref45441736'></span><span style='mso-element:field-begin'></span><span
-style='mso-bookmark:_Ref45441736'><span style='mso-spacerun:yes'> </span>SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='mso-bookmark:_Ref45441736'><span style='mso-no-proof:yes'>5</span></span><!--[if supportFields]><span
-style='mso-bookmark:_Ref45441736'></span><span style='mso-element:field-end'></span><![endif]--><span
-style='mso-bookmark:_Ref45441736'></span>. <b>Eigen Centrality</b>. In order to
-extract a network of hackers, who caused the outage, it is important to
-understand how the central nodes are connected to each other. Which is done by
-Eigen Vector Centrality, Nodes with high eigen vector score are connected to
-high number of important nodes.<b style='mso-bidi-font-weight:normal'><span
+auto;text-align:center;page-break-after:avoid'><b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'><span lang=EN-GB
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;font-style:normal;
-mso-bidi-font-style:italic'><o:p></o:p></span></b></p>
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
+EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
+ o:spid="_x0000_i1050" type="#_x0000_t75" style='width:732pt;height:513.6pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image020.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=976 height=685
+src="index_files/image010.jpg" v:shapes="Picture_x0020_5"><![endif]></span></i></b></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref45441736"><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure
+</span></a><!--[if supportFields]><span style='mso-bookmark:_Ref45441736'></span><span
+style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref45441736'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span></span><![endif]--><span style='mso-bookmark:
+_Ref45441736'><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-no-proof:yes'>5</span></span></span><!--[if supportFields]><span
+style='mso-bookmark:_Ref45441736'></span><span style='mso-element:field-end'></span><![endif]--><span
+style='mso-bookmark:_Ref45441736'></span><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'>. <b>Eigen Centrality</b>. In order to extract a network of
+hackers, who caused the outage, it is important to understand how the central
+nodes are connected to each other. Which is done by Eigen Vector Centrality,
+Nodes with high eigen vector score are connected to high number of important
+nodes.</span><b style='mso-bidi-font-weight:normal'><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext;font-style:normal;mso-bidi-font-style:
+italic'><o:p></o:p></span></b></p>
 
 <p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;margin-left:0cm;mso-add-space:auto;text-align:justify'><span
@@ -2073,24 +2118,34 @@ minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p><
 
 <p class=MsoListParagraphCxSpLast align=center style='mso-margin-top-alt:auto;
 mso-margin-bottom-alt:auto;margin-left:0cm;mso-add-space:auto;text-align:center;
-page-break-after:avoid'><!--[if gte vml 1]><v:shape id="_x0000_s1049" type="#_x0000_t75"
- style='width:849.6pt;height:424.2pt;visibility:visible;mso-wrap-style:square;
- mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+page-break-after:avoid'><span lang=EN-GB style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
+color:windowtext;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_3" o:spid="_x0000_i1049" type="#_x0000_t75" style='width:849.6pt;
+ height:424.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image011.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1133 height=566
-src="index_files/image010.gif" v:shapes="_x0000_s1049"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1133 height=566
+src="index_files/image011.gif" v:shapes="Picture_x0020_3"><![endif]></span></p>
 
-<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
-field-separator'></span><![endif]--><span style='mso-no-proof:yes'>6</span><!--[if supportFields]><span
-style='mso-element:field-end'></span><![endif]-->. An interactive plot compares
-the Distributions of the template subgraph with other subgraphs for these three
-similarity measures.<span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+<p class=MsoCaption align=center style='text-align:center'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure </span><!--[if supportFields]><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-no-proof:yes'>6</span></span><!--[if supportFields]><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin'>. An interactive plot compares the
+Distributions of the template subgraph with other subgraphs for these three
+similarity measures.</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p></o:p></span></p>
 
@@ -2100,32 +2155,33 @@ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-page-break-after:avoid'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+page-break-after:avoid'><span style='font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>Eigen
 Vector Centrality measure shows dissimilarity between template and subgraph-2.
 As seen from the pie charts in </span><!--[if supportFields]><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45402298 \h <span style='mso-element:
-field-separator'></span></span><![endif]-->Figure-<span style='mso-no-proof:
-yes'>2</span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-theme-font:minor-latin;color:windowtext'><span style='mso-element:
+field-begin'></span><span style='mso-spacerun:yes'> </span>REF _Ref45402298 \h <span
+style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure-<span
+style='mso-no-proof:yes'>2</span></span><span style='font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003400300032003200390038000000</w:data>
-</xml><![endif]--></span><!--[if supportFields]><span style='font-size:11.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+</xml><![endif]--></span><!--[if supportFields]><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:windowtext'><span style='mso-element:field-end'></span></span><![endif]--><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>, the shape of
-the networks is the largest contributing factor for this difference, meaning
-the central nodes are distributed differently in template and subgraph-2. The
-Page Rank (normalized form of Eigen Vector Centrality) nullifies this
-difference so the similarity between the two is again high for this measure. <o:p></o:p></span></p>
+color:windowtext'>, the shape of the networks is the largest contributing
+factor for this difference, meaning the central nodes are distributed
+differently in template and subgraph-2. The Page Rank (normalized form of Eigen
+Vector Centrality) nullifies this difference so the similarity between the two
+is again high for this measure. <o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 page-break-after:avoid'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
@@ -2133,25 +2189,34 @@ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_7" o:spid="_x0000_s1048" type="#_x0000_t75" style='width:922.8pt;
- height:453.6pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1230 height=605
-src="index_files/image011.gif" v:shapes="Picture_x0020_7"><![endif]></p>
+auto;text-align:center;page-break-after:avoid'><span lang=EN-GB
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext;mso-ansi-language:
+EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1048" type="#_x0000_t75"
+ style='width:921pt;height:453.6pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image032.gif" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1228 height=605
+src="index_files/image032.gif" v:shapes="_x0000_i1048"><![endif]></span></p>
 
-<p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
+<p class=MsoCaption align=center style='text-align:center'><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure </span><!--[if supportFields]><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
 style='mso-element:field-begin'></span><span
 style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
-field-separator'></span><![endif]--><span style='mso-no-proof:yes'>7</span><!--[if supportFields]><span
-style='mso-element:field-end'></span><![endif]-->. Visualizing and comparing
-the network graphs, network analysis and changes based on time in <span
-class=SpellE>Gephi</span> software.<span style='font-size:11.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+field-separator'></span></span><![endif]--><span style='font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>7</span></span><!--[if supportFields]><span
+style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-element:field-end'></span></span><![endif]--><span style='font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin'>. Visualizing and comparing the
+network graphs, network analysis and changes based on time in <span
+class=SpellE>Gephi</span> software.</span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
 color:windowtext'><o:p></o:p></span></p>
 
@@ -2171,11 +2236,11 @@ mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify'><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>With
-all the above rationale in mind, we can conclude that <b style='mso-bidi-font-weight:
-normal'><i style='mso-bidi-font-style:normal'>Subgraph-2 is the most similar to
+text-align:justify'><span style='font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;color:windowtext'>With all the
+above rationale in mind, we can conclude that <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>subgraph-2 is the most similar to
 the template subgraph. </i></b><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'><b
@@ -2227,16 +2292,15 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 color:#555555'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="_x0000_s1047" type="#_x0000_t75" style='width:727.8pt;height:388.2pt;
- visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=970 height=518
-src="index_files/image013.gif" v:shapes="_x0000_s1047"><![endif]></p>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_7" o:spid="_x0000_i1047"
+ type="#_x0000_t75" style='width:727.8pt;height:363.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image011.gif" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=970 height=485
+src="index_files/image011.gif" v:shapes="Picture_x0020_7"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45445228">Figure </a><!--[if supportFields]><span style='mso-bookmark:
@@ -2266,17 +2330,15 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 color:#555555'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_9" o:spid="_x0000_s1046" type="#_x0000_t75" style='width:976.8pt;
- height:346.8pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1046" type="#_x0000_t75"
+ style='width:975.6pt;height:346.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image034.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1302 height=462
-src="index_files/image014.gif" v:shapes="Picture_x0020_9"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1301 height=462
+src="index_files/image034.gif" v:shapes="_x0000_i1046"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2297,17 +2359,16 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 color:#555555'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_16" o:spid="_x0000_s1045" type="#_x0000_t75" style='width:985.8pt;
- height:358.8pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_16" o:spid="_x0000_i1045"
+ type="#_x0000_t75" style='width:985.8pt;height:358.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image036.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1314 height=478
-src="index_files/image015.gif" v:shapes="Picture_x0020_16"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1314 height=478
+src="index_files/image036.gif" v:shapes="Picture_x0020_16"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2333,17 +2394,16 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 color:#555555'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_17" o:spid="_x0000_s1044" type="#_x0000_t75" style='width:974.4pt;
- height:441.6pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_17" o:spid="_x0000_i1044"
+ type="#_x0000_t75" style='width:974.4pt;height:441.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image037.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1299 height=589
-src="index_files/image016.gif" v:shapes="Picture_x0020_17"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1299 height=589
+src="index_files/image037.gif" v:shapes="Picture_x0020_17"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2361,17 +2421,16 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 color:#555555'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_11" o:spid="_x0000_s1043" type="#_x0000_t75" style='width:987pt;
- height:492pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+mso-fareast-font-family:"Times New Roman";color:#555555;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_11" o:spid="_x0000_i1043"
+ type="#_x0000_t75" style='width:987pt;height:492pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image038.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1316 height=656
-src="index_files/image017.gif" v:shapes="Picture_x0020_11"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1316 height=656
+src="index_files/image038.gif" v:shapes="Picture_x0020_11"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2536,17 +2595,15 @@ third stage because almost all the retrieved nodes had only co-authorship data.
 <o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_26" o:spid="_x0000_s1042" type="#_x0000_t75" alt="Q2Seed1"
- style='width:991.8pt;height:475.8pt;visibility:visible;mso-wrap-style:square;
- mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_26" o:spid="_x0000_i1042" type="#_x0000_t75" style='width:990.6pt;
+ height:475.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image039.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1322 height=634
-src="index_files/image018.gif" alt=Q2Seed1 v:shapes="Picture_x0020_26"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1321 height=634
+src="index_files/image039.gif" v:shapes="Picture_x0020_26"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2562,17 +2619,15 @@ style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p>&nbsp;</o:p></span></b></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_13" o:spid="_x0000_s1041" type="#_x0000_t75" alt="Q2Seed2"
- style='width:1000.2pt;height:480.6pt;visibility:visible;mso-wrap-style:square;
- mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_13" o:spid="_x0000_i1041" type="#_x0000_t75" style='width:1000.2pt;
+ height:480.6pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image040.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1334 height=641
-src="index_files/image019.gif" alt=Q2Seed2 v:shapes="Picture_x0020_13"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1334 height=641
+src="index_files/image040.gif" v:shapes="Picture_x0020_13"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2594,17 +2649,15 @@ style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;color:#555555;
 background:white'><o:p>&nbsp;</o:p></span></b></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_15" o:spid="_x0000_s1040" type="#_x0000_t75" alt="Q2Seed3"
- style='width:910.8pt;height:481.8pt;visibility:visible;mso-wrap-style:square;
- mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:996pt;height:478.8pt;
+ visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image041.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1214 height=642
-src="index_files/image020.gif" alt=Q2Seed3 v:shapes="Picture_x0020_15"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1328 height=638
+src="index_files/image041.gif" v:shapes="_x0000_i1040"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2624,23 +2677,23 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
-"Source Sans Pro",sans-serif;color:#555555;background:white'>The retrieved
-subgraphs for Seed-1 (Q2-Graph1) and Seed-3 (Q2-Graph3) have been compared to
-the template subgraph and the best result from the first question (subgraph-2)
+"Source Sans Pro",sans-serif;color:#555555;background:white'>The retrieved subgraphs
+for Seed-1 (Q2-Graph1) and Seed-3 (Q2-Graph3) have been compared to the
+template subgraph and the best result from the first question (subgraph-2)
 based on each channel.<o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_27" o:spid="_x0000_s1039" type="#_x0000_t75" style='width:968.4pt;
- height:343.8pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_27" o:spid="_x0000_i1039"
+ type="#_x0000_t75" style='width:967.2pt;height:343.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image042.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1291 height=458
-src="index_files/image021.gif" v:shapes="Picture_x0020_27"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1290 height=458
+src="index_files/image042.gif" v:shapes="Picture_x0020_27"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2660,17 +2713,17 @@ mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
 mso-ansi-language:EN-IN'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_20" o:spid="_x0000_s1038" type="#_x0000_t75" style='width:998.4pt;
- height:362.4pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_20" o:spid="_x0000_i1038"
+ type="#_x0000_t75" style='width:997.2pt;height:362.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image043.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1331 height=483
-src="index_files/image022.gif" v:shapes="Picture_x0020_20"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1330 height=483
+src="index_files/image043.gif" v:shapes="Picture_x0020_20"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2686,17 +2739,17 @@ mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
 mso-ansi-language:EN-IN'><o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_21" o:spid="_x0000_s1037" type="#_x0000_t75" style='width:990pt;
- height:448.2pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
+color:#444444;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_21" o:spid="_x0000_i1037" type="#_x0000_t75" style='width:988.8pt;
+ height:448.2pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image013.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1320 height=598
-src="index_files/image023.gif" v:shapes="Picture_x0020_21"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1318 height=598
+src="index_files/image013.gif" v:shapes="Picture_x0020_21"><![endif]></span></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2722,17 +2775,17 @@ mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
 mso-ansi-language:EN-IN'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_18" o:spid="_x0000_s1036" type="#_x0000_t75" style='width:981.6pt;
- height:486pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_18" o:spid="_x0000_i1036"
+ type="#_x0000_t75" style='width:981.6pt;height:486pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image014.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1309 height=648
-src="index_files/image024.gif" v:shapes="Picture_x0020_18"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1309 height=648
+src="index_files/image014.gif" v:shapes="Picture_x0020_18"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2865,17 +2918,17 @@ of calls and emails in the Template, size of the graphs was reduced till we had
 number of nodes in the same range as the template.<o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_19" o:spid="_x0000_s1035" type="#_x0000_t75" alt="Q3Seed1"
- style='width:929.4pt;height:483pt;visibility:visible;mso-wrap-style:square;
- mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_19" o:spid="_x0000_i1035"
+ type="#_x0000_t75" style='width:929.4pt;height:446.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image041.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1239 height=644
-src="index_files/image025.gif" alt=Q3Seed1 v:shapes="Picture_x0020_19"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1239 height=595
+src="index_files/image041.gif" v:shapes="Picture_x0020_19"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2890,26 +2943,20 @@ mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444'><o:p>
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
 style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444'>Q3-Graph2:<o:p></o:p></span></b></p>
-
-<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
-style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'><o:p>&nbsp;</o:p></span></b></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_30" o:spid="_x0000_s1034" type="#_x0000_t75" alt="Q3Seed2"
- style='width:940.8pt;height:483.6pt;visibility:visible;mso-wrap-style:square;
- mso-left-percent:-10001;mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
+color:#444444;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_30" o:spid="_x0000_i1034" type="#_x0000_t75" style='width:940.8pt;
+ height:451.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image015.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1254 height=645
-src="index_files/image026.gif" alt=Q3Seed2 v:shapes="Picture_x0020_30"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1254 height=602
+src="index_files/image015.gif" v:shapes="Picture_x0020_30"><![endif]></span></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2924,22 +2971,22 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_28" o:spid="_x0000_s1033" type="#_x0000_t75" style='width:968.4pt;
- height:343.8pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_28" o:spid="_x0000_i1033"
+ type="#_x0000_t75" style='width:967.2pt;height:343.8pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image016.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1291 height=458
-src="index_files/image021.gif" v:shapes="Picture_x0020_28"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1290 height=458
+src="index_files/image016.gif" v:shapes="Picture_x0020_28"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
-style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
-field-separator'></span><![endif]--><span style='mso-no-proof:yes'>22</span><!--[if supportFields]><span
+style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>SEQ
+Figure \* ARABIC <span style='mso-element:field-separator'></span><![endif]--><span
+style='mso-no-proof:yes'>22</span><!--[if supportFields]><span
 style='mso-element:field-end'></span><![endif]-->. <b>Level 1</b>: Procurement
 Channel Analysis.<span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
@@ -2952,17 +2999,17 @@ text-align:justify;background:white'><span style='font-size:11.0pt;font-family:
 color:#444444'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_23" o:spid="_x0000_s1032" type="#_x0000_t75" style='width:994.2pt;
- height:344.4pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-GB;
+mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_23" o:spid="_x0000_i1032"
+ type="#_x0000_t75" style='width:993pt;height:344.4pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image017.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1326 height=459
-src="index_files/image027.gif" v:shapes="Picture_x0020_23"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1324 height=459
+src="index_files/image017.gif" v:shapes="Picture_x0020_23"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -2987,17 +3034,17 @@ text-align:justify;background:white'><span style='font-size:11.0pt;font-family:
 color:#444444'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_25" o:spid="_x0000_s1031" type="#_x0000_t75" style='width:976.2pt;
- height:483.6pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
+color:#444444;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_25" o:spid="_x0000_i1031" type="#_x0000_t75" style='width:976.2pt;
+ height:483.6pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image018.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1302 height=645
-src="index_files/image028.gif" v:shapes="Picture_x0020_25"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1302 height=645
+src="index_files/image018.gif" v:shapes="Picture_x0020_25"><![endif]></span></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -3010,17 +3057,17 @@ minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444'><o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_24" o:spid="_x0000_s1030" type="#_x0000_t75" style='width:978.6pt;
- height:444pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;
+color:#444444;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_24" o:spid="_x0000_i1030" type="#_x0000_t75" style='width:978.6pt;
+ height:444pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image019.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1305 height=592
-src="index_files/image029.gif" v:shapes="Picture_x0020_24"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1305 height=592
+src="index_files/image019.gif" v:shapes="Picture_x0020_24"><![endif]></span></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -3123,10 +3170,10 @@ src="index_files/image030.gif" v:shapes="Picture_x0020_9"><![endif]></span></p>
 style='mso-element:field-begin'></span><span
 style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
 field-separator'></span><![endif]--><span style='mso-no-proof:yes'>26</span><!--[if supportFields]><span
-style='mso-element:field-end'></span><![endif]-->. PC to find trends from the
-candidate subgraphs which resemble the template. Subgraph 2 from Question 1 and
-Seed 1 Network (Q2G1) resemble the template highest.<span style='font-size:
-10.5pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
+style='mso-element:field-end'></span><![endif]-->. PC to find trends from the candidate
+subgraphs which resemble the template. Subgraph 2 from Question 1 and Seed 1
+Network (Q2G1) resemble the template highest.<span style='font-size:10.5pt;
+font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:"Times New Roman";
 color:#555555'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
@@ -3153,17 +3200,17 @@ background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sa
 color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_8" o:spid="_x0000_s1029" type="#_x0000_t75" style='width:544.2pt;
- height:490.8pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <v:imagedata croptop="1f" cropbottom="415f"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=726 height=654
-src="index_files/image031.gif" v:shapes="Picture_x0020_8"><![endif]></p>
+auto;text-align:center;page-break-after:avoid;background:white'><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><span
+lang=EN-GB style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin;mso-ansi-language:EN-GB;mso-no-proof:
+yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8" o:spid="_x0000_i1028"
+ type="#_x0000_t75" style='width:544.2pt;height:450.6pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="index_files/image026.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=726 height=601
+src="index_files/image021.jpg" v:shapes="Picture_x0020_8"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -3200,23 +3247,21 @@ background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sa
 color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_12" o:spid="_x0000_s1028" type="#_x0000_t75" style='width:684.6pt;
- height:491.4pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=913 height=655
-src="index_files/image033.gif" v:shapes="Picture_x0020_12"><![endif]></p>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_12" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:684.6pt;
+ height:491.4pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image025.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=913 height=655
+src="index_files/image023.jpg" v:shapes="Picture_x0020_12"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
 style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
 field-separator'></span><![endif]--><span style='mso-no-proof:yes'>28</span><!--[if supportFields]><span
-style='mso-element:field-end'></span><![endif]-->. <b>Out-Degree</b>. Network
-graphs with node sizes proportional to the magnitude of the similarity measure.
+style='mso-element:field-end'></span><![endif]-->. <b>Out-Degree</b>. Network graphs
+with node sizes proportional to the magnitude of the similarity measure.
 Subgraph 2 from question 1 (Q1G1), Seed 1 graph (Q2G1) and Seed 3 graph (Q2G2)
 are the most similar to the template.<span style='font-size:10.5pt;font-family:
 "Source Sans Pro",sans-serif;color:#555555;background:white'><o:p></o:p></span></p>
@@ -3226,16 +3271,14 @@ background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sa
 color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="Picture_x0020_14" o:spid="_x0000_s1027" type="#_x0000_t75" style='width:713.4pt;
- height:502.8pt;visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=951 height=670
-src="index_files/image035.gif" v:shapes="Picture_x0020_14"><![endif]></p>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_14" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:713.4pt;
+ height:502.8pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image022.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=951 height=670
+src="index_files/image029.jpg" v:shapes="Picture_x0020_14"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
@@ -3271,17 +3314,15 @@ background:white'><span style='font-size:10.5pt;font-family:"Source Sans Pro",sa
 color:#555555;background:white'><o:p>&nbsp;</o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
-auto;text-align:center;page-break-after:avoid;background:white'><!--[if gte vml 1]><v:shape
- id="_x0000_s1026" type="#_x0000_t75" style='width:964.2pt;height:480.6pt;
- visibility:visible;mso-wrap-style:square;mso-left-percent:-10001;
- mso-top-percent:-10001;mso-position-horizontal:absolute;
- mso-position-horizontal-relative:char;mso-position-vertical:absolute;
- mso-position-vertical-relative:line;mso-left-percent:-10001;mso-top-percent:-10001'>
+auto;text-align:center;page-break-after:avoid;background:white'><span
+lang=EN-GB style='font-size:10.5pt;font-family:"Source Sans Pro",sans-serif;
+color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Picture_x0020_15" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:964.2pt;
+ height:480.6pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="index_files/image028.gif" o:title=""/>
  <o:lock v:ext="edit" cropping="t"/>
- <w:wrap type="none"/>
- <w:anchorlock/>
-</v:shape><![endif]--><![if !vml]><img width=1286 height=236
-src="index_files/image037.gif" v:shapes="_x0000_s1026"><![endif]></p>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1286 height=641
+src="index_files/image028.gif" v:shapes="Picture_x0020_15"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'>Figure <!--[if supportFields]><span
 style='mso-element:field-begin'></span><span
