@@ -74,11 +74,11 @@
 - [x] Image 7:  Demographic, dash
   * {-Behnam: plot, record}
 <br/><br/>
-- [ ] Image 8:  undecided
-  * {undecided}
+- [x] Image 8:  graph 1 network graph
+  * {-Atrayee: programming, plotting -Behnam: editing}
 <br/><br/>
-- [ ] Image 9:  undecided
-  * {undecided}
+- [x] Image 9:  graph 3 network graph
+  * {-Atrayee: programming, plotting -Behnam: editing}
 <br/><br/>
 - [ ] Image 10: undecided
   * {undecided}
@@ -92,14 +92,14 @@
 - [x] Image 1:  Finding Procurement seeds I
   * {-Atrayee}
 <br/><br/>
-- [ ] Image 2:  undecided
-  * {-Behnam, -Atrayee}
+- [x] Image 2:  graph 1 network graph
+  * {-Atrayee: programming, plotting -Behnam: editing}
 <br/><br/>
 - [x] Image 3:  Finding Travel seeds I
   * {-Atrayee, -Behnam}
 <br/><br/>
-- [ ] Image 4:  undecided
-  * {-Atrayee, -Behnam}
+- [ ] Image 4:  graph 2 network graph
+  * {-Atrayee: programming, plotting -Behnam: editing}
 <br/><br/>
 - [x] Image 5:  Seed Network Development I/Animation
   * {-Atrayee:plot, -Behnam:record}
