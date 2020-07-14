@@ -38,16 +38,20 @@ s3_graph2<-igraph::simplify(s3_graph, remove.multiple = FALSE, remove.loops = TR
 
 tail(s1, 10)
 unique(Graph_Attributes$NodeType)
+
+s1_edgelist <- s1_edgelist[!duplicated(s1_edgelist)]
 ```
 
 ## S1:
 
-```{r pressure, echo=FALSE}
+```{r pressure, fig.width=50, fig.height=60, echo=FALSE}
+knitr::opts_chunk$set(fig.width=50, fig.height=60) 
 #Layout Options
 set.seed(3952)  # set seed to make the layout reproducible
 #layout1 <- layout.fruchterman.reingold(s1_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
-layout1 <-layout_in_circle(s1_graph2)
+layout1 <-layout_on_sphere(s1_graph2)
 V(s1_graph2)
+nrow(s1_edgelist)
 
 #Node or Vetex Options: Size and Color
 #colrs <- c("gray50", "tomato", "gold")
@@ -59,18 +63,24 @@ V(s1_graph2)
 #  4	  Financial category
 #  5	      Country
 
-V(s1_graph2)$color <- ifelse(Graph_Attributes[V(s1_graph2), 2] == 1, "tomato", 
-                              ifelse(Graph1_Attributes[V(s1_graph2), 2] == 4, "gray50",
+V(s1_graph2)$color <- ifelse(Graph_Attributes[V(s1_graph2), 2] == 1, "gray50", 
+                              ifelse(Graph1_Attributes[V(s1_graph2), 2] == 4, "tomato",
                                     ifelse(Graph1_Attributes[V(s1_graph2), 2] == 5, "gold", "green")))
 
 #V(s1_graph2)$size <- V(s1_graph2)$Weight 
 
 #Edge Options: Color
-E(s1_graph2)$color <- "grey"
+#E(s1_graph2)$color <- "grey"
 
 #Plotting, Now Specifying an arrow size and getting rid of arrow heads
 #We are letting the color and the size of the node indicate the directed nature of the graph
-plot(s1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA, layout=layout1)
+#plot(s1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = , layout=layout1)
+#s1_edgelist <- subset(s1_edgelist, select = -c(Weight))
+
+plot(s1_graph2, vertex.color = 'lightblue', #edge.label=s1_edgelist$Weight, 
+     vertex.size=7, edge.color="darkgreen",
+     vertex.label.font=1, #edge.label.font =1, #edge.label.cex = 1, 
+     vertex.label.cex = 5, layout=layout1)
 
 ```
 
