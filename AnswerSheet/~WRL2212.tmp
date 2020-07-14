@@ -26,10 +26,10 @@ be easily edited that way</title>
  <o:DocumentProperties>
   <o:Author>Whiting, Mark A</o:Author>
   <o:LastAuthor>Behnam Beladi</o:LastAuthor>
-  <o:Revision>429</o:Revision>
-  <o:TotalTime>3631</o:TotalTime>
+  <o:Revision>428</o:Revision>
+  <o:TotalTime>3617</o:TotalTime>
   <o:Created>2020-07-10T11:28:00Z</o:Created>
-  <o:LastSaved>2020-07-14T13:49:00Z</o:LastSaved>
+  <o:LastSaved>2020-07-14T13:35:00Z</o:LastSaved>
   <o:Pages>46</o:Pages>
   <o:Words>2793</o:Words>
   <o:Characters>15923</o:Characters>
@@ -49,6 +49,7 @@ target="index_files/props056.xml">
   <w:View>Print</w:View>
   <w:Zoom>105</w:Zoom>
   <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:ValidateAgainstSchemas/>
@@ -1847,7 +1848,7 @@ color:windowtext;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v
  height:457.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image002.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=854 height=610
-src="index_files/image003.jpg" v:shapes="Picture_x0020_2"><![endif]></span></p>
+src="index_files/image038.jpg" v:shapes="Picture_x0020_2"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45402298"><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
@@ -2022,7 +2023,7 @@ EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1058" type="#_x0
  style='width:810.6pt;height:443.4pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image004.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1081 height=591
-src="index_files/image005.jpg" v:shapes="_x0000_i1058"><![endif]></span></i></b></p>
+src="index_files/image039.jpg" v:shapes="_x0000_i1058"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45441727"><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
@@ -2082,7 +2083,7 @@ EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_4"
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image006.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1085 height=599
-src="index_files/image007.jpg" v:shapes="Picture_x0020_4"><![endif]></span></i></b></p>
+src="index_files/image040.jpg" v:shapes="Picture_x0020_4"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45441732"><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
@@ -2129,7 +2130,7 @@ EN-GB;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_5"
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image008.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1078 height=596
-src="index_files/image009.jpg" v:shapes="Picture_x0020_5"><![endif]></span></i></b></p>
+src="index_files/image041.jpg" v:shapes="Picture_x0020_5"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45441736"><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
@@ -2385,7 +2386,7 @@ mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1053" type="#_x0000_t7
  style='width:925.2pt;height:391.2pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image012.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1234 height=522
-src="index_files/image013.jpg" v:shapes="_x0000_i1053"><![endif]></span></p>
+src="index_files/image042.jpg" v:shapes="_x0000_i1053"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
@@ -2403,19 +2404,11 @@ style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'>. Overview of count of edges for
 each “<span class=SpellE>eType</span>”. The plot helps visualize the relative
 importance of each channel in the various graphs and is a starting point for
-our analysis. For instance, subgraph</span><span style='font-size:12.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>4 and subgraph</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>5 don’t have a co-authorship
-channel unlike the others and hence this channel could be ignored.</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;color:#555555'><o:p></o:p></span></p>
+our analysis. For instance, subgraph-4 and subgraph-5 don’t have a
+co-authorship channel unlike the others and hence this channel could be
+ignored.</span><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;color:#555555'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2445,49 +2438,22 @@ src="index_files/image014.gif" v:shapes="_x0000_i1052"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:white;mso-themecolor:background1'>_</span><!--[if supportFields]><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
-style='mso-element:field-begin'></span> SEQ Figure \* ARABIC <span
-style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
-style='mso-no-proof:yes'>9</span></span><!--[if supportFields]><span
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure
+</span><!--[if supportFields]><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin;mso-bidi-theme-font:minor-latin'><span style='mso-no-proof:yes'>9</span></span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
 style='mso-element:field-end'></span></span><![endif]--><span style='font-size:
 12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>. <b>Procurement
-channel</b>. In subgraph</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>1,
-subgraph</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>2
-and subgraph</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>3
-there is only one item sold from one seller (Source) to one buyer (Source)
-which is same as the template. There were no such distinct transactions for
-subgraph</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>4
-and subgraph</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>5.<span
+channel</b>. In subgraph-1, subgraph-2 and subgraph-3 there is only one item
+sold from one seller (Source) to one buyer (Source) which is same as the
+template. There were no such distinct transactions for subgraph-4 and subgraph-5.<span
 style='mso-spacerun:yes'>  </span>Color: “<span class=SpellE>eType</span>”,
 shape: “<span class=SpellE>item_ID</span>”, size: “weight” (cost)</span><span
 style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
@@ -2512,17 +2478,18 @@ mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_10" o:spid="_x00
 src="index_files/image015.gif" v:shapes="Picture_x0020_10"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
-style='font-size:12.0pt'>Figure_</span><!--[if supportFields]><span
-style='font-size:12.0pt'><span style='mso-element:field-begin'></span> SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt'><span style='mso-no-proof:yes'>10</span></span><!--[if supportFields]><span
+style='font-size:12.0pt'>Figure </span><!--[if supportFields]><span
+style='font-size:12.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt'><span
+style='mso-no-proof:yes'>10</span></span><!--[if supportFields]><span
 style='font-size:12.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt'>. <b>Travel Channel</b>. Colors distinguish countries,
 size the length of travel and travel records are being filtered based on
-targets. Similar clusters seem to appear in the template, subgraph_1, subgraph_2
-and subgraph_3 with people travelling to the same “<span class=SpellE>TargetLocation</span>”
-from the same “<span class=SpellE>SourceLocation</span>” at close points in
-time.</span><span style='font-size:14.0pt;font-family:"Source Sans Pro",sans-serif;
+targets. Similar clusters seem to appear in the template, subgraph-1,
+subgraph-2 and subgraph-3 with people travelling to the same “<span
+class=SpellE>TargetLocation</span>” from the same “<span class=SpellE>SourceLocation</span>”
+at close points in time.</span><span style='font-size:14.0pt;font-family:"Source Sans Pro",sans-serif;
 mso-fareast-font-family:"Times New Roman";color:#555555'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
@@ -2548,17 +2515,17 @@ mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_17" o:spid="_x00
 src="index_files/image016.gif" v:shapes="Picture_x0020_17"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
-style='font-size:12.0pt'>Figure_</span><!--[if supportFields]><span
-style='font-size:12.0pt'><span style='mso-element:field-begin'></span> SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt'><span style='mso-no-proof:yes'>11</span></span><!--[if supportFields]><span
+style='font-size:12.0pt'>Figure </span><!--[if supportFields]><span
+style='font-size:12.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt'><span
+style='mso-no-proof:yes'>11</span></span><!--[if supportFields]><span
 style='font-size:12.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt'>. <b>Demographic Channel</b>. Data was reported for
-the end of the year. Subgraph_2 and subgraph</span><span style='font-size:12.0pt;
-color:white;mso-themecolor:background1'>_</span><span style='font-size:12.0pt'>3,
-show similar patterns to template in the various categories unlike other
-subgraphs.</span><span style='font-size:14.0pt;font-family:"Source Sans Pro",sans-serif;
-mso-fareast-font-family:"Times New Roman";color:#555555'><o:p></o:p></span></p>
+the end of the year. subgraph-2 and subgraph-3, show similar patterns to
+template in the various categories unlike other subgraphs.</span><span
+style='font-size:14.0pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
+"Times New Roman";color:#555555'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
@@ -2578,34 +2545,23 @@ mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_11" o:spid="_x00
 src="index_files/image017.gif" v:shapes="Picture_x0020_11"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
-style='font-size:12.0pt'>Figure_</span><!--[if supportFields]><span
-style='font-size:12.0pt'><span style='mso-element:field-begin'></span> SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt'><span style='mso-no-proof:yes'>12</span></span><!--[if supportFields]><span
+style='font-size:12.0pt'>Figure </span><!--[if supportFields]><span
+style='font-size:12.0pt'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt'><span
+style='mso-no-proof:yes'>12</span></span><!--[if supportFields]><span
 style='font-size:12.0pt'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt'>. <b>Communication Channel</b>. Each arc represents a
 call or an email exchange between Sources. Communication’s frequency based on
-time best fits the subgraph_2 to the template while subgraph</span><span
-style='font-size:12.0pt;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:12.0pt'>1 and subgraph</span><span style='font-size:12.0pt;
-color:white;mso-themecolor:background1'>_</span><span style='font-size:12.0pt'>3
-show the same patterns unlike subgraph</span><span style='font-size:12.0pt;
-color:white;mso-themecolor:background1'>_</span><span style='font-size:12.0pt'>4
-and subgraph</span><span style='font-size:12.0pt;color:white;mso-themecolor:
-background1'>_</span><span style='font-size:12.0pt'>5.<o:p></o:p></span></p>
+time best fits the subgraph-2 to the template while subgraph-1 and subgraph-3
+show the same patterns unlike subgraph-4 and subgraph-5.<o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
-background:white'><span style='font-size:14.0pt'>Subgraph</span><span
-style='font-size:14.0pt;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:14.0pt'>1, subgraph</span><span style='font-size:14.0pt;
-color:white;mso-themecolor:background1'>_</span><span style='font-size:14.0pt'>2
-and subgraph</span><span style='font-size:14.0pt;color:white;mso-themecolor:
-background1'>_</span><span style='font-size:14.0pt'>3 each could match the
-template to some extent. However, due to the importance of the dominating
-channels like communication alongside the aforementioned network analysis, we
-believe that <b>subgraph</b></span><b><span style='font-size:14.0pt;color:white;
-mso-themecolor:background1'>_</span></b><b><span style='font-size:14.0pt'>2 is
-the best match and most similar to the template subgraph.</span></b><b><span
+background:white'><span style='font-size:14.0pt'>subgraph-1, subgraph-2 and
+subgraph-3 each could match the template to some extent. However, due to the
+importance of the dominating channels like communication alongside the
+aforementioned network analysis, we believe that <b>subgraph-2 is the best
+match and most similar to the template subgraph.</b></span><b><span
 style='font-size:11.0pt;font-family:"Source Sans Pro",sans-serif;mso-fareast-font-family:
 "Times New Roman";color:#555555'><o:p></o:p></span></b></p>
 
@@ -2673,45 +2629,11 @@ Symbol;color:#555555'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Ti
 14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
 mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-background:white'>Stage</span></b><b><span style='font-size:14.0pt;font-family:
+background:white'>Stage_1:</span></b><span style='font-size:14.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-mso-bidi-theme-font:major-bidi;color:white;mso-themecolor:background1;
-background:white'>_</span></b><b><span style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-mso-bidi-theme-font:major-bidi;background:white'>1:</span></b><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-background:white'> The seed was located in the large graph.</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-color:windowtext;mso-color-alt:windowtext'><o:p></o:p></span></p>
-
-<p class=MsoListParagraphCxSpMiddle style='margin-left:36.6pt;mso-add-space:
-auto;text-align:justify;text-indent:-18.6pt;mso-list:l4 level1 lfo2;background:
-white'><![if !supportLists]><span style='font-size:10.5pt;mso-bidi-font-size:
-14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
-Symbol;color:#555555'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span dir=LTR></span><b><span style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
-mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-background:white'>Stage</span></b><b><span style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-mso-bidi-theme-font:major-bidi;color:white;mso-themecolor:background1;
-background:white'>_</span></b><b><span style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
-"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-mso-bidi-theme-font:major-bidi;background:white'>2</span></b><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-background:white'>: All nodes directly connected to person’s IDs in the seed,
-were found.</span><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
+mso-bidi-theme-font:major-bidi;background:white'> The seed was located in the
+large graph.</span><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
 mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
 mso-bidi-theme-font:major-bidi;color:windowtext;mso-color-alt:windowtext'><o:p></o:p></span></p>
@@ -2725,27 +2647,37 @@ Symbol;color:#555555'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Ti
 14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
 mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-background:white'>Stage</span></b><b><span style='font-size:14.0pt;font-family:
+background:white'>Stage_2</span></b><span style='font-size:14.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-mso-bidi-theme-font:major-bidi;color:white;mso-themecolor:background1;
-background:white'>_</span></b><b><span style='font-size:14.0pt;font-family:
+mso-bidi-theme-font:major-bidi;background:white'>: All nodes directly connected
+to person’s IDs in the seed, were found.</span><span style='font-size:14.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:major-bidi;color:windowtext;mso-color-alt:windowtext'><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:36.6pt;mso-add-space:
+auto;text-align:justify;text-indent:-18.6pt;mso-list:l4 level1 lfo2;background:
+white'><![if !supportLists]><span style='font-size:10.5pt;mso-bidi-font-size:
+14.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol;color:#555555'><span style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span dir=LTR></span><b><span style='font-size:
+14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
+background:white'>Stage_3</span></b><span style='font-size:14.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-mso-bidi-theme-font:major-bidi;background:white'>3</span></b><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-background:white'>: Nodes corresponding to people were separated based on
-channels. Then nodes were analyzed based on channels and only the most prominent
-nodes were kept. For instance, for the Communication channel, nodes with less
-than or equal to the minimum Closeness centrality were considered less
-prominent and removed. Finally, every channel data for the remaining person
-nodes were added and an extended graph was created.</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-color:windowtext;mso-color-alt:windowtext'><o:p></o:p></span></p>
+mso-bidi-theme-font:major-bidi;background:white'>: Nodes corresponding to
+people were separated based on channels. Then nodes were analyzed based on
+channels and only the most prominent nodes were kept. For instance, for the
+Communication channel, nodes with less than or equal to the minimum Closeness
+centrality were considered less prominent and removed. Finally, every channel
+data for the remaining person nodes were added and an extended graph was
+created.</span><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:major-bidi;color:windowtext;mso-color-alt:windowtext'><o:p></o:p></span></p>
 
 <p class=MsoListParagraphCxSpLast style='margin-left:36.6pt;mso-add-space:auto;
 text-align:justify;text-indent:-18.6pt;mso-list:l4 level1 lfo2;background:white'><![if !supportLists]><span
@@ -2756,33 +2688,20 @@ style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
 14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:minor-latin;
 mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-background:white'>Stage</span></b><b><span style='font-size:14.0pt;font-family:
+background:white'>Stage_4</span></b><span style='font-size:14.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-mso-bidi-theme-font:major-bidi;color:white;mso-themecolor:background1;
-background:white'>_</span></b><b><span style='font-size:14.0pt;font-family:
+mso-bidi-theme-font:major-bidi;background:white'>: Based on existing patterns
+in the template’s channels, the extended graph was then reduced in each channel
+to best resemble the template.</span><span style='font-size:14.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
 "Times New Roman";mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
-mso-bidi-theme-font:major-bidi;background:white'>4</span></b><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-background:white'>: Based on existing patterns in the template’s channels, the
-extended graph was then reduced in each channel to best resemble the template.</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:major-bidi;
-color:windowtext;mso-color-alt:windowtext'><o:p></o:p></span></p>
+mso-bidi-theme-font:major-bidi;color:windowtext;mso-color-alt:windowtext'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='text-align:justify;background:white'><span
 style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin'>Seed</span><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
-mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin'>2 did not go beyond the third stage because almost all the
+minor-latin'>Seed-2 did not go beyond the third stage because almost all the
 retrieved nodes had only co-authorship data. <o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
@@ -2798,27 +2717,20 @@ src="index_files/image018.gif" v:shapes="Picture_x0020_26"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>Figure</span><span
+minor-latin;mso-hansi-theme-font:minor-latin'>Figure </span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><!--[if supportFields]><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span>
-SEQ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-no-proof:yes'>13</span></span><!--[if supportFields]><span
+minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>13</span></span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'>. Animated creation of a network
-graph based on <b>seed</b></span><b><span style='font-size:12.0pt;font-family:
+graph based on <b>seed-1</b>.</span><span style='font-size:14.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span></b><b><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>1</span></b><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>.</span><span style='font-size:
-14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
-mso-hansi-theme-font:minor-latin;color:#555555;background:white'><o:p></o:p></span></p>
+minor-latin;color:#555555;background:white'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2838,28 +2750,21 @@ src="index_files/image019.gif" v:shapes="Picture_x0020_13"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>Figure</span><span
+minor-latin;mso-hansi-theme-font:minor-latin'>Figure </span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><!--[if supportFields]><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span>
-SEQ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-no-proof:yes'>14</span></span><!--[if supportFields]><span
+minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>14</span></span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'>. Animated creation of a network
-graph based on <b>seed</b></span><b><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span></b><b><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>2</span></b><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>. Only two nodes are connected to
-channels other than co-authorship.</span><span style='font-size:14.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;color:#555555;background:white'><o:p></o:p></span></p>
+graph based on <b>seed-2</b>. Only two nodes are connected to channels other
+than co-authorship.</span><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:#555555;
+background:white'><o:p></o:p></span></p>
 
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><b style='mso-bidi-font-weight:normal'><span
@@ -2910,23 +2815,9 @@ text-align:justify;background:white'><span style='font-size:10.5pt;font-family:
 <p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
 text-align:justify;background:white'><span style='font-size:14.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;color:#555555;background:white'>The retrieved subgraphs for seed</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1;
-background:white'>_</span><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:#555555;
-background:white'>1 (Q2-Graph1) and seed</span><span style='font-size:14.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;color:white;mso-themecolor:background1;background:white'>_</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:#555555;background:white'>3
-(Q2-Graph3) have been compared to the template subgraph and the best result
-from the first question (subgraph</span><span style='font-size:14.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;color:white;mso-themecolor:background1;background:white'>_</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:#555555;background:white'>2)
-based on each channel.<o:p></o:p></span></p>
+minor-latin;color:#555555;background:white'>The retrieved subgraphs for seed-1
+(Q2-Graph1) and seed-3 (Q2-Graph3) have been compared to the template subgraph
+and the best result from the first question (subgraph-2) based on each channel.<o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;text-align:center;page-break-after:avoid;background:white'><span
@@ -2943,28 +2834,19 @@ src="index_files/image021.gif" v:shapes="Picture_x0020_27"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>Figure</span><span
+minor-latin;mso-hansi-theme-font:minor-latin'>Figure </span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><!--[if supportFields]><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span>
-SEQ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-no-proof:yes'>16</span></span><!--[if supportFields]><span
+minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>16</span></span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'>. <b>Procurement Channel</b>:
-seed</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>1 and seed</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>3 subgraphs have a maximum of two transactions for the same item
-which is lower than the template, but there are transactions nonetheless.</span><span
+seed-1 and seed-3 subgraphs have a maximum of two transactions for the same
+item which is lower than the template, but there are transactions nonetheless.</span><span
 lang=EN-IN style='font-size:16.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-IN'><o:p></o:p></span></p>
@@ -2990,36 +2872,24 @@ src="index_files/image022.gif" v:shapes="Picture_x0020_20"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>Figure</span><span
+minor-latin;mso-hansi-theme-font:minor-latin'>Figure </span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><!--[if supportFields]><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span>
-SEQ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-no-proof:yes'>17</span></span><!--[if supportFields]><span
+minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>17</span></span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'>. <b>Travel Channel</b>: Similar
-to template and subgraph</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>2, seed</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>1 and seed</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>3 subgraphs include nodes which have travelled from one “<span
-class=SpellE>SourceLocation</span>” (depicted by color) to the same “<span
-class=SpellE>TargetLocation</span>” at close points in time.</span><span
-lang=EN-IN style='font-size:16.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
-minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-IN'><o:p></o:p></span></p>
+to template and subgraph-2, seed-1 and seed-3 subgraphs include nodes which
+have travelled from one “<span class=SpellE>SourceLocation</span>” (depicted by
+color) to the same “<span class=SpellE>TargetLocation</span>” at close points
+in time.</span><span lang=EN-IN style='font-size:16.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:Arial;color:#444444;
+mso-ansi-language:EN-IN'><o:p></o:p></span></p>
 
 <p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
 auto;text-align:center;page-break-after:avoid;background:white'><b
@@ -3036,33 +2906,20 @@ src="index_files/image023.gif" v:shapes="Picture_x0020_21"><![endif]></span></b>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>Figure</span><span
+minor-latin;mso-hansi-theme-font:minor-latin'>Figure </span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><!--[if supportFields]><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span>
-SEQ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-no-proof:yes'>18</span></span><!--[if supportFields]><span
+minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>18</span></span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'>. <b>Demographic Channel</b>:
-seed</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>1 and seed</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>3 subgraphs show similar income and expense patterns as the
-template and subgraph</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>2.</span><b style='mso-bidi-font-weight:normal'><span lang=EN-IN
-style='font-size:16.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+seed-1 and seed-3 subgraphs show similar income and expense patterns as the
+template and subgraph-2.</span><b style='mso-bidi-font-weight:normal'><span
+lang=EN-IN style='font-size:16.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-fareast-font-family:"Times New Roman";mso-hansi-theme-font:
 minor-latin;mso-bidi-font-family:Arial;color:#444444;mso-ansi-language:EN-IN'><o:p></o:p></span></b></p>
 
@@ -3093,27 +2950,18 @@ src="index_files/image024.gif" v:shapes="Picture_x0020_18"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'>Figure</span><span
+minor-latin;mso-hansi-theme-font:minor-latin'>Figure </span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><!--[if supportFields]><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span>
-SEQ Figure \* ARABIC <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-no-proof:yes'>19</span></span><!--[if supportFields]><span
+minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span><![endif]--><span style='font-size:12.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>19</span></span><!--[if supportFields]><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin'>. <b>Communication Channel</b>:
-seed</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>1 and seed</span><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;color:white;
-mso-themecolor:background1'>_</span><span style='font-size:12.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin'>3 subgraphs frequencies of communication between sources are
+seed-1 and seed-3 subgraphs frequencies of communication between sources are
 compared to template. <o:p></o:p></span></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
@@ -3123,23 +2971,21 @@ style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="_x0000_i1041" type="#_x
  style='width:555.6pt;height:532.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image032.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=741 height=710
-src="index_files/image034.jpg" v:shapes="_x0000_i1041"><![endif]></span></p>
+src="index_files/image045.jpg" v:shapes="_x0000_i1041"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45632305"><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin'>Figure</span></a><span style='mso-bookmark:_Ref45632305'><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:white;mso-themecolor:background1'>_</span></span><span style='mso-bookmark:
-_Ref45632305'></span><!--[if supportFields]><span style='mso-bookmark:_Ref45632305'></span><span
-style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref45632305'><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'> SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+minor-latin'>Figure </span></a><!--[if supportFields]><span style='mso-bookmark:
+_Ref45632305'></span><span style='mso-element:field-begin'></span><span
 style='mso-bookmark:_Ref45632305'><span style='font-size:12.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin'><span style='mso-no-proof:yes'>20</span></span></span><!--[if supportFields]><span
+minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span></span><![endif]--><span style='mso-bookmark:
+_Ref45632305'><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>20</span></span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45632305'></span><span style='mso-element:field-end'></span><![endif]--><span
 style='mso-bookmark:_Ref45632305'></span><span style='font-size:12.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
@@ -3158,23 +3004,21 @@ style='font-size:14.0pt;mso-no-proof:yes'><!--[if gte vml 1]><v:shape id="Pictur
  visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image036.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=739 height=706
-src="index_files/image047.jpg" v:shapes="Picture_x0020_34"><![endif]></span></p>
+src="index_files/image046.jpg" v:shapes="Picture_x0020_34"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><a
 name="_Ref45632568"><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin'>Figure</span></a><span style='mso-bookmark:_Ref45632568'><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:white;mso-themecolor:background1'>_</span></span><span style='mso-bookmark:
-_Ref45632568'></span><!--[if supportFields]><span style='mso-bookmark:_Ref45632568'></span><span
-style='mso-element:field-begin'></span><span style='mso-bookmark:_Ref45632568'><span
-style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'> SEQ
-Figure \* ARABIC <span style='mso-element:field-separator'></span></span></span><![endif]--><span
+minor-latin'>Figure </span></a><!--[if supportFields]><span style='mso-bookmark:
+_Ref45632568'></span><span style='mso-element:field-begin'></span><span
 style='mso-bookmark:_Ref45632568'><span style='font-size:12.0pt;font-family:
 "Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin'><span style='mso-no-proof:yes'>21</span></span></span><!--[if supportFields]><span
+minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span style='mso-element:
+field-separator'></span></span></span><![endif]--><span style='mso-bookmark:
+_Ref45632568'><span style='font-size:12.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
+minor-latin'><span style='mso-no-proof:yes'>21</span></span></span><!--[if supportFields]><span
 style='mso-bookmark:_Ref45632568'></span><span style='mso-element:field-end'></span><![endif]--><span
 style='mso-bookmark:_Ref45632568'></span><span style='font-size:12.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
@@ -3185,50 +3029,30 @@ minor-latin'><o:p></o:p></span></p>
 
 <p class=MsoNormal><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin'>All in all, seed</span><span style='font-size:14.0pt;font-family:
-"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;color:white;mso-themecolor:background1'>_</span><span
+minor-latin'>All in all, seed-1 (Q2-Graph1 in </span><!--[if supportFields]><span
 style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>1
-(Q2-Graph1 in </span><!--[if supportFields]><span style='font-size:14.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin'><span style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45632305 \h <span
-style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>REF
+_Ref45632305 \h <span style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span
+style='mso-element:field-separator'></span></span><![endif]--><span
 style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:white;mso-themecolor:background1'>_</span><span style='font-size:14.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;mso-no-proof:yes'>20</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><!--[if gte mso 9]><xml>
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure
+<span style='mso-no-proof:yes'>20</span><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003600330032003300300035000000</w:data>
 </xml><![endif]--></span><!--[if supportFields]><span style='font-size:14.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
 minor-latin;mso-bidi-theme-font:minor-latin'><span style='mso-element:field-end'></span></span><![endif]--><span
 style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
 minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>)
-and seed</span><span style='font-size:14.0pt;font-family:"Calibri",sans-serif;
-mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:
-minor-latin;color:white;mso-themecolor:background1'>_</span><span
+and seed-3 (Q2-Graph3 in </span><!--[if supportFields]><span style='font-size:
+14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><span
+style='mso-element:field-begin'></span><span style='mso-spacerun:yes'> </span>REF
+_Ref45632568 \h <span style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span
+style='mso-element:field-separator'></span></span><![endif]--><span
 style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>3
-(Q2-Graph3 in </span><!--[if supportFields]><span style='font-size:14.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin'><span style='mso-element:field-begin'></span><span
-style='mso-spacerun:yes'> </span>REF _Ref45632568 \h <span
-style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span></span><![endif]--><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin;
-color:white;mso-themecolor:background1'>_</span><span style='font-size:14.0pt;
-font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
-minor-latin;mso-bidi-theme-font:minor-latin;mso-no-proof:yes'>21</span><span
-style='font-size:14.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
-minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><!--[if gte mso 9]><xml>
+minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>Figure
+<span style='mso-no-proof:yes'>21</span><!--[if gte mso 9]><xml>
  <w:data>08D0C9EA79F9BACE118C8200AA004BA90B02000000080000000D0000005F00520065006600340035003600330032003500360038000000</w:data>
 </xml><![endif]--></span><!--[if supportFields]><span style='font-size:14.0pt;
 font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
@@ -3311,7 +3135,7 @@ minor-latin;mso-hansi-theme-font:minor-latin;color:#555555;mso-no-proof:yes'><!-
  height:382.2pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image044.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1065 height=510
-src="index_files/image050.jpg" v:shapes="Picture_x0020_33"><![endif]></span></p>
+src="index_files/image048.jpg" v:shapes="Picture_x0020_33"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
@@ -3796,7 +3620,7 @@ yes'><!--[if gte vml 1]><v:shape id="Picture_x0020_8" o:spid="_x0000_i1030"
  mso-wrap-style:square'>
  <v:imagedata src="index_files/image031.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=684 height=601
-src="index_files/image051.jpg" v:shapes="Picture_x0020_8"><![endif]></span></i></b></p>
+src="index_files/image049.jpg" v:shapes="Picture_x0020_8"><![endif]></span></i></b></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
@@ -3837,7 +3661,7 @@ color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if
  height:430.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image033.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1034 height=574
-src="index_files/image053.jpg" v:shapes="Picture_x0020_12"><![endif]></span></p>
+src="index_files/image052.jpg" v:shapes="Picture_x0020_12"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
@@ -3872,7 +3696,7 @@ color:#555555;background:white;mso-ansi-language:EN-GB;mso-no-proof:yes'><!--[if
  height:432.6pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image035.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=1050 height=577
-src="index_files/image054.jpg" v:shapes="Picture_x0020_14"><![endif]></span></p>
+src="index_files/image055.jpg" v:shapes="Picture_x0020_14"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
@@ -3963,7 +3787,7 @@ minor-latin;mso-hansi-theme-font:minor-latin;color:#555555;mso-no-proof:yes'><!-
  height:529.8pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image056.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=741 height=706
-src="index_files/image058.jpg" v:shapes="Picture_x0020_35"><![endif]></span></p>
+src="index_files/image057.jpg" v:shapes="Picture_x0020_35"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
@@ -4007,7 +3831,7 @@ minor-latin;mso-hansi-theme-font:minor-latin;color:#555555;mso-no-proof:yes'><!-
  height:535.2pt;visibility:visible;mso-wrap-style:square'>
  <v:imagedata src="index_files/image059.png" o:title=""/>
 </v:shape><![endif]--><![if !vml]><img border=0 width=750 height=714
-src="index_files/image060.jpg" v:shapes="Picture_x0020_36"><![endif]></span></p>
+src="index_files/image061.jpg" v:shapes="Picture_x0020_36"><![endif]></span></p>
 
 <p class=MsoCaption align=center style='text-align:center'><span
 style='font-size:12.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
