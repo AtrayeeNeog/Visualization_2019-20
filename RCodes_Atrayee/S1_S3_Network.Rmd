@@ -108,7 +108,75 @@ plot(s3_graph2, vertex.color = 'lightblue', #edge.label=s1_edgelist$Weight,
 
 ```
 
-##
+## Q3G1:
+```{r}
+q3g1 <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed1-Graph2ReducedFinal.csv"))
+q3g1_network <- subset(q3g1, select = c(Source, Target, Weight))
+q3g1_edgelist <- q3g1_network
+q3g1_graph <- graph.data.frame(q3g1_edgelist, directed = TRUE)
+q3g1_graph2<-igraph::simplify(q3g1_graph, remove.multiple = FALSE, remove.loops = TRUE)
+
+```
+
+
+```{r, fig.width=50, fig.height=60, echo=FALSE}
+knitr::opts_chunk$set(fig.width=50, fig.height=60) 
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+#layout1 <- layout.fruchterman.reingold(s1_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <-layout_on_sphere(q3g1_graph2)
+#Node or Vetex Options: Size and Color
+#colrs <- c("gray50", "tomato", "gold")
+#V(s1_graph2)$color <- colrs[V(s1_graph2)$media.type]
+#NodeType	Description
+#  1	      Person
+#  2	  Product category
+#  3	      Document
+#  4	  Financial category
+#  5	      Country
+
+plot(q3g1_graph2, vertex.color = 'lightblue', #edge.label=s1_edgelist$Weight, 
+     vertex.size=7, edge.color="darkgreen",
+     vertex.label.font=1, #edge.label.font =1, #edge.label.cex = 1, 
+     vertex.label.cex = 7, layout=layout1)
+
+```
+
+## Q3G2:
+```{r}
+q3g2 <- data.table::fread(here::here("dataQ3","FinalGraphs2", "dfProcSeed3-Graph2ReducedFinal.csv"))
+q3g2_network <- subset(q3g2, select = c(Source, Target, Weight))
+q3g2_edgelist <- q3g2_network
+q3g2_graph <- graph.data.frame(q3g2_edgelist, directed = TRUE)
+q3g2_graph2<-igraph::simplify(q3g2_graph, remove.multiple = FALSE, remove.loops = TRUE)
+
+```
+
+
+```{r, fig.width=50, fig.height=60, echo=FALSE}
+knitr::opts_chunk$set(fig.width=50, fig.height=60) 
+#Layout Options
+set.seed(3952)  # set seed to make the layout reproducible
+#layout1 <- layout.fruchterman.reingold(s1_graph, niter=1000) #Creating a layout object to tell iGraph what layout I want
+layout1 <-layout_on_sphere(q3g2_graph2)
+#Node or Vetex Options: Size and Color
+#colrs <- c("gray50", "tomato", "gold")
+#V(s1_graph2)$color <- colrs[V(s1_graph2)$media.type]
+#NodeType	Description
+#  1	      Person
+#  2	  Product category
+#  3	      Document
+#  4	  Financial category
+#  5	      Country
+
+plot(q3g2_graph2, vertex.color = 'lightblue', #edge.label=s1_edgelist$Weight, 
+     vertex.size=7, edge.color="darkgreen",
+     vertex.label.font=1, #edge.label.font =1, #edge.label.cex = 1, 
+     vertex.label.cex = 7, layout=layout1)
+
+```
+
+
 
 
 ## Vis Network:
