@@ -98,7 +98,7 @@
 - [x] Image 3:  Finding Travel seeds I
   * {-Atrayee, -Behnam}
 <br/><br/>
-- [ ] Image 4:  graph 2 network graph
+- [x] Image 4:  graph 2 network graph
   * {-Atrayee: programming, plotting -Behnam: editing}
 <br/><br/>
 - [x] Image 5:  Seed Network Development I/Animation
