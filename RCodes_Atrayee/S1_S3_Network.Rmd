@@ -80,7 +80,7 @@ V(s1_graph2)$color <- ifelse(Graph_Attributes[V(s1_graph2), 2] == 1, "gray50",
 plot(s1_graph2, vertex.color = 'lightblue', #edge.label=s1_edgelist$Weight, 
      vertex.size=7, edge.color="darkgreen",
      vertex.label.font=1, #edge.label.font =1, #edge.label.cex = 1, 
-     vertex.label.cex = 5, layout=layout1)
+     vertex.label.cex = 7, layout=layout1)
 
 ```
 
