@@ -5,6 +5,14 @@ output: html_document
 
 ```{r setup, include=FALSE}
 library(igraph)
+library(ggpubr)
+library(GGally)
+library(here)
+library(tidyverse)
+library(tidygraph)
+library(network)
+library(visNetwork)
+library(networkD3)
 ```
 
 ## R Markdown
@@ -66,4 +74,45 @@ plot(s1_graph2, edge.arrow.size=0.25,edge.arrow.mode = "-", vertex.label = NA, l
 
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Vis Network:
+
+```{r}
+Sources <- s1 %>%
+  distinct(Source) %>%
+  rename(label = Source)
+
+Targets <- s1 %>%
+  distinct(Target) %>%
+  rename(label = Target)
+
+# Creating a Node List:
+nodes <- full_join(Sources, Targets, by = "label")
+nodes
+nodes <- nodes %>% rowid_to_column("id")
+nodes
+
+# Creating an Edge List:
+per_route <- s1 %>%  
+  group_by(Source, Target) %>%
+  summarise(weight = n()) %>% 
+  ungroup()
+per_route
+
+edges <- per_route %>% 
+  left_join(nodes, by = c("Source" = "label")) %>% 
+  rename(from = id)
+
+edges <- edges %>% 
+  left_join(nodes, by = c("Target" = "label")) %>% 
+  rename(to = id)
+
+edges <- select(edges, from, to, weight)
+edges
+
+# Creating a Network:
+routes_network <- network(edges, vertex.attr = nodes, matrix.type = "edgelist", ignore.eval = FALSE)
+class(routes_network)
+routes_network
+plot(routes_network, vertex.cex = 3, main = "Seed-1 Graph")
+```
+
