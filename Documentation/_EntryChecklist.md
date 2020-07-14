@@ -3,7 +3,7 @@
 ### Question 1.a:
 * 7 Images and 500 Words
 
-- [ ] Text:
+- [x] Text:
     {-Atrayee, -Behnam}
 - [x] Image 1:  Parallel Coordinates
   * {-Behnam: plot, record}
@@ -30,7 +30,7 @@
 ### Question 1.b:
 * 5 Images and 300 Words
 
-- [ ] Text:
+- [x] Text:
     {-Atrayee, -Behnam}
 - [x] Image 1:  Communication, Arc
   * {-Behnam: plot, record}
@@ -51,7 +51,7 @@
 ### Question 2:
 * 10 Images and 500 Words
 
-- [ ] Text:
+- [x] Text:
     {-Atrayee, -Behnam}
 - [x] Image 1:  Seed Network Development I/Animation
   * {-Atrayee: plot, edit -Behnam: record, edit}
@@ -87,18 +87,18 @@
 ### Question 3:
 * 10 Images and 500 Words
 
-- [ ] Text:
+- [x] Text:
     {-Atrayee, -Behnam}
-- [ ] Image 1:  Finding Procurement seeds I
+- [x] Image 1:  Finding Procurement seeds I
   * {-Atrayee}
 <br/><br/>
-- [ ] Image 2:  Finding Procurement seeds II
-  * {-Atrayee}
+- [ ] Image 2:  undecided
+  * {-Behnam, -Atrayee}
 <br/><br/>
-- [ ] Image 3:  Finding Travel seeds I
+- [x] Image 3:  Finding Travel seeds I
   * {-Atrayee, -Behnam}
 <br/><br/>
-- [ ] Image 4:  Finding Travel seeds II(crosscheck with Procurement)
+- [ ] Image 4:  undecided
   * {-Atrayee, -Behnam}
 <br/><br/>
 - [x] Image 5:  Seed Network Development I/Animation
@@ -123,7 +123,7 @@
 ### Question 4:
 * 5 Images and 300 Words
 
-- [ ] Text:
+- [x] Text:
     {-Atrayee, -Behnam}
 - [x] Image 1:  Parallel Coordinates
   * {-Behnam: plot, record, programming}
@@ -143,5 +143,5 @@
 ---------------------------
 ### Question 5:
 
-- [ ] Text:
+- [x] Text:
     {-Atrayee, -Behnam}
