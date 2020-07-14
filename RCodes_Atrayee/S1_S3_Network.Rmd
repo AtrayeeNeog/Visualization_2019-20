@@ -135,7 +135,7 @@ layout1 <-layout_on_sphere(q3g1_graph2)
 #  4	  Financial category
 #  5	      Country
 
-plot(q3g1_graph2, vertex.color = 'lightblue', #edge.label=s1_edgelist$Weight, 
+plot(q3g1_graph2, vertex.color = "Plum", #edge.label=s1_edgelist$Weight, 
      vertex.size=7, edge.color="darkgreen",
      vertex.label.font=1, #edge.label.font =1, #edge.label.cex = 1, 
      vertex.label.cex = 7, layout=layout1)
@@ -169,7 +169,7 @@ layout1 <-layout_on_sphere(q3g2_graph2)
 #  4	  Financial category
 #  5	      Country
 
-plot(q3g2_graph2, vertex.color = 'lightblue', #edge.label=s1_edgelist$Weight, 
+plot(q3g2_graph2, vertex.color = 'Plum', #edge.label=s1_edgelist$Weight, 
      vertex.size=7, edge.color="darkgreen",
      vertex.label.font=1, #edge.label.font =1, #edge.label.cex = 1, 
      vertex.label.cex = 7, layout=layout1)
