@@ -16,11 +16,16 @@
 ---------------------------
 ### Methodology
 
-- [ ] Measures with references
+- [ ] different measures with references:
+  - [ ] Wasserstein
+  - [ ] closeness centrality
 - [ ] Parallel coordinates
 - [ ] Graph visualization with references
-- [ ]
-- [ ]
+- [ ] question 1
+- [ ] question 2
+- [ ] question 3
+- [ ] question 4
+- [ ] hint to question 5
 ---------------------------
 ### Results
 
@@ -48,4 +53,4 @@
 - [ ]
 - [ ]
 - [ ]
-- [ ]
+- [ ] 
