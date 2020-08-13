@@ -237,7 +237,17 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
     sourceIn = [str([x]) for x in df['Source']]
     targetIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
-    fig = px.scatter(x=df["Time"], y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
+    fig = px.scatter(x=df["Time"]/(24*3600), y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
+
+    fig.update_layout(
+        title={
+            'text':"Travel Channel",
+            'y': 0.92,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        yaxis_title="Person Id",
+        xaxis_title="Time")
 
     if slct_comparison_graph2_value == "default":
         title = "Template"
