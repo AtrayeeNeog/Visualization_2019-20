@@ -457,8 +457,8 @@ app.layout = html.Div([
 
     html.Div(id='output_container', children=[]),
     html.Br(),
-    dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': True}),
-    dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': True})
+    dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
+    dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
 
 ])
 
@@ -618,7 +618,7 @@ def update_graph(option_slctd):
             )
     )
 
-    figT.update_layout(height=300, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
+    figT.update_layout(height=500, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
     # fig.show()
     fig.update_layout(
         plot_bgcolor='white',
@@ -639,4 +639,4 @@ def update_graph(option_slctd):
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
