@@ -161,9 +161,10 @@ app.layout = html.Div([
                        )
                        ),
 
-    ]),
+
 
     dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
+              ], style={'display': 'inline-block', 'width': '79%'}),
 
 
 
@@ -558,8 +559,23 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
             family="TXTT",
             size=35,
             color="black"
-        )
+        ),
+        legend=dict(
+            font=dict(
+                family="TXTT",
+                size=20,
+                color="black"
+            ),
+        ),
     )
+    figT.update_xaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=20,
+            color='black'
+        ),
+    )
+
     figT.update_xaxes(range=[0, 365])
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
