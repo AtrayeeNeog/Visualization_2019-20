@@ -363,7 +363,9 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
             showticklabels=False
         ),
         height=300,
-        margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
+        margin={'l': 20, 'b': 30, 'r': 10, 't': 20},
+        yaxis_title="Person Id",
+        xaxis_title="Time"
     )
     fig.update_xaxes(range=[0, 365])
 
@@ -478,6 +480,8 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
     figT.update_yaxes(
         range=[-1, len(df_eT01People)],
         zeroline=False,
+        yaxis_title="Person Id",
+        xaxis_title="Time"
     )
 
     path1 = []
@@ -543,7 +547,6 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
     )
     figT.update_xaxes(range=[0, 365])
-
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 
