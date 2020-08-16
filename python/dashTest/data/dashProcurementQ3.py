@@ -94,7 +94,7 @@ app.layout = html.Div([
                      value="template",
                      placeholder="Select Graph to compare",
                      style=dict(
-                         width='50%',
+                         width='1%',
                          verticalAlign="right"
                      )
                      ),
@@ -102,7 +102,7 @@ app.layout = html.Div([
         # dcc.RadioItems(id='target_radio'),
 
         dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
-    ], style={'width': '49%', 'display': 'inline-block', 'padding': '0 20'}),
+    ], style={'width': '69%', 'display': 'inline-block', 'padding': '0 20'}),
 
 
     html.Div([
@@ -123,7 +123,7 @@ app.layout = html.Div([
                      ),
         # dcc.RadioItems(id="target2_radio"),
         dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
-    ], style={'display': 'inline-block', 'width': '49%'})
+    ], style={'display': 'inline-block', 'width': '29%'})
 
 
 
@@ -224,10 +224,12 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value):
         xaxis_title="Source Id",
         yaxis_title="Time(days)",
         font=dict(
-            family="Courier New, monospace",
-            size=18,
+            family="TXTT",
+            size=35,
             color="#000000"
-        )
+        ),
+        margin={'l': 20, 'b': 30, 'r': 10, 't': 70},
+        height=450,
     )
 
     if slct_comparison_graph2_value == "default":
