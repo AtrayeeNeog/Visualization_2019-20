@@ -241,7 +241,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
 
     fig.update_layout(
         title={
-            'text':"Travel Channel",
+            'text': "Travel Channel",
             'y': 0.92,
             'x': 0.5,
             'xanchor': 'center',
