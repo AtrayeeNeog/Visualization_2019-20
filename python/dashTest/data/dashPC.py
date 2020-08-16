@@ -516,7 +516,8 @@ def update_graph(option_slctd):
                  label='avg_neighbor_deg', values=df['Average_Neighbor_Degree']),
             dict(range=[0, 1],
                  constraintrange=[0, 1],
-                 label='KNN', values=df['KNN'])
+                 label='KNN', values=df['KNN'],
+                 )
         ])
     )
     )
@@ -531,7 +532,13 @@ def update_graph(option_slctd):
             'y': 1.0,
             'x': 0.5,
             'xanchor': 'center',
-            'yanchor': 'top'})
+            'yanchor': 'auto'},
+        font=dict(
+            family="TXTT",
+            size=25,
+            color="black"
+        )
+    )
 
     df = normalized_dfT1.copy()
     title = "Template"
@@ -639,4 +646,4 @@ def update_graph(option_slctd):
 
 # ------------------------------------------------------------------------------
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
