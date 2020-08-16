@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ab79100b-26d4-479d-8a96-72f51fa32aa0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashCommunication.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashCommunication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashDemographicQ3.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashDemographicQ3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashProcurementQ3.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashProcurementQ3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dashTravelQ3.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/dashTravelQ3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data/dashDemographicQ3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="243" column="19" selection-start-line="243" selection-start-column="19" selection-end-line="243" selection-end-column="19" />
+            <state relative-caret-position="20">
+              <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -150,13 +146,13 @@
       <find>pad</find>
       <find>Multi</find>
       <find>font</find>
-      <find>title_text</find>
       <find>fon</find>
       <find>Time</find>
       <find>title</find>
       <find>xaxis</find>
       <find>xaxes</find>
       <find>scatter</find>
+      <find>title_text</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -657,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/dashDemographicQ3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="243" column="19" selection-start-line="243" selection-start-column="19" selection-end-line="243" selection-end-column="19" />
+        <state relative-caret-position="20">
+          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
         </state>
       </provider>
     </entry>
