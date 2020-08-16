@@ -246,8 +246,31 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
             'x': 0.5,
             'xanchor': 'center',
             'yanchor': 'top'},
+        height=650,
+        margin={'l': 20, 'b': 30, 'r': 10, 't': 90},
         yaxis_title="Person Id",
-        xaxis_title="Time")
+        xaxis_title="Time(days)",
+        font=dict(
+            family="TXTT",
+            size=35,
+            color="black"
+        ),
+
+    )
+    fig.update_xaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=30,
+            color='black'
+        ),
+    )
+    fig.update_yaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=20,
+            color='black'
+        ),
+    )
 
     if slct_comparison_graph2_value == "default":
         title = "Template"
@@ -305,7 +328,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
     targetIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
     figT = px.scatter(x=df["Time"], y=sourceIn, color=targetIn,
-                      size=weightIn, hover_data=[weightIn])
+                      size=weightIn, hover_data=[weightIn],)
 
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
