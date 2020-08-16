@@ -307,11 +307,6 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
     figT = px.scatter(x=df["Time"], y=sourceIn, color=targetIn,
                       size=weightIn, hover_data=[weightIn])
 
-    fig.update_layout(
-        height=600,
-        uniformtext_minsize=50,
-
-    )
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 
