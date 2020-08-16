@@ -102,7 +102,7 @@ app.layout = html.Div([
         # dcc.RadioItems(id='target_radio'),
 
         dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False}),
-    ], style={'width': '69%', 'display': 'inline-block', 'padding': '0 20'}),
+    ], style={'width': '59%', 'display': 'inline-block', 'padding': '0 20'}),
 
 
     html.Div([
@@ -229,7 +229,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value):
             color="#000000"
         ),
         margin={'l': 20, 'b': 30, 'r': 10, 't': 70},
-        height=450,
+        height=600,
     )
 
     if slct_comparison_graph2_value == "default":
