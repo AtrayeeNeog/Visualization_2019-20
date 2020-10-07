@@ -234,10 +234,10 @@ def update_graph(option_slctd):
             'x': 0.5,
             'xanchor': 'center',
             'yanchor': 'top'},
-        title_text="Demographic channel",
+        # title_text="Demographic channel",
         xaxis_title="Person Id",
         yaxis_title="Category",
-        height=650,
+        # height=650,
         margin={'l': 20, 'b': 30, 'r': 10, 't': 60},
         font=dict(
             family="TXTT",
@@ -260,6 +260,45 @@ def update_graph(option_slctd):
         ),
     )
     figT.update_yaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=25,
+            color='black'
+        ),
+    )
+
+    fig.update_layout(
+        title={
+            'y': 1.0,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        # title_text="Demographic channel",
+        xaxis_title="Person Id",
+        yaxis_title="Category",
+        # height=650,
+        margin={'l': 20, 'b': 30, 'r': 10, 't': 50},
+        font=dict(
+            family="TXTT",
+            size=30,
+            color="black"
+        ),
+        legend=dict(
+            font=dict(
+                family="TXTT",
+                size=14,
+                color="black"
+            ),
+        )
+    )
+    fig.update_xaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=18,
+            color='black'
+        ),
+    )
+    fig.update_yaxes(
         tickfont=dict(
             family='TXTT',
             size=25,
