@@ -311,6 +311,56 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
 
+    fig.update_layout(
+        yaxis_title="Person Id",
+        xaxis_title="Time(days)",
+        font=dict(
+            family="TXTT",
+            size=35,
+            color="black"
+        ),
+
+    )
+    fig.update_xaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=30,
+            color='black'
+        ),
+    )
+    fig.update_yaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=20,
+            color='black'
+        ),
+    )
+
+    figT.update_layout(
+        yaxis_title="Person Id",
+        xaxis_title="Time(days)",
+        font=dict(
+            family="TXTT",
+            size=35,
+            color="black"
+        ),
+
+    )
+    figT.update_xaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=30,
+            color='black'
+        ),
+    )
+    figT.update_yaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=20,
+            color='black'
+        ),
+    )
+
     return container, fig, figT
 
 
