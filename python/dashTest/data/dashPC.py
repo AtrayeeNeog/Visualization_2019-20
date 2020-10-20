@@ -452,13 +452,14 @@ app.layout = html.Div([
                      {"label": "Template vs Q3 Graph2", "value": "q3graph2"}],
                  multi=False,
                  value="Initial",
-                 style={'width': "40%"}
+                 style={'width': "40%", 'margin': '40 20 50 50'}
                  ),
 
     html.Div(id='output_container', children=[]),
     html.Br(),
-    dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': True}),
-    dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': True})
+    dcc.Graph(id='template_graph', figure={}, config={'displayModeBar': False},
+              style={'width': '100%', 'display': 'inline-block'}),
+    dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
 
 ])
 
@@ -516,7 +517,8 @@ def update_graph(option_slctd):
                  label='avg_neighbor_deg', values=df['Average_Neighbor_Degree']),
             dict(range=[0, 1],
                  constraintrange=[0, 1],
-                 label='KNN', values=df['KNN'])
+                 label='KNN', values=df['KNN'],
+                 )
         ])
     )
     )
@@ -531,7 +533,13 @@ def update_graph(option_slctd):
             'y': 1.0,
             'x': 0.5,
             'xanchor': 'center',
-            'yanchor': 'top'})
+            'yanchor': 'top'},
+        font=dict(
+            family="TXTT",
+            size=30,
+            color="black"
+        )
+    )
 
     df = normalized_dfT1.copy()
     title = "Template"
@@ -618,7 +626,7 @@ def update_graph(option_slctd):
             )
     )
 
-    figT.update_layout(height=300, margin={'l': 20, 'b': 30, 'r': 10, 't': 60})
+    figT.update_layout(height=560, margin={'l': 40, 'b': 30, 'r': 10, 't': 100})
     # fig.show()
     fig.update_layout(
         plot_bgcolor='white',
@@ -632,7 +640,9 @@ def update_graph(option_slctd):
             'y': 1.0,
             'x': 0.5,
             'xanchor': 'center',
-            'yanchor': 'top'})
+            'yanchor': 'top'},
+        margin={'l': 100, 'r': 20, 't': 100, 'b': 100}
+    )
 
     return container, figT, fig
 

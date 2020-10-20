@@ -161,9 +161,11 @@ app.layout = html.Div([
                        )
                        ),
 
-    ]),
+
 
     dcc.Graph(id='comparison_graph', figure={}, config={'displayModeBar': False})
+              ]),
+        # style={'display': 'inline-block', 'width': '100%'}),
 
 
 
@@ -293,6 +295,7 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
         name="Call Receiver",
     ))
 
+
     fig.update_xaxes(
         range=[0, max(list(time0))],
         zeroline=False,
@@ -363,7 +366,10 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
             showticklabels=False
         ),
         height=300,
-        margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
+        margin={'l': 20, 'b': 30, 'r': 10, 't': 20},
+        yaxis_title="Person Id",
+        xaxis_title="Time",
+
     )
     fig.update_xaxes(range=[0, 365])
 
@@ -472,12 +478,13 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
 
     figT.update_xaxes(
         range=[0, max(list(time0))],
-        zeroline=False,
+        zeroline=False
+
     )
 
     figT.update_yaxes(
         range=[-1, len(df_eT01People)],
-        zeroline=False,
+        zeroline=False
     )
 
     path1 = []
@@ -539,10 +546,79 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
             ticks="",
             showticklabels=False
         ),
+        # height=700,
         height=300,
-        margin={'l': 20, 'b': 30, 'r': 10, 't': 20}
+        margin={'l': 20, 'b': 30, 'r': 10, 't': 10},
+        yaxis_title="Person Id",
+        xaxis_title="Time(days)",
+        # title_text="Time versus Source and Target for Template",
+        title={
+            'y': 1.0,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        font=dict(
+            family="TXTT",
+            size=35,
+            color="black"
+        ),
+        legend=dict(
+            font=dict(
+                family="TXTT",
+                size=20,
+                color="black"
+            ),
+        ),
     )
+    figT.update_xaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=20,
+            color='black'
+        ),
+    )
+
     figT.update_xaxes(range=[0, 365])
+
+    fig.update_layout(
+        yaxis=dict(
+            autorange=True,
+            showgrid=False,
+            ticks="",
+            showticklabels=False
+        ),
+        # height=700,
+        # margin={'l': 20, 'b': 30, 'r': 10, 't': 60},
+        yaxis_title="Person Id",
+        xaxis_title="Time(days)",
+        # title_text="Time versus Source and Target for Template",
+        title={
+            'y': 1.0,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top'},
+        font=dict(
+            family="TXTT",
+            size=35,
+            color="black"
+        ),
+        legend=dict(
+            font=dict(
+                family="TXTT",
+                size=20,
+                color="black"
+            ),
+        ),
+    )
+    fig.update_xaxes(
+        tickfont=dict(
+            family='TXTT',
+            size=20,
+            color='black'
+        ),
+    )
+
+    fig.update_xaxes(range=[0, 365])
 
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
