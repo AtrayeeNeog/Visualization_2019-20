@@ -241,7 +241,8 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
     sourceIn = [str([x]) for x in df['Source']]
     targetIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
-    fig = px.scatter(x=df["Time"], y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
+    timeIn = df["Time"] / (24 * 3600)
+    fig = px.scatter(x=timeIn, y=sourceIn, color=targetIn, size=weightIn, hover_data=[weightIn])
 
     if slct_comparison_graph2_value == "default":
         title = "Template"
@@ -298,7 +299,8 @@ def update_graph(slct_comparison_graph_value, slct_comparison_graph2_value, slct
     sourceIn = [str([x]) for x in df['Source']]
     targetIn = [str(x) for x in df['SourceLocation']]
     weightIn = [abs(int(x)) for x in df['Weight']]
-    figT = px.scatter(x=df["Time"], y=sourceIn, color=targetIn,
+    timeIn = df["Time"] / (24 * 3600)
+    figT = px.scatter(x=timeIn, y=sourceIn, color=targetIn,
                       size=weightIn, hover_data=[weightIn])
 
     container = "Upper Graph: Template | Lower Graph: {}".format(str(title))
